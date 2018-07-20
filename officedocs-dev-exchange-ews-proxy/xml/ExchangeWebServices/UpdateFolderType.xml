@@ -1,0 +1,144 @@
+<Type Name="UpdateFolderType" FullName="ExchangeWebServices.UpdateFolderType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="50e974c8a2b12818680163879f53db23ba38e740" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20607693" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class UpdateFolderType : ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit UpdateFolderType extends ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.UpdateFolderType" />
+  <TypeSignature Language="VB.NET" Value="Public Class UpdateFolderType&#xA;Inherits BaseRequestType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UpdateFolderType : ExchangeWebServices::BaseRequestType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseRequestType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/messages")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.UpdateFolderType" />クラスは、メールボックス内のフォルダーを更新する要求を表します。</summary>
+    <remarks>
+      <para>を追加、設定、またはフォルダーを更新する場合は、プロパティを削除します</para>。
+      <para>次の表は、UpdateFolder 操作で返されるエラー応答コードを一覧します</para>。
+      <para>UpdateFolder 操作エラーの応答コード</para><list type="table"><item><term>ErrorInvalidPropertySet</term><description>読み取り専用であるプロパティの値を設定しようとしました</description></item>。
+        <item><term>ErrorChangeKeyRequiredForWriteOperations</term><description>の更新操作は、キーの変更は指定されていません</description></item>。
+        <item><term>ErrorIncorrectUpdatePropertyCount</term><description>1 つ以上のプロパティを変更するのには、記述の変更を送信しようとしました</description></item></list>。
+      <para /></remarks>
+    <example>
+      <para>次のコード例では、フォルダーの表示名を更新する方法を示します。フォルダーの識別子と変更キーは、読みやすさを保持するために短縮されています。</para>
+      <code>static void UpdateFolder(ExchangeServiceBinding esb)
+{
+    // Create the container for the set of updates to be made to the folders.
+    FolderChangeType changes = new FolderChangeType();
+
+    // Identify the folder to change.
+    FolderIdType folderId = new FolderIdType();
+    folderId.Id = "AQAlAE1BQG1h=";
+    folderId.ChangeKey = "AQAAABYA";
+    changes.Item = folderId;
+
+    // Create the update. Identify the field to update and the value to set for it.
+    SetFolderFieldType uDisplayName = new SetFolderFieldType();
+    PathToUnindexedFieldType displayNameProp = new PathToUnindexedFieldType();
+    displayNameProp.FieldURI = UnindexedFieldURIType.folderDisplayName;
+    FolderType updatedFolder = new FolderType();
+    updatedFolder.DisplayName = "My new folder name";
+    uDisplayName.Item = displayNameProp; 
+    uDisplayName.Item1 = updatedFolder;
+    
+    // Add the folder to change.
+    changes.Item = folderId;
+
+    // Add the array of changes; in this case, a single element array.
+    changes.Updates = new FolderChangeDescriptionType[1] { uDisplayName };
+
+    // Add changes to the request.
+    UpdateFolderType &lt;span class="label"&gt;request&lt;/span&gt; = new &lt;span class="label"&gt;UpdateFolderType&lt;/span&gt;();
+    &lt;span class="label"&gt;request&lt;/span&gt;.FolderChanges = new FolderChangeType[1] { changes };
+
+    // Send the request and get the response.
+    UpdateFolderResponseType response = esb.UpdateFolder(&lt;span class="label"&gt;request&lt;/span&gt;);
+    ArrayOfResponseMessagesType aormt = response.ResponseMessages;
+    ResponseMessageType[] rmta = aormt.Items;
+
+    // Get the new change key for the updated folder.
+    foreach (ResponseMessageType rmt in rmta)
+    {
+        FolderInfoResponseMessageType firmt = (rmt as FolderInfoResponseMessageType);
+
+        foreach (BaseFolderType folder in firmt.Folders)
+        {
+            Console.WriteLine("New change key: " + folder.FolderId.ChangeKey);
+        }
+    }
+}</code>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UpdateFolderType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.UpdateFolderType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UpdateFolderType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.UpdateFolderType" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.UpdateFolderType" />クラス。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FolderChanges">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.FolderChangeType[] FolderChanges { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.FolderChangeType[] FolderChanges" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.UpdateFolderType.FolderChanges" />
+      <MemberSignature Language="VB.NET" Value="Public Property FolderChanges As FolderChangeType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::FolderChangeType ^&gt; ^ FolderChanges { cli::array &lt;ExchangeWebServices::FolderChangeType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::FolderChangeType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("FolderChange", IsNullable=false, Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.FolderChangeType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.UpdateFolderType.FolderChanges" />プロパティを取得または一連のフォルダーに加えられた変更の配列を設定します。 このプロパティは、必要があります。 これは、読み取り/書き込みプロパティです。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.UpdateFolderType.FolderChanges" />を<see cref="T:ExchangeWebServices.FolderChangeType" />の配列です。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

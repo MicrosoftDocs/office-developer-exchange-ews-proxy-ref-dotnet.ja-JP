@@ -1,0 +1,160 @@
+<Type Name="WorkingPeriod" FullName="ExchangeWebServices.WorkingPeriod">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="2b4035a3ed67c15bd9c8561cf6243cdac5a13490" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20607706" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class WorkingPeriod" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit WorkingPeriod extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.WorkingPeriod" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkingPeriod" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkingPeriod" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.WorkingPeriod" />クラスには、メールボックス ユーザーの時間、日曜日が含まれます。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkingPeriod ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.WorkingPeriod.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkingPeriod();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.WorkingPeriod" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.WorkingPeriod" />クラス。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DayOfWeek">
+      <MemberSignature Language="C#" Value="public string DayOfWeek { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DayOfWeek" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.WorkingPeriod.DayOfWeek" />
+      <MemberSignature Language="VB.NET" Value="Public Property DayOfWeek As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DayOfWeek { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.WorkingPeriod.DayOfWeek" />プロパティを取得またはメールボックス ユーザーの稼働日にスケジュールされているの一覧を設定します。</summary>
+        <value>メールボックス ユーザーの稼働日を表す日付が設定されている場合、<see cref="P:ExchangeWebServices.WorkingPeriod.DayOfWeek" />プロパティには、使用する日付のリストが含まれています。</value>
+        <remarks>
+          <para>
+            <see cref="P:ExchangeWebServices.WorkingPeriod.DayOfWeek" />プロパティは、次の値のいずれかを含めることができます:</para>
+          <list type="bullet">
+            <item>
+              <description>日曜日</description>
+            </item>
+            <item>
+              <description>月曜日</description>
+            </item>
+            <item>
+              <description>火曜日</description>
+            </item>
+            <item>
+              <description>水曜日</description>
+            </item>
+            <item>
+              <description>木曜日</description>
+            </item>
+            <item>
+              <description>金曜日</description>
+            </item>
+            <item>
+              <description>土曜日</description>
+            </item>
+          </list>
+          <para>で、テキスト値が返されます、注文を一覧表示します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTimeInMinutes">
+      <MemberSignature Language="C#" Value="public int EndTimeInMinutes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 EndTimeInMinutes" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.WorkingPeriod.EndTimeInMinutes" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndTimeInMinutes As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EndTimeInMinutes { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.WorkingPeriod.EndTimeInMinutes" />プロパティを取得またはメールボックスがユーザーの稼働日の終了を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.WorkingPeriod.EndTimeInMinutes" /> 、1 日の開始からの経過時間を分単位で表される稼働日の終了時刻を返します。</value>
+        <remarks>
+          <para>、<see cref="P:ExchangeWebServices.WorkingPeriod.EndTimeInMinutes" />プロパティは、1 日の開始からの経過時間を分単位で表されるメールボックス ユーザーの作業の 1 日の終わりを表します。1080 分で午後 6 時の終了時刻を表現するなどします</para>。
+          <para>このプロパティに指定できる値の範囲は、0 から 1440</para> 。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartTimeInMinutes">
+      <MemberSignature Language="C#" Value="public int StartTimeInMinutes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StartTimeInMinutes" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.WorkingPeriod.StartTimeInMinutes" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartTimeInMinutes As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartTimeInMinutes { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.WorkingPeriod.StartTimeInMinutes" />プロパティを取得またはメールボックスがユーザーの作業日の開始を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.WorkingPeriod.StartTimeInMinutes" /> 、1 日の開始からの経過時間を分単位で表される稼働日の開始時刻を返します。</value>
+        <remarks>
+          <para>、<see cref="P:ExchangeWebServices.WorkingPeriod.StartTimeInMinutes" />プロパティは、1 日の開始からの経過時間を分単位で表されるメールボックス ユーザーの作業の 1 日の開始を表します。480 分として午前 8 時の開始時刻を表現するなどします</para>。
+          <para>このプロパティに指定できる値の範囲は、0 から 1440</para> 。
+          <para /></remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

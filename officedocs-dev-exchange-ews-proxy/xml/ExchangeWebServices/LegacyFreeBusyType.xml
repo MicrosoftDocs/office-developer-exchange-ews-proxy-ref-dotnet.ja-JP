@@ -1,0 +1,153 @@
+<Type Name="LegacyFreeBusyType" FullName="ExchangeWebServices.LegacyFreeBusyType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="3ba32ae1b13392475c74d21690a2040f47df1d2c" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20607924" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum LegacyFreeBusyType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed LegacyFreeBusyType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.LegacyFreeBusyType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LegacyFreeBusyType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class LegacyFreeBusyType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.LegacyFreeBusyType" />列挙体は、予定表イベントの空き時間情報のステータスを表します。</summary>
+    <remarks>
+      <para>次の表は、プロパティ値を空き時間情報の項目のステータスを確認するかをチェックできます</para>。
+      <para>空き時間情報のプロパティの値</para><list type="table"><item><term>予定表アイテム</term><description><see cref="P:ExchangeWebServices.CalendarItemType.LegacyFreeBusyStatus" /></description></item><item><term>会議出席依頼を目的としています</term><description><see cref="P:ExchangeWebServices.MeetingRequestMessageType.IntendedFreeBusyStatus" /></description></item><item><term>会議出席依頼</term><description><see cref="P:ExchangeWebServices.MeetingRequestMessageType.LegacyFreeBusyStatus" /></description></item><item><term>イベント</term><description><see cref="P:ExchangeWebServices.CalendarEvent.BusyType" /></description></item><term>の競合データ</term><description><see cref="P:ExchangeWebServices.IndividualAttendeeConflictData.BusyType" /></description></list><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Busy">
+      <MemberSignature Language="C#" Value="Busy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.LegacyFreeBusyType Busy = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.LegacyFreeBusyType.Busy" />
+      <MemberSignature Language="VB.NET" Value="Busy" />
+      <MemberSignature Language="C++ CLI" Value="Busy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.LegacyFreeBusyType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>ビジー状態としてのステータスを識別します。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Free">
+      <MemberSignature Language="C#" Value="Free" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.LegacyFreeBusyType Free = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.LegacyFreeBusyType.Free" />
+      <MemberSignature Language="VB.NET" Value="Free" />
+      <MemberSignature Language="C++ CLI" Value="Free" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.LegacyFreeBusyType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>空き領域としてのステータスを識別します。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoData">
+      <MemberSignature Language="C#" Value="NoData" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.LegacyFreeBusyType NoData = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.LegacyFreeBusyType.NoData" />
+      <MemberSignature Language="VB.NET" Value="NoData" />
+      <MemberSignature Language="C++ CLI" Value="NoData" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.LegacyFreeBusyType</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>受信者のデータがないことを示します。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OOF">
+      <MemberSignature Language="C#" Value="OOF" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.LegacyFreeBusyType OOF = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.LegacyFreeBusyType.OOF" />
+      <MemberSignature Language="VB.NET" Value="OOF" />
+      <MemberSignature Language="C++ CLI" Value="OOF" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.LegacyFreeBusyType</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>不在 (時 OOF) のステータスを識別します。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Tentative">
+      <MemberSignature Language="C#" Value="Tentative" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.LegacyFreeBusyType Tentative = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.LegacyFreeBusyType.Tentative" />
+      <MemberSignature Language="VB.NET" Value="Tentative" />
+      <MemberSignature Language="C++ CLI" Value="Tentative" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.LegacyFreeBusyType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>仮の予定としてのステータスを識別します。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkingElsewhere">
+      <MemberSignature Language="C#" Value="WorkingElsewhere" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.LegacyFreeBusyType WorkingElsewhere = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.LegacyFreeBusyType.WorkingElsewhere" />
+      <MemberSignature Language="VB.NET" Value="WorkingElsewhere" />
+      <MemberSignature Language="C++ CLI" Value="WorkingElsewhere" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.LegacyFreeBusyType</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

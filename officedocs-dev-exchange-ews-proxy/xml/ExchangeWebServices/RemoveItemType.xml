@@ -1,0 +1,67 @@
+<Type Name="RemoveItemType" FullName="ExchangeWebServices.RemoveItemType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="068f44f9d38881f18f26e7adb6468a260f69d10a" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20607960" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class RemoveItemType : ExchangeWebServices.ResponseObjectType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit RemoveItemType extends ExchangeWebServices.ResponseObjectType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.RemoveItemType" />
+  <TypeSignature Language="VB.NET" Value="Public Class RemoveItemType&#xA;Inherits ResponseObjectType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RemoveItemType : ExchangeWebServices::ResponseObjectType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.ResponseObjectType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.RemoveItemType" />クラスは、MeetingCancellation メッセージを受信したとき、会議アイテムを削除するために使用される応答オブジェクトを表します。</summary>
+    <remarks>
+      <para>
+        <see cref="T:ExchangeWebServices.RemoveItemType" />クラスにのみ有効ですが、 <see cref="T:ExchangeWebServices.MeetingCancellationMessageType" />。それ以外の場合、エラーがスローされます</para>。
+      <para>を削除するのには、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />とそれに関連付けられた<see cref="T:ExchangeWebServices.CalendarItemType" />を使用して、<see cref="T:ExchangeWebServices.DeclineItemType" />の代わりに、応答オブジェクト、<see cref="T:ExchangeWebServices.RemoveItemType" />応答オブジェクト</para>。
+      <para>での RemoveItem が代理人アクセスはサポートされていません</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RemoveItemType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.RemoveItemType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoveItemType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.RemoveItemType" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.RemoveItemType" />クラス。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

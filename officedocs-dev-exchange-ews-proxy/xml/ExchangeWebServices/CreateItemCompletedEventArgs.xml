@@ -1,0 +1,78 @@
+<Type Name="CreateItemCompletedEventArgs" FullName="ExchangeWebServices.CreateItemCompletedEventArgs">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="36ed5eb54f8f82e85d70db2187b6236231ca57d2" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20609284" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class CreateItemCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CreateItemCompletedEventArgs extends System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.CreateItemCompletedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class CreateItemCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CreateItemCompletedEventArgs : System::ComponentModel::AsyncCompletedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.AsyncCompletedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="d22d7-101">
+        <see cref="T:ExchangeWebServices.CreateItemCompletedEventArgs" />クラスのデータを提供します<see cref="E:ExchangeWebServices.ExchangeServiceBinding.CreateItemCompleted" />イベントです。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="d22d7-101">The <see cref="T:ExchangeWebServices.CreateItemCompletedEventArgs" /> class provides data for the <see cref="E:ExchangeWebServices.ExchangeServiceBinding.CreateItemCompleted" /> event.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.CreateItemResponseType Result { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.CreateItemResponseType Result" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CreateItemCompletedEventArgs.Result" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As CreateItemResponseType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::CreateItemResponseType ^ Result { ExchangeWebServices::CreateItemResponseType ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CreateItemResponseType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d22d7-102">
+            <see cref="P:ExchangeWebServices.CreateItemCompletedEventArgs.Result" />プロパティは、CreateItem 操作への非同期呼び出しからの応答を取得します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d22d7-102">The <see cref="P:ExchangeWebServices.CreateItemCompletedEventArgs.Result" /> property gets the response from an asynchronous call to the CreateItem operation.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d22d7-103">
+            <see cref="P:ExchangeWebServices.CreateItemCompletedEventArgs.Result" />を<see cref="T:ExchangeWebServices.CreateItemResponseType" />CreateItem 操作への非同期呼び出しの結果を格納するオブジェクトです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d22d7-103">The <see cref="P:ExchangeWebServices.CreateItemCompletedEventArgs.Result" /> property returns a <see cref="T:ExchangeWebServices.CreateItemResponseType" /> object that contains the results of an asynchronous call to the CreateItem operation.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

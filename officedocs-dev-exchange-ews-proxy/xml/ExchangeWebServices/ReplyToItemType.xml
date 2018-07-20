@@ -1,0 +1,187 @@
+<Type Name="ReplyToItemType" FullName="ExchangeWebServices.ReplyToItemType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="030ea6fc5358d2e3e3dfb0fc3418402f945d911b" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608610" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class ReplyToItemType : ExchangeWebServices.SmartResponseType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ReplyToItemType extends ExchangeWebServices.SmartResponseType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.ReplyToItemType" />
+  <TypeSignature Language="VB.NET" Value="Public Class ReplyToItemType&#xA;Inherits SmartResponseType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ReplyToItemType : ExchangeWebServices::SmartResponseType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.SmartResponseType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="f19f9-101">
+        <see cref="T:ExchangeWebServices.ReplyToItemType" />クラスは、アイテムの送信者に返信するために使用される返信応答オブジェクトを表します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="f19f9-101">The <see cref="T:ExchangeWebServices.ReplyToItemType" /> class represents a reply response object that is used to reply to the sender of an item.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="f19f9-102">
+        <para>に対して有効な唯一のプロパティは、次の<see cref="T:ExchangeWebServices.ReplyToItemType" />クラス。</para>
+        <list type="bullet">
+          <item>
+            <description>
+              <see cref="P:ExchangeWebServices.ItemType.Subject" />
+            </description>
+          </item>
+          <item>
+            <description>
+              <see cref="P:ExchangeWebServices.ItemType.Body" />
+            </description>
+          </item>
+          <item>
+            <description>
+              <see cref="P:ExchangeWebServices.MessageType.ToRecipients" />
+            </description>
+          </item>
+          <item>
+            <description>
+              <see cref="P:ExchangeWebServices.MessageType.CcRecipients" />
+            </description>
+          </item>
+          <item>
+            <description>
+              <see cref="P:ExchangeWebServices.MessageType.BccRecipients" />
+            </description>
+          </item>
+          <item>
+            <description>
+              <see cref="P:ExchangeWebServices.MessageType.IsReadReceiptRequested" />
+            </description>
+          </item>
+          <item>
+            <description>
+              <see cref="P:ExchangeWebServices.MessageType.IsDeliveryReceiptRequested" />
+            </description>
+          </item>
+          <item>
+            <description>
+              <see cref="P:ExchangeWebServices.MessageType.From" />
+            </description>
+          </item>
+          <item>
+            <description>
+              <see cref="P:ExchangeWebServices.ResponseObjectCoreType.ReferenceItemId" />
+            </description>
+          </item>
+          <item>
+            <description>
+              <see cref="P:ExchangeWebServices.SmartResponseType.NewBodyContent" />
+            </description>
+          </item>
+        </list>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="f19f9-102">
+          <para>The following are the only properties that are valid for the <see cref="T:ExchangeWebServices.ReplyToItemType" /> class:</para>
+          <list type="bullet">
+            <item>
+              <description>
+                <see cref="P:ExchangeWebServices.ItemType.Subject" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="P:ExchangeWebServices.ItemType.Body" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="P:ExchangeWebServices.MessageType.ToRecipients" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="P:ExchangeWebServices.MessageType.CcRecipients" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="P:ExchangeWebServices.MessageType.BccRecipients" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="P:ExchangeWebServices.MessageType.IsReadReceiptRequested" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="P:ExchangeWebServices.MessageType.IsDeliveryReceiptRequested" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="P:ExchangeWebServices.MessageType.From" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="P:ExchangeWebServices.ResponseObjectCoreType.ReferenceItemId" />
+              </description>
+            </item>
+            <item>
+              <description>
+                <see cref="P:ExchangeWebServices.SmartResponseType.NewBodyContent" />
+              </description>
+            </item>
+          </list>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReplyToItemType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.ReplyToItemType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReplyToItemType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="f19f9-103">
+            <see cref="T:ExchangeWebServices.ReplyToItemType" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.ReplyToItemType" />クラス。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="f19f9-103">The <see cref="T:ExchangeWebServices.ReplyToItemType" /> constructor initializes a new instance of the <see cref="T:ExchangeWebServices.ReplyToItemType" /> class.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,126 @@
+<Type Name="ItemsChoiceType1" FullName="ExchangeWebServices.ItemsChoiceType1">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="b8773524434b38b7c9207ac190c7f79a8d7184aa" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608166" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum ItemsChoiceType1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ItemsChoiceType1 extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.ItemsChoiceType1" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ItemsChoiceType1" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ItemsChoiceType1" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(IncludeInSchema=false, Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="43fc3-101">
+        <see cref="T:ExchangeWebServices.ItemsChoiceType1" /> 、SyncFolderHierarchy 操作内の各フォルダーの種類の変更を識別する列挙体です。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="43fc3-101">The <see cref="T:ExchangeWebServices.ItemsChoiceType1" /> enumeration identifies the change types for each folder in a SyncFolderHierarchy operation.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="43fc3-102">
+        <para>でこの列挙体を使用、<see cref="P:ExchangeWebServices.SyncFolderHierarchyChangesType.ItemsElementName" />のプロパティ、<see cref="T:ExchangeWebServices.SyncFolderHierarchyChangesType" />の種類</para>。
+      <para>SyncFolderHierarchy 応答にこの列挙体を使用します。この列挙体を使用して、クライアントがフォルダー階層のローカル バージョンを更新できるように、サーバー上のフォルダー階層に発生した変更の種類を決定します</para>。
+      <para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="43fc3-102">
+          <para>This enumeration is used by the <see cref="P:ExchangeWebServices.SyncFolderHierarchyChangesType.ItemsElementName" /> property of the <see cref="T:ExchangeWebServices.SyncFolderHierarchyChangesType" /> type.</para>
+          <para>This enumeration is used in SyncFolderHierarchy responses. Use this enumeration to determine the type of change that has occurred to a folder hierarchy on the server so that the client can update the local version of the folder hierarchy.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="Create" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.ItemsChoiceType1 Create = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.ItemsChoiceType1.Create" />
+      <MemberSignature Language="VB.NET" Value="Create" />
+      <MemberSignature Language="C++ CLI" Value="Create" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ItemsChoiceType1</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="43fc3-103">ローカル クライアント ストアに作成する 1 つのフォルダーを識別します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="43fc3-103">Identifies a single folder to create in the local client store.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="Delete" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.ItemsChoiceType1 Delete = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.ItemsChoiceType1.Delete" />
+      <MemberSignature Language="VB.NET" Value="Delete" />
+      <MemberSignature Language="C++ CLI" Value="Delete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ItemsChoiceType1</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="43fc3-104">ローカル クライアント ストアで削除するのには 1 つのフォルダーを識別します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="43fc3-104">Identifies a single folder to delete in the local client store.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="Update" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.ItemsChoiceType1 Update = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.ItemsChoiceType1.Update" />
+      <MemberSignature Language="VB.NET" Value="Update" />
+      <MemberSignature Language="C++ CLI" Value="Update" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ItemsChoiceType1</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="43fc3-105">ローカル クライアント ストアで更新する 1 つのフォルダーを識別します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="43fc3-105">Identifies a single folder to update in the local client store.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

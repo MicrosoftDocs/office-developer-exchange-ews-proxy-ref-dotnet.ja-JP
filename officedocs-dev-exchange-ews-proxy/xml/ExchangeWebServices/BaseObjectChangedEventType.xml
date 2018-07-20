@@ -1,0 +1,193 @@
+<Type Name="BaseObjectChangedEventType" FullName="ExchangeWebServices.BaseObjectChangedEventType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="199ffb5587dfea2176d150b377d0df4c817c1fc0" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608090" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class BaseObjectChangedEventType : ExchangeWebServices.BaseNotificationEventType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit BaseObjectChangedEventType extends ExchangeWebServices.BaseNotificationEventType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.BaseObjectChangedEventType" />
+  <TypeSignature Language="VB.NET" Value="Public Class BaseObjectChangedEventType&#xA;Inherits BaseNotificationEventType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BaseObjectChangedEventType : ExchangeWebServices::BaseNotificationEventType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseNotificationEventType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.MovedCopiedEventType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.ModifiedEventType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="377b1-101">
+        <see cref="T:ExchangeWebServices.BaseObjectChangedEventType" />クラスを表すを作成、削除、および新しいメール イベントです。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="377b1-101">The <see cref="T:ExchangeWebServices.BaseObjectChangedEventType" /> class represents create, delete, and new mail events.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BaseObjectChangedEventType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.BaseObjectChangedEventType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BaseObjectChangedEventType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="377b1-102">
+            <see cref="T:ExchangeWebServices.BaseObjectChangedEventType" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.BaseObjectChangedEventType" />クラス。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="377b1-102">The <see cref="T:ExchangeWebServices.BaseObjectChangedEventType" /> constructor initializes a new instance of the <see cref="T:ExchangeWebServices.BaseObjectChangedEventType" /> class.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object Item { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.BaseObjectChangedEventType.Item" />
+      <MemberSignature Language="VB.NET" Value="Public Property Item As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Item { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("FolderId", typeof(ExchangeWebServices.FolderIdType))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("ItemId", typeof(ExchangeWebServices.ItemIdType))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="377b1-103">
+            <see cref="P:ExchangeWebServices.BaseObjectChangedEventType.Item" />プロパティを取得、<see cref="T:ExchangeWebServices.FolderIdType" />または<see cref="T:ExchangeWebServices.ItemIdType" />ストアが変更された項目を識別するオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="377b1-103">The <see cref="P:ExchangeWebServices.BaseObjectChangedEventType.Item" /> property gets a <see cref="T:ExchangeWebServices.FolderIdType" /> or an <see cref="T:ExchangeWebServices.ItemIdType" /> object that identifies the changed store item.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="377b1-104">
+            <see cref="P:ExchangeWebServices.BaseObjectChangedEventType.Item" />プロパティは、いずれかを表すオブジェクトを取得、<see cref="T:ExchangeWebServices.FolderIdType" />または<see cref="T:ExchangeWebServices.ItemIdType" />オブジェクトです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="377b1-104">The <see cref="P:ExchangeWebServices.BaseObjectChangedEventType.Item" /> property returns an object that represents either a <see cref="T:ExchangeWebServices.FolderIdType" /> or an <see cref="T:ExchangeWebServices.ItemIdType" /> object.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentFolderId">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.FolderIdType ParentFolderId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.FolderIdType ParentFolderId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.BaseObjectChangedEventType.ParentFolderId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParentFolderId As FolderIdType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::FolderIdType ^ ParentFolderId { ExchangeWebServices::FolderIdType ^ get(); void set(ExchangeWebServices::FolderIdType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.FolderIdType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="377b1-105">
+            <see cref="P:ExchangeWebServices.BaseObjectChangedEventType.ParentFolderId" />プロパティが変更されたアイテムまたはフォルダーのフォルダー id の親を取得します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="377b1-105">The <see cref="P:ExchangeWebServices.BaseObjectChangedEventType.ParentFolderId" /> property gets the parent folder identifier of the changed item or folder.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="377b1-106">
+            <see cref="P:ExchangeWebServices.BaseObjectChangedEventType.ParentFolderId" />を<see cref="T:ExchangeWebServices.FolderIdType" />変更された項目の親フォルダーを識別するオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="377b1-106">The <see cref="P:ExchangeWebServices.BaseObjectChangedEventType.ParentFolderId" /> property returns a <see cref="T:ExchangeWebServices.FolderIdType" /> object that identifies the parent folder of the changed item.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="377b1-107">
+            <para>このプロパティは、応答でのみ返されるために、読み取り専用です。署名のプロパティでプロパティ設定メソッドは、プロキシ ジェネレーターの成果物です。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="377b1-107">
+              <para>This property is read-only because it is only returned in a response. The property setter in the property signature is an artifact of the proxy generator.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeStamp">
+      <MemberSignature Language="C#" Value="public DateTime TimeStamp { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime TimeStamp" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.BaseObjectChangedEventType.TimeStamp" />
+      <MemberSignature Language="VB.NET" Value="Public Property TimeStamp As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime TimeStamp { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="377b1-108">
+            <see cref="P:ExchangeWebServices.BaseObjectChangedEventType.TimeStamp" />プロパティが変更されたアイテムまたはフォルダーのメールボックス イベントのタイムスタンプを取得します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="377b1-108">The <see cref="P:ExchangeWebServices.BaseObjectChangedEventType.TimeStamp" /> property gets the time stamp of a changed item or folder mailbox event.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="377b1-109">
+            <see cref="P:ExchangeWebServices.BaseObjectChangedEventType.TimeStamp" />プロパティが変更されたアイテムまたはフォルダーのメールボックス イベントのタイムスタンプを表す DateTime オブジェクトを返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="377b1-109">The <see cref="P:ExchangeWebServices.BaseObjectChangedEventType.TimeStamp" /> property returns a DateTime object that represents the time stamp of a changed item or folder mailbox event.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

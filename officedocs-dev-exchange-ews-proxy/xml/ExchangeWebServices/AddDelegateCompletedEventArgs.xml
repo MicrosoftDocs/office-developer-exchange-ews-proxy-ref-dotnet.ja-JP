@@ -1,0 +1,78 @@
+<Type Name="AddDelegateCompletedEventArgs" FullName="ExchangeWebServices.AddDelegateCompletedEventArgs">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="95a653ced13cb3cf09afbbb9320884b7f40c9014" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20609372" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class AddDelegateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AddDelegateCompletedEventArgs extends System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.AddDelegateCompletedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class AddDelegateCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AddDelegateCompletedEventArgs : System::ComponentModel::AsyncCompletedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.AsyncCompletedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="0fb1a-101">
+        <see cref="T:ExchangeWebServices.AddDelegateCompletedEventArgs" />クラスのデータを提供します<see cref="E:ExchangeWebServices.ExchangeServiceBinding.AddDelegateCompleted" />イベントです。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="0fb1a-101">The <see cref="T:ExchangeWebServices.AddDelegateCompletedEventArgs" /> class provides data for the <see cref="E:ExchangeWebServices.ExchangeServiceBinding.AddDelegateCompleted" /> event.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.AddDelegateResponseMessageType Result { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.AddDelegateResponseMessageType Result" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AddDelegateCompletedEventArgs.Result" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As AddDelegateResponseMessageType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::AddDelegateResponseMessageType ^ Result { ExchangeWebServices::AddDelegateResponseMessageType ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.AddDelegateResponseMessageType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0fb1a-102">
+            <see cref="P:ExchangeWebServices.AddDelegateCompletedEventArgs.Result" />への非同期呼び出しからの応答を取得するプロパティ、<see cref="M:ExchangeWebServices.ExchangeServiceBinding.AddDelegateAsync(ExchangeWebServices.AddDelegateType)" />操作します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0fb1a-102">The <see cref="P:ExchangeWebServices.AddDelegateCompletedEventArgs.Result" /> property gets the response from an asynchronous call to the <see cref="M:ExchangeWebServices.ExchangeServiceBinding.AddDelegateAsync(ExchangeWebServices.AddDelegateType)" /> operation.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0fb1a-103">
+            <see cref="P:ExchangeWebServices.AddDelegateCompletedEventArgs.Result" />を<see cref="T:ExchangeWebServices.AddDelegateResponseMessageType" />への非同期呼び出しの結果を格納しているオブジェクト、<see cref="M:ExchangeWebServices.ExchangeServiceBinding.AddDelegateAsync(ExchangeWebServices.AddDelegateType)" />操作します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0fb1a-103">The <see cref="P:ExchangeWebServices.AddDelegateCompletedEventArgs.Result" /> property returns an <see cref="T:ExchangeWebServices.AddDelegateResponseMessageType" /> object that contains the results of an asynchronous call to the <see cref="M:ExchangeWebServices.ExchangeServiceBinding.AddDelegateAsync(ExchangeWebServices.AddDelegateType)" /> operation.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

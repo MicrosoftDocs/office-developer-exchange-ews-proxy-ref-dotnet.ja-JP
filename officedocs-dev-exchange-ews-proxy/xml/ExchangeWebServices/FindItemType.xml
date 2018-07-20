@@ -1,0 +1,1031 @@
+<Type Name="FindItemType" FullName="ExchangeWebServices.FindItemType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="2c4c1eccb292f65c95b1697c7acb299c1d2e6dc8" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20609016" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class FindItemType : ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FindItemType extends ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.FindItemType" />
+  <TypeSignature Language="VB.NET" Value="Public Class FindItemType&#xA;Inherits BaseRequestType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FindItemType : ExchangeWebServices::BaseRequestType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseRequestType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/messages")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="7557e-101">
+        <see cref="T:ExchangeWebServices.FindItemType" />クラスは、メールボックス内のアイテムを検索するクエリを表します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="7557e-101">The <see cref="T:ExchangeWebServices.FindItemType" /> class represents a query to find items in a mailbox.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="7557e-102">
+        <para>
+          <see cref="T:ExchangeWebServices.FindItemType" />クラスには、メールボックスを照会するための多くのオプションが用意されています。FindItem クエリでは、緩斜面とソフト削除された検索フォルダーのセットに制限されている多くのオプションは複雑な検索式と検索結果のセットのビューを作成できるようにします。<see cref="T:ExchangeWebServices.FindItemType" />クラスには、検索のパラメーターを設定するために使用されるプロパティのセットが含まれています。次の表に、クエリの作成に使用されるさまざまなパラメーターを記述するプロパティ</para>。
+      <para>クエリの作成に使用されるプロパティ</para><list type="table"><item><term><see cref="P:ExchangeWebServices.FindItemType.Item" /></term>結果セットのページング機能を識別します。このプロパティは省略可能です
+        </item>。
+        <item><term><see cref="P:ExchangeWebServices.FindItemType.Item1" /></term>結果セットのデータをグループ化する方法を識別します。このプロパティは省略可能です。このプロパティが設定されていない場合、グループ化は適用されません
+        </item>。
+        <item><term><see cref="P:ExchangeWebServices.FindItemType.ItemShape" /></term>結果セット内の項目に対して返される項目を識別します
+        </item>。
+        <item><term><see cref="P:ExchangeWebServices.FindItemType.ParentFolderIds" /></term>検索するフォルダーを識別します
+        </item>。
+        <item><term><see cref="P:ExchangeWebServices.FindItemType.Restriction" /></term>結果セットで返されるアイテムにフィルターを定義するパラメーターのセットを識別します。このプロパティは省略可能です
+        </item>。
+        <item><term><see cref="P:ExchangeWebServices.FindItemType.SortOrder" /></term>の結果セット内のアイテムの順序を識別します。このプロパティは省略可能です
+        </item>。
+        <item><term><see cref="P:ExchangeWebServices.FindItemType.Traversal" /></term>フォルダーで検索を実行する方法を識別します
+        </item></list>。
+      <para>、FindItem クエリは、頻繁に変更しを必要としないフォルダー構造の深い階層にわたるクエリを使用してください。特定の検索を定期的に実行すると場合、は、検索用の検索フォルダーを作成するのにはより適切な場合があります。メモの検索フォルダーは、フォルダー構造の詳細の走査にも実行できます</para>。
+      <para><b>重要</b>: 検索フォルダーが Exchange Server 2007 データベースで実行され、したがって FindItem クエリのみに影響を与えるパフォーマンスがクエリを受信するときに、Exchange server を実行しているコンピューターのパフォーマンスに影響する操作を行います、Exchange サーバーです</para>。
+      <para>の FindItem クエリは、クライアント アプリケーションに必要な情報の多くを提供します。基本的には、項目の概要を返します。FindItem には、ストリーム再生可能なプロパティの最初の 512 バイトのみが返されます。Unicode では、null で終わる Unicode 文字列を使用して、最初の 255 文字を返します。</para><para><b>注</b>: メッセージの本文、添付ファイル、または受信者のリストを返さない FindItem</para> 。
+      <para>使用<see cref="T:ExchangeWebServices.GetItemType" />の特定の項目の詳細を取得します。GetItem は、FindItem より多くのプロパティを返します。詳細が必要な場合は、クライアント アプリケーションする必要があります FindItem 呼び出しを実行し、GetItem の呼び出しでは FindItem 呼び出しで使用できないプロパティを取得する項目の識別子を使用します</para>。
+      <para>次の表は、両方の FindItem で返されるプロパティと、GetItem を呼び出します</para>。
+      <para>返されるプロパティ FindItem および GetItem の呼び出し</para><list type="table"><item><term>ConversationIndex</term><description>ConversationTopic</description><description>カルチャ</description></item><item><term>DateTimeCreated</term><description>DateTimeReceived</description><description>DateTimeSent</description></item><item><term>DisplayCc</term><description>DisplayTo</description><description></description></item><item><term>添付ファイル付き</term>の
+          <description>重要性</description><description>InReplyTo</description></item><item><term>InternetMessageId</term><description>IsDeliveryReceiptRequested</description><description>IsDraft</description></item><item><term>IsFromMe</term><description>IsRead</description><description>IsReadReceiptRequested</description></item><item><term>IsResend</term><description>IsResponseRequested</description><description>IsSubmitted</description></item><item><term>IsUnmodified</term><description>ItemClass</description><description>アイテム Id</description></item><item><term>ParentFolderId</term><description>参照</description><description>ReminderDueBy</description></item><item><term>ReminderIsSet</term><description>ReminderMinutesBeforeStart</description><description>送信者</description></item><item><term>感度</term><description>サイズ</description><description>件名</description></item></list><para><b>注</b>: のみの表示名 (文字列) が返されますが、送信者のプロパティで返される FindItem および GetItem の両方の呼び出し、FindItem 呼び出しで。表示名 (文字列)、EmailAddress (NonEmptyStringType)、および RoutingType (EmailAddress) が返される GetItem の呼び出しによって</para>。
+      <para>、<see cref="P:ExchangeWebServices.FindItemType.Item" />と<see cref="P:ExchangeWebServices.FindItemType.Item1" />プロパティは、プロキシの生成処理と XML スキーマの任意の要素を処理する方法で作成します。<see cref="P:ExchangeWebServices.FindItemType.Item" />を拡張するオブジェクトのプロパティを設定します<see cref="T:ExchangeWebServices.BasePagingType" />クラス。このプロパティは、応答で返されます表示の種類について説明します。<see cref="P:ExchangeWebServices.FindItemType.Item1" />を拡張するオブジェクトのプロパティを設定します<see cref="T:ExchangeWebServices.BaseGroupByType" />クラス。このプロパティは、応答が結果セット内のアイテムをグループ化する方法について説明します。これらのプロパティの詳細については、XML スキーマの選択要素のプロキシのアーティファクトを参照してください</para>。
+      <para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="7557e-102">
+          <para>The <see cref="T:ExchangeWebServices.FindItemType" /> class provides many options for querying a mailbox. Although the FindItem query is limited to shallow and soft-deleted searches of a set of folders, many options are available for creating complex search expressions and views of the search result set. The <see cref="T:ExchangeWebServices.FindItemType" /> class contains a set of properties that are used to set the parameters of the search. The following table lists the properties that describe the different parameters that are used to construct queries.</para>
+          <para>Properties that are used to construct queries</para>
+          <list type="table">
+            <item>
+              <term>
+                <see cref="P:ExchangeWebServices.FindItemType.Item" />
+              </term>
+              <description>Identifies the paging mechanism of the result set. This property is optional.</description>
+            </item>
+            <item>
+              <term>
+                <see cref="P:ExchangeWebServices.FindItemType.Item1" />
+              </term>
+              <description>Identifies how the data is grouped in the result set. This property is optional. If this property is not set, no grouping will be applied.</description>
+            </item>
+            <item>
+              <term>
+                <see cref="P:ExchangeWebServices.FindItemType.ItemShape" />
+              </term>
+              <description>Identifies which item properties are returned for the items in the result set.</description>
+            </item>
+            <item>
+              <term>
+                <see cref="P:ExchangeWebServices.FindItemType.ParentFolderIds" />
+              </term>
+              <description>Identifies which folders are searched.</description>
+            </item>
+            <item>
+              <term>
+                <see cref="P:ExchangeWebServices.FindItemType.Restriction" />
+              </term>
+              <description>Identifies a set of parameters that define a filter on the items that are returned in the result set. This property is optional.</description>
+            </item>
+            <item>
+              <term>
+                <see cref="P:ExchangeWebServices.FindItemType.SortOrder" />
+              </term>
+              <description>Identifies how the items are ordered in the results set. This property is optional.</description>
+            </item>
+            <item>
+              <term>
+                <see cref="P:ExchangeWebServices.FindItemType.Traversal" />
+              </term>
+              <description>Identifies how the search is performed in the folders.</description>
+            </item>
+          </list>
+          <para>The FindItem query should be used for queries that change frequently and that do not require a deep traversal of the folder structure. If a specific search is performed regularly, it may be more appropriate to create a search folder for the search. Note that search folders can also perform deep traversals of the folder structure.</para>
+          <para>
+            <b>Important</b>: Search folders run in the Exchange Server 2007 database and therefore do affect the performance of the computer that is running the Exchange server, while FindItem queries only affect performance when the queries are received by the Exchange server.</para>
+          <para>The FindItem query will provide much of the information that a client application needs. It basically returns a summary of an item. FindItem returns only the first 512 bytes of any streamable property. For Unicode, it returns the first 255 characters by using a null-terminated Unicode string. </para>
+          <para>
+            <b>Note</b>: FindItem does not return a message body, attachments, or recipient lists.</para>
+          <para>Use <see cref="T:ExchangeWebServices.GetItemType" /> to get the details of specific items. GetItem returns more properties than FindItem. If more information is required, a client application must perform a FindItem call and then use the item identifiers in a GetItem call to get the properties that are not available in the FindItem call.</para>
+          <para>The following table lists the properties that are returned in both the FindItem and GetItem calls.</para>
+          <para>Properties that are returned in FindItem and GetItem calls</para>
+          <list type="table">
+            <item>
+              <term>ConversationIndex</term>
+              <description>ConversationTopic</description>
+              <description>Culture</description>
+            </item>
+            <item>
+              <term>DateTimeCreated</term>
+              <description>DateTimeReceived</description>
+              <description>DateTimeSent</description>
+            </item>
+            <item>
+              <term>DisplayCc</term>
+              <description>DisplayTo</description>
+              <description>From</description>
+            </item>
+            <item>
+              <term>HasAttachments</term>
+              <description>Importance</description>
+              <description>InReplyTo</description>
+            </item>
+            <item>
+              <term>InternetMessageId</term>
+              <description>IsDeliveryReceiptRequested</description>
+              <description>IsDraft</description>
+            </item>
+            <item>
+              <term>IsFromMe</term>
+              <description>IsRead</description>
+              <description>IsReadReceiptRequested</description>
+            </item>
+            <item>
+              <term>IsResend</term>
+              <description>IsResponseRequested</description>
+              <description>IsSubmitted</description>
+            </item>
+            <item>
+              <term>IsUnmodified</term>
+              <description>ItemClass</description>
+              <description>ItemId</description>
+            </item>
+            <item>
+              <term>ParentFolderId</term>
+              <description>References</description>
+              <description>ReminderDueBy</description>
+            </item>
+            <item>
+              <term>ReminderIsSet</term>
+              <description>ReminderMinutesBeforeStart</description>
+              <description>Sender</description>
+            </item>
+            <item>
+              <term>Sensitivity</term>
+              <description>Size</description>
+              <description>Subject</description>
+            </item>
+          </list>
+          <para>
+            <b>Note</b>: Although the Sender property is returned in both FindItem and GetItem calls, only the DisplayName (string) is returned in the FindItem call. DisplayName (string), EmailAddress (NonEmptyStringType), and RoutingType (EmailAddress) are returned by the GetItem call.</para>
+          <para>The <see cref="P:ExchangeWebServices.FindItemType.Item" /> and <see cref="P:ExchangeWebServices.FindItemType.Item1" /> properties are created by the proxy generation process and how it handles XML schema choice elements. The <see cref="P:ExchangeWebServices.FindItemType.Item" /> property is set with an object that extends the <see cref="T:ExchangeWebServices.BasePagingType" /> class. This property describes which type of view will be returned in the response. The <see cref="P:ExchangeWebServices.FindItemType.Item1" /> property is set with an object that extends the <see cref="T:ExchangeWebServices.BaseGroupByType" /> class. This property describes how the response will group items in the result set. For more information about these properties, see XML Schema Choice Element Proxy Artifacts.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+    <example>
+      <span data-ttu-id="7557e-103">
+        <para>次のコード例を次の結果を返す検索項目のクエリを示しています:</para>
+        <list type="number">
+          <item>
+            <description>、インデックス付きのクエリ結果を結果セットの先頭から開始し、結果セットから最大で 10 個のエントリを返します</description>
+          </item>。
+        <item><description>は、次にグループ化された検索:</description></item><item><description>、AllProperties に定義されているプロパティをすべて図形、IsMeeting と重要度のプロパティだけでなく。AllProperties 図形は、GetItem 操作では、それよりも FindItem 操作では異なります</description></item>。
+        <item><description>既定の予定表フォルダーのアイテムは見つかりませんでした</description></item>。
+        <item><description>を開始時刻が現在の時刻より後を持つ項目だけです</description></item>。
+        <item><description>Subject プロパティによって、項目が並べ替えられます</description></item>。
+        <item><description>アイテムは検索フォルダーの最上位レベルでしか見つかりませんでした</description></item>。
+      </list>
+        <code>static void FindItem()
+{
+    // Create the service binding.
+    ExchangeServiceBinding esb = new ExchangeServiceBinding();
+    esb.Credentials = new NetworkCredential("username", "password", "domain");
+    esb.Url = @"https://ExchangeServer/EWS/Exchange.asmx";
+
+    // Form the FindItem request.
+    FindItemType &lt;span class="label"&gt;findItemRequest&lt;/span&gt; = new &lt;span class="label"&gt;FindItemType&lt;/span&gt;();
+
+    // Define the paging scheme for the result set.
+    IndexedPageViewType ipvt = new IndexedPageViewType();
+    ipvt.BasePoint = IndexBasePointType.Beginning;
+    ipvt.MaxEntriesReturned = 10;
+    ipvt.MaxEntriesReturnedSpecified = true;
+    ipvt.Offset = 0;
+    // Add the paging scheme to the request.
+    &lt;span class="label"&gt;findItemRequest&lt;/span&gt;.Item = ipvt;
+
+    // Define the grouping scheme for the result set.
+    GroupByType group = new GroupByType();
+    // Define the property that is used to determine the order of groups of items in a group.
+    AggregateOnType aggregate = new AggregateOnType();
+    PathToUnindexedFieldType subject = new PathToUnindexedFieldType();
+    subject.FieldURI = UnindexedFieldURIType.itemSubject;
+    aggregate.Item = subject;
+    aggregate.Aggregate = AggregateType.Minimum;
+    group.AggregateOn = aggregate;
+    // Define the property that is used to group items.
+    PathToUnindexedFieldType importance = new PathToUnindexedFieldType();
+    importance.FieldURI = UnindexedFieldURIType.itemImportance;
+    group.Item = importance;
+    // Define how the groups are ordered in the response.
+    group.Order = SortDirectionType.Descending;
+    // Add the grouping scheme to the request.
+    &lt;span class="label"&gt;findItemRequest&lt;/span&gt;.Item1 = group;
+
+    // Define the item properties that are returned in the response.
+    ItemResponseShapeType itemProperties = new ItemResponseShapeType();
+    // Use the Default shape for the response.            
+    itemProperties.BaseShape = DefaultShapeNamesType.Default;
+    // Add more properties to the request.
+    PathToUnindexedFieldType addIsMeeting = new PathToUnindexedFieldType();
+    PathToUnindexedFieldType addImportance = new PathToUnindexedFieldType();
+    addIsMeeting.FieldURI = UnindexedFieldURIType.calendarIsMeeting;
+    addImportance.FieldURI = UnindexedFieldURIType.itemImportance;
+    itemProperties.AdditionalProperties = new PathToUnindexedFieldType[2];
+    itemProperties.AdditionalProperties[0] = addIsMeeting;
+    itemProperties.AdditionalProperties[1] = addImportance;
+    // Add the properties shape to the request.
+    &lt;span class="label"&gt;findItemRequest&lt;/span&gt;.ItemShape = itemProperties;
+
+    // Identify which folders to search.
+    DistinguishedFolderIdType[] folderIDArray = new DistinguishedFolderIdType[1];
+    folderIDArray[0] = new DistinguishedFolderIdType();
+    folderIDArray[0].Id = DistinguishedFolderIdNameType.calendar;
+    // Add folders to the request.
+    &lt;span class="label"&gt;findItemRequest&lt;/span&gt;.ParentFolderIds = folderIDArray;
+
+    // Create a restriction for the result set.
+    RestrictionType restriction = new RestrictionType();
+    PathToUnindexedFieldType pteft = new PathToUnindexedFieldType();
+    pteft.FieldURI = UnindexedFieldURIType.calendarStart;
+    FieldURIOrConstantType fieldURIORConstant = new FieldURIOrConstantType();
+    fieldURIORConstant.Item = new ConstantValueType();
+    (fieldURIORConstant.Item as ConstantValueType).Value = DateTime.Now.ToString();
+    IsGreaterThanType isGreaterThan = new IsGreaterThanType();
+    isGreaterThan.Item = pteft;
+    isGreaterThan.FieldURIOrConstant = fieldURIORConstant;
+    restriction.Item = isGreaterThan;
+    &lt;span class="label"&gt;findItemRequest&lt;/span&gt;.Restriction = restriction;
+
+    // Define the sort order of items.
+    FieldOrderType[] fieldsOrder = new FieldOrderType[1];
+    fieldsOrder[0] = new FieldOrderType();
+    PathToUnindexedFieldType subjectOrder = new PathToUnindexedFieldType();
+    subjectOrder.FieldURI = UnindexedFieldURIType.itemSubject;
+    fieldsOrder[0].Item = subjectOrder;
+    fieldsOrder[0].Order = SortDirectionType.Ascending;
+    &lt;span class="label"&gt;findItemRequest&lt;/span&gt;.SortOrder = fieldsOrder;
+
+    // Define the traversal type.
+    &lt;span class="label"&gt;findItemRequest&lt;/span&gt;.Traversal = ItemQueryTraversalType.Shallow;
+
+    try
+    {
+        // Send the FindItem request and get the response.
+        FindItemResponseType findItemResponse = esb.FindItem(&lt;span class="label"&gt;findItemRequest&lt;/span&gt;);
+
+        // Access the response message.
+        ArrayOfResponseMessagesType responseMessages = findItemResponse.ResponseMessages;
+        ResponseMessageType responseMessage = responseMessages.Items[0];
+
+        if (responseMessage is FindItemResponseMessageType)
+        {
+            FindItemResponseMessageType firmt = (responseMessage as FindItemResponseMessageType);
+            FindItemParentType fipt = firmt.RootFolder;
+            object obj = fipt.Item;
+
+            // Determine whether the FindItem response contains grouped items.
+            if (obj is ArrayOfGroupedItemsType)
+            {
+                ArrayOfGroupedItemsType groupedItems = (obj as ArrayOfGroupedItemsType);
+                //TODO: Write code to handle grouped items.
+            }
+
+            // FindItem contains an array of items.
+            else if (obj is ArrayOfRealItemsType)
+            {
+                ArrayOfRealItemsType items = (obj as ArrayOfRealItemsType);
+                //TODO: Write code to handle items.
+            }
+        }
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine(e.Message);
+    }
+}</code>
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="7557e-103">
+          <para>The following code example shows a find item query that returns the following results:</para>
+          <list type="number">
+            <item>
+              <description>An indexed query result that starts at the beginning of the result set and returns at most 10 entries from the result set.</description>
+            </item>
+            <item>
+              <description>A grouped search that does the following:</description>
+            </item>
+            <item>
+              <description>All the properties that are defined for the AllProperties shape, in addition to the IsMeeting and Importance properties. Note that the AllProperties shape is different in a FindItem operation than it is in a GetItem operation.</description>
+            </item>
+            <item>
+              <description>Items found in the Calendar default folder.</description>
+            </item>
+            <item>
+              <description>Only items that have a start time that is after the current time.</description>
+            </item>
+            <item>
+              <description>Items sorted by the Subject property.</description>
+            </item>
+            <item>
+              <description>Items found only in the top level of the searched folder.</description>
+            </item>
+          </list>
+          <code>static void FindItem()
+{
+    // Create the service binding.
+    ExchangeServiceBinding esb = new ExchangeServiceBinding();
+    esb.Credentials = new NetworkCredential("username", "password", "domain");
+    esb.Url = @"https://ExchangeServer/EWS/Exchange.asmx";
+
+    // Form the FindItem request.
+    FindItemType &lt;span class="label"&gt;findItemRequest&lt;/span&gt; = new &lt;span class="label"&gt;FindItemType&lt;/span&gt;();
+
+    // Define the paging scheme for the result set.
+    IndexedPageViewType ipvt = new IndexedPageViewType();
+    ipvt.BasePoint = IndexBasePointType.Beginning;
+    ipvt.MaxEntriesReturned = 10;
+    ipvt.MaxEntriesReturnedSpecified = true;
+    ipvt.Offset = 0;
+    // Add the paging scheme to the request.
+    &lt;span class="label"&gt;findItemRequest&lt;/span&gt;.Item = ipvt;
+
+    // Define the grouping scheme for the result set.
+    GroupByType group = new GroupByType();
+    // Define the property that is used to determine the order of groups of items in a group.
+    AggregateOnType aggregate = new AggregateOnType();
+    PathToUnindexedFieldType subject = new PathToUnindexedFieldType();
+    subject.FieldURI = UnindexedFieldURIType.itemSubject;
+    aggregate.Item = subject;
+    aggregate.Aggregate = AggregateType.Minimum;
+    group.AggregateOn = aggregate;
+    // Define the property that is used to group items.
+    PathToUnindexedFieldType importance = new PathToUnindexedFieldType();
+    importance.FieldURI = UnindexedFieldURIType.itemImportance;
+    group.Item = importance;
+    // Define how the groups are ordered in the response.
+    group.Order = SortDirectionType.Descending;
+    // Add the grouping scheme to the request.
+    &lt;span class="label"&gt;findItemRequest&lt;/span&gt;.Item1 = group;
+
+    // Define the item properties that are returned in the response.
+    ItemResponseShapeType itemProperties = new ItemResponseShapeType();
+    // Use the Default shape for the response.            
+    itemProperties.BaseShape = DefaultShapeNamesType.Default;
+    // Add more properties to the request.
+    PathToUnindexedFieldType addIsMeeting = new PathToUnindexedFieldType();
+    PathToUnindexedFieldType addImportance = new PathToUnindexedFieldType();
+    addIsMeeting.FieldURI = UnindexedFieldURIType.calendarIsMeeting;
+    addImportance.FieldURI = UnindexedFieldURIType.itemImportance;
+    itemProperties.AdditionalProperties = new PathToUnindexedFieldType[2];
+    itemProperties.AdditionalProperties[0] = addIsMeeting;
+    itemProperties.AdditionalProperties[1] = addImportance;
+    // Add the properties shape to the request.
+    &lt;span class="label"&gt;findItemRequest&lt;/span&gt;.ItemShape = itemProperties;
+
+    // Identify which folders to search.
+    DistinguishedFolderIdType[] folderIDArray = new DistinguishedFolderIdType[1];
+    folderIDArray[0] = new DistinguishedFolderIdType();
+    folderIDArray[0].Id = DistinguishedFolderIdNameType.calendar;
+    // Add folders to the request.
+    &lt;span class="label"&gt;findItemRequest&lt;/span&gt;.ParentFolderIds = folderIDArray;
+
+    // Create a restriction for the result set.
+    RestrictionType restriction = new RestrictionType();
+    PathToUnindexedFieldType pteft = new PathToUnindexedFieldType();
+    pteft.FieldURI = UnindexedFieldURIType.calendarStart;
+    FieldURIOrConstantType fieldURIORConstant = new FieldURIOrConstantType();
+    fieldURIORConstant.Item = new ConstantValueType();
+    (fieldURIORConstant.Item as ConstantValueType).Value = DateTime.Now.ToString();
+    IsGreaterThanType isGreaterThan = new IsGreaterThanType();
+    isGreaterThan.Item = pteft;
+    isGreaterThan.FieldURIOrConstant = fieldURIORConstant;
+    restriction.Item = isGreaterThan;
+    &lt;span class="label"&gt;findItemRequest&lt;/span&gt;.Restriction = restriction;
+
+    // Define the sort order of items.
+    FieldOrderType[] fieldsOrder = new FieldOrderType[1];
+    fieldsOrder[0] = new FieldOrderType();
+    PathToUnindexedFieldType subjectOrder = new PathToUnindexedFieldType();
+    subjectOrder.FieldURI = UnindexedFieldURIType.itemSubject;
+    fieldsOrder[0].Item = subjectOrder;
+    fieldsOrder[0].Order = SortDirectionType.Ascending;
+    &lt;span class="label"&gt;findItemRequest&lt;/span&gt;.SortOrder = fieldsOrder;
+
+    // Define the traversal type.
+    &lt;span class="label"&gt;findItemRequest&lt;/span&gt;.Traversal = ItemQueryTraversalType.Shallow;
+
+    try
+    {
+        // Send the FindItem request and get the response.
+        FindItemResponseType findItemResponse = esb.FindItem(&lt;span class="label"&gt;findItemRequest&lt;/span&gt;);
+
+        // Access the response message.
+        ArrayOfResponseMessagesType responseMessages = findItemResponse.ResponseMessages;
+        ResponseMessageType responseMessage = responseMessages.Items[0];
+
+        if (responseMessage is FindItemResponseMessageType)
+        {
+            FindItemResponseMessageType firmt = (responseMessage as FindItemResponseMessageType);
+            FindItemParentType fipt = firmt.RootFolder;
+            object obj = fipt.Item;
+
+            // Determine whether the FindItem response contains grouped items.
+            if (obj is ArrayOfGroupedItemsType)
+            {
+                ArrayOfGroupedItemsType groupedItems = (obj as ArrayOfGroupedItemsType);
+                //TODO: Write code to handle grouped items.
+            }
+
+            // FindItem contains an array of items.
+            else if (obj is ArrayOfRealItemsType)
+            {
+                ArrayOfRealItemsType items = (obj as ArrayOfRealItemsType);
+                //TODO: Write code to handle items.
+            }
+        }
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine(e.Message);
+    }
+}</code>
+        </span>
+      </span>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FindItemType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.FindItemType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FindItemType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="7557e-104">
+            <see cref="T:ExchangeWebServices.FindItemType" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.FindItemType" />クラス。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-104">The <see cref="T:ExchangeWebServices.FindItemType" /> constructor initializes a new instance of the <see cref="T:ExchangeWebServices.FindItemType" /> class.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.BasePagingType Item { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.BasePagingType Item" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindItemType.Item" />
+      <MemberSignature Language="VB.NET" Value="Public Property Item As BasePagingType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::BasePagingType ^ Item { ExchangeWebServices::BasePagingType ^ get(); void set(ExchangeWebServices::BasePagingType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("SeekToConditionPageItemView", typeof(ExchangeWebServices.SeekToConditionPageViewType))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("CalendarView", typeof(ExchangeWebServices.CalendarViewType))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("ContactsView", typeof(ExchangeWebServices.ContactsViewType))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("FractionalPageItemView", typeof(ExchangeWebServices.FractionalPageViewType))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("IndexedPageItemView", typeof(ExchangeWebServices.IndexedPageViewType))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.BasePagingType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="7557e-105">
+            <see cref="P:ExchangeWebServices.FindItemType.Item" />プロパティを取得または応答にクエリの結果セットをページングする方法について説明するページングの種類を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-105">The <see cref="P:ExchangeWebServices.FindItemType.Item" /> property gets or sets the paging type that describes how the query result set is paged in the response.</span>
+          </span>
+          <span data-ttu-id="7557e-106">このプロパティを取得または設定するか、 <see cref="T:ExchangeWebServices.IndexedPageViewType" />、 <see cref="T:ExchangeWebServices.FractionalPageViewType" />、 <see cref="T:ExchangeWebServices.CalendarViewType" />、または<see cref="T:ExchangeWebServices.ContactsViewType" />オブジェクトです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-106">This property gets or sets either an <see cref="T:ExchangeWebServices.IndexedPageViewType" />, <see cref="T:ExchangeWebServices.FractionalPageViewType" />, <see cref="T:ExchangeWebServices.CalendarViewType" />, or <see cref="T:ExchangeWebServices.ContactsViewType" /> object.</span>
+          </span>
+          <span data-ttu-id="7557e-107">このプロパティは省略可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-107">This property is optional.</span>
+          </span>
+          <span data-ttu-id="7557e-108">これは、読み取り/書き込みプロパティです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-108">This is a read/write property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="7557e-109">
+            <see cref="P:ExchangeWebServices.FindItemType.Item" />を<see cref="T:ExchangeWebServices.BasePagingType" />クエリのセットに対して実行するページングの種類を表すオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-109">The <see cref="P:ExchangeWebServices.FindItemType.Item" /> property returns a <see cref="T:ExchangeWebServices.BasePagingType" /> object that represents the type of paging to be performed for the query set.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="7557e-110">
+            <para>
+              <see cref="P:ExchangeWebServices.FindItemType.Item" />のいずれかのプロパティを設定できます、 <see cref="T:ExchangeWebServices.IndexedPageViewType" />、 <see cref="T:ExchangeWebServices.FractionalPageViewType" />、 <see cref="T:ExchangeWebServices.CalendarViewType" />、または<see cref="T:ExchangeWebServices.ContactsViewType" />オブジェクトです。これらすべての型は、拡張<see cref="T:ExchangeWebServices.BasePagingType" />、抽象クラスであります。このプロパティは省略可能です。結果セット内のすべての項目が含まれているビューが返される既定の動作は、このプロパティが設定されていない場合です</para>。
+          <para><b>注</b>: 予定表ビューのページングを実行している場合は、制約を指定することはできません</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-110">
+              <para>The <see cref="P:ExchangeWebServices.FindItemType.Item" /> property can be set with either an <see cref="T:ExchangeWebServices.IndexedPageViewType" />, <see cref="T:ExchangeWebServices.FractionalPageViewType" />, <see cref="T:ExchangeWebServices.CalendarViewType" />, or <see cref="T:ExchangeWebServices.ContactsViewType" /> object. All these types extend <see cref="T:ExchangeWebServices.BasePagingType" />, which is an abstract class. This property is optional. If this property is not set, the default behavior is to return a view that includes all the items in the result set.</para>
+              <para>
+                <b>Note</b>: You cannot specify restrictions when you are performing CalendarView paging.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item1">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.BaseGroupByType Item1 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.BaseGroupByType Item1" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindItemType.Item1" />
+      <MemberSignature Language="VB.NET" Value="Public Property Item1 As BaseGroupByType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::BaseGroupByType ^ Item1 { ExchangeWebServices::BaseGroupByType ^ get(); void set(ExchangeWebServices::BaseGroupByType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("GroupBy", typeof(ExchangeWebServices.GroupByType))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("DistinguishedGroupBy", typeof(ExchangeWebServices.DistinguishedGroupByType))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.BaseGroupByType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="7557e-111">
+            <see cref="P:ExchangeWebServices.FindItemType.Item1" />プロパティを取得または応答にクエリの結果セットをグループ化する方法について説明をグループ化の種類を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-111">The <see cref="P:ExchangeWebServices.FindItemType.Item1" /> property gets or sets the grouping type that describes how the query result set is grouped in the response.</span>
+          </span>
+          <span data-ttu-id="7557e-112">このプロパティを取得または設定するか、<see cref="T:ExchangeWebServices.GroupByType" />または<see cref="T:ExchangeWebServices.DistinguishedGroupByType" />オブジェクトです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-112">This property gets or sets either a <see cref="T:ExchangeWebServices.GroupByType" /> or <see cref="T:ExchangeWebServices.DistinguishedGroupByType" /> object.</span>
+          </span>
+          <span data-ttu-id="7557e-113">このプロパティは省略可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-113">This property is optional.</span>
+          </span>
+          <span data-ttu-id="7557e-114">これは、読み取り/書き込みプロパティです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-114">This is a read/write property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="7557e-115">
+            <see cref="P:ExchangeWebServices.FindItemType.Item1" />を<see cref="T:ExchangeWebServices.BaseGroupByType" />は、結果セットに適用されるグループ化スキームの種類を表すオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-115">The <see cref="P:ExchangeWebServices.FindItemType.Item1" /> property returns a <see cref="T:ExchangeWebServices.BaseGroupByType" /> object that represents the type of grouping scheme that is applied to the result set.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="7557e-116">
+            <para>
+              <see cref="P:ExchangeWebServices.FindItemType.Item1" />のいずれかのプロパティを設定できます、<see cref="T:ExchangeWebServices.GroupByType" />または<see cref="T:ExchangeWebServices.DistinguishedGroupByType" />オブジェクトです。両方の種類の拡張<see cref="T:ExchangeWebServices.BaseGroupByType" />、抽象クラスであります。このプロパティは省略可能です。このプロパティが設定されていない場合は結果セットはグループ化できません</para>。
+          <para><b>注</b>: グループ定義を作成するいくつかのプロパティを使用することはできません</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-116">
+              <para>The <see cref="P:ExchangeWebServices.FindItemType.Item1" /> property can be set with either a <see cref="T:ExchangeWebServices.GroupByType" /> or <see cref="T:ExchangeWebServices.DistinguishedGroupByType" /> object. Both types extend <see cref="T:ExchangeWebServices.BaseGroupByType" />, which is an abstract class. This property is optional. If this property is not set, the result set will not be grouped.</para>
+              <para>
+                <b>Note</b>: Some properties cannot be used to form the group definitions.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemShape">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ItemResponseShapeType ItemShape { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.ItemResponseShapeType ItemShape" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindItemType.ItemShape" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemShape As ItemResponseShapeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::ItemResponseShapeType ^ ItemShape { ExchangeWebServices::ItemResponseShapeType ^ get(); void set(ExchangeWebServices::ItemResponseShapeType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ItemResponseShapeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="7557e-117">
+            <see cref="P:ExchangeWebServices.FindItemType.ItemShape" />プロパティを取得またはクエリ セットの形状を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-117">The <see cref="P:ExchangeWebServices.FindItemType.ItemShape" /> property gets or sets the shape of the query set.</span>
+          </span>
+          <span data-ttu-id="7557e-118">このプロパティは、必要があります。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-118">This property is required.</span>
+          </span>
+          <span data-ttu-id="7557e-119">これは、読み取り/書き込みプロパティです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-119">This is a read/write property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="7557e-120">
+            <see cref="P:ExchangeWebServices.FindItemType.ItemShape" />を<see cref="T:ExchangeWebServices.ItemResponseShapeType" />結果セットで返されるプロパティが要求された先の説明を格納しているオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-120">The <see cref="P:ExchangeWebServices.FindItemType.ItemShape" /> property returns an <see cref="T:ExchangeWebServices.ItemResponseShapeType" /> object that contains the description of which properties are requested to be returned in the result set.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="7557e-121">
+            <para>
+              <see cref="P:ExchangeWebServices.FindItemType.ItemShape" /> FindItem 操作では、プロパティを設定する必要があります。FindItem 操作によって返されるこのプロパティを説明します。このプロパティは、必要があります。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-121">
+              <para>The <see cref="P:ExchangeWebServices.FindItemType.ItemShape" /> property must be set for FindItem operations. This property describes which properties are returned by the FindItem operation. This property is required.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentFolderIds">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.BaseFolderIdType[] ParentFolderIds { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.BaseFolderIdType[] ParentFolderIds" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindItemType.ParentFolderIds" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParentFolderIds As BaseFolderIdType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::BaseFolderIdType ^&gt; ^ ParentFolderIds { cli::array &lt;ExchangeWebServices::BaseFolderIdType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::BaseFolderIdType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("FolderId", typeof(ExchangeWebServices.FolderIdType), IsNullable=false, Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("DistinguishedFolderId", typeof(ExchangeWebServices.DistinguishedFolderIdType), IsNullable=false, Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.BaseFolderIdType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="7557e-122">
+            <see cref="P:ExchangeWebServices.FindItemType.ParentFolderIds" />プロパティを取得または FindItem 操作を検索するフォルダーを設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-122">The <see cref="P:ExchangeWebServices.FindItemType.ParentFolderIds" /> property gets or sets the folders that the FindItem operation searches.</span>
+          </span>
+          <span data-ttu-id="7557e-123">このプロパティは、必要があります。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-123">This property is required.</span>
+          </span>
+          <span data-ttu-id="7557e-124">これは、読み取り/書き込みプロパティです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-124">This is a read/write property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="7557e-125">
+            <see cref="P:ExchangeWebServices.FindItemType.ParentFolderIds" />プロパティの配列を返します<see cref="T:ExchangeWebServices.BaseFolderIdType" />オブジェクトを検索する FindItem 操作のすべてのフォルダーの識別子が含まれます。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-125">The <see cref="P:ExchangeWebServices.FindItemType.ParentFolderIds" /> property returns an array of <see cref="T:ExchangeWebServices.BaseFolderIdType" /> objects that contains the identifiers of all folders for the FindItem operation to search.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="7557e-126">
+            <para>、<see cref="P:ExchangeWebServices.FindItemType.ParentFolderIds" />のいずれかのアレイのプロパティを設定できます<see cref="T:ExchangeWebServices.FolderIdType" />または<see cref="T:ExchangeWebServices.DistinguishedFolderIdType" />のオブジェクトです。両方の種類の拡張<see cref="T:ExchangeWebServices.BaseFolderIdType" />、抽象クラスであります。</para>
+            <para>このプロパティは必須で、FindItem 操作に対して設定する必要があります</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-126">
+              <para>The <see cref="P:ExchangeWebServices.FindItemType.ParentFolderIds" /> property can be set with arrays of either <see cref="T:ExchangeWebServices.FolderIdType" /> or <see cref="T:ExchangeWebServices.DistinguishedFolderIdType" /> objects. Both types extend <see cref="T:ExchangeWebServices.BaseFolderIdType" />, which is an abstract class. </para>
+              <para>This property is required and must be set for FindItem operations.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryString">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.QueryStringType QueryString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.QueryStringType QueryString" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindItemType.QueryString" />
+      <MemberSignature Language="VB.NET" Value="Public Property QueryString As QueryStringType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::QueryStringType ^ QueryString { ExchangeWebServices::QueryStringType ^ get(); void set(ExchangeWebServices::QueryStringType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.QueryStringType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>
+          <span data-ttu-id="7557e-127">返します。 <see cref="T:System.String" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-127">Returns <see cref="T:System.String" />.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="7557e-128">
+            <para>
+              <b>メモ</b>: このメンバーは、バージョンの Exchange が Exchange Server 2010 Service Pack 1 (SP1) では、Exchange のオンラインなどで始まるに適用されます。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-128">
+              <para>
+                <b>Note</b>: This member applies to versions of Exchange starting with Exchange Server 2010 Service Pack 1 (SP1), including Exchange Online.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Restriction">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.RestrictionType Restriction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.RestrictionType Restriction" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindItemType.Restriction" />
+      <MemberSignature Language="VB.NET" Value="Public Property Restriction As RestrictionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::RestrictionType ^ Restriction { ExchangeWebServices::RestrictionType ^ get(); void set(ExchangeWebServices::RestrictionType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.RestrictionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="7557e-129">
+            <see cref="P:ExchangeWebServices.FindItemType.Restriction" />プロパティを取得またはアイテム クエリを定義する検索パラメーターを設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-129">The <see cref="P:ExchangeWebServices.FindItemType.Restriction" /> property gets or sets the search parameters that define an item query.</span>
+          </span>
+          <span data-ttu-id="7557e-130">このプロパティは省略可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-130">This property is optional.</span>
+          </span>
+          <span data-ttu-id="7557e-131">これは、読み取り/書き込みプロパティです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-131">This is a read/write property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="7557e-132">
+            <see cref="P:ExchangeWebServices.FindItemType.Restriction" />を<see cref="T:ExchangeWebServices.RestrictionType" />クエリを定義する検索パラメーターを格納するオブジェクトです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-132">The <see cref="P:ExchangeWebServices.FindItemType.Restriction" /> property returns a <see cref="T:ExchangeWebServices.RestrictionType" /> object that contains the search parameters that define the query.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="7557e-133">
+            <para>
+              <see cref="P:ExchangeWebServices.FindItemType.Restriction" />プロパティには、クエリ フィルターを含むすべての比較の引数が含まれています。次の検索式を含めることができます:</para>
+            <list type="bullet">
+              <item>
+                <description>と</description>
+              </item>
+              <item>
+                <description>含まれる</description>
+              </item>
+              <item>
+                <description>除外</description>
+              </item>
+              <item>
+                <description>Exists</description>
+              </item>
+              <item>
+                <description>IsEqualTo</description>
+              </item>
+              <item>
+                <description>IsGreaterThan</description>
+              </item>
+              <item>
+                <description>IsGreaterThanOrEqualTo</description>
+              </item>
+              <item>
+                <description>IsLessThan</description>
+              </item>
+              <item>
+                <description>IsLessThanOrEqualTo</description>
+              </item>
+              <item>
+                <description>IsNotEqualTo</description>
+              </item>
+              <item>
+                <description>いない</description>
+              </item>、
+            <item><description>または</description></item></list>
+            <para>このプロパティは省略可能です</para>。
+          <para><b>注</b>: 予定表ビューのページングを行うときに制約を指定することはできません。制限定義を形成するのにはさらに、いくつかのプロパティは使用できません</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-133">
+              <para>The <see cref="P:ExchangeWebServices.FindItemType.Restriction" /> property contains all the comparison arguments that the query filter includes. It can contain the following search expressions:</para>
+              <list type="bullet">
+                <item>
+                  <description>And</description>
+                </item>
+                <item>
+                  <description>Contains</description>
+                </item>
+                <item>
+                  <description>Excludes</description>
+                </item>
+                <item>
+                  <description>Exists</description>
+                </item>
+                <item>
+                  <description>IsEqualTo</description>
+                </item>
+                <item>
+                  <description>IsGreaterThan</description>
+                </item>
+                <item>
+                  <description>IsGreaterThanOrEqualTo</description>
+                </item>
+                <item>
+                  <description>IsLessThan</description>
+                </item>
+                <item>
+                  <description>IsLessThanOrEqualTo</description>
+                </item>
+                <item>
+                  <description>IsNotEqualTo</description>
+                </item>
+                <item>
+                  <description>Not</description>
+                </item>
+                <item>
+                  <description>Or</description>
+                </item>
+              </list>
+              <para>This property is optional.</para>
+              <para>
+                <b>Note</b>: You cannot specify restrictions when doing CalendarView paging. Additionally, some properties cannot be used to form the restriction definitions.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortOrder">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.FieldOrderType[] SortOrder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.FieldOrderType[] SortOrder" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindItemType.SortOrder" />
+      <MemberSignature Language="VB.NET" Value="Public Property SortOrder As FieldOrderType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::FieldOrderType ^&gt; ^ SortOrder { cli::array &lt;ExchangeWebServices::FieldOrderType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::FieldOrderType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("FieldOrder", IsNullable=false, Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.FieldOrderType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="7557e-134">
+            <see cref="P:ExchangeWebServices.FindItemType.SortOrder" />プロパティを取得または結果セットで返されたアイテムの並べ替え順序を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-134">The <see cref="P:ExchangeWebServices.FindItemType.SortOrder" /> property gets or sets the sort order of items returned in the result set.</span>
+          </span>
+          <span data-ttu-id="7557e-135">このプロパティは省略可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-135">This property is optional.</span>
+          </span>
+          <span data-ttu-id="7557e-136">これは、読み取り/書き込みプロパティです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-136">This is a read/write property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="7557e-137">
+            <see cref="P:ExchangeWebServices.FindItemType.SortOrder" />プロパティの配列を返します<see cref="T:ExchangeWebServices.FieldOrderType" />結果セットの並べ替えに使用するプロパティを表すオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-137">The <see cref="P:ExchangeWebServices.FindItemType.SortOrder" /> property returns an array of <see cref="T:ExchangeWebServices.FieldOrderType" /> objects that describe which properties are used to sort the result set.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="7557e-138">配列内の項目の最初の<para><see cref="T:ExchangeWebServices.FieldOrderType" />オブジェクトは、並べ替え順序を決定するために使用されるプライマリ プロパティです。配列の次の項目は、結果セットの並べ替え順序を決定するために使用されるセカンダリ プロパティです。配列内の連続した各項目<see cref="T:ExchangeWebServices.FieldOrderType" />の各項目の連続した要素は、並べ替え階層で低い優先順位、結果セット内の項目を並べ替えるにはオブジェクトを使用します。<see cref="T:ExchangeWebServices.FieldOrderType" />オブジェクトでは、アイテムの並べ替えの方向についても説明します</para>。
+          <para>このプロパティは省略可能です</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-138">
+              <para>The first item in the array of <see cref="T:ExchangeWebServices.FieldOrderType" /> objects is the primary property that is used to determine the sort order. The next item in the array is the secondary property that is used to determine the sort order in the result set. Each consecutive item in the array of <see cref="T:ExchangeWebServices.FieldOrderType" /> objects is used to sort the items in the result set, with each consecutive item being of lower precedence in the sort hierarchy. The <see cref="T:ExchangeWebServices.FieldOrderType" /> objects also describe the sort direction of the items.</para>
+              <para>This property is optional.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Traversal">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ItemQueryTraversalType Traversal { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.ItemQueryTraversalType Traversal" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindItemType.Traversal" />
+      <MemberSignature Language="VB.NET" Value="Public Property Traversal As ItemQueryTraversalType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::ItemQueryTraversalType Traversal { ExchangeWebServices::ItemQueryTraversalType get(); void set(ExchangeWebServices::ItemQueryTraversalType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ItemQueryTraversalType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="7557e-139">
+            <see cref="P:ExchangeWebServices.FindItemType.Traversal" />プロパティを取得またはフォルダー内のアイテムの検索に使用される走査方法を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-139">The <see cref="P:ExchangeWebServices.FindItemType.Traversal" /> property gets or sets the traversal scheme that is used to search for items in folders.</span>
+          </span>
+          <span data-ttu-id="7557e-140">このプロパティは、必要があります。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-140">This property is required.</span>
+          </span>
+          <span data-ttu-id="7557e-141">これは、読み取り/書き込みプロパティです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-141">This is a read/write property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="7557e-142">
+            <see cref="P:ExchangeWebServices.FindItemType.Traversal" />を<see cref="T:ExchangeWebServices.ItemQueryTraversalType" />の検索が実行される走査の種類を定義する列挙体です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-142">The <see cref="P:ExchangeWebServices.FindItemType.Traversal" /> property returns an <see cref="T:ExchangeWebServices.ItemQueryTraversalType" /> enumeration that defines the type of traversal that is performed for the search.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="7557e-143">FindItem の<para>は、フォルダーの浅いまたはソフト削除走査のみをサポートします。詳細走査を実行するのには、検索フォルダーを使用します。</para><para>このプロパティは、FindItem 操作に必要です</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7557e-143">
+              <para>FindItem only supports shallow or soft-deleted traversals of a folder. To perform deep traversals, use search folders. </para>
+              <para>This property is required for FindItem operations.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

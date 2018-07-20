@@ -1,0 +1,633 @@
+<Type Name="FindFolderType" FullName="ExchangeWebServices.FindFolderType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="e997bd1fb1374ad0c54e2309daa7c7c1fc4aeebe" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608611" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class FindFolderType : ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FindFolderType extends ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.FindFolderType" />
+  <TypeSignature Language="VB.NET" Value="Public Class FindFolderType&#xA;Inherits BaseRequestType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FindFolderType : ExchangeWebServices::BaseRequestType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseRequestType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/messages")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="20b1b-101">
+        <see cref="T:ExchangeWebServices.FindFolderType" />クラスは、メールボックス内のフォルダーを検索する要求を表します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="20b1b-101">The <see cref="T:ExchangeWebServices.FindFolderType" /> class represents a request to find folders in a mailbox.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="20b1b-102">
+        <para>、FindFolder 操作では、識別されたフォルダーのサブフォルダーを検索します。FindFolder 操作には、ストリーム再生可能なプロパティの最初の 512 バイトのみが返されます。Unicode、FindFolder 操作では、null で終わる Unicode 文字列を使用して、最初の 255 文字を返します。GetFolder の操作を使用して、追加のフォルダーのプロパティを取得します</para>。フォルダーのプロパティで、アイテム プロパティを
+      <para>の制限が許可されます。並べ替え機能では、FindFolder 応答を使用できません。FindFolder クエリのクエリをグループ化することはできません。</para><para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="20b1b-102">
+          <para>The FindFolder operation finds subfolders of an identified folder. The FindFolder operation returns only the first 512 bytes of any streamable property. For Unicode, the FindFolder operation returns the first 255 characters by using a null-terminated Unicode string. Use the GetFolder operation to get additional folder properties.</para>
+          <para>Restrictions on folder properties, but not item properties, are permitted. Sorting functionality is not available for FindFolder responses. Grouped queries are not available for FindFolder queries. </para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+    <example>
+      <span data-ttu-id="20b1b-103">
+        <para>次の使用例は、次の結果を返す FindFolder クエリを示しています:</para>
+        <list type="number">
+          <item>
+            <description>、受信トレイのディープ トラバーサル検索します</description>
+          </item>。
+        <item><description>FindFolder 操作でデフォルトの FolderShape に定義されているすべてのプロパティ</description></item>。
+        <item><description>SentOnlyToMe の表示名を持つすべてのフォルダー。大文字と小文字が一致するようにはありません</description></item>。
+        <item><description>最初のフォルダーの後の小数のページング方式を返す最大で 1 つのフォルダーを起動します</description></item>。
+      </list>
+        <code>static void FindFolder(ExchangeServiceBinding esb)
+{
+    // Create the request and specify the traversal type.
+    FindFolderType &lt;span class="label"&gt;findFolderRequest&lt;/span&gt; = new FindFolderType();
+    &lt;span class="label"&gt;findFolderRequest&lt;/span&gt;.Traversal = FolderQueryTraversalType.Deep;
+
+    // Define the properties to be returned in the response.
+    FolderResponseShapeType responseShape = new FolderResponseShapeType();
+    responseShape.BaseShape = DefaultShapeNamesType.Default;
+    &lt;span class="label"&gt;findFolderRequest&lt;/span&gt;.FolderShape = responseShape;
+
+    // Identify which folders to search.
+    DistinguishedFolderIdType[] folderIDArray = new DistinguishedFolderIdType[1];
+    folderIDArray[0] = new DistinguishedFolderIdType();
+    folderIDArray[0].Id = DistinguishedFolderIdNameType.inbox;
+
+    // Add the folders to search to the request.
+    &lt;span class="label"&gt;findFolderRequest&lt;/span&gt;.ParentFolderIds = folderIDArray;
+
+    // Restriction based on the folder display name.
+    RestrictionType restriction = new RestrictionType();
+    PathToUnindexedFieldType fldrRestriction = new PathToUnindexedFieldType();
+    fldrRestriction.FieldURI = UnindexedFieldURIType.folderDisplayName;
+    // Identify the folder name to restrict on.
+    ContainsExpressionType contains = new ContainsExpressionType();
+    contains.ContainmentMode = ContainmentModeType.Substring;
+    contains.ContainmentModeSpecified = true;
+    contains.ContainmentComparison = ContainmentComparisonType.IgnoreCase;
+    contains.ContainmentComparisonSpecified = true;
+    contains.Item = fldrRestriction;
+    contains.Constant = new ConstantValueType();
+    contains.Constant.Value = "SentOnlyToMe";
+    restriction.Item = contains;
+    &lt;span class="label"&gt;findFolderRequest&lt;/span&gt;.Restriction = restriction;
+
+    // Define the paging scheme for the result set.
+    FractionalPageViewType fpvt = new FractionalPageViewType();
+    fpvt.MaxEntriesReturned = 1;
+    fpvt.MaxEntriesReturnedSpecified = true;
+    fpvt.Numerator = 1;
+    fpvt.Denominator = 4;
+    &lt;span class="label"&gt;findFolderRequest&lt;/span&gt;.Item = fpvt;
+
+    try
+    {
+        // Send the request and get the response.
+        FindFolderResponseType findFolderResponse = esb.FindFolder(&lt;span class="label"&gt;findFolderRequest&lt;/span&gt;);
+
+        // Get the response messages.
+        ResponseMessageType[] rmta = findFolderResponse.ResponseMessages.Items;
+
+        foreach (ResponseMessageType rmt in rmta)
+        {
+            FindFolderResponseMessageType ffrmt = (rmt as FindFolderResponseMessageType);
+
+            FindFolderParentType ffpt = ffrmt.RootFolder;
+            BaseFolderType[] folders = ffpt.Folders;
+            
+            foreach (BaseFolderType folder in folders)
+            {
+                // Check folder type
+                if (folder is CalendarFolderType)
+                {
+                    CalendarFolderType fldr = (folder as CalendarFolderType);
+                    // TODO: Handle calendar folder
+                }
+                else 
+                { 
+                    // TODO: Handle folders, search folders, tasks folders,
+                    // and contacts folder
+                }
+            }
+        }
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine(e.Message);
+    }
+}</code>
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="20b1b-103">
+          <para>The following example shows a FindFolder query that returns the following results:</para>
+          <list type="number">
+            <item>
+              <description>A deep traversal search of the Inbox.</description>
+            </item>
+            <item>
+              <description>All the properties that are defined for the Default FolderShape in a FindFolder operation.</description>
+            </item>
+            <item>
+              <description>All folders that have a display name of SentOnlyToMe. The case does not have to match.</description>
+            </item>
+            <item>
+              <description>A fractional paging scheme that returns at most a single folder that starts after the first folder.</description>
+            </item>
+          </list>
+          <code>static void FindFolder(ExchangeServiceBinding esb)
+{
+    // Create the request and specify the traversal type.
+    FindFolderType &lt;span class="label"&gt;findFolderRequest&lt;/span&gt; = new FindFolderType();
+    &lt;span class="label"&gt;findFolderRequest&lt;/span&gt;.Traversal = FolderQueryTraversalType.Deep;
+
+    // Define the properties to be returned in the response.
+    FolderResponseShapeType responseShape = new FolderResponseShapeType();
+    responseShape.BaseShape = DefaultShapeNamesType.Default;
+    &lt;span class="label"&gt;findFolderRequest&lt;/span&gt;.FolderShape = responseShape;
+
+    // Identify which folders to search.
+    DistinguishedFolderIdType[] folderIDArray = new DistinguishedFolderIdType[1];
+    folderIDArray[0] = new DistinguishedFolderIdType();
+    folderIDArray[0].Id = DistinguishedFolderIdNameType.inbox;
+
+    // Add the folders to search to the request.
+    &lt;span class="label"&gt;findFolderRequest&lt;/span&gt;.ParentFolderIds = folderIDArray;
+
+    // Restriction based on the folder display name.
+    RestrictionType restriction = new RestrictionType();
+    PathToUnindexedFieldType fldrRestriction = new PathToUnindexedFieldType();
+    fldrRestriction.FieldURI = UnindexedFieldURIType.folderDisplayName;
+    // Identify the folder name to restrict on.
+    ContainsExpressionType contains = new ContainsExpressionType();
+    contains.ContainmentMode = ContainmentModeType.Substring;
+    contains.ContainmentModeSpecified = true;
+    contains.ContainmentComparison = ContainmentComparisonType.IgnoreCase;
+    contains.ContainmentComparisonSpecified = true;
+    contains.Item = fldrRestriction;
+    contains.Constant = new ConstantValueType();
+    contains.Constant.Value = "SentOnlyToMe";
+    restriction.Item = contains;
+    &lt;span class="label"&gt;findFolderRequest&lt;/span&gt;.Restriction = restriction;
+
+    // Define the paging scheme for the result set.
+    FractionalPageViewType fpvt = new FractionalPageViewType();
+    fpvt.MaxEntriesReturned = 1;
+    fpvt.MaxEntriesReturnedSpecified = true;
+    fpvt.Numerator = 1;
+    fpvt.Denominator = 4;
+    &lt;span class="label"&gt;findFolderRequest&lt;/span&gt;.Item = fpvt;
+
+    try
+    {
+        // Send the request and get the response.
+        FindFolderResponseType findFolderResponse = esb.FindFolder(&lt;span class="label"&gt;findFolderRequest&lt;/span&gt;);
+
+        // Get the response messages.
+        ResponseMessageType[] rmta = findFolderResponse.ResponseMessages.Items;
+
+        foreach (ResponseMessageType rmt in rmta)
+        {
+            FindFolderResponseMessageType ffrmt = (rmt as FindFolderResponseMessageType);
+
+            FindFolderParentType ffpt = ffrmt.RootFolder;
+            BaseFolderType[] folders = ffpt.Folders;
+            
+            foreach (BaseFolderType folder in folders)
+            {
+                // Check folder type
+                if (folder is CalendarFolderType)
+                {
+                    CalendarFolderType fldr = (folder as CalendarFolderType);
+                    // TODO: Handle calendar folder
+                }
+                else 
+                { 
+                    // TODO: Handle folders, search folders, tasks folders,
+                    // and contacts folder
+                }
+            }
+        }
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine(e.Message);
+    }
+}</code>
+        </span>
+      </span>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FindFolderType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.FindFolderType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FindFolderType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="20b1b-104">
+            <see cref="T:ExchangeWebServices.FindFolderType" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.FindFolderType" />クラス。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-104">The <see cref="T:ExchangeWebServices.FindFolderType" /> constructor initializes a new instance of the <see cref="T:ExchangeWebServices.FindFolderType" /> class.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FolderShape">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.FolderResponseShapeType FolderShape { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.FolderResponseShapeType FolderShape" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderType.FolderShape" />
+      <MemberSignature Language="VB.NET" Value="Public Property FolderShape As FolderResponseShapeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::FolderResponseShapeType ^ FolderShape { ExchangeWebServices::FolderResponseShapeType ^ get(); void set(ExchangeWebServices::FolderResponseShapeType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.FolderResponseShapeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="20b1b-105">
+            <see cref="P:ExchangeWebServices.FindFolderType.FolderShape" />プロパティを取得またはクエリ セットの形状を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-105">The <see cref="P:ExchangeWebServices.FindFolderType.FolderShape" /> property gets or sets the shape of the query set.</span>
+          </span>
+          <span data-ttu-id="20b1b-106">このプロパティは、必要があります。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-106">This property is required.</span>
+          </span>
+          <span data-ttu-id="20b1b-107">これは、読み取り/書き込みプロパティです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-107">This is a read/write property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="20b1b-108">
+            <see cref="P:ExchangeWebServices.FindFolderType.FolderShape" />を<see cref="T:ExchangeWebServices.FolderResponseShapeType" />が結果セットに返される要求するプロパティの説明を格納しているオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-108">The <see cref="P:ExchangeWebServices.FindFolderType.FolderShape" /> property returns a <see cref="T:ExchangeWebServices.FolderResponseShapeType" /> object that contains the description of the properties that are requested to be returned in the result set.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="20b1b-109">
+            <para>
+              <see cref="P:ExchangeWebServices.FindFolderType.FolderShape" /> 、FindFolder 応答で返されるプロパティの説明です。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-109">
+              <para>The <see cref="P:ExchangeWebServices.FindFolderType.FolderShape" /> property describes which properties are returned by the FindFolder response.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.BasePagingType Item { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.BasePagingType Item" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderType.Item" />
+      <MemberSignature Language="VB.NET" Value="Public Property Item As BasePagingType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::BasePagingType ^ Item { ExchangeWebServices::BasePagingType ^ get(); void set(ExchangeWebServices::BasePagingType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("FractionalPageFolderView", typeof(ExchangeWebServices.FractionalPageViewType))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("IndexedPageFolderView", typeof(ExchangeWebServices.IndexedPageViewType))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.BasePagingType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="20b1b-110">
+            <see cref="P:ExchangeWebServices.FindFolderType.Item" />プロパティを取得または応答にクエリの結果セットをページングする方法について説明するページングの種類を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-110">The <see cref="P:ExchangeWebServices.FindFolderType.Item" /> property gets or sets the paging type that describes how the query result set is paged in the response.</span>
+          </span>
+          <span data-ttu-id="20b1b-111">このプロパティを取得または設定するか、<see cref="T:ExchangeWebServices.IndexedPageViewType" />または<see cref="T:ExchangeWebServices.FractionalPageViewType" />オブジェクトです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-111">This property gets or sets either an <see cref="T:ExchangeWebServices.IndexedPageViewType" /> or <see cref="T:ExchangeWebServices.FractionalPageViewType" /> object.</span>
+          </span>
+          <span data-ttu-id="20b1b-112">このプロパティは省略可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-112">This property is optional.</span>
+          </span>
+          <span data-ttu-id="20b1b-113">これは、読み取り/書き込みプロパティです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-113">This is a read/write property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="20b1b-114">
+            <see cref="P:ExchangeWebServices.FindFolderType.Item" />を<see cref="T:ExchangeWebServices.BasePagingType" />クエリのセットに対して実行するページングの種類を表すオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-114">The <see cref="P:ExchangeWebServices.FindFolderType.Item" /> property returns a <see cref="T:ExchangeWebServices.BasePagingType" /> object that represents the type of paging to be performed for the query set.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="20b1b-115">
+            <para>
+              <see cref="P:ExchangeWebServices.FindFolderType.Item" />のいずれかのプロパティを設定できます、<see cref="T:ExchangeWebServices.IndexedPageViewType" />または<see cref="T:ExchangeWebServices.FractionalPageViewType" />のオブジェクトです。これらすべての型は、拡張<see cref="T:ExchangeWebServices.BasePagingType" />、抽象クラスであります。このプロパティは省略可能です。このプロパティが設定されていない場合の既定の動作では、結果セットのすべてのフォルダーを含むビューを返します。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-115">
+              <para>The <see cref="P:ExchangeWebServices.FindFolderType.Item" /> property can be set with either the <see cref="T:ExchangeWebServices.IndexedPageViewType" /> or <see cref="T:ExchangeWebServices.FractionalPageViewType" /> objects. All these types extend <see cref="T:ExchangeWebServices.BasePagingType" />, which is an abstract class. This property is optional. If this property is not set, the default behavior is to return a view that includes all the folders in the result set.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentFolderIds">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.BaseFolderIdType[] ParentFolderIds { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.BaseFolderIdType[] ParentFolderIds" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderType.ParentFolderIds" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParentFolderIds As BaseFolderIdType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::BaseFolderIdType ^&gt; ^ ParentFolderIds { cli::array &lt;ExchangeWebServices::BaseFolderIdType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::BaseFolderIdType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("FolderId", typeof(ExchangeWebServices.FolderIdType), IsNullable=false, Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("DistinguishedFolderId", typeof(ExchangeWebServices.DistinguishedFolderIdType), IsNullable=false, Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.BaseFolderIdType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="20b1b-116">
+            <see cref="P:ExchangeWebServices.FindFolderType.ParentFolderIds" />プロパティを取得または FindFolder 操作を検索するフォルダーを設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-116">The <see cref="P:ExchangeWebServices.FindFolderType.ParentFolderIds" /> property gets or sets the folders that the FindFolder operation searches.</span>
+          </span>
+          <span data-ttu-id="20b1b-117">このプロパティは、必要があります。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-117">This property is required.</span>
+          </span>
+          <span data-ttu-id="20b1b-118">これは、読み取り/書き込みプロパティです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-118">This is a read/write property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="20b1b-119">
+            <see cref="P:ExchangeWebServices.FindFolderType.ParentFolderIds" />プロパティの配列を返します<see cref="T:ExchangeWebServices.BaseFolderIdType" />オブジェクトを検索する FindFolder 操作のすべてのフォルダーの識別子が含まれます。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-119">The <see cref="P:ExchangeWebServices.FindFolderType.ParentFolderIds" /> property returns an array of <see cref="T:ExchangeWebServices.BaseFolderIdType" /> objects that contains the identifiers of all the folders for the FindFolder operation to search.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="20b1b-120">
+            <para>
+              <see cref="P:ExchangeWebServices.FindItemType.ParentFolderIds" />のいずれかのアレイのプロパティを設定できます<see cref="T:ExchangeWebServices.FolderIdType" />または<see cref="T:ExchangeWebServices.DistinguishedFolderIdType" />のオブジェクトです。これらの種類の両方を拡張<see cref="T:ExchangeWebServices.BaseFolderIdType" />、抽象クラスであります。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-120">
+              <para>The <see cref="P:ExchangeWebServices.FindItemType.ParentFolderIds" /> property can be set with arrays of either <see cref="T:ExchangeWebServices.FolderIdType" /> or <see cref="T:ExchangeWebServices.DistinguishedFolderIdType" /> objects. Both of these types extend <see cref="T:ExchangeWebServices.BaseFolderIdType" />, which is an abstract class. </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Restriction">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.RestrictionType Restriction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.RestrictionType Restriction" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderType.Restriction" />
+      <MemberSignature Language="VB.NET" Value="Public Property Restriction As RestrictionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::RestrictionType ^ Restriction { ExchangeWebServices::RestrictionType ^ get(); void set(ExchangeWebServices::RestrictionType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.RestrictionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="20b1b-121">
+            <see cref="P:ExchangeWebServices.FindFolderType.Restriction" />プロパティを取得またはフォルダー クエリを定義する検索パラメーターを設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-121">The <see cref="P:ExchangeWebServices.FindFolderType.Restriction" /> property gets or sets the search parameters that define a folder query.</span>
+          </span>
+          <span data-ttu-id="20b1b-122">このプロパティは省略可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-122">This property is optional.</span>
+          </span>
+          <span data-ttu-id="20b1b-123">これは、読み取り/書き込みプロパティです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-123">This is a read/write property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="20b1b-124">
+            <see cref="P:ExchangeWebServices.FindFolderType.Restriction" />を<see cref="T:ExchangeWebServices.RestrictionType" />クエリを定義する検索パラメーターを格納するオブジェクトです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-124">The <see cref="P:ExchangeWebServices.FindFolderType.Restriction" /> property returns a <see cref="T:ExchangeWebServices.RestrictionType" /> object that contains the search parameters that define the query.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="20b1b-125">
+            <para>
+              <see cref="P:ExchangeWebServices.FindFolderType.Restriction" />プロパティを使用する場合のみ使用してくださいフォルダーのプロパティです。<see cref="P:ExchangeWebServices.FindFolderType.Restriction" />プロパティは、次の検索式を含めることができます:</para>
+            <list type="bullet">
+              <item>
+                <description>と</description>
+              </item>
+              <item>
+                <description>含まれる</description>
+              </item>
+              <item>
+                <description>除外</description>
+              </item>
+              <item>
+                <description>Exists</description>
+              </item>
+              <item>
+                <description>IsEqualTo</description>
+              </item>
+              <item>
+                <description>IsGreaterThan</description>
+              </item>
+              <item>
+                <description>IsGreaterThanOrEqualTo</description>
+              </item>
+              <item>
+                <description>IsLessThan</description>
+              </item>
+              <item>
+                <description>IsLessThanOrEqualTo</description>
+              </item>
+              <item>
+                <description>IsNotEqualTo</description>
+              </item>
+              <item>
+                <description>しない</description>
+              </item>
+              <item>
+                <description>か</description>
+              </item>
+            </list>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-125">
+              <para>The <see cref="P:ExchangeWebServices.FindFolderType.Restriction" /> property, if it is used, should only use the folder properties. The <see cref="P:ExchangeWebServices.FindFolderType.Restriction" /> property can contain the following search expressions:</para>
+              <list type="bullet">
+                <item>
+                  <description>And</description>
+                </item>
+                <item>
+                  <description>Contains</description>
+                </item>
+                <item>
+                  <description>Excludes</description>
+                </item>
+                <item>
+                  <description>Exists</description>
+                </item>
+                <item>
+                  <description>IsEqualTo</description>
+                </item>
+                <item>
+                  <description>IsGreaterThan</description>
+                </item>
+                <item>
+                  <description>IsGreaterThanOrEqualTo</description>
+                </item>
+                <item>
+                  <description>IsLessThan</description>
+                </item>
+                <item>
+                  <description>IsLessThanOrEqualTo</description>
+                </item>
+                <item>
+                  <description>IsNotEqualTo</description>
+                </item>
+                <item>
+                  <description>Not</description>
+                </item>
+                <item>
+                  <description>Or</description>
+                </item>
+              </list>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Traversal">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.FolderQueryTraversalType Traversal { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.FolderQueryTraversalType Traversal" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderType.Traversal" />
+      <MemberSignature Language="VB.NET" Value="Public Property Traversal As FolderQueryTraversalType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::FolderQueryTraversalType Traversal { ExchangeWebServices::FolderQueryTraversalType get(); void set(ExchangeWebServices::FolderQueryTraversalType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.FolderQueryTraversalType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="20b1b-126">
+            <see cref="P:ExchangeWebServices.FindFolderType.Traversal" />プロパティを取得またはフォルダーの検索に使用される走査方法を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-126">The <see cref="P:ExchangeWebServices.FindFolderType.Traversal" /> property gets or sets the traversal scheme that is used to search for folders.</span>
+          </span>
+          <span data-ttu-id="20b1b-127">このプロパティは、必要があります。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-127">This property is required.</span>
+          </span>
+          <span data-ttu-id="20b1b-128">これは、読み取り/書き込みプロパティです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-128">This is a read/write property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="20b1b-129">
+            <see cref="P:ExchangeWebServices.FindFolderType.Traversal" />を<see cref="T:ExchangeWebServices.FolderQueryTraversalType" />の検索が実行される走査の種類を定義する列挙体です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-129">The <see cref="P:ExchangeWebServices.FindFolderType.Traversal" /> property returns a <see cref="T:ExchangeWebServices.FolderQueryTraversalType" /> enumeration that defines the type of traversal that is performed for the search.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="20b1b-130">
+            <para>FindFolder 操作には、緩斜面と深いトラバーサル フォルダーの検索がサポートされています。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="20b1b-130">
+              <para>The FindFolder operation supports shallow and deep traversal folder searches.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

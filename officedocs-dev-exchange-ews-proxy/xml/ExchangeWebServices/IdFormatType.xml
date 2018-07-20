@@ -1,0 +1,205 @@
+<Type Name="IdFormatType" FullName="ExchangeWebServices.IdFormatType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="9bf6c899f043ba0d1a9162e8e8c4715301d3db9a" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20609193" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum IdFormatType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed IdFormatType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.IdFormatType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum IdFormatType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class IdFormatType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="3a2e4-101">
+        <see cref="T:ExchangeWebServices.IdFormatType" />列挙体は変換後、Id のソースの形式を変換するか、Id の形式を指定します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="3a2e4-101">The <see cref="T:ExchangeWebServices.IdFormatType" /> enumeration specifies the source format of the Id to be converted or the format of the Id after conversion.</span>
+      </span>
+      <span data-ttu-id="3a2e4-102">この列挙体は、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="3a2e4-102">This enumeration was introduced in Microsoft Exchange Server 2007 Service Pack 1 (SP1).</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="3a2e4-103">
+        <para>この列挙体を使って、<see cref="P:ExchangeWebServices.AlternateIdBaseType.Format" />のプロパティ、<see cref="T:ExchangeWebServices.AlternateIdBaseType" />オブジェクトと、<see cref="P:ExchangeWebServices.ConvertIdType.DestinationFormat" />のプロパティ、<see cref="T:ExchangeWebServices.ConvertIdType" />オブジェクト。</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="3a2e4-103">
+          <para>This enumeration is used by the <see cref="P:ExchangeWebServices.AlternateIdBaseType.Format" /> property of the <see cref="T:ExchangeWebServices.AlternateIdBaseType" /> object and by the <see cref="P:ExchangeWebServices.ConvertIdType.DestinationFormat" /> property of the <see cref="T:ExchangeWebServices.ConvertIdType" /> object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EntryId">
+      <MemberSignature Language="C#" Value="EntryId" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.IdFormatType EntryId = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.IdFormatType.EntryId" />
+      <MemberSignature Language="VB.NET" Value="EntryId" />
+      <MemberSignature Language="C++ CLI" Value="EntryId" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.IdFormatType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3a2e4-104">PR_ENTRYID プロパティと同様に、MAPI 識別子をについて説明します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3a2e4-104">Describes MAPI identifiers, as in the PR_ENTRYID property.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EwsId">
+      <MemberSignature Language="C#" Value="EwsId" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.IdFormatType EwsId = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.IdFormatType.EwsId" />
+      <MemberSignature Language="VB.NET" Value="EwsId" />
+      <MemberSignature Language="C++ CLI" Value="EwsId" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.IdFormatType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3a2e4-105">Exchange 2007 SP1 以降の Exchange Web サービスによって生成される識別子について説明します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3a2e4-105">Describes identifiers that are produced by Exchange Web Services starting with Exchange 2007 SP1.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EwsLegacyId">
+      <MemberSignature Language="C#" Value="EwsLegacyId" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.IdFormatType EwsLegacyId = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.IdFormatType.EwsLegacyId" />
+      <MemberSignature Language="VB.NET" Value="EwsLegacyId" />
+      <MemberSignature Language="C++ CLI" Value="EwsLegacyId" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.IdFormatType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3a2e4-106">Exchange 2007 の最初のリリース版の Exchange Web サービスによって生成される識別子について説明します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3a2e4-106">Describes identifiers that are produced by Exchange Web Services in the initial release version of Exchange 2007.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HexEntryId">
+      <MemberSignature Language="C#" Value="HexEntryId" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.IdFormatType HexEntryId = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.IdFormatType.HexEntryId" />
+      <MemberSignature Language="VB.NET" Value="HexEntryId" />
+      <MemberSignature Language="C++ CLI" Value="HexEntryId" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.IdFormatType</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3a2e4-107">PR_ENTRYID プロパティの 16 進数でエンコードされた表現を説明します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3a2e4-107">Describes a hexadecimal-encoded representation of the PR_ENTRYID property.</span>
+          </span>
+          <span data-ttu-id="3a2e4-108">これは、可用性の予定表のイベント識別子の形式です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3a2e4-108">This is the format of availability calendar event identifiers.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OwaId">
+      <MemberSignature Language="C#" Value="OwaId" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.IdFormatType OwaId = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.IdFormatType.OwaId" />
+      <MemberSignature Language="VB.NET" Value="OwaId" />
+      <MemberSignature Language="C++ CLI" Value="OwaId" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.IdFormatType</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3a2e4-109">Microsoft Office Outlook の Web アクセス識別子をについて説明します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3a2e4-109">Describes a Microsoft Office Outlook Web Access identifier.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StoreId">
+      <MemberSignature Language="C#" Value="StoreId" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.IdFormatType StoreId = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.IdFormatType.StoreId" />
+      <MemberSignature Language="VB.NET" Value="StoreId" />
+      <MemberSignature Language="C++ CLI" Value="StoreId" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.IdFormatType</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3a2e4-110">Exchange ストア識別子をについて説明します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3a2e4-110">Describes Exchange store identifiers.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

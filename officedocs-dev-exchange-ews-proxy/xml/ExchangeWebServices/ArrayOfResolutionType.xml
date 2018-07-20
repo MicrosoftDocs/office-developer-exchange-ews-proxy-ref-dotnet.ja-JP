@@ -1,0 +1,499 @@
+<Type Name="ArrayOfResolutionType" FullName="ExchangeWebServices.ArrayOfResolutionType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="7696bb5367d3a869220ae702f786d9db703beb86" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608102" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class ArrayOfResolutionType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ArrayOfResolutionType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.ArrayOfResolutionType" />
+  <TypeSignature Language="VB.NET" Value="Public Class ArrayOfResolutionType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ArrayOfResolutionType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="0eec6-101">
+        <see cref="T:ExchangeWebServices.ArrayOfResolutionType" />によって返される項目の配列を含むクラス、<see cref="M:ExchangeWebServices.ExchangeServiceBinding.ResolveNames(ExchangeWebServices.ResolveNamesType)" />メソッドです。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="0eec6-101">The <see cref="T:ExchangeWebServices.ArrayOfResolutionType" /> class contains an array of items that are returned by the <see cref="M:ExchangeWebServices.ExchangeServiceBinding.ResolveNames(ExchangeWebServices.ResolveNamesType)" /> method.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ArrayOfResolutionType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.ArrayOfResolutionType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArrayOfResolutionType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="0eec6-102">
+            <see cref="M:ExchangeWebServices.ArrayOfResolutionType.#ctor" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.ArrayOfResolutionType" />クラス。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-102">The <see cref="M:ExchangeWebServices.ArrayOfResolutionType.#ctor" /> constructor initializes a new instance of the <see cref="T:ExchangeWebServices.ArrayOfResolutionType" /> class.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AbsoluteDenominator">
+      <MemberSignature Language="C#" Value="public int AbsoluteDenominator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AbsoluteDenominator" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ArrayOfResolutionType.AbsoluteDenominator" />
+      <MemberSignature Language="VB.NET" Value="Public Property AbsoluteDenominator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AbsoluteDenominator { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0eec6-103">
+            <see cref="P:ExchangeWebServices.ArrayOfResolutionType.AbsoluteDenominator" />プロパティを取得または分数形式のページングの使用の結果セット内のアイテムの合計数を指定する整数値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-103">The <see cref="P:ExchangeWebServices.ArrayOfResolutionType.AbsoluteDenominator" /> property gets or sets an integer value that specifies the total number of items in the result set for use with fractional paging.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0eec6-104">
+            <see cref="P:ExchangeWebServices.ArrayOfResolutionType.AbsoluteDenominator" />プロパティは、整数値を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-104">The <see cref="P:ExchangeWebServices.ArrayOfResolutionType.AbsoluteDenominator" /> property returns an integer value.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AbsoluteDenominatorSpecified">
+      <MemberSignature Language="C#" Value="public bool AbsoluteDenominatorSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AbsoluteDenominatorSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ArrayOfResolutionType.AbsoluteDenominatorSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property AbsoluteDenominatorSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AbsoluteDenominatorSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0eec6-105">
+            <see cref="P:ExchangeWebServices.ArrayOfResolutionType.AbsoluteDenominatorSpecified" />プロパティを取得または設定を示すブール値かどうか、<see cref="P:ExchangeWebServices.ArrayOfResolutionType.AbsoluteDenominatorSpecified" />プロパティは、SOAP メッセージにシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-105">The <see cref="P:ExchangeWebServices.ArrayOfResolutionType.AbsoluteDenominatorSpecified" /> property gets or sets a Boolean value that indicates whether the <see cref="P:ExchangeWebServices.ArrayOfResolutionType.AbsoluteDenominatorSpecified" /> property is serialized into the SOAP message.</span>
+          </span>
+          <span data-ttu-id="0eec6-106">このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ArrayOfResolutionType.AbsoluteDenominatorSpecified" />プロパティを設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-106">This property is required if the <see cref="P:ExchangeWebServices.ArrayOfResolutionType.AbsoluteDenominatorSpecified" /> property is set.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0eec6-107">
+            <see cref="P:ExchangeWebServices.ArrayOfResolutionType.AbsoluteDenominatorSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ArrayOfResolutionType.AbsoluteDenominatorSpecified" />プロパティは、SOAP 応答をシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-107">The <see cref="P:ExchangeWebServices.ArrayOfResolutionType.AbsoluteDenominatorSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.ArrayOfResolutionType.AbsoluteDenominatorSpecified" /> property is serialized into the SOAP response; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludesLastItemInRange">
+      <MemberSignature Language="C#" Value="public bool IncludesLastItemInRange { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludesLastItemInRange" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ArrayOfResolutionType.IncludesLastItemInRange" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludesLastItemInRange As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludesLastItemInRange { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0eec6-108">
+            <see cref="P:ExchangeWebServices.ArrayOfResolutionType.IncludesLastItemInRange" />プロパティを取得またはすべてのアイテムは、指定された範囲内かどうかを示すブール値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-108">The <see cref="P:ExchangeWebServices.ArrayOfResolutionType.IncludesLastItemInRange" /> property gets or sets a Boolean value that indicates whether all the items are in the range specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0eec6-109">
+            <see cref="P:ExchangeWebServices.ArrayOfResolutionType.IncludesLastItemInRange" />結果セット内のすべてのアイテムが指定した範囲に含まれている場合、プロパティが<b>true</b>を返しますそれ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-109">The <see cref="P:ExchangeWebServices.ArrayOfResolutionType.IncludesLastItemInRange" /> property returns <b>true</b> if all the items in the result set are included in the range specified; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludesLastItemInRangeSpecified">
+      <MemberSignature Language="C#" Value="public bool IncludesLastItemInRangeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludesLastItemInRangeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ArrayOfResolutionType.IncludesLastItemInRangeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludesLastItemInRangeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludesLastItemInRangeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0eec6-110">
+            <see cref="P:ExchangeWebServices.ArrayOfResolutionType.IncludesLastItemInRangeSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ArrayOfResolutionType.IncludesLastItemInRange" />プロパティは、SOAP メッセージにシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-110">The <see cref="P:ExchangeWebServices.ArrayOfResolutionType.IncludesLastItemInRangeSpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.ArrayOfResolutionType.IncludesLastItemInRange" /> property is serialized into the SOAP message.</span>
+          </span>
+          <span data-ttu-id="0eec6-111">このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ArrayOfResolutionType.IncludesLastItemInRange" />プロパティを設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-111">This property is required if the <see cref="P:ExchangeWebServices.ArrayOfResolutionType.IncludesLastItemInRange" /> property is set.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0eec6-112">
+            <see cref="P:ExchangeWebServices.ArrayOfResolutionType.IncludesLastItemInRangeSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ArrayOfResolutionType.IncludesLastItemInRange" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-112">The <see cref="P:ExchangeWebServices.ArrayOfResolutionType.IncludesLastItemInRangeSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.ArrayOfResolutionType.IncludesLastItemInRange" /> property is serialized into the SOAP message; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexedPagingOffset">
+      <MemberSignature Language="C#" Value="public int IndexedPagingOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 IndexedPagingOffset" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ArrayOfResolutionType.IndexedPagingOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Property IndexedPagingOffset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int IndexedPagingOffset { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0eec6-113">
+            <see cref="P:ExchangeWebServices.ArrayOfResolutionType.IndexedPagingOffset" />プロパティを取得またはインデックス付きページングを使用するときに取得するのには次の項目のインデックスを指定する整数値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-113">The <see cref="P:ExchangeWebServices.ArrayOfResolutionType.IndexedPagingOffset" /> property gets or sets an integer value that specifies the index of the next item to fetch when using indexed paging.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0eec6-114">
+            <see cref="P:ExchangeWebServices.ArrayOfResolutionType.IndexedPagingOffset" />プロパティは、インデックス付きページングを使用するときに取得するのには次の項目のインデックスを指定する整数値を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-114">The <see cref="P:ExchangeWebServices.ArrayOfResolutionType.IndexedPagingOffset" /> property returns an integer value that specifies the index of the next item to fetch when using indexed paging.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexedPagingOffsetSpecified">
+      <MemberSignature Language="C#" Value="public bool IndexedPagingOffsetSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IndexedPagingOffsetSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ArrayOfResolutionType.IndexedPagingOffsetSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IndexedPagingOffsetSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IndexedPagingOffsetSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0eec6-115">
+            <see cref="P:ExchangeWebServices.ArrayOfResolutionType.IndexedPagingOffsetSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ArrayOfResolutionType.IndexedPagingOffset" />プロパティは、SOAP メッセージにシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-115">The <see cref="P:ExchangeWebServices.ArrayOfResolutionType.IndexedPagingOffsetSpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.ArrayOfResolutionType.IndexedPagingOffset" /> property is serialized into the SOAP message.</span>
+          </span>
+          <span data-ttu-id="0eec6-116">このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ArrayOfResolutionType.IndexedPagingOffset" />プロパティが指定されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-116">This property is required if the <see cref="P:ExchangeWebServices.ArrayOfResolutionType.IndexedPagingOffset" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0eec6-117">
+            <see cref="P:ExchangeWebServices.ArrayOfResolutionType.IndexedPagingOffsetSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ArrayOfResolutionType.IndexedPagingOffset" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-117">The <see cref="P:ExchangeWebServices.ArrayOfResolutionType.IndexedPagingOffsetSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.ArrayOfResolutionType.IndexedPagingOffset" /> property is serialized into the SOAP message; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumeratorOffset">
+      <MemberSignature Language="C#" Value="public int NumeratorOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumeratorOffset" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ArrayOfResolutionType.NumeratorOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumeratorOffset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumeratorOffset { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0eec6-118">
+            <see cref="P:ExchangeWebServices.ArrayOfResolutionType.NumeratorOffset" />プロパティを取得または分数形式のページングを使用するときに取得するのには次の項目のインデックスを指定する整数値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-118">The <see cref="P:ExchangeWebServices.ArrayOfResolutionType.NumeratorOffset" /> property gets or sets an integer value that specifies the index of the next item to fetch when using fractional paging.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0eec6-119">
+            <see cref="P:ExchangeWebServices.ArrayOfResolutionType.NumeratorOffset" />プロパティは、分数形式のページングを使用するときに取得するのには次の項目のインデックスを指定する整数値を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-119">The <see cref="P:ExchangeWebServices.ArrayOfResolutionType.NumeratorOffset" /> property returns an integer value that specifies the index of the next item to fetch when using fractional paging.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumeratorOffsetSpecified">
+      <MemberSignature Language="C#" Value="public bool NumeratorOffsetSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NumeratorOffsetSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ArrayOfResolutionType.NumeratorOffsetSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumeratorOffsetSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NumeratorOffsetSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0eec6-120">
+            <see cref="P:ExchangeWebServices.ArrayOfResolutionType.NumeratorOffsetSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ArrayOfResolutionType.NumeratorOffset" />プロパティは、SOAP メッセージにシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-120">The <see cref="P:ExchangeWebServices.ArrayOfResolutionType.NumeratorOffsetSpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.ArrayOfResolutionType.NumeratorOffset" /> property is serialized into the SOAP message.</span>
+          </span>
+          <span data-ttu-id="0eec6-121">このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ArrayOfResolutionType.NumeratorOffset" />プロパティが指定されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-121">This property is required if the <see cref="P:ExchangeWebServices.ArrayOfResolutionType.NumeratorOffset" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0eec6-122">
+            <see cref="P:ExchangeWebServices.ArrayOfResolutionType.NumeratorOffsetSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ArrayOfResolutionType.NumeratorOffset" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-122">The <see cref="P:ExchangeWebServices.ArrayOfResolutionType.NumeratorOffsetSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.ArrayOfResolutionType.NumeratorOffset" /> property is serialized into the SOAP message; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resolution">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ResolutionType[] Resolution { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.ResolutionType[] Resolution" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ArrayOfResolutionType.Resolution" />
+      <MemberSignature Language="VB.NET" Value="Public Property Resolution As ResolutionType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::ResolutionType ^&gt; ^ Resolution { cli::array &lt;ExchangeWebServices::ResolutionType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::ResolutionType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("Resolution")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ResolutionType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0eec6-123">
+            <see cref="P:ExchangeWebServices.ArrayOfResolutionType.Resolution" />プロパティを取得または型の要素を含む配列を設定する<see cref="T:ExchangeWebServices.ResolutionType" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-123">The <see cref="P:ExchangeWebServices.ArrayOfResolutionType.Resolution" /> property gets or sets an array that contains elements of type <see cref="T:ExchangeWebServices.ResolutionType" />.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0eec6-124">
+            <see cref="P:ExchangeWebServices.ArrayOfResolutionType.Resolution" />型の要素を含む配列を返します<see cref="T:ExchangeWebServices.ResolutionType" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-124">The <see cref="P:ExchangeWebServices.ArrayOfResolutionType.Resolution" /> property returns an array that contains elements of type <see cref="T:ExchangeWebServices.ResolutionType" />.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalItemsInView">
+      <MemberSignature Language="C#" Value="public int TotalItemsInView { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TotalItemsInView" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ArrayOfResolutionType.TotalItemsInView" />
+      <MemberSignature Language="VB.NET" Value="Public Property TotalItemsInView As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TotalItemsInView { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0eec6-125">
+            <see cref="P:ExchangeWebServices.ArrayOfResolutionType.TotalItemsInView" />プロパティを取得またはビュー内のアイテムの合計数を指定する整数値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-125">The <see cref="P:ExchangeWebServices.ArrayOfResolutionType.TotalItemsInView" /> property gets or sets an integer value that specifies the total number of items in the view.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0eec6-126">
+            <see cref="P:ExchangeWebServices.ArrayOfResolutionType.TotalItemsInView" />プロパティは、ビュー内のアイテムの合計数を指定する整数値を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-126">The <see cref="P:ExchangeWebServices.ArrayOfResolutionType.TotalItemsInView" /> property returns an integer value that specifies the total number of items in the view.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalItemsInViewSpecified">
+      <MemberSignature Language="C#" Value="public bool TotalItemsInViewSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TotalItemsInViewSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ArrayOfResolutionType.TotalItemsInViewSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property TotalItemsInViewSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TotalItemsInViewSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0eec6-127">
+            <see cref="P:ExchangeWebServices.ArrayOfResolutionType.TotalItemsInViewSpecified" />プロパティを取得または設定を示すブール値かどうか、<see cref="P:ExchangeWebServices.ArrayOfResolutionType.TotalItemsInView" />プロパティは、SOAP メッセージにシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-127">The <see cref="P:ExchangeWebServices.ArrayOfResolutionType.TotalItemsInViewSpecified" /> property gets or sets a Boolean value that indicates whether the <see cref="P:ExchangeWebServices.ArrayOfResolutionType.TotalItemsInView" /> property is serialized into the SOAP message.</span>
+          </span>
+          <span data-ttu-id="0eec6-128">このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ArrayOfResolutionType.TotalItemsInView" />プロパティが指定されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-128">This property is required if the <see cref="P:ExchangeWebServices.ArrayOfResolutionType.TotalItemsInView" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0eec6-129">
+            <see cref="P:ExchangeWebServices.ArrayOfResolutionType.TotalItemsInViewSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ArrayOfResolutionType.TotalItemsInViewSpecified" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0eec6-129">The <see cref="P:ExchangeWebServices.ArrayOfResolutionType.TotalItemsInViewSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.ArrayOfResolutionType.TotalItemsInViewSpecified" /> property is serialized into the SOAP message; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

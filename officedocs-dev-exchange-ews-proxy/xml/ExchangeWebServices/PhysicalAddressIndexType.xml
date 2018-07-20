@@ -1,0 +1,149 @@
+<Type Name="PhysicalAddressIndexType" FullName="ExchangeWebServices.PhysicalAddressIndexType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="a14d9303988f757bb368a3b9931269584a4560a0" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608589" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum PhysicalAddressIndexType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PhysicalAddressIndexType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.PhysicalAddressIndexType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PhysicalAddressIndexType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PhysicalAddressIndexType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="97036-101">
+        <see cref="T:ExchangeWebServices.PhysicalAddressIndexType" />列挙体は、物理アドレスの表示の種類を識別します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="97036-101">The <see cref="T:ExchangeWebServices.PhysicalAddressIndexType" /> enumeration identifies the display types for physical addresses.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="97036-102">
+        <para>この列挙体を使って、<see cref="P:ExchangeWebServices.ContactItemType.PostalAddressIndex" />のプロパティの<see cref="T:ExchangeWebServices.ContactItemType" />オブジェクトです。</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="97036-102">
+          <para>This enumeration is used by the <see cref="P:ExchangeWebServices.ContactItemType.PostalAddressIndex" /> property of the <see cref="T:ExchangeWebServices.ContactItemType" /> object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Business">
+      <MemberSignature Language="C#" Value="Business" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.PhysicalAddressIndexType Business = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.PhysicalAddressIndexType.Business" />
+      <MemberSignature Language="VB.NET" Value="Business" />
+      <MemberSignature Language="C++ CLI" Value="Business" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.PhysicalAddressIndexType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="97036-103">ビジネス アドレスとしてアドレスが表示されます。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="97036-103">Displays the address as a business address.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Home">
+      <MemberSignature Language="C#" Value="Home" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.PhysicalAddressIndexType Home = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.PhysicalAddressIndexType.Home" />
+      <MemberSignature Language="VB.NET" Value="Home" />
+      <MemberSignature Language="C++ CLI" Value="Home" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.PhysicalAddressIndexType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="97036-104">ホーム アドレスとしてアドレスが表示されます。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="97036-104">Displays the address as a home address.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.PhysicalAddressIndexType None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.PhysicalAddressIndexType.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.PhysicalAddressIndexType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="97036-105">アドレスの種類が指定されていないことを示します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="97036-105">Indicates that no type is specified for the address.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Other">
+      <MemberSignature Language="C#" Value="Other" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.PhysicalAddressIndexType Other = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.PhysicalAddressIndexType.Other" />
+      <MemberSignature Language="VB.NET" Value="Other" />
+      <MemberSignature Language="C++ CLI" Value="Other" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.PhysicalAddressIndexType</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="97036-106">その他の種類のアドレスとしてアドレスが表示されます。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="97036-106">Displays the address as an address of type other.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

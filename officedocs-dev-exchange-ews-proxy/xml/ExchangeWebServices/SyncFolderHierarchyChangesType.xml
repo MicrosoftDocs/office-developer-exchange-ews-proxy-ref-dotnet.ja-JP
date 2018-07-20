@@ -1,0 +1,193 @@
+<Type Name="SyncFolderHierarchyChangesType" FullName="ExchangeWebServices.SyncFolderHierarchyChangesType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="a79d5f17ddefc758eedb76cdf481905eb1a429fa" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608381" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class SyncFolderHierarchyChangesType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SyncFolderHierarchyChangesType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.SyncFolderHierarchyChangesType" />
+  <TypeSignature Language="VB.NET" Value="Public Class SyncFolderHierarchyChangesType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SyncFolderHierarchyChangesType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="d272a-101">
+        <see cref="T:ExchangeWebServices.SyncFolderHierarchyChangesType" />クラスには、クライアント上のフォルダーと Exchange サーバー上のフォルダーとの違いを説明する種類の変更の順序付けされた配列が含まれています。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="d272a-101">The <see cref="T:ExchangeWebServices.SyncFolderHierarchyChangesType" /> class contains a sequenced array of change types that describe the differences between the folders on the client and the folders on the Exchange server.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SyncFolderHierarchyChangesType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.SyncFolderHierarchyChangesType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SyncFolderHierarchyChangesType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="d272a-102">
+            <see cref="T:ExchangeWebServices.SyncFolderHierarchyChangesType" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.SyncFolderHierarchyChangesType" />クラス。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d272a-102">The <see cref="T:ExchangeWebServices.SyncFolderHierarchyChangesType" /> constructor initializes a new instance of the <see cref="T:ExchangeWebServices.SyncFolderHierarchyChangesType" /> class.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Items">
+      <MemberSignature Language="C#" Value="public object[] Items { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object[] Items" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SyncFolderHierarchyChangesType.Items" />
+      <MemberSignature Language="VB.NET" Value="Public Property Items As Object()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Object ^&gt; ^ Items { cli::array &lt;System::Object ^&gt; ^ get(); void set(cli::array &lt;System::Object ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlChoiceIdentifier("ItemsElementName")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("Delete", typeof(ExchangeWebServices.SyncFolderHierarchyDeleteType))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("Create", typeof(ExchangeWebServices.SyncFolderHierarchyCreateOrUpdateType))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("Update", typeof(ExchangeWebServices.SyncFolderHierarchyCreateOrUpdateType))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d272a-103">
+            <see cref="P:ExchangeWebServices.SyncFolderHierarchyChangesType.Items" />プロパティを取得または変更のコレクションを設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d272a-103">The <see cref="P:ExchangeWebServices.SyncFolderHierarchyChangesType.Items" /> property gets or sets a collection of changes.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d272a-104">
+            <see cref="P:ExchangeWebServices.SyncFolderHierarchyChangesType.Items" />プロパティの変更を含むオブジェクト配列を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d272a-104">The <see cref="P:ExchangeWebServices.SyncFolderHierarchyChangesType.Items" /> property returns an object array that contains changes.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="d272a-105">
+            <para>によって返されるオブジェクトの配列、<see cref="P:ExchangeWebServices.SyncFolderHierarchyChangesType.Items" />プロパティは、次の種類のアイテムを含めることができます。</para>
+            <list type="bullet">
+              <item>
+                <description>
+                  <see cref="T:ExchangeWebServices.SyncFolderHierarchyCreateOrUpdateType" />
+                </description>
+              </item>
+              <item>
+                <description>
+                  <see cref="T:ExchangeWebServices.SyncFolderHierarchyDeleteType" />
+                </description>
+              </item>
+            </list>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d272a-105">
+              <para>The object array that is returned by the <see cref="P:ExchangeWebServices.SyncFolderHierarchyChangesType.Items" /> property can contain items of the following types:</para>
+              <list type="bullet">
+                <item>
+                  <description>
+                    <see cref="T:ExchangeWebServices.SyncFolderHierarchyCreateOrUpdateType" />
+                  </description>
+                </item>
+                <item>
+                  <description>
+                    <see cref="T:ExchangeWebServices.SyncFolderHierarchyDeleteType" />
+                  </description>
+                </item>
+              </list>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsElementName">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ItemsChoiceType1[] ItemsElementName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.ItemsChoiceType1[] ItemsElementName" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SyncFolderHierarchyChangesType.ItemsElementName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemsElementName As ItemsChoiceType1()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::ItemsChoiceType1&gt; ^ ItemsElementName { cli::array &lt;ExchangeWebServices::ItemsChoiceType1&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::ItemsChoiceType1&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("ItemsElementName")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ItemsChoiceType1[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="d272a-106">
+            <see cref="P:ExchangeWebServices.SyncFolderHierarchyChangesType.ItemsElementName" />プロパティを取得または変更のコレクションのオブジェクト識別子を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d272a-106">The <see cref="P:ExchangeWebServices.SyncFolderHierarchyChangesType.ItemsElementName" /> property gets or sets a collection of change object identifiers.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="d272a-107">
+            <see cref="P:ExchangeWebServices.SyncFolderHierarchyChangesType.ItemsElementName" />プロパティの配列を返します<see cref="T:ExchangeWebServices.ItemsChoiceType1" />オブジェクトの変更の種類を示す列挙値の<see cref="P:ExchangeWebServices.SyncFolderHierarchyChangesType.Items" />コレクション内の対応するインデックス位置。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d272a-107">The <see cref="P:ExchangeWebServices.SyncFolderHierarchyChangesType.ItemsElementName" /> property returns an array of <see cref="T:ExchangeWebServices.ItemsChoiceType1" /> enumeration values that indicate the type of change object in the <see cref="P:ExchangeWebServices.SyncFolderHierarchyChangesType.Items" /> collection at the corresponding index.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

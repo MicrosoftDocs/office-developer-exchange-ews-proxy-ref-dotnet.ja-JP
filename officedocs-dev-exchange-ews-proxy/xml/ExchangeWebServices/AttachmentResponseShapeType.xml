@@ -1,0 +1,346 @@
+<Type Name="AttachmentResponseShapeType" FullName="ExchangeWebServices.AttachmentResponseShapeType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="9118d18531764d00171018178eac7952e51b8430" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20609384" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class AttachmentResponseShapeType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit AttachmentResponseShapeType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.AttachmentResponseShapeType" />
+  <TypeSignature Language="VB.NET" Value="Public Class AttachmentResponseShapeType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AttachmentResponseShapeType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="11e4b-101">
+        <see cref="T:ExchangeWebServices.AttachmentResponseShapeType" />クラスの追加のプロパティを識別する、<see cref="M:ExchangeWebServices.ExchangeServiceBinding.GetAttachment(ExchangeWebServices.GetAttachmentType)" />を返します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="11e4b-101">The <see cref="T:ExchangeWebServices.AttachmentResponseShapeType" /> class identifies additional properties for the <see cref="M:ExchangeWebServices.ExchangeServiceBinding.GetAttachment(ExchangeWebServices.GetAttachmentType)" /> method to return.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AttachmentResponseShapeType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.AttachmentResponseShapeType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AttachmentResponseShapeType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="11e4b-102">
+            <see cref="T:ExchangeWebServices.AttachmentResponseShapeType" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.AttachmentResponseShapeType" />クラス。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="11e4b-102">The <see cref="T:ExchangeWebServices.AttachmentResponseShapeType" /> constructor initializes a new instance of the <see cref="T:ExchangeWebServices.AttachmentResponseShapeType" /> class.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdditionalProperties">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.BasePathToElementType[] AdditionalProperties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.BasePathToElementType[] AdditionalProperties" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentResponseShapeType.AdditionalProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Property AdditionalProperties As BasePathToElementType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::BasePathToElementType ^&gt; ^ AdditionalProperties { cli::array &lt;ExchangeWebServices::BasePathToElementType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::BasePathToElementType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("Path", IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("ExtendedFieldURI", typeof(ExchangeWebServices.PathToExtendedFieldType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("FieldURI", typeof(ExchangeWebServices.PathToUnindexedFieldType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("IndexedFieldURI", typeof(ExchangeWebServices.PathToIndexedFieldType), IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.BasePathToElementType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="11e4b-103">
+            <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.AdditionalProperties" />プロパティを取得または応答で返される追加プロパティを設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="11e4b-103">The <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.AdditionalProperties" /> property gets or sets additional properties to return in a response.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="11e4b-104">
+            <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.AdditionalProperties" />プロパティの配列を返します<see cref="T:ExchangeWebServices.BasePathToElementType" />の応答を取得する追加のプロパティを識別するオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="11e4b-104">The <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.AdditionalProperties" /> property returns an array of <see cref="T:ExchangeWebServices.BasePathToElementType" /> objects that identify the additional properties to return in a response.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BodyType">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.BodyTypeResponseType BodyType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.BodyTypeResponseType BodyType" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentResponseShapeType.BodyType" />
+      <MemberSignature Language="VB.NET" Value="Public Property BodyType As BodyTypeResponseType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::BodyTypeResponseType BodyType { ExchangeWebServices::BodyTypeResponseType get(); void set(ExchangeWebServices::BodyTypeResponseType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.BodyTypeResponseType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="11e4b-105">
+            <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.BodyType" />プロパティを取得または応答の本文テキストの書式を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="11e4b-105">The <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.BodyType" /> property gets or sets the format of body text in a response.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="11e4b-106">
+            <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.BodyType" />のいずれかのプロパティが返されます、<see cref="T:ExchangeWebServices.BodyTypeResponseType" />を応答の本文テキストの書式を示す列挙値。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="11e4b-106">The <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.BodyType" /> property returns one of the <see cref="T:ExchangeWebServices.BodyTypeResponseType" /> enumeration values that indicate the format of body text in a response.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BodyTypeSpecified">
+      <MemberSignature Language="C#" Value="public bool BodyTypeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BodyTypeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentResponseShapeType.BodyTypeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property BodyTypeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BodyTypeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="11e4b-107">
+            <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.BodyTypeSpecified" />プロパティを取得または設定を示すブール値かどうか、<see cref="P:ExchangeWebServices.AttachmentResponseShapeType.BodyType" />プロパティは、SOAP メッセージにシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="11e4b-107">The <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.BodyTypeSpecified" /> property gets or sets a Boolean value that indicates whether the <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.BodyType" /> property is serialized into the SOAP message.</span>
+          </span>
+          <span data-ttu-id="11e4b-108">このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.AttachmentResponseShapeType.BodyType" />プロパティが指定されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="11e4b-108">This property is required if the <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.BodyType" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="11e4b-109">
+            <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.BodyTypeSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.AttachmentResponseShapeType.BodyType" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="11e4b-109">The <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.BodyTypeSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.BodyType" /> property is serialized into the SOAP message; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterHtmlContent">
+      <MemberSignature Language="C#" Value="public bool FilterHtmlContent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FilterHtmlContent" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContent" />
+      <MemberSignature Language="VB.NET" Value="Public Property FilterHtmlContent As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FilterHtmlContent { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="11e4b-110">
+            <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContent" />プロパティを取得または安全でない HTML コンテンツが添付ファイルからフィルター処理するかどうかを指定するブール値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="11e4b-110">The <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContent" /> property gets or sets a Boolean value that specifies whether potentially unsafe HTML content is filtered from an attachment.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="11e4b-111">値、<see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContent" />プロパティが<b>true</b>の場合は、添付ファイルから安全でない HTML コンテンツがフィルター処理それ以外の場合、値は、 <b>false</b>です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="11e4b-111">The value of the <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContent" /> property is <b>true</b> if potentially unsafe HTML content is filtered from an attachment; otherwise the value is <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="11e4b-112">
+            <para>設定する必要があります、<see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContentSpecified" />プロパティを<b>true</b>にするよう、<see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContent" />プロパティは、SOAP 要求にシリアル化します。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="11e4b-112">
+              <para>You must set the <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContentSpecified" /> property to <b>true</b> so that the <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContent" /> property is serialized into the SOAP request.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterHtmlContentSpecified">
+      <MemberSignature Language="C#" Value="public bool FilterHtmlContentSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FilterHtmlContentSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContentSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property FilterHtmlContentSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FilterHtmlContentSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="11e4b-113">
+            <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContentSpecified" />プロパティを指定するブール値を取得するかどうか、<see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContent" />プロパティは、SOAP 要求にシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="11e4b-113">The <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContentSpecified" /> property gets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContent" /> property is serialized into the SOAP request.</span>
+          </span>
+          <span data-ttu-id="11e4b-114">このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContent" />プロパティが指定されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="11e4b-114">This property is required if the <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContent" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="11e4b-115">値、<see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContentSpecified" />プロパティが<b>true</b>の場合、<see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContent" />プロパティは、SOAP 要求にシリアル化それ以外の場合、値が<b>false</b>にします。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="11e4b-115">The value of the <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContentSpecified" /> property is <b>true</b> if the <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.FilterHtmlContent" /> property is serialized into the SOAP request; otherwise, the value is <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeMimeContent">
+      <MemberSignature Language="C#" Value="public bool IncludeMimeContent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeMimeContent" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContent" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeMimeContent As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeMimeContent { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="11e4b-116">
+            <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContent" />プロパティを取得またはアイテムまたは添付ファイルの MIME コンテンツが応答で返されるかどうかを示すブール値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="11e4b-116">The <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContent" /> property gets or sets a Boolean value that indicates whether the MIME content of an item or attachment is returned in a response.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="11e4b-117">
+            <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContent" />プロパティを返します<b>true の</b>場合は、MIME コンテンツが返される必要があります。それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="11e4b-117">The <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContent" /> property returns <b>true</b> if MIME content should be returned; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeMimeContentSpecified">
+      <MemberSignature Language="C#" Value="public bool IncludeMimeContentSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeMimeContentSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContentSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeMimeContentSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeMimeContentSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="11e4b-118">
+            <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContentSpecified" />プロパティを取得または設定を示すブール値かどうか、<see cref="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContent" />プロパティは、SOAP メッセージにシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="11e4b-118">The <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContentSpecified" /> property gets or sets a Boolean value that indicates whether the <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContent" /> property is serialized into the SOAP message.</span>
+          </span>
+          <span data-ttu-id="11e4b-119">このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContent" />プロパティが指定されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="11e4b-119">This property is required if the <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContent" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="11e4b-120">
+            <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContentSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContent" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="11e4b-120">The <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContentSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.AttachmentResponseShapeType.IncludeMimeContent" /> property is serialized into the SOAP message; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

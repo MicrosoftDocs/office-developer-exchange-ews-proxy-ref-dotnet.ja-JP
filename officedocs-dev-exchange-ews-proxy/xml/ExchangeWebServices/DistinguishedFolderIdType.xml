@@ -1,0 +1,226 @@
+<Type Name="DistinguishedFolderIdType" FullName="ExchangeWebServices.DistinguishedFolderIdType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="0b1ff9e1aa14e8ce8bdd4d41c206163ebdac4f11" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20609189" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class DistinguishedFolderIdType : ExchangeWebServices.BaseFolderIdType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit DistinguishedFolderIdType extends ExchangeWebServices.BaseFolderIdType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.DistinguishedFolderIdType" />
+  <TypeSignature Language="VB.NET" Value="Public Class DistinguishedFolderIdType&#xA;Inherits BaseFolderIdType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DistinguishedFolderIdType : ExchangeWebServices::BaseFolderIdType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseFolderIdType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="b1f16-101">
+        <see cref="T:ExchangeWebServices.DistinguishedFolderIdType" />クラスは、名前で参照できる Microsoft Exchange Server のフォルダーを識別します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="b1f16-101">The <see cref="T:ExchangeWebServices.DistinguishedFolderIdType" /> class identifies Microsoft Exchange Server folders that can be referenced by name.</span>
+      </span>
+      <span data-ttu-id="b1f16-102">使用する必要がありますこのクラスを使用しない場合、<see cref="T:ExchangeWebServices.FolderIdType" />フォルダーを識別するクラスです。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="b1f16-102">If you do not use this class, you must use the <see cref="T:ExchangeWebServices.FolderIdType" /> class to identify a folder.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="b1f16-103">
+        <para>A<see cref="T:ExchangeWebServices.DistinguishedFolderIdType" />オブジェクトに解決する<see cref="T:ExchangeWebServices.FolderIdType" />Exchange サーバー上のオブジェクトです。</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="b1f16-103">
+          <para>A <see cref="T:ExchangeWebServices.DistinguishedFolderIdType" /> object resolves to a <see cref="T:ExchangeWebServices.FolderIdType" /> object on the Exchange server.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DistinguishedFolderIdType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.DistinguishedFolderIdType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DistinguishedFolderIdType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="b1f16-104">
+            <see cref="T:ExchangeWebServices.DistinguishedFolderIdType" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.DistinguishedFolderIdType" />クラス。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1f16-104">The <see cref="T:ExchangeWebServices.DistinguishedFolderIdType" /> constructor initializes a new instance of the <see cref="T:ExchangeWebServices.DistinguishedFolderIdType" /> class.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeKey">
+      <MemberSignature Language="C#" Value="public string ChangeKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ChangeKey" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.DistinguishedFolderIdType.ChangeKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChangeKey As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ChangeKey { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="b1f16-105">
+            <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.ChangeKey" />プロパティを取得またはで識別されるフォルダーのバージョンを識別する文字列を設定します<see cref="P:ExchangeWebServices.DistinguishedFolderIdType.Id" />プロパティ。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1f16-105">The <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.ChangeKey" /> property gets or sets a string that identifies a version of a folder that is identified by the <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.Id" /> property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="b1f16-106">
+            <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.ChangeKey" />プロパティの変更キーを表す文字列を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1f16-106">The <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.ChangeKey" /> property returns a string that represents a change key.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="b1f16-107">
+            <para>このプロパティは省略可能です。フォルダーの正しいバージョンを使用するかどうかを確認するには、このプロパティを使用します。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1f16-107">
+              <para>This property is optional. Use this property to make sure that the correct version of a folder is used.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.DistinguishedFolderIdNameType Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.DistinguishedFolderIdNameType Id" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.DistinguishedFolderIdType.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As DistinguishedFolderIdNameType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::DistinguishedFolderIdNameType Id { ExchangeWebServices::DistinguishedFolderIdNameType get(); void set(ExchangeWebServices::DistinguishedFolderIdNameType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DistinguishedFolderIdNameType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="b1f16-108">
+            <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.Id" />プロパティを取得または既定のフォルダーの id を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1f16-108">The <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.Id" /> property gets or sets the identity of a default folder.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="b1f16-109">
+            <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.Id" />を<see cref="T:ExchangeWebServices.DistinguishedFolderIdNameType" />を既定のフォルダーを表す列挙体です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1f16-109">The <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.Id" /> property returns a <see cref="T:ExchangeWebServices.DistinguishedFolderIdNameType" /> enumeration that represents a default folder.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="b1f16-110">
+            <para>このプロパティは、必要があります。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1f16-110">
+              <para>This property is required.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mailbox">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.EmailAddressType Mailbox { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.EmailAddressType Mailbox" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.DistinguishedFolderIdType.Mailbox" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mailbox As EmailAddressType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::EmailAddressType ^ Mailbox { ExchangeWebServices::EmailAddressType ^ get(); void set(ExchangeWebServices::EmailAddressType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.EmailAddressType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="b1f16-111">
+            <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.Mailbox" />プロパティを取得または代理人アクセス シナリオでは、プリンシパルのプライマリ SMTP アドレスを設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1f16-111">The <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.Mailbox" /> property gets or sets a primary SMTP address of a principal for a delegate access scenario.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="b1f16-112">
+            <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.Mailbox" />を<see cref="T:ExchangeWebServices.EmailAddressType" />、代理人アクセスのシナリオでプリンシパルを表すオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1f16-112">The <see cref="P:ExchangeWebServices.DistinguishedFolderIdType.Mailbox" /> property returns an <see cref="T:ExchangeWebServices.EmailAddressType" /> object that represents a principal in a delegate access scenario.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="b1f16-113">
+            <para>プロキシ アドレスは、このプロパティの値として使用できませんは。このプロパティは、代理人アクセスの必要があります。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="b1f16-113">
+              <para>Proxy addresses are not allowed as a value for this property. This property is required for delegate access.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

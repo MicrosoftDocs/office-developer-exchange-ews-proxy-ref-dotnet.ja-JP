@@ -1,0 +1,372 @@
+<Type Name="EffectiveRightsType" FullName="ExchangeWebServices.EffectiveRightsType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="a5651c2e130a31c345a3f0328fd09afba09d1669" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608052" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class EffectiveRightsType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit EffectiveRightsType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.EffectiveRightsType" />
+  <TypeSignature Language="VB.NET" Value="Public Class EffectiveRightsType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EffectiveRightsType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="baeca-101">
+        <see cref="T:ExchangeWebServices.EffectiveRightsType" />クラスには、アイテムまたはフォルダーのアクセス許可の設定に基づいて、クライアントの権限が含まれています。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="baeca-101">The <see cref="T:ExchangeWebServices.EffectiveRightsType" /> class contains the client's rights based on the permission settings for the item or folder.</span>
+      </span>
+      <span data-ttu-id="baeca-102">このクラスは、Microsoft Exchange Server 2007 Service Pack 1 (SP1) で導入されました。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="baeca-102">This class was introduced in Microsoft Exchange Server 2007 Service Pack 1 (SP1).</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="baeca-103">
+        <para>
+          <see cref="T:ExchangeWebServices.EffectiveRightsType" />クラスには、 <see cref="T:ExchangeWebServices.GetFolderResponseType" />、 <see cref="T:ExchangeWebServices.GetItemType" />、 <see cref="T:ExchangeWebServices.FindFolderType" />、 <see cref="T:ExchangeWebServices.FindItemType" />、 <see cref="T:ExchangeWebServices.SyncFolderHierarchyType" />、および<see cref="T:ExchangeWebServices.SyncFolderItemsType" />応答クラスです。<see cref="T:ExchangeWebServices.EffectiveRightsType" />クラスのプロパティとして公開、<see cref="F:ExchangeWebServices.DefaultShapeNamesType.AllProperties" />のフォルダーとアイテムの図形です</para>。
+      <para>、<see cref="T:ExchangeWebServices.EffectiveRightsType" />クラスには、MAPI の PR_ACCESS プロパティで提供されている同じ情報へのアクセスが用意されています</para>。
+      <para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="baeca-103">
+          <para>The <see cref="T:ExchangeWebServices.EffectiveRightsType" /> class is supported in the <see cref="T:ExchangeWebServices.GetFolderResponseType" />, <see cref="T:ExchangeWebServices.GetItemType" />, <see cref="T:ExchangeWebServices.FindFolderType" />, <see cref="T:ExchangeWebServices.FindItemType" />, <see cref="T:ExchangeWebServices.SyncFolderHierarchyType" />, and <see cref="T:ExchangeWebServices.SyncFolderItemsType" /> response classes. The <see cref="T:ExchangeWebServices.EffectiveRightsType" /> class is exposed as a property in the <see cref="F:ExchangeWebServices.DefaultShapeNamesType.AllProperties" /> shape for folders and items.</para>
+          <para>The <see cref="T:ExchangeWebServices.EffectiveRightsType" /> class provides access to the same information that is provided in the PR_ACCESS MAPI property.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EffectiveRightsType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.EffectiveRightsType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EffectiveRightsType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="baeca-104">
+            <see cref="T:ExchangeWebServices.EffectiveRightsType" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.EffectiveRightsType" />クラス。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="baeca-104">The <see cref="T:ExchangeWebServices.EffectiveRightsType" /> constructor initializes a new instance of the <see cref="T:ExchangeWebServices.EffectiveRightsType" /> class.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAssociated">
+      <MemberSignature Language="C#" Value="public bool CreateAssociated { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CreateAssociated" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.EffectiveRightsType.CreateAssociated" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreateAssociated As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CreateAssociated { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="baeca-105">
+            <see cref="P:ExchangeWebServices.EffectiveRightsType.CreateAssociated" />プロパティを取得またはクライアントが関連付けられている内容のテーブルを作成できるかどうかを示すブール値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="baeca-105">The <see cref="P:ExchangeWebServices.EffectiveRightsType.CreateAssociated" /> property gets or sets a Boolean value that indicates whether the client can create an associated contents table.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="baeca-106">
+            <see cref="P:ExchangeWebServices.EffectiveRightsType.CreateAssociated" />クライアントがフォルダーの内容が関連付けられているテーブルを作成できる場合、プロパティが<b>true</b>を返しますそれ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="baeca-106">The <see cref="P:ExchangeWebServices.EffectiveRightsType.CreateAssociated" /> property returns <b>true</b> if the client can create an associated contents table for a folder; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="baeca-107">
+            <para>
+              <see cref="P:ExchangeWebServices.EffectiveRightsType.CreateAssociated" />プロパティは、フォルダーのオブジェクトでのみ使用します。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="baeca-107">
+              <para>The <see cref="P:ExchangeWebServices.EffectiveRightsType.CreateAssociated" /> property is only used on folder objects.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateContents">
+      <MemberSignature Language="C#" Value="public bool CreateContents { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CreateContents" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.EffectiveRightsType.CreateContents" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreateContents As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CreateContents { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="baeca-108">
+            <see cref="P:ExchangeWebServices.EffectiveRightsType.CreateContents" />プロパティを取得またはクライアントに内容テーブルを作成できるかどうかを示すブール値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="baeca-108">The <see cref="P:ExchangeWebServices.EffectiveRightsType.CreateContents" /> property gets or sets a Boolean value that indicates whether the client can create a contents table.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="baeca-109">
+            <see cref="P:ExchangeWebServices.EffectiveRightsType.CreateContents" />プロパティを返す<b>true の</b>場合、クライアントに内容テーブルを作成できますそれ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="baeca-109">The <see cref="P:ExchangeWebServices.EffectiveRightsType.CreateContents" /> property returns <b>true</b> if the client can create a contents table; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="baeca-110">
+            <para>
+              <see cref="P:ExchangeWebServices.EffectiveRightsType.CreateContents" />プロパティは、フォルダーのオブジェクトでのみ使用します。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="baeca-110">
+              <para>The <see cref="P:ExchangeWebServices.EffectiveRightsType.CreateContents" /> property is only used on folder objects.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateHierarchy">
+      <MemberSignature Language="C#" Value="public bool CreateHierarchy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CreateHierarchy" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.EffectiveRightsType.CreateHierarchy" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreateHierarchy As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CreateHierarchy { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="baeca-111">
+            <see cref="P:ExchangeWebServices.EffectiveRightsType.CreateHierarchy" />プロパティを取得またはクライアントが階層テーブルを作成できるかどうかを示すブール値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="baeca-111">The <see cref="P:ExchangeWebServices.EffectiveRightsType.CreateHierarchy" /> property gets or sets a Boolean value that indicates whether a client can create a hierarchy table.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="baeca-112">
+            <see cref="P:ExchangeWebServices.EffectiveRightsType.CreateHierarchy" />プロパティはを返します<b>true の</b>場合、クライアントは、階層テーブルを作成できますそれ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="baeca-112">The <see cref="P:ExchangeWebServices.EffectiveRightsType.CreateHierarchy" /> property returns <b>true</b> if the client can create a hierarchy table; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="baeca-113">
+            <para>
+              <see cref="P:ExchangeWebServices.EffectiveRightsType.CreateHierarchy" />プロパティは、フォルダーのオブジェクトでのみ使用します。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="baeca-113">
+              <para>The <see cref="P:ExchangeWebServices.EffectiveRightsType.CreateHierarchy" /> property is only used on folder objects.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public bool Delete { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Delete" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.EffectiveRightsType.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Property Delete As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Delete { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="baeca-114">
+            <see cref="P:ExchangeWebServices.EffectiveRightsType.Delete" />プロパティを取得またはクライアントがフォルダーまたはアイテムを削除できるかどうかを示すブール値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="baeca-114">The <see cref="P:ExchangeWebServices.EffectiveRightsType.Delete" /> property gets or sets a Boolean value that indicates whether a client can delete a folder or item.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="baeca-115">
+            <see cref="P:ExchangeWebServices.EffectiveRightsType.Delete" />クライアントは、フォルダーまたはアイテムを削除できる場合、プロパティが<b>true</b>を返しますそれ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="baeca-115">The <see cref="P:ExchangeWebServices.EffectiveRightsType.Delete" /> property returns <b>true</b> if the client can delete a folder or item; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Modify">
+      <MemberSignature Language="C#" Value="public bool Modify { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Modify" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.EffectiveRightsType.Modify" />
+      <MemberSignature Language="VB.NET" Value="Public Property Modify As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Modify { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="baeca-116">
+            <see cref="P:ExchangeWebServices.EffectiveRightsType.Modify" />プロパティを取得またはクライアントがフォルダーまたはアイテムを変更できるかどうかを示すブール値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="baeca-116">The <see cref="P:ExchangeWebServices.EffectiveRightsType.Modify" /> property gets or sets a Boolean value that indicates whether a client can modify a folder or item.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="baeca-117">
+            <see cref="P:ExchangeWebServices.EffectiveRightsType.Modify" />クライアントは、フォルダーまたはアイテムを変更できる場合、プロパティが<b>true</b>を返しますそれ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="baeca-117">The <see cref="P:ExchangeWebServices.EffectiveRightsType.Modify" /> property returns <b>true</b> if the client can modify a folder or item; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="public bool Read { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Read" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.EffectiveRightsType.Read" />
+      <MemberSignature Language="VB.NET" Value="Public Property Read As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Read { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="baeca-118">
+            <see cref="P:ExchangeWebServices.EffectiveRightsType.Read" />プロパティを取得またはクライアントがフォルダーまたはアイテムを読み取ることができるかどうかを示すブール値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="baeca-118">The <see cref="P:ExchangeWebServices.EffectiveRightsType.Read" /> property gets or sets a Boolean value that indicates whether a client can read a folder or item.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="baeca-119">
+            <see cref="P:ExchangeWebServices.EffectiveRightsType.Read" />クライアントは、フォルダーまたはアイテムを変更できる場合、プロパティが<b>true</b>を返しますそれ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="baeca-119">The <see cref="P:ExchangeWebServices.EffectiveRightsType.Read" /> property returns <b>true</b> if the client can modify a folder or item; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewPrivateItems">
+      <MemberSignature Language="C#" Value="public bool ViewPrivateItems { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ViewPrivateItems" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.EffectiveRightsType.ViewPrivateItems" />
+      <MemberSignature Language="VB.NET" Value="Public Property ViewPrivateItems As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ViewPrivateItems { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>
+          <span data-ttu-id="baeca-120">返します。 <see cref="T:System.Boolean" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="baeca-120">Returns <see cref="T:System.Boolean" />.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewPrivateItemsSpecified">
+      <MemberSignature Language="C#" Value="public bool ViewPrivateItemsSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ViewPrivateItemsSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.EffectiveRightsType.ViewPrivateItemsSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property ViewPrivateItemsSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ViewPrivateItemsSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>
+          <span data-ttu-id="baeca-121">返します。 <see cref="T:System.Boolean" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="baeca-121">Returns <see cref="T:System.Boolean" />.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

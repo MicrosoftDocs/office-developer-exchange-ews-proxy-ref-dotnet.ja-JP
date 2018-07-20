@@ -1,0 +1,318 @@
+<Type Name="ContainsExpressionType" FullName="ExchangeWebServices.ContainsExpressionType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="818228c5e5b4c9b7dea55d770fa4a37371229704" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20609290" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class ContainsExpressionType : ExchangeWebServices.SearchExpressionType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ContainsExpressionType extends ExchangeWebServices.SearchExpressionType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.ContainsExpressionType" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContainsExpressionType&#xA;Inherits SearchExpressionType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContainsExpressionType : ExchangeWebServices::SearchExpressionType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.SearchExpressionType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="0ff27-101">
+        <see cref="T:ExchangeWebServices.ContainsExpressionType" />クラスは、指定したプロパティに指定された文字列定数の値が含まれているかどうかを決定する検索式を表します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="0ff27-101">The <see cref="T:ExchangeWebServices.ContainsExpressionType" /> class represents a search expression that determines whether a given property contains the supplied constant string value.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContainsExpressionType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.ContainsExpressionType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContainsExpressionType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="0ff27-102">
+            <see cref="T:ExchangeWebServices.ContainsExpressionType" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.ContainsExpressionType" />クラス。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0ff27-102">The <see cref="T:ExchangeWebServices.ContainsExpressionType" /> constructor initializes a new instance of the <see cref="T:ExchangeWebServices.ContainsExpressionType" /> class.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Constant">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ConstantValueType Constant { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.ConstantValueType Constant" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContainsExpressionType.Constant" />
+      <MemberSignature Language="VB.NET" Value="Public Property Constant As ConstantValueType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::ConstantValueType ^ Constant { ExchangeWebServices::ConstantValueType ^ get(); void set(ExchangeWebServices::ConstantValueType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ConstantValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0ff27-103">
+            <see cref="P:ExchangeWebServices.ContainsExpressionType.Constant" />プロパティを取得またはフィールドと比較される制限の値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0ff27-103">The <see cref="P:ExchangeWebServices.ContainsExpressionType.Constant" /> property gets or sets a value in a restriction that is compared to a field.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0ff27-104">
+            <see cref="P:ExchangeWebServices.ContainsExpressionType.Constant" />を<see cref="T:ExchangeWebServices.ConstantValueType" />フィールドの値と比較する値を識別します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0ff27-104">The <see cref="P:ExchangeWebServices.ContainsExpressionType.Constant" /> property returns a <see cref="T:ExchangeWebServices.ConstantValueType" /> that identifies a value that is compared to the value of a field.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainmentComparison">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ContainmentComparisonType ContainmentComparison { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.ContainmentComparisonType ContainmentComparison" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparison" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContainmentComparison As ContainmentComparisonType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::ContainmentComparisonType ContainmentComparison { ExchangeWebServices::ContainmentComparisonType get(); void set(ExchangeWebServices::ContainmentComparisonType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ContainmentComparisonType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0ff27-105">
+            <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparison" />プロパティを取得または、検索には、ケースとのスペースが無視されるかどうかを指定する値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0ff27-105">The <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparison" /> property gets or sets a value that specifies whether the search ignores cases and spaces.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0ff27-106">
+            <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparison" />を<see cref="T:ExchangeWebServices.ContainmentComparisonType" />列挙体です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0ff27-106">The <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparison" /> property returns a <see cref="T:ExchangeWebServices.ContainmentComparisonType" /> enumeration.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="0ff27-107">
+            <para>設定する必要があります、<see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparisonSpecified" />プロパティを<b>true</b>にするよう、<see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparison" />プロパティは、SOAP メッセージにシリアル化します。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0ff27-107">
+              <para>You must set the <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparisonSpecified" /> property to <b>true</b> so that the <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparison" /> property is serialized into the SOAP message.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainmentComparisonSpecified">
+      <MemberSignature Language="C#" Value="public bool ContainmentComparisonSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ContainmentComparisonSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparisonSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContainmentComparisonSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ContainmentComparisonSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0ff27-108">
+            <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparisonSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparison" />プロパティは、SOAP メッセージにシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0ff27-108">The <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparisonSpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparison" /> property is serialized into the SOAP message.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0ff27-109">
+            <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparisonSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparison" />は、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0ff27-109">The <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparisonSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentComparison" /> is serialized into the SOAP message; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainmentMode">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ContainmentModeType ContainmentMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.ContainmentModeType ContainmentMode" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContainsExpressionType.ContainmentMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContainmentMode As ContainmentModeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::ContainmentModeType ContainmentMode { ExchangeWebServices::ContainmentModeType get(); void set(ExchangeWebServices::ContainmentModeType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ContainmentModeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0ff27-110">
+            <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentMode" />プロパティを取得または検索文字列の境界を識別する値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0ff27-110">The <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentMode" /> property gets or sets a value that identifies the boundaries of a search string.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0ff27-111">
+            <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentMode" />を<see cref="T:ExchangeWebServices.ContainmentModeType" />、検索文字列の境界を識別する列挙体です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0ff27-111">The <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentMode" /> property returns a <see cref="T:ExchangeWebServices.ContainmentModeType" /> enumeration that identifies the boundaries of a search string.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="0ff27-112">
+            <para>抑制モードが既定ではプリフィックスを使用してこのプロパティが設定されていない場合です</para>。
+          <para>を設定する必要があります、<see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentModeSpecified" />プロパティを<b>true</b>にするよう、<see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentMode" />プロパティは、SOAP メッセージにシリアル化します</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0ff27-112">
+              <para>If this property is not set, the containment mode will use FullString by default.</para>
+              <para>You must set the <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentModeSpecified" /> property to <b>true</b> so that the <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentMode" /> property is serialized into the SOAP message.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainmentModeSpecified">
+      <MemberSignature Language="C#" Value="public bool ContainmentModeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ContainmentModeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContainsExpressionType.ContainmentModeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContainmentModeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ContainmentModeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0ff27-113">
+            <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentModeSpecified" />プロパティを指定するブール値を取得するかどうか、<see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentMode" />プロパティは、SOAP メッセージにシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0ff27-113">The <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentModeSpecified" /> property gets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentMode" /> property is serialized into the SOAP message.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0ff27-114">
+            <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentModeSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentMode" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0ff27-114">The <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentModeSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.ContainsExpressionType.ContainmentMode" /> property is serialized into the SOAP request; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.BasePathToElementType Item { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.BasePathToElementType Item" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContainsExpressionType.Item" />
+      <MemberSignature Language="VB.NET" Value="Public Property Item As BasePathToElementType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::BasePathToElementType ^ Item { ExchangeWebServices::BasePathToElementType ^ get(); void set(ExchangeWebServices::BasePathToElementType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("FieldURI", typeof(ExchangeWebServices.PathToUnindexedFieldType))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("IndexedFieldURI", typeof(ExchangeWebServices.PathToIndexedFieldType))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("ExtendedFieldURI", typeof(ExchangeWebServices.PathToExtendedFieldType))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.BasePathToElementType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0ff27-115">
+            <see cref="P:ExchangeWebServices.ContainsExpressionType.Item" />プロパティは、内の文字列の検索対象となるフィールドを表す、<see cref="P:ExchangeWebServices.ContainsExpressionType.Constant" />プロパティ。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0ff27-115">The <see cref="P:ExchangeWebServices.ContainsExpressionType.Item" /> property represents the field that is searched for the string in the <see cref="P:ExchangeWebServices.ContainsExpressionType.Constant" /> property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0ff27-116">
+            <see cref="P:ExchangeWebServices.ContainsExpressionType.Item" />を<see cref="T:ExchangeWebServices.BasePathToElementType" />オブジェクトを表すことができます、 <see cref="T:ExchangeWebServices.PathToUnindexedFieldType" />、 <see cref="T:ExchangeWebServices.PathToIndexedFieldType" />、または<see cref="T:ExchangeWebServices.PathToExtendedFieldType" />オブジェクトです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0ff27-116">The <see cref="P:ExchangeWebServices.ContainsExpressionType.Item" /> property returns a <see cref="T:ExchangeWebServices.BasePathToElementType" /> object that can represent a <see cref="T:ExchangeWebServices.PathToUnindexedFieldType" />, <see cref="T:ExchangeWebServices.PathToIndexedFieldType" />, or <see cref="T:ExchangeWebServices.PathToExtendedFieldType" /> object.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

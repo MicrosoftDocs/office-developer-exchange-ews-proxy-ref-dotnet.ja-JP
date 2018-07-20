@@ -1,0 +1,262 @@
+<Type Name="MailboxData" FullName="ExchangeWebServices.MailboxData">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="9bfe27007571d0d5eefd0b6b4316f466a98b4082" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608138" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class MailboxData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit MailboxData extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.MailboxData" />
+  <TypeSignature Language="VB.NET" Value="Public Class MailboxData" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MailboxData" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="86eaa-101">
+        <see cref="T:ExchangeWebServices.MailboxData" />クラスは、個々 のメールボックス ユーザーとメールボックスのユーザーに返されるデータの種類のオプションを表します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="86eaa-101">The <see cref="T:ExchangeWebServices.MailboxData" /> class represents an individual mailbox user and options for the type of data to be returned about the mailbox user.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="86eaa-102">
+        <para>このクラスを使用して、<see cref="P:ExchangeWebServices.GetUserAvailabilityRequestType.MailboxDataArray" />のプロパティの<see cref="T:ExchangeWebServices.GetUserAvailabilityRequestType" />オブジェクトです。</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="86eaa-102">
+          <para>This class is used by the <see cref="P:ExchangeWebServices.GetUserAvailabilityRequestType.MailboxDataArray" /> property of the <see cref="T:ExchangeWebServices.GetUserAvailabilityRequestType" /> object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MailboxData ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.MailboxData.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MailboxData();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="86eaa-103">
+            <see cref="T:ExchangeWebServices.MailboxData" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.MailboxData" />クラス。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="86eaa-103">The <see cref="T:ExchangeWebServices.MailboxData" /> constructor initializes a new instance of the <see cref="T:ExchangeWebServices.MailboxData" /> class.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttendeeType">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.MeetingAttendeeType AttendeeType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.MeetingAttendeeType AttendeeType" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MailboxData.AttendeeType" />
+      <MemberSignature Language="VB.NET" Value="Public Property AttendeeType As MeetingAttendeeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::MeetingAttendeeType AttendeeType { ExchangeWebServices::MeetingAttendeeType get(); void set(ExchangeWebServices::MeetingAttendeeType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.MeetingAttendeeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="86eaa-104">
+            <see cref="P:ExchangeWebServices.MailboxData.AttendeeType" />プロパティを取得またはで識別されている参加者の種類を識別する値を設定します<see cref="P:ExchangeWebServices.MailboxData.Email" />プロパティ。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="86eaa-104">The <see cref="P:ExchangeWebServices.MailboxData.AttendeeType" /> property gets or sets a value that identifies the type of attendee that is identified by the <see cref="P:ExchangeWebServices.MailboxData.Email" /> property.</span>
+          </span>
+          <span data-ttu-id="86eaa-105">このプロパティは、スキーマごとに必要なのです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="86eaa-105">This property is required per the schema.</span>
+          </span>
+          <span data-ttu-id="86eaa-106">これは、読み取り/書き込みプロパティです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="86eaa-106">This is a read/write property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="86eaa-107">
+            <see cref="P:ExchangeWebServices.MailboxData.AttendeeType" />を<see cref="T:ExchangeWebServices.MeetingAttendeeType" />の列挙値。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="86eaa-107">The <see cref="P:ExchangeWebServices.MailboxData.AttendeeType" /> property returns a <see cref="T:ExchangeWebServices.MeetingAttendeeType" /> enumeration value.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="86eaa-108">
+            <para>Microsoft Visual Studio 2005 では、既定値で作成されたプロキシを使用している場合にこのプロパティが設定されていないかどうかは<see cref="F:ExchangeWebServices.MeetingAttendeeType.Organizer" />が使用されます。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="86eaa-108">
+              <para>If this property is not set when you are using a proxy that is created by Microsoft Visual Studio 2005, the default value of <see cref="F:ExchangeWebServices.MeetingAttendeeType.Organizer" /> will be used.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Email">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.EmailAddress Email { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.EmailAddress Email" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MailboxData.Email" />
+      <MemberSignature Language="VB.NET" Value="Public Property Email As EmailAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::EmailAddress ^ Email { ExchangeWebServices::EmailAddress ^ get(); void set(ExchangeWebServices::EmailAddress ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.EmailAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="86eaa-109">
+            <see cref="P:ExchangeWebServices.MailboxData.Email" />プロパティを取得または GetUserAvailability クエリのメールボックスのユーザーを設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="86eaa-109">The <see cref="P:ExchangeWebServices.MailboxData.Email" /> property gets or sets the mailbox user for a GetUserAvailability query.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="86eaa-110">
+            <see cref="P:ExchangeWebServices.MailboxData.Email" />を<see cref="T:ExchangeWebServices.EmailAddress" />オブジェクトです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="86eaa-110">The <see cref="P:ExchangeWebServices.MailboxData.Email" /> property returns an <see cref="T:ExchangeWebServices.EmailAddress" /> object.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExcludeConflicts">
+      <MemberSignature Language="C#" Value="public bool ExcludeConflicts { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ExcludeConflicts" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MailboxData.ExcludeConflicts" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExcludeConflicts As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExcludeConflicts { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="86eaa-111">
+            <see cref="P:ExchangeWebServices.MailboxData.ExcludeConflicts" />プロパティを取得または候補を返すかどうかを指定する値を設定、出席者の間で競合するカレンダーの時間の時間です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="86eaa-111">The <see cref="P:ExchangeWebServices.MailboxData.ExcludeConflicts" /> property gets or sets a value that specifies whether to return suggested times for calendar times that conflict among the attendees.</span>
+          </span>
+          <span data-ttu-id="86eaa-112">このプロパティは省略可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="86eaa-112">This property is optional.</span>
+          </span>
+          <span data-ttu-id="86eaa-113">これは、読み取り/書き込みプロパティです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="86eaa-113">This is a read/write property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="86eaa-114">
+            <see cref="P:ExchangeWebServices.MailboxData.ExcludeConflicts" />会議の時間を提案するために競合しているカレンダーの時間を無視する場合、プロパティが<b>true</b>を返しますそれ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="86eaa-114">The <see cref="P:ExchangeWebServices.MailboxData.ExcludeConflicts" /> property returns <b>true</b> if conflicting calendar times are ignored for suggested meeting times; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="86eaa-115">
+            <para>設定する必要があります、<see cref="P:ExchangeWebServices.MailboxData.ExcludeConflictsSpecified" />プロパティを<b>true</b>にするよう、 <see cref="P:ExchangeWebServices.MailboxData.ExcludeConflicts" /> Simple Object Access Protocol (SOAP) 要求にプロパティをシリアル化します。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="86eaa-115">
+              <para>You must set the <see cref="P:ExchangeWebServices.MailboxData.ExcludeConflictsSpecified" /> property to <b>true</b> so that the <see cref="P:ExchangeWebServices.MailboxData.ExcludeConflicts" /> property is serialized into the Simple Object Access Protocol (SOAP) request.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExcludeConflictsSpecified">
+      <MemberSignature Language="C#" Value="public bool ExcludeConflictsSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ExcludeConflictsSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MailboxData.ExcludeConflictsSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExcludeConflictsSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExcludeConflictsSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="86eaa-116">
+            <see cref="P:ExchangeWebServices.MailboxData.ExcludeConflictsSpecified" />プロパティを取得または指定するブール値を設定するかどうか、 <see cref="P:ExchangeWebServices.MailboxData.ExcludeConflicts" /> Simple Object Access Protocol (SOAP) 要求にプロパティをシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="86eaa-116">The <see cref="P:ExchangeWebServices.MailboxData.ExcludeConflictsSpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.MailboxData.ExcludeConflicts" /> property is serialized into the Simple Object Access Protocol (SOAP) request.</span>
+          </span>
+          <span data-ttu-id="86eaa-117">このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MailboxData.ExcludeConflicts" />プロパティを設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="86eaa-117">This property is required if the <see cref="P:ExchangeWebServices.MailboxData.ExcludeConflicts" /> property is set.</span>
+          </span>
+          <span data-ttu-id="86eaa-118">これは、読み取り/書き込みプロパティです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="86eaa-118">This is a read/write property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="86eaa-119">
+            <see cref="P:ExchangeWebServices.MailboxData.ExcludeConflictsSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MailboxData.ExcludeConflicts" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="86eaa-119">The <see cref="P:ExchangeWebServices.MailboxData.ExcludeConflictsSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.MailboxData.ExcludeConflicts" /> property is serialized into the SOAP request; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

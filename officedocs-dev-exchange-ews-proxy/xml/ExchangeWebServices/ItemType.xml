@@ -1,0 +1,2631 @@
+<Type Name="ItemType" FullName="ExchangeWebServices.ItemType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="7b6643739f814244f7eeddf4d961aeb144fd86f9" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608925" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class ItemType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ItemType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.ItemType" />
+  <TypeSignature Language="VB.NET" Value="Public Class ItemType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ItemType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.AcceptItemType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.TaskType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.DistributionListType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.ContactItemType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.CalendarItemType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.MessageType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.MeetingMessageType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.MeetingCancellationMessageType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.MeetingResponseMessageType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.MeetingRequestMessageType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.ResponseObjectCoreType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.ResponseObjectType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.PostReplyItemBaseType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.PostReplyItemType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.RemoveItemType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.ReferenceItemResponseType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.AcceptSharingInvitationType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.SuppressReadReceiptType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.SmartResponseBaseType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.SmartResponseType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.CancelCalendarItemType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.ForwardItemType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.ReplyAllToItemType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.ReplyToItemType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.WellKnownResponseObjectType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.DeclineItemType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.TentativelyAcceptItemType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.PostItemType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="53a74-101">
+        <see cref="T:ExchangeWebServices.ItemType" />クラスは、Exchange ストア内の一般的な項目を表します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="53a74-101">The <see cref="T:ExchangeWebServices.ItemType" /> class represents a generic item in the Exchange store.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="53a74-102">
+        <para>
+          <see cref="T:ExchangeWebServices.ItemType" />クラスの基本型では、 <see cref="T:ExchangeWebServices.TaskType" />、 <see cref="T:ExchangeWebServices.CalendarItemType" />、 <see cref="T:ExchangeWebServices.ContactItemType" />、および<see cref="T:ExchangeWebServices.MessageType" />のクラスです</para>。
+      <para><see cref="T:ExchangeWebServices.MessageType" />オブジェクトは、電子メール メッセージ、Exchange Web サービス (EWS) スキーマが厳密に型指定されない他のすべての項目を表します。IPM などの項目です。共有として IPM.InfoPath が返されると<see cref="T:ExchangeWebServices.MessageType" />のオブジェクトです。バージョンの Exchange が Exchange Server 2010 および Exchange Online が底を返さない<see cref="T:ExchangeWebServices.ItemType" />応答内のオブジェクトです</para>。
+      <para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="53a74-102">
+          <para>The <see cref="T:ExchangeWebServices.ItemType" /> class is the base type for the <see cref="T:ExchangeWebServices.TaskType" />, <see cref="T:ExchangeWebServices.CalendarItemType" />, <see cref="T:ExchangeWebServices.ContactItemType" />, and <see cref="T:ExchangeWebServices.MessageType" /> classes.</para>
+          <para>
+            <see cref="T:ExchangeWebServices.MessageType" /> objects represent e-mail messages and all other items that are not strongly typed by the Exchange Web Services (EWS) schema. Items such as IPM.Sharing and IPM.InfoPath are returned as <see cref="T:ExchangeWebServices.MessageType" /> objects. Versions of Exchange starting with Exchange Server 2010 and Exchange Online do not return the base <see cref="T:ExchangeWebServices.ItemType" /> object in responses.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ItemType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.ItemType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ItemType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-103">
+            <see cref="M:ExchangeWebServices.ItemType.#ctor" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.ItemType" />クラス。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-103">The <see cref="M:ExchangeWebServices.ItemType.#ctor" /> constructor initializes a new instance of the <see cref="T:ExchangeWebServices.ItemType" /> class.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArchiveTag">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.RetentionTagType ArchiveTag { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.RetentionTagType ArchiveTag" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.ArchiveTag" />
+      <MemberSignature Language="VB.NET" Value="Public Property ArchiveTag As RetentionTagType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::RetentionTagType ^ ArchiveTag { ExchangeWebServices::RetentionTagType ^ get(); void set(ExchangeWebServices::RetentionTagType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.RetentionTagType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Attachments">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.AttachmentType[] Attachments { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.AttachmentType[] Attachments" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.Attachments" />
+      <MemberSignature Language="VB.NET" Value="Public Property Attachments As AttachmentType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::AttachmentType ^&gt; ^ Attachments { cli::array &lt;ExchangeWebServices::AttachmentType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::AttachmentType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("FileAttachment", typeof(ExchangeWebServices.FileAttachmentType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("ItemAttachment", typeof(ExchangeWebServices.ItemAttachmentType), IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.AttachmentType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-104">
+            <see cref="P:ExchangeWebServices.ItemType.Attachments" />プロパティを取得または設定、<see cref="T:ExchangeWebServices.AttachmentType" />アイテムや、Exchange ストア内のアイテムに関連付けられているファイルを格納する配列。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-104">The <see cref="P:ExchangeWebServices.ItemType.Attachments" /> property gets or sets an <see cref="T:ExchangeWebServices.AttachmentType" /> array that contains the items or files that are attached to an item in the Exchange store.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-105">
+            <see cref="P:ExchangeWebServices.ItemType.Attachments" />プロパティの型の配列を返します<see cref="T:ExchangeWebServices.AttachmentType" />アイテムまたは Exchange ストア内のアイテムに関連付けられているファイルを含みます。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-105">The <see cref="P:ExchangeWebServices.ItemType.Attachments" /> property returns an array of type <see cref="T:ExchangeWebServices.AttachmentType" /> that contains the items or files that are attached to an item in the Exchange store.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlockStatus">
+      <MemberSignature Language="C#" Value="public bool BlockStatus { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BlockStatus" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.BlockStatus" />
+      <MemberSignature Language="VB.NET" Value="Public Property BlockStatus As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BlockStatus { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlockStatusSpecified">
+      <MemberSignature Language="C#" Value="public bool BlockStatusSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BlockStatusSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.BlockStatusSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property BlockStatusSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BlockStatusSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Body">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.BodyType Body { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.BodyType Body" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.Body" />
+      <MemberSignature Language="VB.NET" Value="Public Property Body As BodyType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::BodyType ^ Body { ExchangeWebServices::BodyType ^ get(); void set(ExchangeWebServices::BodyType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.BodyType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-106">
+            <see cref="P:ExchangeWebServices.ItemType.Body" />プロパティには、アイテムの本文の内容が含まれています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-106">The <see cref="P:ExchangeWebServices.ItemType.Body" /> property contains the body content of an item.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-107">
+            <see cref="P:ExchangeWebServices.ItemType.Body" />のインスタンスを返すプロパティ、 <see cref="T:ExchangeWebServices.BodyType" /> 、アイテムの本文の内容を表すクラスです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-107">The <see cref="P:ExchangeWebServices.ItemType.Body" /> property returns an instance of the <see cref="T:ExchangeWebServices.BodyType" /> class that represents the body content of an item.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Categories">
+      <MemberSignature Language="C#" Value="public string[] Categories { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] Categories" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.Categories" />
+      <MemberSignature Language="VB.NET" Value="Public Property Categories As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ Categories { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("String", IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-108">
+            <see cref="P:ExchangeWebServices.ItemType.Categories" />プロパティを取得またはメールボックス内のアイテムが属するカテゴリを識別する文字列配列を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-108">The <see cref="P:ExchangeWebServices.ItemType.Categories" /> property gets or set a string array that identifies the categories to which an item in the mailbox belongs.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-109">
+            <see cref="P:ExchangeWebServices.ItemType.Categories" />プロパティは、メールボックス内の項目が所属するカテゴリの名前を含む文字列配列を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-109">The <see cref="P:ExchangeWebServices.ItemType.Categories" /> property returns a string array that contains names of categories to which an item in the mailbox belongs.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConversationId">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ItemIdType ConversationId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.ItemIdType ConversationId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.ConversationId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConversationId As ItemIdType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::ItemIdType ^ ConversationId { ExchangeWebServices::ItemIdType ^ get(); void set(ExchangeWebServices::ItemIdType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ItemIdType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Culture">
+      <MemberSignature Language="C#" Value="public string Culture { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Culture" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.Culture" />
+      <MemberSignature Language="VB.NET" Value="Public Property Culture As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Culture { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement(DataType="language")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-110">
+            <see cref="P:ExchangeWebServices.ItemType.Culture" />プロパティを取得またはメールボックスの特定のアイテムのカルチャを設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-110">The <see cref="P:ExchangeWebServices.ItemType.Culture" /> property gets or sets the culture for a given item in a mailbox.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-111">
+            <see cref="P:ExchangeWebServices.ItemType.Culture" />プロパティは、メールボックス内の指定したアイテムのカルチャの値を格納する文字列を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-111">The <see cref="P:ExchangeWebServices.ItemType.Culture" /> property returns a string that contains the value for the culture for a given item in a mailbox.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="53a74-112">
+            <para>文字列値は、Exchange Web サービス操作で使用される言語を示します。RFC 1766 のカルチャ識別子を使用して、カルチャが指定されています。en-us (英語) など。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-112">
+              <para>The string value indicates the language that is used in the Exchange Web Services operations. Culture is specified by using the RFC 1766 culture identifier; for example, en-US.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateTimeCreated">
+      <MemberSignature Language="C#" Value="public DateTime DateTimeCreated { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime DateTimeCreated" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.DateTimeCreated" />
+      <MemberSignature Language="VB.NET" Value="Public Property DateTimeCreated As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime DateTimeCreated { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-113">
+            <see cref="P:ExchangeWebServices.ItemType.DateTimeCreated" />プロパティを取得またはメールボックス内のアイテムが作成されたときの日時を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-113">The <see cref="P:ExchangeWebServices.ItemType.DateTimeCreated" /> property gets or sets the date and time that an item in the mailbox was created.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-114">
+            <see cref="P:ExchangeWebServices.ItemType.DateTimeCreated" />プロパティは、項目が作成された日時を表す DateTime 構造体のインスタンスを返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-114">The <see cref="P:ExchangeWebServices.ItemType.DateTimeCreated" /> property returns an instance of the DateTime structure that represents the date and time when the item was created.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateTimeCreatedSpecified">
+      <MemberSignature Language="C#" Value="public bool DateTimeCreatedSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DateTimeCreatedSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.DateTimeCreatedSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property DateTimeCreatedSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DateTimeCreatedSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-115">
+            <see cref="P:ExchangeWebServices.ItemType.DateTimeCreatedSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ItemType.DateTimeCreated" />プロパティは、SOAP 要求にシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-115">The <see cref="P:ExchangeWebServices.ItemType.DateTimeCreatedSpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.ItemType.DateTimeCreated" /> property is serialized into the SOAP request.</span>
+          </span>
+          <span data-ttu-id="53a74-116">このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ItemType.DateTimeCreated" />プロパティが指定されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-116">This property is required if the <see cref="P:ExchangeWebServices.ItemType.DateTimeCreated" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-117">
+            <see cref="P:ExchangeWebServices.ItemType.DateTimeCreatedSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ItemType.DateTimeCreated" />は、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-117">The <see cref="P:ExchangeWebServices.ItemType.DateTimeCreatedSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.ItemType.DateTimeCreated" /> is serialized into the SOAP request; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateTimeReceived">
+      <MemberSignature Language="C#" Value="public DateTime DateTimeReceived { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime DateTimeReceived" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.DateTimeReceived" />
+      <MemberSignature Language="VB.NET" Value="Public Property DateTimeReceived As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime DateTimeReceived { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-118">
+            <see cref="P:ExchangeWebServices.ItemType.DateTimeReceived" />プロパティは、メールボックス内のアイテムを受信したときの日時を取得します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-118">The <see cref="P:ExchangeWebServices.ItemType.DateTimeReceived" /> property gets the date and time that an item in a mailbox was received.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-119">
+            <see cref="P:ExchangeWebServices.ItemType.DateTimeReceived" />プロパティは、アイテムが受信されたときの日時を表す DateTime 構造体のインスタンスを返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-119">The <see cref="P:ExchangeWebServices.ItemType.DateTimeReceived" /> property returns an instance of the DateTime structure that represents the date and time when the item was received.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="53a74-120">
+            <para>
+              <see cref="P:ExchangeWebServices.ItemType.DateTimeReceived" />プロパティは、読み取り専用です。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-120">
+              <para>The <see cref="P:ExchangeWebServices.ItemType.DateTimeReceived" /> property is read-only.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateTimeReceivedSpecified">
+      <MemberSignature Language="C#" Value="public bool DateTimeReceivedSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DateTimeReceivedSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.DateTimeReceivedSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property DateTimeReceivedSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DateTimeReceivedSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-121">
+            <see cref="P:ExchangeWebServices.ItemType.DateTimeReceivedSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ItemType.DateTimeReceived" />プロパティは、SOAP 要求にシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-121">The <see cref="P:ExchangeWebServices.ItemType.DateTimeReceivedSpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.ItemType.DateTimeReceived" /> property is serialized into the SOAP request.</span>
+          </span>
+          <span data-ttu-id="53a74-122">このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ItemType.DateTimeReceived" />プロパティが指定されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-122">This property is required if the <see cref="P:ExchangeWebServices.ItemType.DateTimeReceived" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-123">
+            <see cref="P:ExchangeWebServices.ItemType.DateTimeReceivedSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ItemType.DateTimeReceived" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-123">The <see cref="P:ExchangeWebServices.ItemType.DateTimeReceivedSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.ItemType.DateTimeReceived" /> property is serialized into the SOAP request; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateTimeSent">
+      <MemberSignature Language="C#" Value="public DateTime DateTimeSent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime DateTimeSent" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.DateTimeSent" />
+      <MemberSignature Language="VB.NET" Value="Public Property DateTimeSent As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime DateTimeSent { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-124">
+            <see cref="P:ExchangeWebServices.ItemType.DateTimeSent" />プロパティを取得またはメールボックス内のアイテムが送信されたときの日時を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-124">The <see cref="P:ExchangeWebServices.ItemType.DateTimeSent" /> property gets or sets the date and time when an item in a mailbox was sent.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-125">
+            <see cref="P:ExchangeWebServices.ItemType.DateTimeSent" />プロパティは、アイテムが送信されたときの日時を表す DateTime 構造体のインスタンスを返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-125">The <see cref="P:ExchangeWebServices.ItemType.DateTimeSent" /> property returns an instance of the DateTime structure that represents the date and time when the item was sent.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateTimeSentSpecified">
+      <MemberSignature Language="C#" Value="public bool DateTimeSentSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DateTimeSentSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.DateTimeSentSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property DateTimeSentSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DateTimeSentSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-126">
+            <see cref="P:ExchangeWebServices.ItemType.DateTimeSentSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ItemType.DateTimeSent" />プロパティは、SOAP 要求にシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-126">The <see cref="P:ExchangeWebServices.ItemType.DateTimeSentSpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.ItemType.DateTimeSent" /> property is serialized into the SOAP request.</span>
+          </span>
+          <span data-ttu-id="53a74-127">このプロパティは、DateTimeSent プロパティが指定されている場合に必要です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-127">This property is required if the DateTimeSent property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-128">
+            <see cref="P:ExchangeWebServices.ItemType.DateTimeSentSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ItemType.DateTimeSent" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-128">The <see cref="P:ExchangeWebServices.ItemType.DateTimeSentSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.ItemType.DateTimeSent" /> property is serialized into the SOAP request; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayCc">
+      <MemberSignature Language="C#" Value="public string DisplayCc { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayCc" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.DisplayCc" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayCc As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayCc { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-129">
+            <see cref="P:ExchangeWebServices.ItemType.DisplayCc" />プロパティを取得または [cc] ボックスの内容のために使用される表示文字列を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-129">The <see cref="P:ExchangeWebServices.ItemType.DisplayCc" /> property gets or sets the display string that is used for the contents of the Cc box.</span>
+          </span>
+          <span data-ttu-id="53a74-130">これは、すべての Cc 受信者の表示名の連結された文字列です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-130">This is the concatenated string of all Cc recipient display names.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-131">
+            <see cref="P:ExchangeWebServices.ItemType.DisplayCc" />プロパティは、[cc] ボックスの内容のために使用される値を格納する文字列を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-131">The <see cref="P:ExchangeWebServices.ItemType.DisplayCc" /> property returns a string that contains the value that is used for the contents of the Cc box.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayTo">
+      <MemberSignature Language="C#" Value="public string DisplayTo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayTo" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.DisplayTo" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayTo As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayTo { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-132">
+            <see cref="P:ExchangeWebServices.ItemType.DisplayTo" />プロパティを取得または] ボックスの内容のために使用される表示文字列を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-132">The <see cref="P:ExchangeWebServices.ItemType.DisplayTo" /> property gets or sets the display string that is used for the contents of the To box.</span>
+          </span>
+          <span data-ttu-id="53a74-133">これは、すべての受信者の表示名の連結された文字列です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-133">This is the concatenated string of all To recipient display names.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-134">
+            <see cref="P:ExchangeWebServices.ItemType.DisplayTo" />プロパティ] ボックスの内容のために使用される値を格納する文字列を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-134">The <see cref="P:ExchangeWebServices.ItemType.DisplayTo" /> property returns a string that contains the value that is used for the contents of the To box.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EffectiveRights">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.EffectiveRightsType EffectiveRights { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.EffectiveRightsType EffectiveRights" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.EffectiveRights" />
+      <MemberSignature Language="VB.NET" Value="Public Property EffectiveRights As EffectiveRightsType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::EffectiveRightsType ^ EffectiveRights { ExchangeWebServices::EffectiveRightsType ^ get(); void set(ExchangeWebServices::EffectiveRightsType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.EffectiveRightsType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-135">
+            <see cref="P:ExchangeWebServices.ItemType.EffectiveRights" />プロパティを取得または設定のインスタンスの<see cref="T:ExchangeWebServices.EffectiveRightsType" />アイテムまたはフォルダーのアクセス許可の設定に基づいて、クライアントの権限を表すクラスです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-135">The <see cref="P:ExchangeWebServices.ItemType.EffectiveRights" /> property gets or sets an instance of the <see cref="T:ExchangeWebServices.EffectiveRightsType" /> class that represents the client's rights based on the permission settings for the item or folder.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-136">
+            <see cref="P:ExchangeWebServices.ItemType.EffectiveRights" />のインスタンスを返すプロパティ、<see cref="T:ExchangeWebServices.EffectiveRightsType" />アイテムまたはフォルダーのアクセス許可の設定に基づいて、クライアントの権限を表すクラスです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-136">The <see cref="P:ExchangeWebServices.ItemType.EffectiveRights" /> property returns an instance of the <see cref="T:ExchangeWebServices.EffectiveRightsType" /> class that represents the client's rights based on the permission settings for the item or folder.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityExtractionResult">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.EntityExtractionResultType EntityExtractionResult { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.EntityExtractionResultType EntityExtractionResult" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.EntityExtractionResult" />
+      <MemberSignature Language="VB.NET" Value="Public Property EntityExtractionResult As EntityExtractionResultType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::EntityExtractionResultType ^ EntityExtractionResult { ExchangeWebServices::EntityExtractionResultType ^ get(); void set(ExchangeWebServices::EntityExtractionResultType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.EntityExtractionResultType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtendedProperty">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ExtendedPropertyType[] ExtendedProperty { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.ExtendedPropertyType[] ExtendedProperty" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.ExtendedProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExtendedProperty As ExtendedPropertyType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::ExtendedPropertyType ^&gt; ^ ExtendedProperty { cli::array &lt;ExchangeWebServices::ExtendedPropertyType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::ExtendedPropertyType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("ExtendedProperty")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ExtendedPropertyType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-137">
+            <see cref="P:ExchangeWebServices.ItemType.ExtendedProperty" />プロパティを取得または型の配列を設定する<see cref="T:ExchangeWebServices.ExtendedPropertyType" />拡張 MAPI プロパティを識別します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-137">The <see cref="P:ExchangeWebServices.ItemType.ExtendedProperty" /> property gets or sets an array of the type <see cref="T:ExchangeWebServices.ExtendedPropertyType" /> that identifies extended MAPI properties.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-138">
+            <see cref="P:ExchangeWebServices.ItemType.ExtendedProperty" />プロパティの型の配列を返します<see cref="T:ExchangeWebServices.ExtendedPropertyType" />拡張 MAPI プロパティを識別します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-138">The <see cref="P:ExchangeWebServices.ItemType.ExtendedProperty" /> property returns an array of the type <see cref="T:ExchangeWebServices.ExtendedPropertyType" /> that identifies extended MAPI properties.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flag">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.FlagType Flag { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.FlagType Flag" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.Flag" />
+      <MemberSignature Language="VB.NET" Value="Public Property Flag As FlagType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::FlagType ^ Flag { ExchangeWebServices::FlagType ^ get(); void set(ExchangeWebServices::FlagType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.FlagType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupingAction">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.PredictedMessageActionType GroupingAction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.PredictedMessageActionType GroupingAction" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.GroupingAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property GroupingAction As PredictedMessageActionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::PredictedMessageActionType GroupingAction { ExchangeWebServices::PredictedMessageActionType get(); void set(ExchangeWebServices::PredictedMessageActionType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.PredictedMessageActionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupingActionSpecified">
+      <MemberSignature Language="C#" Value="public bool GroupingActionSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool GroupingActionSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.GroupingActionSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property GroupingActionSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool GroupingActionSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasAttachments">
+      <MemberSignature Language="C#" Value="public bool HasAttachments { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasAttachments" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.HasAttachments" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasAttachments As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasAttachments { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-139">
+            <see cref="P:ExchangeWebServices.ItemType.HasAttachments" />プロパティを取得またはアイテムが 1 つ以上の添付ファイルがあるかどうかを示すブール値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-139">The <see cref="P:ExchangeWebServices.ItemType.HasAttachments" /> property gets or sets a Boolean value that indicates whether the item has at least one attachment.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-140">
+            <see cref="P:ExchangeWebServices.ItemType.HasAttachments" />プロパティを返します<b>true</b>場合、アイテムには、少なくとも 1 つの添付ファイルです。それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-140">The <see cref="P:ExchangeWebServices.ItemType.HasAttachments" /> property returns <b>true</b> if the item has at least one attachment; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasAttachmentsSpecified">
+      <MemberSignature Language="C#" Value="public bool HasAttachmentsSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasAttachmentsSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.HasAttachmentsSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasAttachmentsSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasAttachmentsSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-141">
+            <see cref="P:ExchangeWebServices.ItemType.HasAttachmentsSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ItemType.HasAttachments" />プロパティは、SOAP 要求にシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-141">The <see cref="P:ExchangeWebServices.ItemType.HasAttachmentsSpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.ItemType.HasAttachments" /> property is serialized into the SOAP request.</span>
+          </span>
+          <span data-ttu-id="53a74-142">このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ItemType.HasAttachments" />プロパティが指定されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-142">This property is required if the <see cref="P:ExchangeWebServices.ItemType.HasAttachments" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-143">
+            <see cref="P:ExchangeWebServices.ItemType.HasAttachmentsSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ItemType.HasAttachments" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-143">The <see cref="P:ExchangeWebServices.ItemType.HasAttachmentsSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.ItemType.HasAttachments" /> property is serialized into the SOAP request; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasBlockedImages">
+      <MemberSignature Language="C#" Value="public bool HasBlockedImages { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasBlockedImages" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.HasBlockedImages" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasBlockedImages As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasBlockedImages { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasBlockedImagesSpecified">
+      <MemberSignature Language="C#" Value="public bool HasBlockedImagesSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasBlockedImagesSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.HasBlockedImagesSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasBlockedImagesSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasBlockedImagesSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconIndex">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.IconIndexType IconIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.IconIndexType IconIndex" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.IconIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property IconIndex As IconIndexType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::IconIndexType IconIndex { ExchangeWebServices::IconIndexType get(); void set(ExchangeWebServices::IconIndexType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.IconIndexType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconIndexSpecified">
+      <MemberSignature Language="C#" Value="public bool IconIndexSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IconIndexSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.IconIndexSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IconIndexSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IconIndexSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Importance">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ImportanceChoicesType Importance { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.ImportanceChoicesType Importance" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.Importance" />
+      <MemberSignature Language="VB.NET" Value="Public Property Importance As ImportanceChoicesType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::ImportanceChoicesType Importance { ExchangeWebServices::ImportanceChoicesType get(); void set(ExchangeWebServices::ImportanceChoicesType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ImportanceChoicesType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-144">
+            <see cref="P:ExchangeWebServices.ItemType.Importance" />プロパティを取得または設定、無効のいずれかの<see cref="T:ExchangeWebServices.ImportanceChoicesType" />の項目の重要度を指定する値です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-144">The <see cref="P:ExchangeWebServices.ItemType.Importance" /> property gets or sets one of the valid <see cref="T:ExchangeWebServices.ImportanceChoicesType" /> values to indicate the importance of the item.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-145">
+            <see cref="P:ExchangeWebServices.ItemType.Importance" />プロパティは、有効な 1 つを返します<see cref="T:ExchangeWebServices.ImportanceChoicesType" />の値です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-145">The <see cref="P:ExchangeWebServices.ItemType.Importance" /> property returns one of the valid <see cref="T:ExchangeWebServices.ImportanceChoicesType" /> values.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportanceSpecified">
+      <MemberSignature Language="C#" Value="public bool ImportanceSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ImportanceSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.ImportanceSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImportanceSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ImportanceSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-146">
+            <see cref="P:ExchangeWebServices.ItemType.ImportanceSpecified" />プロパティを取得または設定を指定するブール値かどうか、 <see cref="P:ExchangeWebServices.ItemType.Importance" /> theSOAP の要求にプロパティをシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-146">The <see cref="P:ExchangeWebServices.ItemType.ImportanceSpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.ItemType.Importance" /> property is serialized into theSOAP request.</span>
+          </span>
+          <span data-ttu-id="53a74-147">このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ItemType.Importance" />プロパティが指定されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-147">This property is required if the <see cref="P:ExchangeWebServices.ItemType.Importance" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-148">
+            <see cref="P:ExchangeWebServices.ItemType.ImportanceSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ItemType.Importance" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-148">The <see cref="P:ExchangeWebServices.ItemType.ImportanceSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.ItemType.Importance" /> property is serialized into the SOAP request; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InReplyTo">
+      <MemberSignature Language="C#" Value="public string InReplyTo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InReplyTo" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.InReplyTo" />
+      <MemberSignature Language="VB.NET" Value="Public Property InReplyTo As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InReplyTo { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-149">
+            <see cref="P:ExchangeWebServices.ItemType.InReplyTo" />プロパティを取得またはこのアイテムの返信するアイテムの識別子を格納する文字列値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-149">The <see cref="P:ExchangeWebServices.ItemType.InReplyTo" /> property gets or sets a string value that contains the identifier of the item to which this item is a reply.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-150">
+            <see cref="P:ExchangeWebServices.ItemType.InReplyTo" />このアイテムの返信するアイテムの識別子を含む文字列値を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-150">The <see cref="P:ExchangeWebServices.ItemType.InReplyTo" /> property returns a string value that contains the identifier of the item to which this item is a reply.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceKey">
+      <MemberSignature Language="C#" Value="public byte[] InstanceKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] InstanceKey" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.InstanceKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property InstanceKey As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ InstanceKey { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement(DataType="base64Binary")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InternetMessageHeaders">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.InternetHeaderType[] InternetMessageHeaders { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.InternetHeaderType[] InternetMessageHeaders" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.InternetMessageHeaders" />
+      <MemberSignature Language="VB.NET" Value="Public Property InternetMessageHeaders As InternetHeaderType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::InternetHeaderType ^&gt; ^ InternetMessageHeaders { cli::array &lt;ExchangeWebServices::InternetHeaderType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::InternetHeaderType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("InternetMessageHeader", IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.InternetHeaderType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-151">
+            <see cref="P:ExchangeWebServices.ItemType.InternetMessageHeaders" />プロパティを取得または型の配列を設定する<see cref="T:ExchangeWebServices.InternetHeaderType" />、メールボックス内のアイテムに含まれるすべてのインターネット メッセージ ヘッダーのコレクションを表します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-151">The <see cref="P:ExchangeWebServices.ItemType.InternetMessageHeaders" /> property gets or sets an array of the type <see cref="T:ExchangeWebServices.InternetHeaderType" /> that represents the collection of all Internet message headers that are contained in an item in a mailbox.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-152">
+            <see cref="P:ExchangeWebServices.ItemType.InternetMessageHeaders" />プロパティの型の配列を返します<see cref="T:ExchangeWebServices.InternetHeaderType" />、メールボックス内のアイテムに含まれるすべてのインターネット メッセージ ヘッダーのコレクションを表します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-152">The <see cref="P:ExchangeWebServices.ItemType.InternetMessageHeaders" /> property returns an array of the type <see cref="T:ExchangeWebServices.InternetHeaderType" /> that represents the collection of all Internet message headers that are contained in an item in a mailbox.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAssociated">
+      <MemberSignature Language="C#" Value="public bool IsAssociated { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAssociated" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.IsAssociated" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsAssociated As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAssociated { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAssociatedSpecified">
+      <MemberSignature Language="C#" Value="public bool IsAssociatedSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAssociatedSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.IsAssociatedSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsAssociatedSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAssociatedSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDraft">
+      <MemberSignature Language="C#" Value="public bool IsDraft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDraft" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.IsDraft" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsDraft As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDraft { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-153">
+            <see cref="P:ExchangeWebServices.ItemType.IsDraft" />プロパティを取得または、アイテムは送信されていないかどうかを示すブール値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-153">The <see cref="P:ExchangeWebServices.ItemType.IsDraft" /> property gets or sets a Boolean value that indicates whether the item has not been sent.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-154">
+            <see cref="P:ExchangeWebServices.ItemType.IsDraft" />プロパティを返します<b>true の</b>場合、アイテムはまだ送信されていません。それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-154">The <see cref="P:ExchangeWebServices.ItemType.IsDraft" /> property returns <b>true</b> if the item has not yet been sent; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDraftSpecified">
+      <MemberSignature Language="C#" Value="public bool IsDraftSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDraftSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.IsDraftSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsDraftSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDraftSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-155">
+            <see cref="P:ExchangeWebServices.ItemType.IsDraftSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ItemType.IsDraft" />プロパティは、SOAP 要求にシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-155">The <see cref="P:ExchangeWebServices.ItemType.IsDraftSpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.ItemType.IsDraft" /> property is serialized into the SOAP request.</span>
+          </span>
+          <span data-ttu-id="53a74-156">このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ItemType.IsDraft" />プロパティが指定されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-156">This property is required if the <see cref="P:ExchangeWebServices.ItemType.IsDraft" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-157">
+            <see cref="P:ExchangeWebServices.ItemType.IsDraftSpecified" />
+            <b>場合</b>、<see cref="P:ExchangeWebServices.ItemType.IsDraft" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-157">The <see cref="P:ExchangeWebServices.ItemType.IsDraftSpecified" /> returns <b>true</b> if the <see cref="P:ExchangeWebServices.ItemType.IsDraft" /> property is serialized into the SOAP request; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFromMe">
+      <MemberSignature Language="C#" Value="public bool IsFromMe { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFromMe" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.IsFromMe" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsFromMe As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFromMe { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-158">
+            <see cref="P:ExchangeWebServices.ItemType.IsFromMe" />プロパティを取得またはユーザーが彼または彼女自身にアイテムを送信するかどうかを示すブール値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-158">The <see cref="P:ExchangeWebServices.ItemType.IsFromMe" /> property gets or sets a Boolean value that indicates whether a user sent an item to him or herself.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-159">
+            <see cref="P:ExchangeWebServices.ItemType.IsFromMe" />には自分自身にユーザーが、アイテムが送信された場合、プロパティが<b>true</b>を返しますそれ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-159">The <see cref="P:ExchangeWebServices.ItemType.IsFromMe" /> property returns <b>true</b> if the item was sent by a user to him or herself; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFromMeSpecified">
+      <MemberSignature Language="C#" Value="public bool IsFromMeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFromMeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.IsFromMeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsFromMeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFromMeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-160">
+            <see cref="P:ExchangeWebServices.ItemType.IsFromMeSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ItemType.IsFromMe" />プロパティは、SOAP 要求にシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-160">The <see cref="P:ExchangeWebServices.ItemType.IsFromMeSpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.ItemType.IsFromMe" /> property is serialized into the SOAP request.</span>
+          </span>
+          <span data-ttu-id="53a74-161">このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ItemType.IsFromMe" />プロパティが指定されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-161">This property is required if the <see cref="P:ExchangeWebServices.ItemType.IsFromMe" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-162">
+            <see cref="P:ExchangeWebServices.ItemType.IsFromMeSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ItemType.IsFromMe" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-162">The <see cref="P:ExchangeWebServices.ItemType.IsFromMeSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.ItemType.IsFromMe" /> property is serialized into the SOAP request; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsResend">
+      <MemberSignature Language="C#" Value="public bool IsResend { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsResend" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.IsResend" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsResend As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsResend { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-163">
+            <see cref="P:ExchangeWebServices.ItemType.IsResend" />プロパティを取得またはアイテムが送信済みであるかどうかを示すブール値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-163">The <see cref="P:ExchangeWebServices.ItemType.IsResend" /> property gets or sets a Boolean value that indicates whether the item has previously been sent.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-164">
+            <see cref="P:ExchangeWebServices.ItemType.IsResend" />プロパティを返します<b>true の</b>場合は、アイテムは送信されていた。それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-164">The <see cref="P:ExchangeWebServices.ItemType.IsResend" /> property returns <b>true</b> if the item has previously been sent; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsResendSpecified">
+      <MemberSignature Language="C#" Value="public bool IsResendSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsResendSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.IsResendSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsResendSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsResendSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-165">
+            <see cref="P:ExchangeWebServices.ItemType.IsResendSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ItemType.IsResend" />プロパティは、SOAP 要求にシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-165">The <see cref="P:ExchangeWebServices.ItemType.IsResendSpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.ItemType.IsResend" /> property is serialized into the SOAP request.</span>
+          </span>
+          <span data-ttu-id="53a74-166">このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ItemType.IsResend" />プロパティが指定されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-166">This property is required if the <see cref="P:ExchangeWebServices.ItemType.IsResend" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-167">
+            <see cref="P:ExchangeWebServices.ItemType.IsResendSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ItemType.IsResend" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-167">The <see cref="P:ExchangeWebServices.ItemType.IsResendSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.ItemType.IsResend" /> property is serialized into the SOAP request; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSubmitted">
+      <MemberSignature Language="C#" Value="public bool IsSubmitted { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSubmitted" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.IsSubmitted" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsSubmitted As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSubmitted { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-168">
+            <see cref="P:ExchangeWebServices.ItemType.IsSubmitted" />プロパティを取得または既定の [送信トレイ] フォルダーにアイテムが送信されたかどうかを示すブール値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-168">The <see cref="P:ExchangeWebServices.ItemType.IsSubmitted" /> property gets or sets a Boolean value that indicates whether an item has been submitted to the Outbox default folder.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-169">
+            <see cref="P:ExchangeWebServices.ItemType.IsSubmitted" />を返します<b>true</b>アイテムが [送信トレイ] 既定フォルダーに送信された場合はそれ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-169">The <see cref="P:ExchangeWebServices.ItemType.IsSubmitted" /> returns <b>true</b> if the item has been submitted to the Outbox default folder; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSubmittedSpecified">
+      <MemberSignature Language="C#" Value="public bool IsSubmittedSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSubmittedSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.IsSubmittedSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsSubmittedSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSubmittedSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-170">
+            <see cref="P:ExchangeWebServices.ItemType.IsSubmittedSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ItemType.IsSubmitted" />プロパティがシリアル化 (SOAP 要求します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-170">The <see cref="P:ExchangeWebServices.ItemType.IsSubmittedSpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.ItemType.IsSubmitted" /> property is serialized into the (SOAP request.</span>
+          </span>
+          <span data-ttu-id="53a74-171">このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ItemType.IsSubmitted" />プロパティが指定されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-171">This property is required if the <see cref="P:ExchangeWebServices.ItemType.IsSubmitted" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-172">
+            <see cref="P:ExchangeWebServices.ItemType.IsSubmittedSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ItemType.IsSubmitted" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-172">The <see cref="P:ExchangeWebServices.ItemType.IsSubmittedSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.ItemType.IsSubmitted" /> property is serialized into the SOAP request; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUnmodified">
+      <MemberSignature Language="C#" Value="public bool IsUnmodified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsUnmodified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.IsUnmodified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsUnmodified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsUnmodified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-173">
+            <see cref="P:ExchangeWebServices.ItemType.IsUnmodified" />プロパティは、項目が変更されたかどうかを示すブール値を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-173">The <see cref="P:ExchangeWebServices.ItemType.IsUnmodified" /> property returns a Boolean value that indicates whether the item has been modified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-174">
+            <see cref="P:ExchangeWebServices.ItemType.IsUnmodified" />プロパティを返します<b>true の場合</b>項目が変更されている場合それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-174">The <see cref="P:ExchangeWebServices.ItemType.IsUnmodified" /> property returns <b>true</b> if the item is unmodified; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUnmodifiedSpecified">
+      <MemberSignature Language="C#" Value="public bool IsUnmodifiedSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsUnmodifiedSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.IsUnmodifiedSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsUnmodifiedSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsUnmodifiedSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-175">
+            <see cref="P:ExchangeWebServices.ItemType.IsUnmodifiedSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ItemType.IsUnmodified" />プロパティは、SOAP 要求にシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-175">The <see cref="P:ExchangeWebServices.ItemType.IsUnmodifiedSpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.ItemType.IsUnmodified" /> property is serialized into the SOAP request.</span>
+          </span>
+          <span data-ttu-id="53a74-176">このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ItemType.IsUnmodified" />プロパティが指定されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-176">This property is required if the <see cref="P:ExchangeWebServices.ItemType.IsUnmodified" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-177">
+            <see cref="P:ExchangeWebServices.ItemType.IsUnmodifiedSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ItemType.IsUnmodified" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-177">The <see cref="P:ExchangeWebServices.ItemType.IsUnmodifiedSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.ItemType.IsUnmodified" /> property is serialized into the SOAP request; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemClass">
+      <MemberSignature Language="C#" Value="public string ItemClass { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ItemClass" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.ItemClass" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemClass As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ItemClass { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-178">
+            <see cref="P:ExchangeWebServices.ItemType.ItemClass" />プロパティを取得またはアイテムのメッセージ クラスを示す文字列値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-178">The <see cref="P:ExchangeWebServices.ItemType.ItemClass" /> property gets or sets a string value that indicates the message class of the item.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-179">
+            <see cref="P:ExchangeWebServices.ItemType.ItemClass" /> 、アイテムのメッセージ クラスを示す文字列値を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-179">The <see cref="P:ExchangeWebServices.ItemType.ItemClass" /> property returns a string value that indicates the message class of the item.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="53a74-180">
+            <para>指定された値、<see cref="P:ExchangeWebServices.ItemType.ItemClass" />プロパティは、インスタンスの型と一致する必要があります、<see cref="T:ExchangeWebServices.ItemType" />クラス。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-180">
+              <para>The value specified in the <see cref="P:ExchangeWebServices.ItemType.ItemClass" /> property must be consistent with the type of the instance of the <see cref="T:ExchangeWebServices.ItemType" /> class.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemId">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ItemIdType ItemId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.ItemIdType ItemId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.ItemId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemId As ItemIdType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::ItemIdType ^ ItemId { ExchangeWebServices::ItemIdType ^ get(); void set(ExchangeWebServices::ItemIdType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ItemIdType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-181">
+            <see cref="P:ExchangeWebServices.ItemType.ItemId" />プロパティを取得または設定のインスタンス、 <see cref="T:ExchangeWebServices.ItemIdType" /> 、Exchange ストア内のアイテムの一意の識別子と変更キーを表すクラスです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-181">The <see cref="P:ExchangeWebServices.ItemType.ItemId" /> property gets or sets an instance of the <see cref="T:ExchangeWebServices.ItemIdType" /> class that represents the unique identifier and change key of an item in the Exchange store.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-182">
+            <see cref="P:ExchangeWebServices.ItemType.ItemId" />のインスタンスを返すプロパティ、 <see cref="T:ExchangeWebServices.ItemIdType" /> 、Exchange ストア内のアイテムの一意の識別子と変更キーを表すクラスです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-182">The <see cref="P:ExchangeWebServices.ItemType.ItemId" /> property returns an instance of the <see cref="T:ExchangeWebServices.ItemIdType" /> class that represents the unique identifier and change key of an item in the Exchange store.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModifiedName">
+      <MemberSignature Language="C#" Value="public string LastModifiedName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LastModifiedName" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.LastModifiedName" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastModifiedName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LastModifiedName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-183">
+            <see cref="P:ExchangeWebServices.ItemType.LastModifiedName" />プロパティがアイテムを最後に修正したユーザーの名前を含む文字列値を取得します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-183">The <see cref="P:ExchangeWebServices.ItemType.LastModifiedName" /> property gets a string value that contains the name of the user who last modified the item.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-184">
+            <see cref="P:ExchangeWebServices.ItemType.LastModifiedName" />の最後の項目を変更したユーザー名を含む文字列値を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-184">The <see cref="P:ExchangeWebServices.ItemType.LastModifiedName" /> property returns a string value that contains the name of the user who last modified the item.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="53a74-185">
+            <para>LastModifiedName プロパティの署名が正しくないため、このプロパティが設定可能であることをお勧めします。Setter プロパティは、自動生成されたプロキシ コード ジェネレーターは、このプロパティを設定することはできませんサーバーのビジネス ロジックを考慮するコンテキストを持っていないこと、実際の成果物です。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-185">
+              <para>The LastModifiedName property signature is incorrect because it suggests that this property is settable. The setter property is an artifact of the fact that the auto-generated proxy generator does not have the context to account for the server business logic, which does not allow this property to be set.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModifiedTime">
+      <MemberSignature Language="C#" Value="public DateTime LastModifiedTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastModifiedTime" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.LastModifiedTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastModifiedTime As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LastModifiedTime { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-186">
+            <see cref="P:ExchangeWebServices.ItemType.LastModifiedTime" />プロパティは、アイテムの最終更新日時を表す DateTime 構造体のインスタンスを取得します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-186">The <see cref="P:ExchangeWebServices.ItemType.LastModifiedTime" /> property gets an instance of the DateTime structure that represents the date and time that the item was last modified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-187">
+            <see cref="P:ExchangeWebServices.ItemType.LastModifiedTime" />プロパティは、アイテムの最終更新日時を表す DateTime 構造体のインスタンスを返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-187">The <see cref="P:ExchangeWebServices.ItemType.LastModifiedTime" /> property returns an instance of the DateTime structure that represents the date and time that the item was last modified.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="53a74-188">
+            <para>LastModifiedTime プロパティの署名が正しくないため、このプロパティが設定可能であることをお勧めします。Setter プロパティは、自動生成されたプロキシ コード ジェネレーターは、このプロパティを設定することはできませんサーバーのビジネス ロジックを考慮するコンテキストを持っていないこと、実際の成果物です。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-188">
+              <para>The LastModifiedTime property signature is incorrect because it suggests that this property is settable. The setter property is an artifact of the fact that the auto-generated proxy generator does not have the context to account for the server business logic, which does not allow this property to be set.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModifiedTimeSpecified">
+      <MemberSignature Language="C#" Value="public bool LastModifiedTimeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LastModifiedTimeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.LastModifiedTimeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastModifiedTimeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LastModifiedTimeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-189">
+            <see cref="P:ExchangeWebServices.ItemType.LastModifiedTimeSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ItemType.LastModifiedTime" />プロパティは、SOAP 要求にシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-189">The <see cref="P:ExchangeWebServices.ItemType.LastModifiedTimeSpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.ItemType.LastModifiedTime" /> property is serialized into the SOAP request.</span>
+          </span>
+          <span data-ttu-id="53a74-190">このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ItemType.LastModifiedTime" />プロパティが指定されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-190">This property is required if the <see cref="P:ExchangeWebServices.ItemType.LastModifiedTime" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-191">
+            <see cref="P:ExchangeWebServices.ItemType.LastModifiedTimeSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ItemType.LastModifiedTime" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-191">The <see cref="P:ExchangeWebServices.ItemType.LastModifiedTimeSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.ItemType.LastModifiedTime" /> property is serialized into the SOAP request; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MimeContent">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.MimeContentType MimeContent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.MimeContentType MimeContent" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.MimeContent" />
+      <MemberSignature Language="VB.NET" Value="Public Property MimeContent As MimeContentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::MimeContentType ^ MimeContent { ExchangeWebServices::MimeContentType ^ get(); void set(ExchangeWebServices::MimeContentType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.MimeContentType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-192">
+            <see cref="P:ExchangeWebServices.ItemType.MimeContent" />プロパティを取得または設定のインスタンスの<see cref="T:ExchangeWebServices.MimeContentType" />base64Binary の形式で表されるオブジェクトのネイティブの MIME ストリームを格納するクラスです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-192">The <see cref="P:ExchangeWebServices.ItemType.MimeContent" /> property gets or sets an instance of the <see cref="T:ExchangeWebServices.MimeContentType" /> class that contains the native MIME stream of an object that is represented in base64Binary format.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-193">
+            <see cref="P:ExchangeWebServices.ItemType.MimeContent" />のインスタンスを返すプロパティ、 <see cref="T:ExchangeWebServices.MimeContentType" /> base64Binary の形式で表されるオブジェクトのネイティブの MIME ストリームを格納するクラスです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-193">The <see cref="P:ExchangeWebServices.ItemType.MimeContent" /> property returns an instance of the <see cref="T:ExchangeWebServices.MimeContentType" /> class that contains the native MIME stream of an object that is represented in base64Binary format.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextPredictedAction">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.PredictedMessageActionType NextPredictedAction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.PredictedMessageActionType NextPredictedAction" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.NextPredictedAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property NextPredictedAction As PredictedMessageActionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::PredictedMessageActionType NextPredictedAction { ExchangeWebServices::PredictedMessageActionType get(); void set(ExchangeWebServices::PredictedMessageActionType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.PredictedMessageActionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextPredictedActionSpecified">
+      <MemberSignature Language="C#" Value="public bool NextPredictedActionSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NextPredictedActionSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.NextPredictedActionSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property NextPredictedActionSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NextPredictedActionSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NormalizedBody">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.BodyType NormalizedBody { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.BodyType NormalizedBody" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.NormalizedBody" />
+      <MemberSignature Language="VB.NET" Value="Public Property NormalizedBody As BodyType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::BodyType ^ NormalizedBody { ExchangeWebServices::BodyType ^ get(); void set(ExchangeWebServices::BodyType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.BodyType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentFolderId">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.FolderIdType ParentFolderId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.FolderIdType ParentFolderId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.ParentFolderId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParentFolderId As FolderIdType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::FolderIdType ^ ParentFolderId { ExchangeWebServices::FolderIdType ^ get(); void set(ExchangeWebServices::FolderIdType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.FolderIdType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-194">
+            <see cref="P:ExchangeWebServices.ItemType.ParentFolderId" />プロパティを取得または設定のインスタンスの<see cref="T:ExchangeWebServices.FolderIdType" />のアイテムまたはフォルダーを含む親フォルダーの識別子を表すクラスです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-194">The <see cref="P:ExchangeWebServices.ItemType.ParentFolderId" /> property gets or sets an instance of the <see cref="T:ExchangeWebServices.FolderIdType" /> class that represents the identifier of the parent folder that contains the item or folder.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-195">
+            <see cref="P:ExchangeWebServices.ItemType.ParentFolderId" />のインスタンスを返すプロパティ、<see cref="T:ExchangeWebServices.FolderIdType" />アイテムまたはフォルダーを含む親フォルダーの識別子を表すクラスです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-195">The <see cref="P:ExchangeWebServices.ItemType.ParentFolderId" /> property returns an instance of the <see cref="T:ExchangeWebServices.FolderIdType" /> class that represents the identifier of the parent folder that contains the item or folder.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PolicyTag">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.RetentionTagType PolicyTag { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.RetentionTagType PolicyTag" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.PolicyTag" />
+      <MemberSignature Language="VB.NET" Value="Public Property PolicyTag As RetentionTagType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::RetentionTagType ^ PolicyTag { ExchangeWebServices::RetentionTagType ^ get(); void set(ExchangeWebServices::RetentionTagType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.RetentionTagType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Preview">
+      <MemberSignature Language="C#" Value="public string Preview { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Preview" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.Preview" />
+      <MemberSignature Language="VB.NET" Value="Public Property Preview As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Preview { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReminderDueBy">
+      <MemberSignature Language="C#" Value="public DateTime ReminderDueBy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ReminderDueBy" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.ReminderDueBy" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReminderDueBy As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime ReminderDueBy { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-196">
+            <see cref="P:ExchangeWebServices.ItemType.ReminderDueBy" />プロパティを取得またはイベントが発生したときの日時を表す DateTime 構造体のインスタンスを設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-196">The <see cref="P:ExchangeWebServices.ItemType.ReminderDueBy" /> property gets or sets an instance of the DateTime structure that represents the date and time when the event occurs.</span>
+          </span>
+          <span data-ttu-id="53a74-197">これは、使用して、 <see cref="P:ExchangeWebServices.ItemType.ReminderMinutesBeforeStart" /> 、アラームが表示されたときを決定するプロパティです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-197">This is used by the <see cref="P:ExchangeWebServices.ItemType.ReminderMinutesBeforeStart" /> property to determine when the reminder is displayed.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-198">
+            <see cref="P:ExchangeWebServices.ItemType.ReminderDueBy" />プロパティは、イベントが発生したときの日時を表す DateTime 構造体のインスタンスを返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-198">The <see cref="P:ExchangeWebServices.ItemType.ReminderDueBy" /> property returns an instance of the DateTime structure that represents the date and time when the event occurs.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReminderDueBySpecified">
+      <MemberSignature Language="C#" Value="public bool ReminderDueBySpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReminderDueBySpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.ReminderDueBySpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReminderDueBySpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReminderDueBySpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-199">
+            <see cref="P:ExchangeWebServices.ItemType.ReminderDueBySpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ItemType.ReminderDueBy" />プロパティは、SOAP 要求にシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-199">The <see cref="P:ExchangeWebServices.ItemType.ReminderDueBySpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.ItemType.ReminderDueBy" /> property is serialized into the SOAP request.</span>
+          </span>
+          <span data-ttu-id="53a74-200">このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ItemType.ReminderDueBy" />プロパティが指定されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-200">This property is required if the <see cref="P:ExchangeWebServices.ItemType.ReminderDueBy" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-201">
+            <see cref="P:ExchangeWebServices.ItemType.ReminderDueBySpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ItemType.ReminderDueBy" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-201">The <see cref="P:ExchangeWebServices.ItemType.ReminderDueBySpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.ItemType.ReminderDueBy" /> property is serialized into the SOAP request; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReminderIsSet">
+      <MemberSignature Language="C#" Value="public bool ReminderIsSet { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReminderIsSet" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.ReminderIsSet" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReminderIsSet As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReminderIsSet { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-202">
+            <see cref="P:ExchangeWebServices.ItemType.ReminderIsSet" />プロパティを取得または Exchange ストアのアイテムのアラームが設定されたかどうかを示すブール値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-202">The <see cref="P:ExchangeWebServices.ItemType.ReminderIsSet" /> property gets or sets a Boolean value that indicates whether a reminder has been set for an item in the Exchange store.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-203">
+            <see cref="P:ExchangeWebServices.ItemType.ReminderIsSet" />プロパティを返します<b>true の</b>場合は、アイテムのアラームが設定されています。それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-203">The <see cref="P:ExchangeWebServices.ItemType.ReminderIsSet" /> property returns <b>true</b> if a reminder has been set for the item; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReminderIsSetSpecified">
+      <MemberSignature Language="C#" Value="public bool ReminderIsSetSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReminderIsSetSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.ReminderIsSetSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReminderIsSetSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReminderIsSetSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-204">
+            <see cref="P:ExchangeWebServices.ItemType.ReminderIsSetSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ItemType.ReminderIsSet" />プロパティは、SOAP 要求にシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-204">The <see cref="P:ExchangeWebServices.ItemType.ReminderIsSetSpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.ItemType.ReminderIsSet" /> property is serialized into the SOAP request.</span>
+          </span>
+          <span data-ttu-id="53a74-205">このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ItemType.ReminderIsSet" />プロパティが指定されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-205">This property is required if the <see cref="P:ExchangeWebServices.ItemType.ReminderIsSet" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-206">
+            <see cref="P:ExchangeWebServices.ItemType.ReminderIsSetSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ItemType.ReminderIsSet" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-206">The <see cref="P:ExchangeWebServices.ItemType.ReminderIsSetSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.ItemType.ReminderIsSet" /> property is serialized into the SOAP request; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReminderMinutesBeforeStart">
+      <MemberSignature Language="C#" Value="public string ReminderMinutesBeforeStart { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ReminderMinutesBeforeStart" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.ReminderMinutesBeforeStart" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReminderMinutesBeforeStart As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ReminderMinutesBeforeStart { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-207">
+            <see cref="P:ExchangeWebServices.ItemType.ReminderMinutesBeforeStart" />プロパティを取得またはアラームが表示されたときにイベントが発生する前に時間を分単位を示す文字列値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-207">The <see cref="P:ExchangeWebServices.ItemType.ReminderMinutesBeforeStart" /> property gets or sets a string value that indicates the number of minutes before an event occurs when a reminder is displayed.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-208">
+            <see cref="P:ExchangeWebServices.ItemType.ReminderMinutesBeforeStart" /> 、アラームが表示されるときにイベントが発生する前に時間を分単位を示す文字列値を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-208">The <see cref="P:ExchangeWebServices.ItemType.ReminderMinutesBeforeStart" /> property returns a string value that indicates the number of minutes before an event occurs when a reminder is displayed.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReminderNextTime">
+      <MemberSignature Language="C#" Value="public DateTime ReminderNextTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ReminderNextTime" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.ReminderNextTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReminderNextTime As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime ReminderNextTime { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReminderNextTimeSpecified">
+      <MemberSignature Language="C#" Value="public bool ReminderNextTimeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReminderNextTimeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.ReminderNextTimeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReminderNextTimeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReminderNextTimeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseObjects">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ResponseObjectType[] ResponseObjects { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.ResponseObjectType[] ResponseObjects" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.ResponseObjects" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResponseObjects As ResponseObjectType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::ResponseObjectType ^&gt; ^ ResponseObjects { cli::array &lt;ExchangeWebServices::ResponseObjectType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::ResponseObjectType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("TentativelyAcceptItem", typeof(ExchangeWebServices.TentativelyAcceptItemType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("SuppressReadReceipt", typeof(ExchangeWebServices.SuppressReadReceiptType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("AcceptItem", typeof(ExchangeWebServices.AcceptItemType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("CancelCalendarItem", typeof(ExchangeWebServices.CancelCalendarItemType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("DeclineItem", typeof(ExchangeWebServices.DeclineItemType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("ForwardItem", typeof(ExchangeWebServices.ForwardItemType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("AcceptSharingInvitation", typeof(ExchangeWebServices.AcceptSharingInvitationType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("PostReplyItem", typeof(ExchangeWebServices.PostReplyItemType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("RemoveItem", typeof(ExchangeWebServices.RemoveItemType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("ReplyAllToItem", typeof(ExchangeWebServices.ReplyAllToItemType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("ReplyToItem", typeof(ExchangeWebServices.ReplyToItemType), IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ResponseObjectType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-209">
+            <see cref="P:ExchangeWebServices.ItemType.ResponseObjects" />プロパティを取得または型の配列を設定する<see cref="T:ExchangeWebServices.ResponseObjectType" />を Exchange ストア内のアイテムに関連付けられているすべての応答オブジェクトのコレクションが含まれています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-209">The <see cref="P:ExchangeWebServices.ItemType.ResponseObjects" /> property gets or sets an array of the type <see cref="T:ExchangeWebServices.ResponseObjectType" /> that contains a collection of all the response objects that are associated with an item in the Exchange store.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-210">
+            <see cref="P:ExchangeWebServices.ItemType.ResponseObjects" />プロパティの型の配列を返します<see cref="T:ExchangeWebServices.ResponseObjectType" />を Exchange ストア内のアイテムに関連付けられているすべての応答オブジェクトのコレクションが含まれています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-210">The <see cref="P:ExchangeWebServices.ItemType.ResponseObjects" /> property returns an array of the type <see cref="T:ExchangeWebServices.ResponseObjectType" /> that contains a collection of all the response objects that are associated with an item in the Exchange store.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RetentionDate">
+      <MemberSignature Language="C#" Value="public DateTime RetentionDate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime RetentionDate" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.RetentionDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property RetentionDate As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime RetentionDate { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RetentionDateSpecified">
+      <MemberSignature Language="C#" Value="public bool RetentionDateSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RetentionDateSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.RetentionDateSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property RetentionDateSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RetentionDateSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RightsManagementLicenseData">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.RightsManagementLicenseDataType RightsManagementLicenseData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.RightsManagementLicenseDataType RightsManagementLicenseData" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.RightsManagementLicenseData" />
+      <MemberSignature Language="VB.NET" Value="Public Property RightsManagementLicenseData As RightsManagementLicenseDataType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::RightsManagementLicenseDataType ^ RightsManagementLicenseData { ExchangeWebServices::RightsManagementLicenseDataType ^ get(); void set(ExchangeWebServices::RightsManagementLicenseDataType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.RightsManagementLicenseDataType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sensitivity">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.SensitivityChoicesType Sensitivity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.SensitivityChoicesType Sensitivity" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.Sensitivity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Sensitivity As SensitivityChoicesType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::SensitivityChoicesType Sensitivity { ExchangeWebServices::SensitivityChoicesType get(); void set(ExchangeWebServices::SensitivityChoicesType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.SensitivityChoicesType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-211">
+            <see cref="P:ExchangeWebServices.ItemType.Sensitivity" />プロパティを取得または設定、有効な 1 つ<see cref="T:ExchangeWebServices.SensitivityChoicesType" />アイテムの秘密度レベルを示す値です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-211">The <see cref="P:ExchangeWebServices.ItemType.Sensitivity" /> property gets or sets one of the valid <see cref="T:ExchangeWebServices.SensitivityChoicesType" /> values that indicates the sensitivity level of an item.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-212">
+            <see cref="P:ExchangeWebServices.ItemType.Sensitivity" />プロパティは、有効な 1 つを返します<see cref="T:ExchangeWebServices.SensitivityChoicesType" />アイテムの秘密度レベルを示す値です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-212">The <see cref="P:ExchangeWebServices.ItemType.Sensitivity" /> property returns one of the valid <see cref="T:ExchangeWebServices.SensitivityChoicesType" /> values that indicates the sensitivity level of the item.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SensitivitySpecified">
+      <MemberSignature Language="C#" Value="public bool SensitivitySpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SensitivitySpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.SensitivitySpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property SensitivitySpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SensitivitySpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-213">
+            <see cref="P:ExchangeWebServices.ItemType.SensitivitySpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ItemType.Sensitivity" />プロパティは、SOAP 要求にシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-213">The <see cref="P:ExchangeWebServices.ItemType.SensitivitySpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.ItemType.Sensitivity" /> property is serialized into the SOAP request.</span>
+          </span>
+          <span data-ttu-id="53a74-214">このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ItemType.Sensitivity" />プロパティが指定されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-214">This property is required if the <see cref="P:ExchangeWebServices.ItemType.Sensitivity" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-215">
+            <see cref="P:ExchangeWebServices.ItemType.SensitivitySpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ItemType.Sensitivity" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-215">The <see cref="P:ExchangeWebServices.ItemType.SensitivitySpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.ItemType.Sensitivity" /> property is serialized into the SOAP request; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Size">
+      <MemberSignature Language="C#" Value="public int Size { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Size" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.Size" />
+      <MemberSignature Language="VB.NET" Value="Public Property Size As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Size { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-216">
+            <see cref="P:ExchangeWebServices.ItemType.Size" />プロパティを取得またはアイテムのバイト単位のサイズを表す整数値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-216">The <see cref="P:ExchangeWebServices.ItemType.Size" /> property gets or sets an integer value that represents the size in bytes of an item.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-217">
+            <see cref="P:ExchangeWebServices.ItemType.Size" />プロパティがアイテムのバイト単位のサイズを表す整数値を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-217">The <see cref="P:ExchangeWebServices.ItemType.Size" /> property returns an integer value that represents the size in bytes of the item.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeSpecified">
+      <MemberSignature Language="C#" Value="public bool SizeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SizeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.SizeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property SizeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SizeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-218">
+            <see cref="P:ExchangeWebServices.ItemType.SizeSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ItemType.Size" />プロパティは、SOAP 要求にシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-218">The <see cref="P:ExchangeWebServices.ItemType.SizeSpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.ItemType.Size" /> property is serialized into the SOAP request.</span>
+          </span>
+          <span data-ttu-id="53a74-219">このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ItemType.Size" />プロパティが指定されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-219">This property is required if the <see cref="P:ExchangeWebServices.ItemType.Size" /> property is specified.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-220">
+            <see cref="P:ExchangeWebServices.ItemType.SizeSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ItemType.Size" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-220">The <see cref="P:ExchangeWebServices.ItemType.SizeSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.ItemType.Size" /> property is serialized into the SOAP request; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StoreEntryId">
+      <MemberSignature Language="C#" Value="public byte[] StoreEntryId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] StoreEntryId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.StoreEntryId" />
+      <MemberSignature Language="VB.NET" Value="Public Property StoreEntryId As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ StoreEntryId { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement(DataType="base64Binary")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subject">
+      <MemberSignature Language="C#" Value="public string Subject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Subject" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.Subject" />
+      <MemberSignature Language="VB.NET" Value="Public Property Subject As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Subject { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="53a74-221">
+            <see cref="P:ExchangeWebServices.ItemType.Subject" />プロパティを取得または Exchange ストアのアイテムの subject プロパティを表す文字列値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-221">The <see cref="P:ExchangeWebServices.ItemType.Subject" /> property gets or sets a string value that represents the subject property of Exchange store items.</span>
+          </span>
+          <span data-ttu-id="53a74-222">件名は、255 文字までに制限されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-222">The subject is limited to 255 characters.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="53a74-223">
+            <see cref="P:ExchangeWebServices.ItemType.Subject" />プロパティは、Exchange ストアのアイテムの subject プロパティを表す文字列値を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-223">The <see cref="P:ExchangeWebServices.ItemType.Subject" /> property returns a string value that represents the subject property of Exchange store items.</span>
+          </span>
+          <span data-ttu-id="53a74-224">件名は、255 文字までに制限されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="53a74-224">The subject is limited to 255 characters.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextBody">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.BodyType TextBody { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.BodyType TextBody" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.TextBody" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextBody As BodyType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::BodyType ^ TextBody { ExchangeWebServices::BodyType ^ get(); void set(ExchangeWebServices::BodyType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.BodyType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UniqueBody">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.BodyType UniqueBody { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.BodyType UniqueBody" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.UniqueBody" />
+      <MemberSignature Language="VB.NET" Value="Public Property UniqueBody As BodyType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::BodyType ^ UniqueBody { ExchangeWebServices::BodyType ^ get(); void set(ExchangeWebServices::BodyType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.BodyType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebClientEditFormQueryString">
+      <MemberSignature Language="C#" Value="public string WebClientEditFormQueryString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string WebClientEditFormQueryString" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.WebClientEditFormQueryString" />
+      <MemberSignature Language="VB.NET" Value="Public Property WebClientEditFormQueryString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WebClientEditFormQueryString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebClientReadFormQueryString">
+      <MemberSignature Language="C#" Value="public string WebClientReadFormQueryString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string WebClientReadFormQueryString" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemType.WebClientReadFormQueryString" />
+      <MemberSignature Language="VB.NET" Value="Public Property WebClientReadFormQueryString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WebClientReadFormQueryString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

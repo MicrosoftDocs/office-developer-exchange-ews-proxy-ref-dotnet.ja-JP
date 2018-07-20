@@ -1,0 +1,173 @@
+<Type Name="MoveFolderType" FullName="ExchangeWebServices.MoveFolderType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="31f05217c21ecaab4dc91f7b57b84e8bfd1b0303" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20609511" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class MoveFolderType : ExchangeWebServices.BaseMoveCopyFolderType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit MoveFolderType extends ExchangeWebServices.BaseMoveCopyFolderType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.MoveFolderType" />
+  <TypeSignature Language="VB.NET" Value="Public Class MoveFolderType&#xA;Inherits BaseMoveCopyFolderType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MoveFolderType : ExchangeWebServices::BaseMoveCopyFolderType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseMoveCopyFolderType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/messages")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="088e2-101">
+        <see cref="T:ExchangeWebServices.MoveFolderType" />クラスは、メールボックス内のフォルダーを移動する操作を表します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="088e2-101">The <see cref="T:ExchangeWebServices.MoveFolderType" /> class represents an operation to move folders in a mailbox.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="088e2-102">
+        <para>フォルダーを移動すると、フォルダーの識別子と変更キーは変更されません。既定のフォルダーを移動することはできません。</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="088e2-102">
+          <para>The folder identifier and change key do not change when you move a folder. You cannot move default folders.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+    <example>
+      <span data-ttu-id="088e2-103">
+        <para>次の使用例は、2 つのフォルダーを別のフォルダーに移動する方法を示しています。</para>
+        <code>static void MoveFolder(ExchangeServiceBinding esb)
+{
+    // Identify the folders to move.
+    FolderIdType folder1 = new FolderIdType();
+    FolderIdType folder2 = new FolderIdType();
+    folder1.Id = "AQAlAE1BQG1";
+    folder2.Id = "AQAlAE1BQG3";
+    FolderIdType[] folders = new FolderIdType[2] { folder1, folder2 };
+
+    // Identify the destination folder.
+    DistinguishedFolderIdType destFolder = new DistinguishedFolderIdType();
+    destFolder.Id = DistinguishedFolderIdNameType.drafts;
+
+    // Form the move folder request.
+    MoveFolderType &lt;span class="label"&gt;request&lt;/span&gt; = new MoveFolderType();
+    &lt;span class="label"&gt;request&lt;/span&gt;.FolderIds = folders;
+    &lt;span class="label"&gt;request&lt;/span&gt;.ToFolderId = new TargetFolderIdType();
+    &lt;span class="label"&gt;request&lt;/span&gt;.ToFolderId.Item = destFolder;
+
+    try
+    {
+        // Send the request and get the response.
+        MoveFolderResponseType response = esb.MoveFolder(&lt;span class="label"&gt;request&lt;/span&gt;);
+        ArrayOfResponseMessagesType aormt = response.ResponseMessages;
+        ResponseMessageType[] rmta = aormt.Items;
+
+        foreach (ResponseMessageType rmt in rmta)
+        {
+            if (rmt.ResponseClass == ResponseClassType.Error)
+            {
+                throw new Exception("Folder move failed.");
+            }
+        }
+    }
+
+    catch (Exception e)
+    {
+        Console.WriteLine(e.Message);
+    }
+}</code>
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="088e2-103">
+          <para>The following example shows you how to move two folders to another folder. </para>
+          <code>static void MoveFolder(ExchangeServiceBinding esb)
+{
+    // Identify the folders to move.
+    FolderIdType folder1 = new FolderIdType();
+    FolderIdType folder2 = new FolderIdType();
+    folder1.Id = "AQAlAE1BQG1";
+    folder2.Id = "AQAlAE1BQG3";
+    FolderIdType[] folders = new FolderIdType[2] { folder1, folder2 };
+
+    // Identify the destination folder.
+    DistinguishedFolderIdType destFolder = new DistinguishedFolderIdType();
+    destFolder.Id = DistinguishedFolderIdNameType.drafts;
+
+    // Form the move folder request.
+    MoveFolderType &lt;span class="label"&gt;request&lt;/span&gt; = new MoveFolderType();
+    &lt;span class="label"&gt;request&lt;/span&gt;.FolderIds = folders;
+    &lt;span class="label"&gt;request&lt;/span&gt;.ToFolderId = new TargetFolderIdType();
+    &lt;span class="label"&gt;request&lt;/span&gt;.ToFolderId.Item = destFolder;
+
+    try
+    {
+        // Send the request and get the response.
+        MoveFolderResponseType response = esb.MoveFolder(&lt;span class="label"&gt;request&lt;/span&gt;);
+        ArrayOfResponseMessagesType aormt = response.ResponseMessages;
+        ResponseMessageType[] rmta = aormt.Items;
+
+        foreach (ResponseMessageType rmt in rmta)
+        {
+            if (rmt.ResponseClass == ResponseClassType.Error)
+            {
+                throw new Exception("Folder move failed.");
+            }
+        }
+    }
+
+    catch (Exception e)
+    {
+        Console.WriteLine(e.Message);
+    }
+}</code>
+        </span>
+      </span>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MoveFolderType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.MoveFolderType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MoveFolderType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="088e2-104">
+            <see cref="T:ExchangeWebServices.MoveFolderType" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.MoveFolderType" />クラス。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="088e2-104">The <see cref="T:ExchangeWebServices.MoveFolderType" /> constructor initializes a new instance of the <see cref="T:ExchangeWebServices.MoveFolderType" /> class.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

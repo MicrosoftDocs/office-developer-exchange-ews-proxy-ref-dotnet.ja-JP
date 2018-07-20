@@ -1,0 +1,81 @@
+<Type Name="StandardGroupByType" FullName="ExchangeWebServices.StandardGroupByType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="91c95b8ad1ac32ed287374792afd9ccc6d46b3e5" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20609124" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum StandardGroupByType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed StandardGroupByType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.StandardGroupByType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum StandardGroupByType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class StandardGroupByType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="e13ea-101">
+        <see cref="T:ExchangeWebServices.StandardGroupByType" />列挙体は、標準のグループ化と集計のグループ化された FindItem 操作のメカニズムを表します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="e13ea-101">The <see cref="T:ExchangeWebServices.StandardGroupByType" /> enumeration represents the standard grouping and aggregating mechanisms for a grouped FindItem operation.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="e13ea-102">
+        <para>この列挙体を使って、<see cref="P:ExchangeWebServices.DistinguishedGroupByType.StandardGroupBy" />のプロパティの<see cref="T:ExchangeWebServices.DistinguishedGroupByType" />オブジェクトです。</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="e13ea-102">
+          <para>This enumeration is used by the <see cref="P:ExchangeWebServices.DistinguishedGroupByType.StandardGroupBy" /> property of the <see cref="T:ExchangeWebServices.DistinguishedGroupByType" /> object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ConversationTopic">
+      <MemberSignature Language="C#" Value="ConversationTopic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.StandardGroupByType ConversationTopic = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.StandardGroupByType.ConversationTopic" />
+      <MemberSignature Language="VB.NET" Value="ConversationTopic" />
+      <MemberSignature Language="C++ CLI" Value="ConversationTopic" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.StandardGroupByType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e13ea-103">メッセージ: ConversationTopic および集計アイテム: DateTimeReceived (最大) を別のグループです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e13ea-103">Groups by message:ConversationTopic and aggregates on item:DateTimeReceived (maximum).</span>
+          </span>
+          <span data-ttu-id="e13ea-104">集計の詳細については、AggregateOn を参照してください。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e13ea-104">For more information about aggregation, see AggregateOn.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

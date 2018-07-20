@@ -1,0 +1,490 @@
+<Type Name="DeleteItemType" FullName="ExchangeWebServices.DeleteItemType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="f7ed31368d2fa79f6b5a354ffb768d74fb40cbb2" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608717" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class DeleteItemType : ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit DeleteItemType extends ExchangeWebServices.BaseRequestType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.DeleteItemType" />
+  <TypeSignature Language="VB.NET" Value="Public Class DeleteItemType&#xA;Inherits BaseRequestType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DeleteItemType : ExchangeWebServices::BaseRequestType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseRequestType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/messages")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="492af-101">
+        <see cref="T:ExchangeWebServices.DeleteItemType" />クラスは、Exchange データベース内の項目を削除する要求を表します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="492af-101">The <see cref="T:ExchangeWebServices.DeleteItemType" /> class represents a request to delete items in an Exchange database.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="492af-102">
+        <para>
+          <see cref="T:ExchangeWebServices.DeleteItemType" />クラスを使用して、ユーザーのメールボックスからアイテムを削除します。会議キャンセルの通知での RemoveItem 応答オブジェクトは、ユーザーのメールボックスからキャンセルされた会議を削除するために使用する必要がありますに注意してください</para>。指定されている項目の順序を
+      <para>、<see cref="P:ExchangeWebServices.DeleteItemType.ItemIds" />プロパティは、応答で返される応答メッセージの順序を決定します。これは、削除する識別される 2 番目の項目が 2 番目の応答メッセージに対応していることを意味します。削除する各項目に対して 1 つの応答メッセージを作成します</para>。
+      <para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="492af-102">
+          <para>The <see cref="T:ExchangeWebServices.DeleteItemType" /> class is used to delete items from a user's mailbox. The RemoveItem response object on a meeting cancellation notice should be used to remove canceled meetings from a user's mailbox.</para>
+          <para>The order of the items that is specified by the <see cref="P:ExchangeWebServices.DeleteItemType.ItemIds" /> property determines the order of the response messages that are returned in the response. This means that the second item that is identified to be deleted will correspond to the second response message. One response message is created for each item that is to be deleted.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+    <example>
+      <span data-ttu-id="492af-103">
+        <para>次のコード例は、2 つの項目を削除する方法を示しています。削除済みアイテムは、削除済みアイテム フォルダーに移動されます。アイテムがタスクの場合は、指定したタスクのみが削除されます。アイテムが会議の場合は、すべての出席者に会議の取り消し通知が送信されます。</para>
+        <code>static void DeleteItem(ExchangeServiceBinding esb)
+{ 
+    // Create the request.
+    DeleteItemType &lt;span class="label"&gt;request&lt;/span&gt; = new DeleteItemType();
+
+    // Identify the items to delete.
+    ItemIdType[] items = new ItemIdType[2];
+    items[0] = new ItemIdType();
+    items[0].Id = "AAAlAE1BQG1";
+    items[1] = new ItemIdType();
+    items[1].Id = "AAAlAE1BQG2";
+    &lt;span class="label"&gt;request&lt;/span&gt;.ItemIds = items;
+
+    // Identify how deleted items are handled.
+    &lt;span class="label"&gt;request&lt;/span&gt;.DeleteType = DisposalType.MoveToDeletedItems;
+
+    // Identify how tasks are deleted.
+    &lt;span class="label"&gt;request&lt;/span&gt;.AffectedTaskOccurrences = AffectedTaskOccurrencesType.SpecifiedOccurrenceOnly;
+    &lt;span class="label"&gt;request&lt;/span&gt;.AffectedTaskOccurrencesSpecified = true;
+
+    // Identify how meeting cancellations are handled.
+    &lt;span class="label"&gt;request&lt;/span&gt;.SendMeetingCancellations = CalendarItemCreateOrDeleteOperationType.SendOnlyToAll;
+    &lt;span class="label"&gt;request&lt;/span&gt;.SendMeetingCancellationsSpecified = true;
+
+    try
+    {
+        // Send the response and receive the request.
+        DeleteItemResponseType response = esb.DeleteItem(&lt;span class="label"&gt;request&lt;/span&gt;);
+        ArrayOfResponseMessagesType aormt = response.ResponseMessages;
+        ResponseMessageType[] rmta = aormt.Items;
+
+        // Check each response message.
+        foreach (ResponseMessageType rmt in rmta)
+        {
+            if (rmt.ResponseClass == ResponseClassType.Success)
+            {
+                Console.WriteLine("Deleted item.");
+            }
+        }
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine(e.Message);
+    }
+}</code>
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="492af-103">
+          <para>The following code example shows you how to delete two items. The deleted items are moved to the Deleted Items folder. If the item is a task, only the specified task is deleted. If the item is a meeting, a meeting cancellation is sent to all the attendees.</para>
+          <code>static void DeleteItem(ExchangeServiceBinding esb)
+{ 
+    // Create the request.
+    DeleteItemType &lt;span class="label"&gt;request&lt;/span&gt; = new DeleteItemType();
+
+    // Identify the items to delete.
+    ItemIdType[] items = new ItemIdType[2];
+    items[0] = new ItemIdType();
+    items[0].Id = "AAAlAE1BQG1";
+    items[1] = new ItemIdType();
+    items[1].Id = "AAAlAE1BQG2";
+    &lt;span class="label"&gt;request&lt;/span&gt;.ItemIds = items;
+
+    // Identify how deleted items are handled.
+    &lt;span class="label"&gt;request&lt;/span&gt;.DeleteType = DisposalType.MoveToDeletedItems;
+
+    // Identify how tasks are deleted.
+    &lt;span class="label"&gt;request&lt;/span&gt;.AffectedTaskOccurrences = AffectedTaskOccurrencesType.SpecifiedOccurrenceOnly;
+    &lt;span class="label"&gt;request&lt;/span&gt;.AffectedTaskOccurrencesSpecified = true;
+
+    // Identify how meeting cancellations are handled.
+    &lt;span class="label"&gt;request&lt;/span&gt;.SendMeetingCancellations = CalendarItemCreateOrDeleteOperationType.SendOnlyToAll;
+    &lt;span class="label"&gt;request&lt;/span&gt;.SendMeetingCancellationsSpecified = true;
+
+    try
+    {
+        // Send the response and receive the request.
+        DeleteItemResponseType response = esb.DeleteItem(&lt;span class="label"&gt;request&lt;/span&gt;);
+        ArrayOfResponseMessagesType aormt = response.ResponseMessages;
+        ResponseMessageType[] rmta = aormt.Items;
+
+        // Check each response message.
+        foreach (ResponseMessageType rmt in rmta)
+        {
+            if (rmt.ResponseClass == ResponseClassType.Success)
+            {
+                Console.WriteLine("Deleted item.");
+            }
+        }
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine(e.Message);
+    }
+}</code>
+        </span>
+      </span>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DeleteItemType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.DeleteItemType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeleteItemType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="492af-104">
+            <see cref="T:ExchangeWebServices.DeleteItemType" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.DeleteItemType" />クラス。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-104">The <see cref="T:ExchangeWebServices.DeleteItemType" /> constructor initializes a new instance of the <see cref="T:ExchangeWebServices.DeleteItemType" /> class.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AffectedTaskOccurrences">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.AffectedTaskOccurrencesType AffectedTaskOccurrences { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.AffectedTaskOccurrencesType AffectedTaskOccurrences" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.DeleteItemType.AffectedTaskOccurrences" />
+      <MemberSignature Language="VB.NET" Value="Public Property AffectedTaskOccurrences As AffectedTaskOccurrencesType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::AffectedTaskOccurrencesType AffectedTaskOccurrences { ExchangeWebServices::AffectedTaskOccurrencesType get(); void set(ExchangeWebServices::AffectedTaskOccurrencesType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.AffectedTaskOccurrencesType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="492af-105">
+            <see cref="P:ExchangeWebServices.DeleteItemType.AffectedTaskOccurrences" />プロパティを取得またはタスクのインスタンスまたはタスク マスターを削除するかどうかを示す列挙値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-105">The <see cref="P:ExchangeWebServices.DeleteItemType.AffectedTaskOccurrences" /> property gets or sets an enumeration value that indicates whether a task instance or task master is deleted.</span>
+          </span>
+          <span data-ttu-id="492af-106">このプロパティは、タスクが削除されるときに必要です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-106">This property is required when tasks are deleted.</span>
+          </span>
+          <span data-ttu-id="492af-107">これは、読み取り/書き込みプロパティです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-107">This is a read/write property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="492af-108">
+            <see cref="P:ExchangeWebServices.DeleteItemType.AffectedTaskOccurrences" />を<see cref="T:ExchangeWebServices.AffectedTaskOccurrencesType" />タスク インスタンスまたはタスク マスターが削除されるかどうかを表す列挙値。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-108">The <see cref="P:ExchangeWebServices.DeleteItemType.AffectedTaskOccurrences" /> property returns an <see cref="T:ExchangeWebServices.AffectedTaskOccurrencesType" /> enumeration value that represents whether a task instance or task master is deleted.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="492af-109">
+            <para>設定する必要があります、<see cref="P:ExchangeWebServices.DeleteItemType.AffectedTaskOccurrencesSpecified" />プロパティを<b>true</b>にするよう、 <see cref="P:ExchangeWebServices.DeleteItemType.AffectedTaskOccurrences" /> Simple Object Access Protocol (SOAP) 要求にプロパティをシリアル化します。このプロパティをするのではない項目を削除するのには設定する必要はありません、<see cref="T:ExchangeWebServices.TaskType" />クラス。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-109">
+              <para>You must set the <see cref="P:ExchangeWebServices.DeleteItemType.AffectedTaskOccurrencesSpecified" /> property to <b>true</b> so that the <see cref="P:ExchangeWebServices.DeleteItemType.AffectedTaskOccurrences" /> property is serialized into the Simple Object Access Protocol (SOAP) request. This property does not have to be set to delete items that are not of the <see cref="T:ExchangeWebServices.TaskType" /> class.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AffectedTaskOccurrencesSpecified">
+      <MemberSignature Language="C#" Value="public bool AffectedTaskOccurrencesSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AffectedTaskOccurrencesSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.DeleteItemType.AffectedTaskOccurrencesSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property AffectedTaskOccurrencesSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AffectedTaskOccurrencesSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="492af-110">
+            <see cref="P:ExchangeWebServices.DeleteItemType.AffectedTaskOccurrencesSpecified" />プロパティを取得または指定するブール値を設定するかどうか、 <see cref="P:ExchangeWebServices.DeleteItemType.AffectedTaskOccurrences" /> Simple Object Access Protocol (SOAP) 要求にプロパティをシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-110">The <see cref="P:ExchangeWebServices.DeleteItemType.AffectedTaskOccurrencesSpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.DeleteItemType.AffectedTaskOccurrences" /> property is serialized into the Simple Object Access Protocol (SOAP) request.</span>
+          </span>
+          <span data-ttu-id="492af-111">これは、読み取り/書き込みプロパティです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-111">This is a read/write property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="492af-112">
+            <see cref="P:ExchangeWebServices.DeleteItemType.AffectedTaskOccurrencesSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.DeleteItemType.AffectedTaskOccurrences" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-112">The <see cref="P:ExchangeWebServices.DeleteItemType.AffectedTaskOccurrencesSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.DeleteItemType.AffectedTaskOccurrences" /> property is serialized into the SOAP request; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteType">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.DisposalType DeleteType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.DisposalType DeleteType" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.DeleteItemType.DeleteType" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeleteType As DisposalType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::DisposalType DeleteType { ExchangeWebServices::DisposalType get(); void set(ExchangeWebServices::DisposalType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DisposalType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="492af-113">
+            <see cref="P:ExchangeWebServices.DeleteItemType.DeleteType" />プロパティを取得または項目を削除する方法について説明する列挙値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-113">The <see cref="P:ExchangeWebServices.DeleteItemType.DeleteType" /> property gets or sets an enumeration value that describes how an item is deleted.</span>
+          </span>
+          <span data-ttu-id="492af-114">このプロパティは、必要があります。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-114">This property is required.</span>
+          </span>
+          <span data-ttu-id="492af-115">これは、読み取り/書き込みプロパティです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-115">This is a read/write property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="492af-116">
+            <see cref="P:ExchangeWebServices.DeleteItemType.DeleteType" />を<see cref="T:ExchangeWebServices.DisposalType" />の項目を削除する方法について説明する列挙体です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-116">The <see cref="P:ExchangeWebServices.DeleteItemType.DeleteType" /> property returns a <see cref="T:ExchangeWebServices.DisposalType" /> enumeration that describes how an item is deleted.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemIds">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.BaseItemIdType[] ItemIds { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.BaseItemIdType[] ItemIds" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.DeleteItemType.ItemIds" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemIds As BaseItemIdType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::BaseItemIdType ^&gt; ^ ItemIds { cli::array &lt;ExchangeWebServices::BaseItemIdType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::BaseItemIdType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("RecurringMasterItemIdRanges", typeof(ExchangeWebServices.RecurringMasterItemIdRangesType), IsNullable=false, Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("OccurrenceItemId", typeof(ExchangeWebServices.OccurrenceItemIdType), IsNullable=false, Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("ItemId", typeof(ExchangeWebServices.ItemIdType), IsNullable=false, Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("RecurringMasterItemId", typeof(ExchangeWebServices.RecurringMasterItemIdType), IsNullable=false, Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.BaseItemIdType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="492af-117">
+            <see cref="P:ExchangeWebServices.DeleteItemType.ItemIds" />プロパティを取得または削除する項目のコレクションを設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-117">The <see cref="P:ExchangeWebServices.DeleteItemType.ItemIds" /> property gets or sets the collection of items to delete.</span>
+          </span>
+          <span data-ttu-id="492af-118">このプロパティは、必要があります。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-118">This property is required.</span>
+          </span>
+          <span data-ttu-id="492af-119">これは、読み取り/書き込みプロパティです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-119">This is a read/write property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="492af-120">
+            <see cref="P:ExchangeWebServices.DeleteItemType.ItemIds" />を<see cref="T:ExchangeWebServices.BaseItemIdType" />を削除するすべてのアイテムの識別子を格納する配列。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-120">The <see cref="P:ExchangeWebServices.DeleteItemType.ItemIds" /> property returns a <see cref="T:ExchangeWebServices.BaseItemIdType" /> array that contains the identifiers of all the items to delete.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="492af-121">
+            <para>
+              <see cref="P:ExchangeWebServices.DeleteItemType.ItemIds" />プロパティは、<see cref="T:ExchangeWebServices.ItemIdType" />型です。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-121">
+              <para>The <see cref="P:ExchangeWebServices.DeleteItemType.ItemIds" /> property is set with an <see cref="T:ExchangeWebServices.ItemIdType" /> type.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendMeetingCancellations">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.CalendarItemCreateOrDeleteOperationType SendMeetingCancellations { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.CalendarItemCreateOrDeleteOperationType SendMeetingCancellations" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellations" />
+      <MemberSignature Language="VB.NET" Value="Public Property SendMeetingCancellations As CalendarItemCreateOrDeleteOperationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::CalendarItemCreateOrDeleteOperationType SendMeetingCancellations { ExchangeWebServices::CalendarItemCreateOrDeleteOperationType get(); void set(ExchangeWebServices::CalendarItemCreateOrDeleteOperationType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CalendarItemCreateOrDeleteOperationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="492af-122">
+            <see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellations" />プロパティを取得または削除された会議のキャンセル通知を処理する方法について説明する列挙値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-122">The <see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellations" /> property gets or sets an enumeration that describes how cancellations are handled for deleted meetings.</span>
+          </span>
+          <span data-ttu-id="492af-123">このプロパティは、予定表アイテムを削除するため必要があります。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-123">This property is required for calendar item deletions.</span>
+          </span>
+          <span data-ttu-id="492af-124">これは、読み取り/書き込みプロパティです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-124">This is a read/write property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="492af-125">
+            <see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellations" />を<see cref="T:ExchangeWebServices.CalendarItemCreateOrDeleteOperationType" />を表す列挙値どのように削除された会議のキャンセル通知が処理されます。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-125">The <see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellations" /> property returns a <see cref="T:ExchangeWebServices.CalendarItemCreateOrDeleteOperationType" /> enumeration value that represents how deleted meeting cancellations are handled.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="492af-126">
+            <para>設定する必要があります、<see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellationsSpecified" />プロパティを<b>true</b>にするよう、 <see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellations" /> Simple Object Access Protocol (SOAP) 要求にプロパティをシリアル化します。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-126">
+              <para>You must set the <see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellationsSpecified" /> property to <b>true</b> so that the <see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellations" /> property is serialized into the Simple Object Access Protocol (SOAP) request.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendMeetingCancellationsSpecified">
+      <MemberSignature Language="C#" Value="public bool SendMeetingCancellationsSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SendMeetingCancellationsSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellationsSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property SendMeetingCancellationsSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SendMeetingCancellationsSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="492af-127">
+            <see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellationsSpecified" />プロパティを取得または指定するブール値を設定するかどうか、 <see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellations" /> Simple Object Access Protocol (SOAP) 要求のプロパティをシリアル化します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-127">The <see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellationsSpecified" /> property gets or sets a Boolean value that specifies whether the <see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellations" /> property is serialized in the Simple Object Access Protocol (SOAP) request.</span>
+          </span>
+          <span data-ttu-id="492af-128">これは、読み取り/書き込みプロパティです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-128">This is a read/write property.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="492af-129">
+            <see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellationsSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellations" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="492af-129">The <see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellationsSpecified" /> property returns <b>true</b> if the <see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellations" /> property is serialized into the SOAP request; otherwise, the property returns <b>false</b>.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

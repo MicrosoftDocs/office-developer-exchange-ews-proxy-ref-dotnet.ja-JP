@@ -1,0 +1,138 @@
+<Type Name="CalendarItemCreateOrDeleteOperationType" FullName="ExchangeWebServices.CalendarItemCreateOrDeleteOperationType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="4b6a73065f86326b9228c8fbeaad815520744678" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20607743" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum CalendarItemCreateOrDeleteOperationType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed CalendarItemCreateOrDeleteOperationType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.CalendarItemCreateOrDeleteOperationType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CalendarItemCreateOrDeleteOperationType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CalendarItemCreateOrDeleteOperationType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="dcb30-101">
+        <see cref="T:ExchangeWebServices.CalendarItemCreateOrDeleteOperationType" />列挙体は、会議出席依頼およびキャンセルを処理する方法について説明します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="dcb30-101">The <see cref="T:ExchangeWebServices.CalendarItemCreateOrDeleteOperationType" /> enumeration describes how meeting requests and cancellations are handled.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="dcb30-102">
+        <para>確認することによって会議出席依頼を処理するためのメソッドを指定できます、<see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitations" />プロパティ。設定する必要があります、<see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitationsSpecified" />プロパティを<b>true</b>にするよう、<see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitations" />プロパティは、SOAP 要求にシリアル化します</para>。会議の取り消しを確認することによって処理方法を決定できます
+      <para>、<see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellations" />プロパティ。設定する必要があります、<see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellationsSpecified" />プロパティを<b>true</b>にするよう、<see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellations" />プロパティは、SOAP 要求にシリアル化します</para>。
+      <para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="dcb30-102">
+          <para>You can determine the method for handling meeting requests by checking the <see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitations" /> property. You must set the <see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitationsSpecified" /> property to <b>true</b> so that the <see cref="P:ExchangeWebServices.CreateItemType.SendMeetingInvitations" /> property is serialized into the SOAP request.</para>
+          <para>You can determine the method for handling meeting cancellations by checking the <see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellations" /> property. You must set the <see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellationsSpecified" /> property to <b>true</b> so that the <see cref="P:ExchangeWebServices.DeleteItemType.SendMeetingCancellations" /> property is serialized into the SOAP request.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SendOnlyToAll">
+      <MemberSignature Language="C#" Value="SendOnlyToAll" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.CalendarItemCreateOrDeleteOperationType SendOnlyToAll = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.CalendarItemCreateOrDeleteOperationType.SendOnlyToAll" />
+      <MemberSignature Language="VB.NET" Value="SendOnlyToAll" />
+      <MemberSignature Language="C++ CLI" Value="SendOnlyToAll" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CalendarItemCreateOrDeleteOperationType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="dcb30-103">CreateItem 操作では、会議が作成したすべての出席者に会議出席依頼が送信されたが、会議出席依頼のコピーは保存されませんを指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dcb30-103">In the CreateItem operation, specifies that the meeting is created and a meeting request is sent to all attendees, but no copy of the meeting request is saved.</span>
+          </span>
+          <span data-ttu-id="dcb30-104">DeleteItem 操作では会議が削除されたことを指定し、会議キャンセルについてのメッセージがすべての出席者に送信されるが、会議の取り消し通知のコピーは保存されません。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dcb30-104">In the DeleteItem operation, specifies that the meeting is deleted and a meeting cancellation message is sent to all attendees, but no copy of the meeting cancellation is saved.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SendToAllAndSaveCopy">
+      <MemberSignature Language="C#" Value="SendToAllAndSaveCopy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.CalendarItemCreateOrDeleteOperationType SendToAllAndSaveCopy = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.CalendarItemCreateOrDeleteOperationType.SendToAllAndSaveCopy" />
+      <MemberSignature Language="VB.NET" Value="SendToAllAndSaveCopy" />
+      <MemberSignature Language="C++ CLI" Value="SendToAllAndSaveCopy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CalendarItemCreateOrDeleteOperationType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="dcb30-105">CreateItem 操作では、会議が作成された、すべての出席者に会議出席依頼を送信、会議出席依頼のコピーが [送信済みアイテム フォルダーに保存されますを指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dcb30-105">In the CreateItem operation, specifies that the meeting is created, a meeting request is sent to all attendees, and a copy of the meeting request is saved in the Sent Items folder.</span>
+          </span>
+          <span data-ttu-id="dcb30-106">DeleteItem 操作の指定、会議を削除すること、会議、すべての出席者に取り消しメッセージが送信され、会議キャンセル通知のコピーが送信済みアイテム フォルダーに保存されます。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dcb30-106">In the DeleteItem operation, specifies that the meeting is deleted, a meeting cancellation message is sent to all attendees, and a copy of the meeting cancellation is saved in the Sent Items folder.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SendToNone">
+      <MemberSignature Language="C#" Value="SendToNone" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.CalendarItemCreateOrDeleteOperationType SendToNone = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.CalendarItemCreateOrDeleteOperationType.SendToNone" />
+      <MemberSignature Language="VB.NET" Value="SendToNone" />
+      <MemberSignature Language="C++ CLI" Value="SendToNone" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CalendarItemCreateOrDeleteOperationType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="dcb30-107">CreateItem 操作では、ミーティングが作成されますが、出席者に会議出席依頼は送信されませんを指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dcb30-107">In the CreateItem operation, specifies that the meeting is created but no meeting request is sent to attendees.</span>
+          </span>
+          <span data-ttu-id="dcb30-108">DeleteItem 操作ではない会議が、会議を削除することを指定の取り消しメッセージを出席者に送信します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dcb30-108">In the DeleteItem operation, specifies that the meeting is deleted but no meeting cancellation message is sent to attendees.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

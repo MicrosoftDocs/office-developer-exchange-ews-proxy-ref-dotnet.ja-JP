@@ -1,0 +1,144 @@
+<Type Name="PathToUnindexedFieldType" FullName="ExchangeWebServices.PathToUnindexedFieldType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="4c0bf06faa3bea53d2ba3c5934505d04b22224aa" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20607885" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class PathToUnindexedFieldType : ExchangeWebServices.BasePathToElementType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PathToUnindexedFieldType extends ExchangeWebServices.BasePathToElementType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.PathToUnindexedFieldType" />
+  <TypeSignature Language="VB.NET" Value="Public Class PathToUnindexedFieldType&#xA;Inherits BasePathToElementType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PathToUnindexedFieldType : ExchangeWebServices::BasePathToElementType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BasePathToElementType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="f3dbc-101">
+        <see cref="T:ExchangeWebServices.PathToUnindexedFieldType" />クラスは、頻繁に参照されるプロパティを表します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="f3dbc-101">The <see cref="T:ExchangeWebServices.PathToUnindexedFieldType" /> class represents frequently referenced properties.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="f3dbc-102">
+        <para>
+          <see cref="T:ExchangeWebServices.PathToUnindexedFieldType" />プロパティは、Uri で参照されています</para>。
+      <para>を使用する方法を示す例については、<see cref="T:ExchangeWebServices.PathToUnindexedFieldType" />クラスは、「<see cref="T:ExchangeWebServices.FindItemType" />です。</para><para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="f3dbc-102">
+          <para>
+            <see cref="T:ExchangeWebServices.PathToUnindexedFieldType" /> properties are referenced by URIs.</para>
+          <para>For an example that shows how to use the <see cref="T:ExchangeWebServices.PathToUnindexedFieldType" /> class, see <see cref="T:ExchangeWebServices.FindItemType" />.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PathToUnindexedFieldType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.PathToUnindexedFieldType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PathToUnindexedFieldType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="f3dbc-103">
+            <see cref="T:ExchangeWebServices.PathToUnindexedFieldType" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.PathToUnindexedFieldType" />クラス。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="f3dbc-103">The <see cref="T:ExchangeWebServices.PathToUnindexedFieldType" /> constructor initializes a new instance of the <see cref="T:ExchangeWebServices.PathToUnindexedFieldType" /> class.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="f3dbc-104">
+            <para>使用する方法を示す例については、<see cref="T:ExchangeWebServices.PathToUnindexedFieldType" />クラスは、「 <see cref="T:ExchangeWebServices.FindItemType" />.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="f3dbc-104">
+              <para>For an example that shows how to use the <see cref="T:ExchangeWebServices.PathToUnindexedFieldType" /> class, see <see cref="T:ExchangeWebServices.FindItemType" />.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldURI">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.UnindexedFieldURIType FieldURI { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.UnindexedFieldURIType FieldURI" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.PathToUnindexedFieldType.FieldURI" />
+      <MemberSignature Language="VB.NET" Value="Public Property FieldURI As UnindexedFieldURIType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::UnindexedFieldURIType FieldURI { ExchangeWebServices::UnindexedFieldURIType get(); void set(ExchangeWebServices::UnindexedFieldURIType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.UnindexedFieldURIType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="f3dbc-105">
+            <see cref="P:ExchangeWebServices.PathToUnindexedFieldType.FieldURI" />プロパティを取得または頻繁に参照されるフィールドの Uri を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="f3dbc-105">The <see cref="P:ExchangeWebServices.PathToUnindexedFieldType.FieldURI" /> property gets or sets frequently referenced field URIs.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="f3dbc-106">
+            <see cref="P:ExchangeWebServices.PathToUnindexedFieldType.FieldURI" />を<see cref="T:ExchangeWebServices.UnindexedFieldURIType" />フィールドの URI を識別する列挙体です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="f3dbc-106">The <see cref="P:ExchangeWebServices.PathToUnindexedFieldType.FieldURI" /> property returns an <see cref="T:ExchangeWebServices.UnindexedFieldURIType" /> enumeration that identifies a field URI.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="f3dbc-107">
+            <para>使用する方法を示す例については、<see cref="T:ExchangeWebServices.PathToUnindexedFieldType" />クラスは、「 <see cref="T:ExchangeWebServices.FindItemType" />.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="f3dbc-107">
+              <para>For an example that shows how to use the <see cref="T:ExchangeWebServices.PathToUnindexedFieldType" /> class, see <see cref="T:ExchangeWebServices.FindItemType" />.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

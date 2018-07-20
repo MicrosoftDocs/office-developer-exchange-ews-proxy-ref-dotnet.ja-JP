@@ -1,0 +1,69 @@
+<Type Name="CopyFolderCompletedEventArgs" FullName="ExchangeWebServices.CopyFolderCompletedEventArgs">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="1087390b388b678bd9d5bd9bbc26700a19b335dd" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20609138" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class CopyFolderCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CopyFolderCompletedEventArgs extends System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.CopyFolderCompletedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class CopyFolderCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CopyFolderCompletedEventArgs : System::ComponentModel::AsyncCompletedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.AsyncCompletedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.CopyFolderCompletedEventArgs" />クラスのデータを提供します<see cref="E:ExchangeWebServices.ExchangeServiceBinding.CopyFolderCompleted" />イベントです。</summary>
+    <remarks>
+      <para>参照してください、<see cref="M:ExchangeWebServices.ExchangeServiceBinding.FindFolderAsync(ExchangeWebServices.FindFolderType)" />メソッドの非同期の Exchange Web サービスの例です。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.CopyFolderResponseType Result { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.CopyFolderResponseType Result" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CopyFolderCompletedEventArgs.Result" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As CopyFolderResponseType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::CopyFolderResponseType ^ Result { ExchangeWebServices::CopyFolderResponseType ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CopyFolderResponseType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CopyFolderCompletedEventArgs.Result" />プロパティを取得、 <see cref="T:ExchangeWebServices.CopyFolderResponseType" /> CopyFolder の非同期呼び出しのオブジェクトです。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CopyFolderCompletedEventArgs.Result" /> プロパティは <see cref="T:ExchangeWebServices.CopyFolderResponseType" /> オブジェクトを返します。</value>
+        <remarks>
+          <para>参照してください、<see cref="M:ExchangeWebServices.ExchangeServiceBinding.FindFolderAsync(ExchangeWebServices.FindFolderType)" />メソッドの非同期の Exchange Web サービスの例です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,127 @@
+<Type Name="FractionalPageViewType" FullName="ExchangeWebServices.FractionalPageViewType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="736d6527b6ea8663443c3a4a14c380849440ce84" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608612" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class FractionalPageViewType : ExchangeWebServices.BasePagingType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FractionalPageViewType extends ExchangeWebServices.BasePagingType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.FractionalPageViewType" />
+  <TypeSignature Language="VB.NET" Value="Public Class FractionalPageViewType&#xA;Inherits BasePagingType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FractionalPageViewType : ExchangeWebServices::BasePagingType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BasePagingType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.FractionalPageViewType" />クラスは、ページ ビューの開始位置と FindItem または FindFolder の応答で返される項目の最大数について説明します。</summary>
+    <remarks>
+      <para>見つかった項目のセットの先頭からのページ ビュー オフセットは、分数で表されます。分数で定義されている、<see cref="P:ExchangeWebServices.FractionalPageViewType.Numerator" />と<see cref="P:ExchangeWebServices.FractionalPageViewType.Denominator" />プロパティでは、情報のページを開始する位置について説明します。などの場合<see cref="P:ExchangeWebServices.FractionalPageViewType.Numerator" />4 に等しいと<see cref="P:ExchangeWebServices.FractionalPageViewType.Denominator" />5 は、返された情報のページは、エントリにある 4-5 分の方法で結果セットをで始まります</para>。分数がゼロで、結果の開始位置を指定すると評価された場合に
+      <para>を設定します。結果セットの末尾を示す分数を 1 つに評価する場合です</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FractionalPageViewType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.FractionalPageViewType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FractionalPageViewType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.FractionalPageViewType" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.FractionalPageViewType" />クラス。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Denominator">
+      <MemberSignature Language="C#" Value="public int Denominator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Denominator" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FractionalPageViewType.Denominator" />
+      <MemberSignature Language="VB.NET" Value="Public Property Denominator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Denominator { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FractionalPageViewType.Denominator" />プロパティを取得または結果セット内のアイテムの合計数の先頭からのオフセットを表す分数の分母を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FractionalPageViewType.Denominator" />オフセットを表す分数の分母を返します。</value>
+        <remarks>
+          <para>
+            <see cref="P:ExchangeWebServices.FractionalPageViewType.Denominator" /> 0 より大きい必要があります。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Numerator">
+      <MemberSignature Language="C#" Value="public int Numerator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Numerator" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FractionalPageViewType.Numerator" />
+      <MemberSignature Language="VB.NET" Value="Public Property Numerator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Numerator { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FractionalPageViewType.Numerator" />プロパティを取得または、結果セット内のアイテムの合計数の先頭からのオフセットを表す分数の分子を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FractionalPageViewType.Numerator" />オフセットを表す分数の分子を返します。</value>
+        <remarks>
+          <para>
+            <see cref="P:ExchangeWebServices.FractionalPageViewType.Numerator" />以上の値を 0 にする必要があります。<see cref="P:ExchangeWebServices.FractionalPageViewType.Numerator" />以上にする必要があります、 <see cref="P:ExchangeWebServices.FractionalPageViewType.Denominator" />。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

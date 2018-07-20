@@ -1,0 +1,135 @@
+<Type Name="DayOfWeekIndexType" FullName="ExchangeWebServices.DayOfWeekIndexType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="00442a0fbe5ad9715144103cdd8a1f2ce87d496e" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20609289" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum DayOfWeekIndexType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed DayOfWeekIndexType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.DayOfWeekIndexType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DayOfWeekIndexType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DayOfWeekIndexType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.DayOfWeekIndexType" />列挙体は、1 か月の週が相対的な定期的なパターンの使用について説明します。</summary>
+    <remarks>
+      <para>をチェックして、年間の定期的なパターンで使用されている日を確認できます、<see cref="P:ExchangeWebServices.RelativeYearlyRecurrencePatternType.DayOfWeekIndex" />のプロパティ、<see cref="T:ExchangeWebServices.RelativeYearlyRecurrencePatternType" />にして、<see cref="P:ExchangeWebServices.RelativeYearlyRecurrencePatternType.Month" />プロパティ。チェックして、毎月の定期的なパターンで使用されている曜日を指定できます、<see cref="P:ExchangeWebServices.RelativeMonthlyRecurrencePatternType.DayOfWeekIndex" />のプロパティ、<see cref="T:ExchangeWebServices.RelativeMonthlyRecurrencePatternType" />クラス</para>
+      <para>など、1 か月の第 2 月曜日、ことがありますその月の第 3 週です。金曜日に開始されると、月、月の最初の週では、月曜日は含まれません。したがって、第 1 月曜日、第 2 週に発生することがあり、月の第 2 月曜日が第 3 週に発生します</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="First">
+      <MemberSignature Language="C#" Value="First" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.DayOfWeekIndexType First = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.DayOfWeekIndexType.First" />
+      <MemberSignature Language="VB.NET" Value="First" />
+      <MemberSignature Language="C++ CLI" Value="First" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DayOfWeekIndexType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>定期的なパターンで、月の最初の週が使用されることを示します。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Fourth">
+      <MemberSignature Language="C#" Value="Fourth" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.DayOfWeekIndexType Fourth = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.DayOfWeekIndexType.Fourth" />
+      <MemberSignature Language="VB.NET" Value="Fourth" />
+      <MemberSignature Language="C++ CLI" Value="Fourth" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DayOfWeekIndexType</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>月の第 4 週が定期的なパターンで使用されることを示します。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Last">
+      <MemberSignature Language="C#" Value="Last" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.DayOfWeekIndexType Last = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.DayOfWeekIndexType.Last" />
+      <MemberSignature Language="VB.NET" Value="Last" />
+      <MemberSignature Language="C++ CLI" Value="Last" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DayOfWeekIndexType</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>月の最後の週が定期的なパターンで使用されることを示します。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Second">
+      <MemberSignature Language="C#" Value="Second" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.DayOfWeekIndexType Second = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.DayOfWeekIndexType.Second" />
+      <MemberSignature Language="VB.NET" Value="Second" />
+      <MemberSignature Language="C++ CLI" Value="Second" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DayOfWeekIndexType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>月の第 2 週が定期的なパターンで使用されることを示します。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Third">
+      <MemberSignature Language="C#" Value="Third" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.DayOfWeekIndexType Third = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.DayOfWeekIndexType.Third" />
+      <MemberSignature Language="VB.NET" Value="Third" />
+      <MemberSignature Language="C++ CLI" Value="Third" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DayOfWeekIndexType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>月の第 3 週が定期的なパターンで使用されることを示します。</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

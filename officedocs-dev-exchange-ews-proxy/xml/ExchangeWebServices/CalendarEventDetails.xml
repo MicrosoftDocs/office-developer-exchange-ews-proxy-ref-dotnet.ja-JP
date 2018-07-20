@@ -1,0 +1,248 @@
+<Type Name="CalendarEventDetails" FullName="ExchangeWebServices.CalendarEventDetails">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="3b39bec6816ea4ea08dc6bf98e4bfdd04a0e234f" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608681" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class CalendarEventDetails" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CalendarEventDetails extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.CalendarEventDetails" />
+  <TypeSignature Language="VB.NET" Value="Public Class CalendarEventDetails" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CalendarEventDetails" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.CalendarEventDetails" />クラスは、予定表のイベントに関する追加情報を提供します。</summary>
+    <remarks>
+      <para>
+        <see cref="M:ExchangeWebServices.ExchangeServiceBinding.GetUserAvailability(ExchangeWebServices.GetUserAvailabilityRequestType)" />場合呼び出し元の詳細については、呼び出し元は、ターゲット ユーザーの予定表の読み取りアクセス権を持っていない限り、します。Exchange 管理シェルを使用して予定表のアクセス許可を設定することができます</para>。
+      <para>場合、<see cref="P:ExchangeWebServices.CalendarEventDetails.IsPrivate" />プロパティが<b>true を指定</b>しない<see cref="T:ExchangeWebServices.CalendarEventDetails" />クラスのプロパティを設定します</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CalendarEventDetails ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.CalendarEventDetails.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CalendarEventDetails();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.CalendarEventDetails" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.CalendarEventDetails" />クラス。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ID">
+      <MemberSignature Language="C#" Value="public string ID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ID" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CalendarEventDetails.ID" />
+      <MemberSignature Language="VB.NET" Value="Public Property ID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ID { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CalendarEventDetails.ID" />プロパティを取得または予定表アイテムのエントリ ID を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CalendarEventDetails.ID" />プロパティは、予定表アイテムのエントリ ID を含む文字列を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsException">
+      <MemberSignature Language="C#" Value="public bool IsException { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsException" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CalendarEventDetails.IsException" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsException As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsException { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CalendarEventDetails.IsException" />プロパティを取得または元の定期的な予定表アイテムのインスタンスが変更されたかどうかを示すブール値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CalendarEventDetails.IsException" />プロパティはを返します<b>true</b> ; 元の予定表アイテムが変更された場合それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsMeeting">
+      <MemberSignature Language="C#" Value="public bool IsMeeting { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsMeeting" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CalendarEventDetails.IsMeeting" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsMeeting As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMeeting { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CalendarEventDetails.IsMeeting" />プロパティを取得または予定表のイベントは、会議または予定かどうかを示すブール値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CalendarEventDetails.IsMeeting" />は、会議、予定表のイベントの場合、プロパティが<b>true</b>を返します。 予定表アイテムが予定の場合は、このプロパティは<b>false</b>を返します。</value>
+        <remarks>
+          <para>会議は、予定表アイテムの出席者を含むです。予定は、予定表アイテムの出席者が含まれていないです。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPrivate">
+      <MemberSignature Language="C#" Value="public bool IsPrivate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsPrivate" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CalendarEventDetails.IsPrivate" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsPrivate As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPrivate { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CalendarEventDetails.IsPrivate" />プロパティを取得または予定表アイテムがプライベートかどうかを示すブール値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CalendarEventDetails.IsPrivate" />プロパティを返します<b>true の</b>場合、予定表のアイテムはプライベートです。それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>
+          <para>場合、<see cref="P:ExchangeWebServices.CalendarEventDetails.IsPrivate" />プロパティが<b>true</b>でないその他のプロパティ、<see cref="T:ExchangeWebServices.CalendarEventDetails" />のインスタンスを設定します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRecurring">
+      <MemberSignature Language="C#" Value="public bool IsRecurring { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsRecurring" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CalendarEventDetails.IsRecurring" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsRecurring As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRecurring { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CalendarEventDetails.IsRecurring" />プロパティを取得または予定表アイテムが再発するかどうかを示すブール値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CalendarEventDetails.IsRecurring" />プロパティを返します<b>true を指定</b>する、定期的に行われる予定表アイテムが設定されている場合それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReminderSet">
+      <MemberSignature Language="C#" Value="public bool IsReminderSet { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReminderSet" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CalendarEventDetails.IsReminderSet" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsReminderSet As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReminderSet { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CalendarEventDetails.IsReminderSet" />プロパティを取得または予定表のイベントのアラームを設定するかどうかを示すブール値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CalendarEventDetails.IsReminderSet" />プロパティはを返します<b>true を指定</b>予定表イベントのアラームが設定されている場合それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Location">
+      <MemberSignature Language="C#" Value="public string Location { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Location" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CalendarEventDetails.Location" />
+      <MemberSignature Language="VB.NET" Value="Public Property Location As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Location { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CalendarEventDetails.Location" />プロパティを取得または予定表アイテムの場所を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CalendarEventDetails.Location" />プロパティは、予定表アイテムの [場所] フィールドを含む文字列を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subject">
+      <MemberSignature Language="C#" Value="public string Subject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Subject" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CalendarEventDetails.Subject" />
+      <MemberSignature Language="VB.NET" Value="Public Property Subject As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Subject { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CalendarEventDetails.Subject" />プロパティを取得または予定表アイテムの件名を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CalendarEventDetails.Subject" />プロパティは、予定表アイテムの [件名] フィールドを含む文字列を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

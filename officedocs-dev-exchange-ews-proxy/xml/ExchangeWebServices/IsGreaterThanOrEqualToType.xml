@@ -1,0 +1,62 @@
+<Type Name="IsGreaterThanOrEqualToType" FullName="ExchangeWebServices.IsGreaterThanOrEqualToType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="d19fc28551a1bd0ffb24bf6ea4f54c475610c298" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608480" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class IsGreaterThanOrEqualToType : ExchangeWebServices.TwoOperandExpressionType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit IsGreaterThanOrEqualToType extends ExchangeWebServices.TwoOperandExpressionType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.IsGreaterThanOrEqualToType" />
+  <TypeSignature Language="VB.NET" Value="Public Class IsGreaterThanOrEqualToType&#xA;Inherits TwoOperandExpressionType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IsGreaterThanOrEqualToType : ExchangeWebServices::TwoOperandExpressionType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.TwoOperandExpressionType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.IsGreaterThanOrEqualToType" />クラスをプロパティに定数値または別のプロパティを比較し、最初のプロパティには、もう 1 つ以上の場合に<b>true</b>を返す検索式を表します。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IsGreaterThanOrEqualToType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.IsGreaterThanOrEqualToType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IsGreaterThanOrEqualToType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.IsGreaterThanOrEqualToType" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.IsGreaterThanOrEqualToType" />クラス。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

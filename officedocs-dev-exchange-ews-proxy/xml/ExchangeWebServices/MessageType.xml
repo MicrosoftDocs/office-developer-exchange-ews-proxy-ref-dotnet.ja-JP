@@ -1,0 +1,665 @@
+<Type Name="MessageType" FullName="ExchangeWebServices.MessageType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="106af571067f2e47b0c1b2ebceb0bc1cdd2d48f8" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608261" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class MessageType : ExchangeWebServices.ItemType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit MessageType extends ExchangeWebServices.ItemType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.MessageType" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessageType&#xA;Inherits ItemType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageType : ExchangeWebServices::ItemType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.ItemType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.MeetingMessageType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.MeetingCancellationMessageType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.MeetingResponseMessageType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.MeetingRequestMessageType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.ResponseObjectCoreType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.ResponseObjectType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.PostReplyItemBaseType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.PostReplyItemType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.RemoveItemType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.ReferenceItemResponseType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.AcceptSharingInvitationType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.SuppressReadReceiptType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.SmartResponseBaseType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.SmartResponseType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.CancelCalendarItemType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.ForwardItemType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.ReplyAllToItemType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.ReplyToItemType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.WellKnownResponseObjectType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.DeclineItemType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.TentativelyAcceptItemType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.AcceptItemType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.MessageType" />クラスは、Exchange のメールボックスに電子メール メッセージを表します。</summary>
+    <remarks>
+      <para>
+        <see cref="T:ExchangeWebServices.MessageType" />クラスには多くのメンバーは読み取り専用ですが、プロパティの set アクセス操作子があります。これは、スキーマ ファイルで定義の成果物です。などの<see cref="P:ExchangeWebServices.MessageType.IsRead" />メッセージを作成するときにプロパティを設定できません。メッセージ アイテムを Exchange Server 2007 を実行しているコンピューターからの応答の受信時にこのプロパティが返されます</para>。
+      <para>を設定する必要がある、<see cref="P:ExchangeWebServices.ItemType.ItemClass" />のプロパティの<see cref="T:ExchangeWebServices.MessageType" />オブジェクトの IPM のカスタム サブタイプを作成する場合を除き、します。注意してください。Exchange サーバーのハンドル、 <see cref="T:ExchangeWebServices.MessageType" /> 、ipm。注</para>。
+      <para><see cref="T:ExchangeWebServices.MessageType" />オブジェクトは、電子メール メッセージ、Exchange Web サービス (EWS) スキーマが厳密に型指定されない他のすべての項目を表します。IPM などの項目です。共有として IPM.InfoPath が返されると<see cref="T:ExchangeWebServices.MessageType" />のオブジェクトです。Exchange 2010 および Exchange オンラインの Exchange Server のバージョンがベースを返さない<see cref="T:ExchangeWebServices.ItemType" />応答内のオブジェクトです</para>。
+      <para /></remarks>
+    <example>
+      <para>次のコード例では、メッセージを作成する方法を示します。応答で返されるメッセージが Exchange サーバーで設定されている他の多くのプロパティを持つことに注意してください。</para>
+      <code>static MessageType CreateMessage()
+{ 
+    // Create a meesage.
+    MessageType &lt;span class="label"&gt;message&lt;/span&gt; = new MessageType();
+    
+    // Add recipients to message.
+    &lt;span class="label"&gt;message&lt;/span&gt;.ToRecipients = new EmailAddressType[2];
+    &lt;span class="label"&gt;message&lt;/span&gt;.ToRecipients[0] = new EmailAddressType();
+    &lt;span class="label"&gt;message&lt;/span&gt;.ToRecipients[0].EmailAddress = "user1@example.com";
+    &lt;span class="label"&gt;message&lt;/span&gt;.ToRecipients[1] = new EmailAddressType();
+    &lt;span class="label"&gt;message&lt;/span&gt;.ToRecipients[1].EmailAddress = "user2@example.com";
+    &lt;span class="label"&gt;message&lt;/span&gt;.CcRecipients = new EmailAddressType[1];
+    &lt;span class="label"&gt;message&lt;/span&gt;.CcRecipients[0] = new EmailAddressType();
+    &lt;span class="label"&gt;message&lt;/span&gt;.CcRecipients[0].EmailAddress = "user3@example.com";
+    &lt;span class="label"&gt;message&lt;/span&gt;.BccRecipients = new EmailAddressType[1];
+    &lt;span class="label"&gt;message&lt;/span&gt;.BccRecipients[0] = new EmailAddressType();
+    &lt;span class="label"&gt;message&lt;/span&gt;.BccRecipients[0].EmailAddress = "user4@example.com";
+
+    // Compose e-mail message.
+    &lt;span class="label"&gt;message&lt;/span&gt;.Subject = "High Priority Projects for Q3";
+    &lt;span class="label"&gt;message&lt;/span&gt;.Body = new BodyType();
+    &lt;span class="label"&gt;message&lt;/span&gt;.Body.BodyType1 = BodyTypeType.HTML;
+    &lt;span class="label"&gt;message&lt;/span&gt;.Body.Value = "&amp;lt;html&amp;gt;&amp;lt;body style='font-family: Arial'&amp;gt;&amp;lt;ul&amp;gt;" +
+     "&amp;lt;li&amp;gt;Create budget for next fiscal year.&amp;amp;nbsp;&amp;lt;/li&amp;gt;" + 
+     "&amp;lt;li&amp;gt;Hiring updates.&amp;amp;nbsp;&amp;lt;/li&amp;gt;" + 
+     "&amp;lt;li&amp;gt;Design plan for new facilities.&amp;lt;/li&amp;gt;" + 
+     "&amp;lt;li&amp;gt;Identify new opportunities for operational efficiency.&amp;amp;nbsp;&amp;lt;/li&amp;gt;" +
+     "&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;Please provide feedback before the meeting.&amp;amp;nbsp;&amp;lt;/p&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;";
+    &lt;span class="label"&gt;message&lt;/span&gt;.Sensitivity = SensitivityChoicesType.Confidential;
+    &lt;span class="label"&gt;message&lt;/span&gt;.SensitivitySpecified = true;
+    &lt;span class="label"&gt;message&lt;/span&gt;.Categories = new string[2] { "Planning", "FiscalYear_Next" };
+    &lt;span class="label"&gt;message&lt;/span&gt;.Importance = ImportanceChoicesType.High;
+    &lt;span class="label"&gt;message&lt;/span&gt;.ImportanceSpecified = true;
+
+    return &lt;span class="label"&gt;message&lt;/span&gt;;
+}</code>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessageType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.MessageType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.MessageType" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.MessageType" />クラス。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BccRecipients">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.EmailAddressType[] BccRecipients { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.EmailAddressType[] BccRecipients" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MessageType.BccRecipients" />
+      <MemberSignature Language="VB.NET" Value="Public Property BccRecipients As EmailAddressType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::EmailAddressType ^&gt; ^ BccRecipients { cli::array &lt;ExchangeWebServices::EmailAddressType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::EmailAddressType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("Mailbox", IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.EmailAddressType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MessageType.BccRecipients" />プロパティを取得または電子メールのブラインド カーボン コピー (Bcc) を受け取る受信者のコレクションを設定します。 このプロパティは省略可能です。 これは、読み取り/書き込みプロパティです。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MessageType.BccRecipients" />を<see cref="T:ExchangeWebServices.EmailAddressType" />の配列です。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CcRecipients">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.EmailAddressType[] CcRecipients { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.EmailAddressType[] CcRecipients" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MessageType.CcRecipients" />
+      <MemberSignature Language="VB.NET" Value="Public Property CcRecipients As EmailAddressType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::EmailAddressType ^&gt; ^ CcRecipients { cli::array &lt;ExchangeWebServices::EmailAddressType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::EmailAddressType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("Mailbox", IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.EmailAddressType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MessageType.CcRecipients" />プロパティを取得または電子メールのカーボン コピー (Bcc) を受け取る受信者のコレクションを設定します。 このプロパティは省略可能です。 これは、読み取り/書き込みプロパティです。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MessageType.CcRecipients" />を<see cref="T:ExchangeWebServices.EmailAddressType" />の配列です。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConversationIndex">
+      <MemberSignature Language="C#" Value="public byte[] ConversationIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] ConversationIndex" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MessageType.ConversationIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConversationIndex As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ ConversationIndex { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement(DataType="base64Binary")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MessageType.ConversationIndex" />プロパティを取得または、メッセージが属するスレッドの識別子を設定します。 このプロパティは省略可能です。 これは、読み取り/書き込みプロパティです。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MessageType.ConversationIndex" />プロパティは、バイト配列を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConversationTopic">
+      <MemberSignature Language="C#" Value="public string ConversationTopic { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConversationTopic" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MessageType.ConversationTopic" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConversationTopic As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConversationTopic { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MessageType.ConversationTopic" />プロパティを取得または会話 id を設定します。 このプロパティは省略可能です。 これは、読み取り/書き込みプロパティです。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MessageType.ConversationTopic" />プロパティは、会話 id を表す文字列を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="From">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.SingleRecipientType From { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.SingleRecipientType From" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MessageType.From" />
+      <MemberSignature Language="VB.NET" Value="Public Property From As SingleRecipientType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::SingleRecipientType ^ From { ExchangeWebServices::SingleRecipientType ^ get(); void set(ExchangeWebServices::SingleRecipientType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.SingleRecipientType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MessageType.From" />プロパティを取得またはメッセージの送信元アドレスを設定します。 このプロパティは省略可能です。 これは、読み取り/書き込みプロパティです。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MessageType.From" />を<see cref="T:ExchangeWebServices.SingleRecipientType" />メッセージの送信元アドレスを表します。Name プロパティだけが返される FindItem 呼び出しで。 FindItem にプロパティが返されない電子メール アドレスを呼び出します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InternetMessageId">
+      <MemberSignature Language="C#" Value="public string InternetMessageId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InternetMessageId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MessageType.InternetMessageId" />
+      <MemberSignature Language="VB.NET" Value="Public Property InternetMessageId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InternetMessageId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MessageType.InternetMessageId" />プロパティを取得またはメッセージのインターネット メッセージ id を設定します。 このプロパティは省略可能です。 これは、読み取り/書き込みプロパティです。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MessageType.InternetMessageId" />プロパティは、メッセージのインターネット メッセージ id を表す文字列を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDeliveryReceiptRequested">
+      <MemberSignature Language="C#" Value="public bool IsDeliveryReceiptRequested { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDeliveryReceiptRequested" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MessageType.IsDeliveryReceiptRequested" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsDeliveryReceiptRequested As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDeliveryReceiptRequested { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MessageType.IsDeliveryReceiptRequested" />プロパティを取得またはアイテムの送信者が配信確認を要求するかどうかを指定するブール値を設定します。 このプロパティは省略可能です。 これは、読み取り/書き込みプロパティです。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MessageType.IsDeliveryReceiptRequested" />プロパティを返します<b>true の</b>場合、配信済みメッセージを要求するとします。それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>
+          <para>設定する必要があります、<see cref="P:ExchangeWebServices.MessageType.IsDeliveryReceiptRequestedSpecified" />プロパティを<b>true</b>にするよう、 <see cref="P:ExchangeWebServices.MessageType.IsDeliveryReceiptRequested" /> Simple Object Access Protocol (SOAP) 要求にプロパティをシリアル化します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDeliveryReceiptRequestedSpecified">
+      <MemberSignature Language="C#" Value="public bool IsDeliveryReceiptRequestedSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDeliveryReceiptRequestedSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MessageType.IsDeliveryReceiptRequestedSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsDeliveryReceiptRequestedSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDeliveryReceiptRequestedSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MessageType.IsDeliveryReceiptRequestedSpecified" />プロパティを取得または指定するブール値を設定するかどうか、 <see cref="P:ExchangeWebServices.MessageType.IsDeliveryReceiptRequested" /> Simple Object Access Protocol (SOAP) 要求にプロパティをシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MessageType.IsDeliveryReceiptRequested" />プロパティが指定されています。 これは、読み取り/書き込みプロパティです。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MessageType.IsDeliveryReceiptRequestedSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MessageType.IsDeliveryReceiptRequested" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRead">
+      <MemberSignature Language="C#" Value="public bool IsRead { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsRead" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MessageType.IsRead" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsRead As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRead { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MessageType.IsRead" />プロパティは、メッセージが開封されたかどうかを指定するブール値を取得します。 このプロパティは値の取得のみ可能です。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MessageType.IsRead" />プロパティはを返します<b>true の</b>場合は、メッセージが読まれました。それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>
+          <para>メッセージを表す応答でこのプロパティが返されます。要求に対しては、このプロパティを設定できません。要求でこのプロパティが設定されている場合、エラーが発生します</para>。
+          <para>を設定する必要があります、<see cref="P:ExchangeWebServices.MessageType.IsReadSpecified" />プロパティを<b>true</b>にするよう、 <see cref="P:ExchangeWebServices.MessageType.IsRead" /> Simple Object Access Protocol (SOAP) 要求にプロパティをシリアル化します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadReceiptRequested">
+      <MemberSignature Language="C#" Value="public bool IsReadReceiptRequested { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadReceiptRequested" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MessageType.IsReadReceiptRequested" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsReadReceiptRequested As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadReceiptRequested { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MessageType.IsReadReceiptRequested" />プロパティを取得またはメッセージの送信者が開封確認メッセージを要求するかどうかを指定するブール値を設定します。 このプロパティは省略可能です。 これは、読み取り/書き込みプロパティです。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MessageType.IsReadReceiptRequested" />を返します<b>true</b>場合は、開封確認メッセージを要求するとします。それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>
+          <para>設定する必要があります、<see cref="P:ExchangeWebServices.MessageType.IsReadReceiptRequestedSpecified" />プロパティを<b>true</b>にするよう、 <see cref="P:ExchangeWebServices.MessageType.IsDeliveryReceiptRequested" /> Simple Object Access Protocol (SOAP) 要求には、シリアル化します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadReceiptRequestedSpecified">
+      <MemberSignature Language="C#" Value="public bool IsReadReceiptRequestedSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadReceiptRequestedSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MessageType.IsReadReceiptRequestedSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsReadReceiptRequestedSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadReceiptRequestedSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MessageType.IsReadReceiptRequestedSpecified" />プロパティを取得または指定するブール値を設定するかどうか、 <see cref="P:ExchangeWebServices.MessageType.IsDeliveryReceiptRequested" /> Simple Object Access Protocol (SOAP) 要求にプロパティをシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MessageType.IsReadReceiptRequested" />プロパティが指定されています。 これは、読み取り/書き込みプロパティです。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MessageType.IsReadReceiptRequestedSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MessageType.IsReadReceiptRequested" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadSpecified">
+      <MemberSignature Language="C#" Value="public bool IsReadSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MessageType.IsReadSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsReadSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MessageType.IsReadSpecified" />プロパティを取得または指定するブール値を設定するかどうか、 <see cref="P:ExchangeWebServices.MessageType.IsRead" /> Simple Object Access Protocol (SOAP) 要求にプロパティをシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MessageType.IsRead" />プロパティが指定されています。 これは、読み取り/書き込みプロパティです。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MessageType.IsReadSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MessageType.IsRead" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsResponseRequested">
+      <MemberSignature Language="C#" Value="public bool IsResponseRequested { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsResponseRequested" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MessageType.IsResponseRequested" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsResponseRequested As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsResponseRequested { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MessageType.IsResponseRequested" />プロパティを取得または電子メールへの応答が要求されたかどうかを指定するブール値を設定します。 このプロパティは省略可能です。 これは、読み取り/書き込みプロパティです。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MessageType.IsResponseRequested" />を返します<b>true</b>場合は、応答が要求されます。それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>
+          <para>設定する必要があります、<see cref="P:ExchangeWebServices.MessageType.IsResponseRequestedSpecified" />プロパティを<b>true</b>にするよう、 <see cref="P:ExchangeWebServices.MessageType.IsResponseRequested" /> Simple Object Access Protocol (SOAP) 要求にプロパティをシリアル化します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsResponseRequestedSpecified">
+      <MemberSignature Language="C#" Value="public bool IsResponseRequestedSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsResponseRequestedSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MessageType.IsResponseRequestedSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsResponseRequestedSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsResponseRequestedSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MessageType.IsResponseRequestedSpecified" />プロパティを取得または指定するブール値を設定するかどうか、 <see cref="P:ExchangeWebServices.MessageType.IsResponseRequested" /> Simple Object Access Protocol (SOAP) 要求にプロパティをシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MessageType.IsResponseRequested" />プロパティが指定されています。 これは、読み取り/書き込みプロパティです。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MessageType.IsResponseRequestedSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MessageType.IsResponseRequested" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceivedBy">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.SingleRecipientType ReceivedBy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.SingleRecipientType ReceivedBy" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MessageType.ReceivedBy" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReceivedBy As SingleRecipientType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::SingleRecipientType ^ ReceivedBy { ExchangeWebServices::SingleRecipientType ^ get(); void set(ExchangeWebServices::SingleRecipientType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.SingleRecipientType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceivedRepresenting">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.SingleRecipientType ReceivedRepresenting { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.SingleRecipientType ReceivedRepresenting" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MessageType.ReceivedRepresenting" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReceivedRepresenting As SingleRecipientType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::SingleRecipientType ^ ReceivedRepresenting { ExchangeWebServices::SingleRecipientType ^ get(); void set(ExchangeWebServices::SingleRecipientType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.SingleRecipientType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="References">
+      <MemberSignature Language="C#" Value="public string References { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string References" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MessageType.References" />
+      <MemberSignature Language="VB.NET" Value="Public Property References As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ References { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MessageType.References" />プロパティを取得または、元のメッセージに応答を関連付けるために使用する Usenet ヘッダーを表す文字列を設定します。 このプロパティは省略可能です。 これは、読み取り/書き込みプロパティです。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MessageType.References" /> Usenet ヘッダーを表す文字列を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplyTo">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.EmailAddressType[] ReplyTo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.EmailAddressType[] ReplyTo" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MessageType.ReplyTo" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReplyTo As EmailAddressType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::EmailAddressType ^&gt; ^ ReplyTo { cli::array &lt;ExchangeWebServices::EmailAddressType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::EmailAddressType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("Mailbox", IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.EmailAddressType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MessageType.ReplyTo" />プロパティを取得または応答を送信するアドレスのコレクションを設定します。 このプロパティは省略可能です。 これは、読み取り/書き込みプロパティです。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MessageType.ReplyTo" />を<see cref="T:ExchangeWebServices.EmailAddressType" />応答を送信するアドレスのセットを格納する配列。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sender">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.SingleRecipientType Sender { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.SingleRecipientType Sender" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MessageType.Sender" />
+      <MemberSignature Language="VB.NET" Value="Public Property Sender As SingleRecipientType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::SingleRecipientType ^ Sender { ExchangeWebServices::SingleRecipientType ^ get(); void set(ExchangeWebServices::SingleRecipientType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.SingleRecipientType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MessageType.Sender" />プロパティを取得または、メッセージの送信者を設定します。 このプロパティは省略可能です。 これは、読み取り/書き込みプロパティです。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MessageType.Sender" />を<see cref="T:ExchangeWebServices.SingleRecipientType" />オブジェクトです。Name プロパティだけが返される FindItem 呼び出しで。 FindItem にプロパティが返されない電子メール アドレスを呼び出します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToRecipients">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.EmailAddressType[] ToRecipients { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.EmailAddressType[] ToRecipients" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MessageType.ToRecipients" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToRecipients As EmailAddressType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::EmailAddressType ^&gt; ^ ToRecipients { cli::array &lt;ExchangeWebServices::EmailAddressType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::EmailAddressType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("Mailbox", IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.EmailAddressType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MessageType.ToRecipients" />プロパティを取得または電子メールの受信者のコレクションを設定します。 このプロパティは、メッセージを送信する必要があります。 これは、読み取り/書き込みプロパティです。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MessageType.ToRecipients" />を<see cref="T:ExchangeWebServices.EmailAddressType" />に電子メール アドレスのセットを含む配列を送信します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

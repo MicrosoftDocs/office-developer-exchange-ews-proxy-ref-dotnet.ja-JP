@@ -1,0 +1,122 @@
+<Type Name="IndexedPageViewType" FullName="ExchangeWebServices.IndexedPageViewType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="b7700a17e967a03a529b952201c8b697f3c9029c" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608901" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class IndexedPageViewType : ExchangeWebServices.BasePagingType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit IndexedPageViewType extends ExchangeWebServices.BasePagingType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.IndexedPageViewType" />
+  <TypeSignature Language="VB.NET" Value="Public Class IndexedPageViewType&#xA;Inherits BasePagingType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IndexedPageViewType : ExchangeWebServices::BasePagingType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BasePagingType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.IndexedPageViewType" />クラスは、どのようにページングされたアイテム情報を記述の FindItem または FindFolder 要求が返されます。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IndexedPageViewType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.IndexedPageViewType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IndexedPageViewType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.IndexedPageViewType" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.IndexedPageViewType" />型です。</summary>
+        <remarks>
+          <para>末尾からのシークでは、によって識別される原点に移動します<see cref="P:ExchangeWebServices.IndexedPageViewType.Offset" />プロパティ。さらに、ポインターが再び要求されたレコードの数によって。要求されたレコードの数を超えない値で指定されている、<see cref="P:ExchangeWebServices.BasePagingType.MaxEntriesReturned" />プロパティ。などの場合は 100 個のレコードがある、オフセットが末尾から 25、75 から検索を開始します。10 個のレコードが返された場合ポインターが逆方向、さらに 10 が 65 を記録し、65 75 からのレコードを返します。次のインデックスは、64 です。ページの末尾からの次のオフセットは、100-64 = 36。36 は、次のインデックス付きのページを取得する、末尾からの次のオフセットの値です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BasePoint">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.IndexBasePointType BasePoint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.IndexBasePointType BasePoint" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.IndexedPageViewType.BasePoint" />
+      <MemberSignature Language="VB.NET" Value="Public Property BasePoint As IndexBasePointType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::IndexBasePointType BasePoint { ExchangeWebServices::IndexBasePointType get(); void set(ExchangeWebServices::IndexBasePointType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.IndexBasePointType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.IndexedPageViewType.BasePoint" />プロパティを取得またはアイテムのページが検索条件を使用して検出された項目のセットの最後または先頭に開始するかどうかを指定する値を設定します。 このプロパティは、必要があります。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.IndexedPageViewType.BasePoint" />を<see cref="T:ExchangeWebServices.IndexBasePointType" />アイテムのページが結果セットの末尾または先頭に開始するかどうかを指定する列挙値。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Offset">
+      <MemberSignature Language="C#" Value="public int Offset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Offset" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.IndexedPageViewType.Offset" />
+      <MemberSignature Language="VB.NET" Value="Public Property Offset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Offset { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.IndexedPageViewType.Offset" />プロパティを取得またはからのオフセットを設定します<see cref="P:ExchangeWebServices.IndexedPageViewType.BasePoint" />プロパティ。 このプロパティは、必要があります。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.IndexedPageViewType.Offset" />プロパティは、基本のポイントからのオフセットを表す整数を返します。</value>
+        <remarks>
+          <para>場合、<see cref="P:ExchangeWebServices.IndexedPageViewType.BasePoint" />プロパティは<see cref="F:ExchangeWebServices.IndexBasePointType.Beginning" />、オフセットが正の数値です。場合、<see cref="P:ExchangeWebServices.IndexedPageViewType.BasePoint" />プロパティは<see cref="F:ExchangeWebServices.IndexBasePointType.End" />、オフセットが負の場合と処理されます。どの項目は、応答で配信される最初の項目になりますを識別します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

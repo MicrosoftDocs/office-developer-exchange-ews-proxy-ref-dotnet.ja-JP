@@ -1,0 +1,63 @@
+<Type Name="SyncFolderItemsCompletedEventArgs" FullName="ExchangeWebServices.SyncFolderItemsCompletedEventArgs">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="76ac97ccff0cf998cf1de9182f1e2d364474f81a" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608379" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class SyncFolderItemsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SyncFolderItemsCompletedEventArgs extends System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.SyncFolderItemsCompletedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class SyncFolderItemsCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SyncFolderItemsCompletedEventArgs : System::ComponentModel::AsyncCompletedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.AsyncCompletedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.SyncFolderItemsCompletedEventArgs" />クラスのデータを提供します<see cref="E:ExchangeWebServices.ExchangeServiceBinding.SyncFolderItemsCompleted" />イベントです。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.SyncFolderItemsResponseType Result { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.SyncFolderItemsResponseType Result" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SyncFolderItemsCompletedEventArgs.Result" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As SyncFolderItemsResponseType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::SyncFolderItemsResponseType ^ Result { ExchangeWebServices::SyncFolderItemsResponseType ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.SyncFolderItemsResponseType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.SyncFolderItemsCompletedEventArgs.Result" />プロパティは、非同期の呼び出しからの応答を取得、<see cref="M:ExchangeWebServices.ExchangeServiceBinding.SyncFolderItemsAsync(ExchangeWebServices.SyncFolderItemsType)" />メソッドです。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.SyncFolderItemsCompletedEventArgs.Result" />を<see cref="T:ExchangeWebServices.SyncFolderItemsResponseType" />への非同期呼び出しの結果を格納しているオブジェクト、<see cref="M:ExchangeWebServices.ExchangeServiceBinding.SyncFolderItemsAsync(ExchangeWebServices.SyncFolderItemsType)" />メソッドです。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

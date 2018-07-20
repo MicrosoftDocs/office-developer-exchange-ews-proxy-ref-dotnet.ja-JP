@@ -1,0 +1,105 @@
+<Type Name="DefaultShapeNamesType" FullName="ExchangeWebServices.DefaultShapeNamesType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="f097d199d775568bbae3cc049b8b1c1fc0157ffb" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20609007" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum DefaultShapeNamesType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed DefaultShapeNamesType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.DefaultShapeNamesType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DefaultShapeNamesType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DefaultShapeNamesType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.DefaultShapeNamesType" />列挙体は、アイテムまたはフォルダーの応答で返されるプロパティの標準的なセットを識別します。</summary>
+    <remarks>
+      <para>この列挙体を使用、<see cref="P:ExchangeWebServices.ItemResponseShapeType.BaseShape" />のプロパティの<see cref="T:ExchangeWebServices.ItemResponseShapeType" />オブジェクトと<see cref="P:ExchangeWebServices.FolderResponseShapeType.BaseShape" />のプロパティの<see cref="T:ExchangeWebServices.FolderResponseShapeType" />オブジェクト</para>。
+      <para>の AdditionalProperties プロパティで定義されているプロパティで、AllProperties、既定値、および IdOnly の図形によって返されるプロパティを補強することができます、<see cref="T:ExchangeWebServices.ItemResponseShapeType" />と<see cref="T:ExchangeWebServices.FolderResponseShapeType" />のオブジェクトです</para>。
+      <para>、次の表はフォルダーごとに返されるプロパティと、<see cref="F:ExchangeWebServices.DefaultShapeNamesType.Default" />フォルダーの応答のプロパティが返されます。指定したフォルダーのすべてのサブフォルダーが名前順に返されます</para>。
+      <para>既定のプロパティ</para><item><term>受信トレイ</term><description>フォルダー Id 名前、未読数、総数、サブフォルダーの数を表示する</description></item><item><term>連絡先</term><description>フォルダー Id、表示名、合計数、サブフォルダーの数</description></item><item><term>の予定表</term>フォルダー Id を
+          <description>、 
+      <list type="table">、表示名、サブフォルダーの数
+        <item><description>フォルダー Id は、
+          <term>削除済みアイテム</term>の
+        <item><term>[下書き]</term><description>フォルダーの Id、名前、未読数、総数、サブフォルダーの数を表示する</description></item>名前、未読のカウント、合計、サブフォルダーを表示します。数</description></item><item>の
+        <item><term>他のフォルダー</term>の
+          <description>フォルダー Id 名前、未読数、総数、サブフォルダーの数を表示</description></item><item><term>[送信トレイ]</term><description>フォルダーの Id 名前、未読数、総数、サブフォルダーの数を表示</description></item><term>タスク</term><description>過去の期日は、カウント、合計、サブフォルダーの数の表示名、フォルダー Id は、</description></item><item><term>メモ</term><description>サブフォルダーの数、フォルダー Id、表示名、総カウント数</description></item></list></description></item><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllProperties">
+      <MemberSignature Language="C#" Value="AllProperties" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.DefaultShapeNamesType AllProperties = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.DefaultShapeNamesType.AllProperties" />
+      <MemberSignature Language="VB.NET" Value="AllProperties" />
+      <MemberSignature Language="C++ CLI" Value="AllProperties" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DefaultShapeNamesType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>AllProperties の図形に対して定義されているすべてのプロパティを返します。 このオプションでは、アイテムまたはフォルダーのすべての利用可能なプロパティは返されません。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.DefaultShapeNamesType Default = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.DefaultShapeNamesType.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DefaultShapeNamesType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>アイテムまたはフォルダーの既定値として定義されているプロパティのセットを返します。 フォルダーに対して返されるプロパティの詳細については、このトピックの後半の表を参照してください。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IdOnly">
+      <MemberSignature Language="C#" Value="IdOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.DefaultShapeNamesType IdOnly = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.DefaultShapeNamesType.IdOnly" />
+      <MemberSignature Language="VB.NET" Value="IdOnly" />
+      <MemberSignature Language="C++ CLI" Value="IdOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DefaultShapeNamesType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>アイテムまたはフォルダーの ID を返します。</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

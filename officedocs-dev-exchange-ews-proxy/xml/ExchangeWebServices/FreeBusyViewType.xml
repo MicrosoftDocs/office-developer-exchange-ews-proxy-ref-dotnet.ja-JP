@@ -1,0 +1,163 @@
+<Type Name="FreeBusyViewType" FullName="ExchangeWebServices.FreeBusyViewType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="3f1121c88206f6bff0713b5840ea037f70ebc076" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608909" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum FreeBusyViewType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed FreeBusyViewType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.FreeBusyViewType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FreeBusyViewType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class FreeBusyViewType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.FreeBusyViewType" />列挙は、クライアントが要求する予定表の情報の種類を指定します。</summary>
+    <remarks>
+      <para>この列挙体が使用、<see cref="P:ExchangeWebServices.FreeBusyViewOptionsType.RequestedView" />のプロパティ、<see cref="T:ExchangeWebServices.FreeBusyViewOptionsType" />の要求の応答で返される空き時間情報の種類を示すオブジェクト。この列挙体を使用しても、<see cref="P:ExchangeWebServices.FreeBusyView.FreeBusyViewType" />のプロパティ、 <see cref="T:ExchangeWebServices.FreeBusyView" /> 、応答で返される空き時間情報の種類を示すオブジェクト</para>。
+      <para>次の表には、さまざまなビューの種類のプロパティと、対応する MAPI プロパティが一覧表示されます。各ビューの種類は、以前のビューの種類に基づいて作成します</para>。
+      <para>FreeBusyViewType プロパティ</para><list type="table"><item><term><b>MergedOnly</b></term><description>MergedFreeBusyStream</description><description /></item><item><term><b>空き時間情報</b></term>の
+          <description>典型的な状態</description>の
+          <description>PropTag (0x80860003)</description></item><item><term><b>空き時間情報</b></term><description>の稼働時間</description><description /></item><item><term><b>空き時間情報</b></term><description>の開始時間</description><description>単に PR_START_DATE</description></item><item><description>PR_END_DATE</description>の
+          <term><b>空き時間情報</b></term><description>の終了時刻</description></item><item><term><b>FreeBusyMerged</b></term><description>典型的なステータス</description><description>PropTag (0x80860003)</description></item><item><term><b>FreeBusyMerged</b></term><description>稼働時間</description><description /></item><item><term><b>FreeBusyMerged</b></term><description>開始時間</description><description>単に PR_START_DATE</description></item><item><description>PR_END_DATE</description><term><b>FreeBusyMerged</b></term><description>終了時刻</description></item><item><term><b>FreeBusyMerged</b></term><description>MergedFreeBusyStream</description><description /></item><item><term><b>詳細</b></term><description>古典ステータス</description><description>PropTag (0x80860003)</description></item><item><term><b>詳細</b></term><description>勤務時間</description><description /></item><item><term><b>詳細</b></term><description>の開始時間</description><description>単に PR_START_DATE</description></item><item><term><b>詳細</b></term>の
+          <description>終了時刻</description><description>PR_END_DATE</description></item><item><term><b>詳細な</b></term><description>件名</description><description>あるの PR_SUBJECT</description></item><item><term><b>詳細な</b></term><description>場所</description><description>PR_LOCATION</description></item><item><term><b>詳細</b></term><description>エントリ Id(unless private)</description><description /></item><item><term><b>詳細な</b></term><description>プライベート フラグ</description><description /></item><item><term><b>詳細</b></term><description>IsMeeting</description><description /></item><item><term><b>詳細</b></term><description>IsRecurring</description><description /></item><item><term><b>詳細</b></term><description>IsException</description><description /></item><item><term><b>詳細</b></term><description>IsReminderSet</description><description /></item><item><description>不在時の Office メッセージ (要求)</description>の
+          <term><b>詳細</b></term><description /></item><item><term><b>DetailedMerged</b></term><description>典型的なステータス</description><description>PropTag (0x80860003)</description></item><item><term><b>DetailedMerged</b></term><description>稼働時間</description><description /></item><item><term><b>DetailedMerged</b></term><description>開始時間</description><description>単に PR_START_DATE</description></item><item><description>PR_END_DATE</description><term><b>DetailedMerged</b></term><description>終了時刻</description></item><item><term><b>DetailedMerged</b></term><description>件名</description><description>あるの PR_SUBJECT</description></item><item><term><b>DetailedMerged</b></term>の
+          <description>場所</description><description>PR_LOCATION</description></item><item><term><b>DetailedMerged</b></term><description>エントリ Id(unless private)</description><description /></item><item><term><b>DetailedMerged</b></term><description>プライベート フラグ</description><description /></item><item><term><b>DetailedMerged</b></term><description>MergedFreeBusyStream</description><description /></item><item><term><b>DetailedMerged</b></term><description>IsMeeting</description><description /></item><item><term><b>DetailedMerged</b></term><description>IsRecurring</description><description /></item><item><term><b>DetailedMerged</b></term><description>IsException</description><description /></item><term><b>DetailedMerged</b></term><description>IsReminderSet</description><description /></list><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Detailed">
+      <MemberSignature Language="C#" Value="Detailed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.FreeBusyViewType Detailed = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.FreeBusyViewType.Detailed" />
+      <MemberSignature Language="VB.NET" Value="Detailed" />
+      <MemberSignature Language="C++ CLI" Value="Detailed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.FreeBusyViewType</ReturnType>
+      </ReturnValue>
+      <MemberValue>16</MemberValue>
+      <Docs>
+        <summary>以下を表します。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DetailedMerged">
+      <MemberSignature Language="C#" Value="DetailedMerged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.FreeBusyViewType DetailedMerged = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.FreeBusyViewType.DetailedMerged" />
+      <MemberSignature Language="VB.NET" Value="DetailedMerged" />
+      <MemberSignature Language="C++ CLI" Value="DetailedMerged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.FreeBusyViewType</ReturnType>
+      </ReturnValue>
+      <MemberValue>32</MemberValue>
+      <Docs>
+        <summary>ストリームの結合された空き時間情報の可用性情報の<b>詳細</b>のすべてのプロパティを表します。 結合された空き時間情報のみがある場合、たとえば、メールボックスが Exchange 2003 を実行しているコンピューター上に存在する場合は、 <b>MergedOnly</b>が返されます。 それ以外の場合、 <b>FreeBusyMerged</b>または<b>DetailedMerged</b>が返されます。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FreeBusy">
+      <MemberSignature Language="C#" Value="FreeBusy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.FreeBusyViewType FreeBusy = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.FreeBusyViewType.FreeBusy" />
+      <MemberSignature Language="VB.NET" Value="FreeBusy" />
+      <MemberSignature Language="C++ CLI" Value="FreeBusy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.FreeBusyViewType</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>従来のステータス情報を表します (フリー、予定あり、仮の予定、および不在時)。 これは、開始時刻と終了時刻の予定にもあります。 このビューは、豊富な集計の空き時間情報のストリームではなく、時間が用意されている個々 の会議の開始し、終了のために表示、レガシ空き時間情報よりも。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FreeBusyMerged">
+      <MemberSignature Language="C#" Value="FreeBusyMerged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.FreeBusyViewType FreeBusyMerged = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.FreeBusyViewType.FreeBusyMerged" />
+      <MemberSignature Language="VB.NET" Value="FreeBusyMerged" />
+      <MemberSignature Language="C++ CLI" Value="FreeBusyMerged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.FreeBusyViewType</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>結合された空き時間情報の可用性情報のストリームを<b>空き時間情報</b>のすべてのプロパティを表します。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MergedOnly">
+      <MemberSignature Language="C#" Value="MergedOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.FreeBusyViewType MergedOnly = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.FreeBusyViewType.MergedOnly" />
+      <MemberSignature Language="VB.NET" Value="MergedOnly" />
+      <MemberSignature Language="C++ CLI" Value="MergedOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.FreeBusyViewType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>集計の空き/予約済みのストリームを表します。 1 つのフォレスト内の移動先のユーザーが、可用性サービスが構成されているフォレスト間のシナリオでは、要求側の可用性サービスは、空き時間情報パブリック フォルダーからターゲット ユーザーの空き時間情報を取得します。 パブリック フォルダーは、差し込み印刷の形式でのみ空き時間情報を格納するため<b>MergedOnly</b>はのみ利用可能な情報です。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.FreeBusyViewType None = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.FreeBusyViewType.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.FreeBusyViewType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>この値は、要求に対して有効ではありません。 この値は応答をします。</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

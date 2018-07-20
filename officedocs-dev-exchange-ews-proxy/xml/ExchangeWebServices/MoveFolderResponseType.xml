@@ -1,0 +1,65 @@
+<Type Name="MoveFolderResponseType" FullName="ExchangeWebServices.MoveFolderResponseType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="5f6b69d00e32dabc2227343dd08694a12bf137f0" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20609001" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class MoveFolderResponseType : ExchangeWebServices.BaseResponseMessageType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit MoveFolderResponseType extends ExchangeWebServices.BaseResponseMessageType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.MoveFolderResponseType" />
+  <TypeSignature Language="VB.NET" Value="Public Class MoveFolderResponseType&#xA;Inherits BaseResponseMessageType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MoveFolderResponseType : ExchangeWebServices::BaseResponseMessageType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseResponseMessageType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/messages")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.MoveFolderResponseType" />への応答を表すクラス、<see cref="M:ExchangeWebServices.ExchangeServiceBinding.MoveFolder(ExchangeWebServices.MoveFolderType)" />メソッドの呼び出しです。</summary>
+    <remarks>
+      <para>使用する例については、<see cref="T:ExchangeWebServices.MoveFolderResponseType" />クラスは、「<see cref="T:ExchangeWebServices.MoveFolderType" />です。</para>
+      <para>A<see cref="T:ExchangeWebServices.MoveFolderResponseType" />オブジェクトは、<see cref="M:ExchangeWebServices.ExchangeServiceBinding.MoveFolder(ExchangeWebServices.MoveFolderType)" />メソッドです</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MoveFolderResponseType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.MoveFolderResponseType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MoveFolderResponseType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.MoveFolderResponseType" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.MoveFolderResponseType" />クラス。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

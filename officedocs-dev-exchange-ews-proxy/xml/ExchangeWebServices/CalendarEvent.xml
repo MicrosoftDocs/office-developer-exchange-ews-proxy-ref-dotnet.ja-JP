@@ -1,0 +1,157 @@
+<Type Name="CalendarEvent" FullName="ExchangeWebServices.CalendarEvent">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="9a4e6494c02ab900dd9ef929642fd3823c99ee3d" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608644" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class CalendarEvent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CalendarEvent extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.CalendarEvent" />
+  <TypeSignature Language="VB.NET" Value="Public Class CalendarEvent" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CalendarEvent" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.CalendarEvent" />クラスは、一意の予定表アイテムの出現を表します。</summary>
+    <remarks>
+      <para>含まれている予定および会議の時間、<see cref="T:ExchangeWebServices.CalendarEvent" />のインスタンスがクライアントのタイム ゾーンでは。このクラスが提供する詳細のレベルは、要求側に付与されるアクセス許可に依存します。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CalendarEvent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.CalendarEvent.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CalendarEvent();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.CalendarEvent" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.CalendarEvent" />クラス。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BusyType">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.LegacyFreeBusyType BusyType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.LegacyFreeBusyType BusyType" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CalendarEvent.BusyType" />
+      <MemberSignature Language="VB.NET" Value="Public Property BusyType As LegacyFreeBusyType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::LegacyFreeBusyType BusyType { ExchangeWebServices::LegacyFreeBusyType get(); void set(ExchangeWebServices::LegacyFreeBusyType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.LegacyFreeBusyType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CalendarEvent.BusyType" />プロパティを取得または予定表イベントの空き時間情報のステータスを設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CalendarEvent.BusyType" />を<see cref="T:ExchangeWebServices.LegacyFreeBusyType" />予定表の空き時間情報のステータスを示す列挙値。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalendarEventDetails">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.CalendarEventDetails CalendarEventDetails { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.CalendarEventDetails CalendarEventDetails" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CalendarEvent.CalendarEventDetails" />
+      <MemberSignature Language="VB.NET" Value="Public Property CalendarEventDetails As CalendarEventDetails" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::CalendarEventDetails ^ CalendarEventDetails { ExchangeWebServices::CalendarEventDetails ^ get(); void set(ExchangeWebServices::CalendarEventDetails ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CalendarEventDetails</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CalendarEvent.CalendarEventDetails" />プロパティは、予定表のイベントに関する追加情報を提供します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CalendarEvent.CalendarEventDetails" />を<see cref="T:ExchangeWebServices.CalendarEventDetails" />予定表のイベントに関する追加情報を格納しているインスタンスです。</value>
+        <remarks>
+          <para>
+            <see cref="M:ExchangeWebServices.ExchangeServiceBinding.GetUserAvailability(ExchangeWebServices.GetUserAvailabilityRequestType)" />場合呼び出し元の詳細については、呼び出し元は、ターゲット ユーザーの予定表の読み取りアクセス権を持っていない限り、します。Exchange 管理シェルを使用してアクセス許可を設定することができます。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTime">
+      <MemberSignature Language="C#" Value="public DateTime EndTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime EndTime" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CalendarEvent.EndTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndTime As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime EndTime { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CalendarEvent.EndTime" />プロパティを取得または予定表のイベントの終了時刻を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CalendarEvent.EndTime" /> 、イベントの終了時刻、カレンダーの日付/時刻値を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartTime">
+      <MemberSignature Language="C#" Value="public DateTime StartTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime StartTime" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CalendarEvent.StartTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartTime As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime StartTime { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CalendarEvent.StartTime" />プロパティを取得または予定表のイベントの開始時刻を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CalendarEvent.StartTime" />プロパティは、予定表イベントの開始時刻を日付/時刻値を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

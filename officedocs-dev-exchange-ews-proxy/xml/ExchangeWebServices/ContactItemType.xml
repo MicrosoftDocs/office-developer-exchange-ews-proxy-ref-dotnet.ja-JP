@@ -1,0 +1,1196 @@
+<Type Name="ContactItemType" FullName="ExchangeWebServices.ContactItemType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="9e73bd67fe18c3178e8b499917947df37e4789bb" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20609236" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class ContactItemType : ExchangeWebServices.ItemType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ContactItemType extends ExchangeWebServices.ItemType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.ContactItemType" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContactItemType&#xA;Inherits ItemType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContactItemType : ExchangeWebServices::ItemType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.ItemType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.ContactItemType" />クラスは、Exchange の連絡先アイテムを表します。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContactItemType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.ContactItemType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContactItemType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="M:ExchangeWebServices.ContactItemType.#ctor" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.ContactItemType" />クラス。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alias">
+      <MemberSignature Language="C#" Value="public string Alias { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Alias" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.Alias" />
+      <MemberSignature Language="VB.NET" Value="Public Property Alias As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Alias { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssistantName">
+      <MemberSignature Language="C#" Value="public string AssistantName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AssistantName" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.AssistantName" />
+      <MemberSignature Language="VB.NET" Value="Public Property AssistantName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssistantName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.AssistantName" />プロパティを取得または連絡先のアシスタントの名前を含む文字列値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.AssistantName" />プロパティは、連絡先のアシスタントの名前を含む文字列値を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Birthday">
+      <MemberSignature Language="C#" Value="public DateTime Birthday { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime Birthday" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.Birthday" />
+      <MemberSignature Language="VB.NET" Value="Public Property Birthday As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Birthday { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.Birthday" />プロパティを取得または連絡先の誕生日を表す DateTime 構造体のインスタンスを設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.Birthday" />プロパティは、連絡先の誕生日を表す DateTime 構造体を返します。</value>
+        <remarks>
+          <para>このプロパティが設定されている場合、 <see cref="P:ExchangeWebServices.ContactItemType.BirthdaySpecified" /> Web サービスの要求にこのプロパティが追加されるようにプロパティを<b>true</b>に設定する必要があります。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BirthdaySpecified">
+      <MemberSignature Language="C#" Value="public bool BirthdaySpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BirthdaySpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.BirthdaySpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property BirthdaySpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BirthdaySpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.BirthdaySpecified" />プロパティを取得または設定を示すブール値かどうかの値、<see cref="P:ExchangeWebServices.ContactItemType.Birthday" />プロパティは、Web サービス要求にシリアル化します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.BirthdaySpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ContactItemType.Birthday" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BusinessHomePage">
+      <MemberSignature Language="C#" Value="public string BusinessHomePage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BusinessHomePage" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.BusinessHomePage" />
+      <MemberSignature Language="VB.NET" Value="Public Property BusinessHomePage As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BusinessHomePage { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement(DataType="anyURI")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.BusinessHomePage" />プロパティを取得または取引先担当者のビジネス ホーム ページの URL を含む文字列値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.BusinessHomePage" /> 、取引先担当者のビジネス ホーム ページの URL を含む文字列値を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Children">
+      <MemberSignature Language="C#" Value="public string[] Children { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] Children" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.Children" />
+      <MemberSignature Language="VB.NET" Value="Public Property Children As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ Children { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("String", IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.Children" />プロパティを取得または連絡先の子供の名前を格納する文字列型の配列を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.Children" />プロパティは、連絡先の子供の名前を格納する文字列型の配列を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Companies">
+      <MemberSignature Language="C#" Value="public string[] Companies { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] Companies" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.Companies" />
+      <MemberSignature Language="VB.NET" Value="Public Property Companies As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ Companies { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("String", IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.Companies" />プロパティを取得または取引先担当者に関連付けられている会社の名前を格納する文字列型の配列を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.Companies" />プロパティは、連絡先に関連付けられている会社の名前を格納する文字列型の配列を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompanyName">
+      <MemberSignature Language="C#" Value="public string CompanyName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CompanyName" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.CompanyName" />
+      <MemberSignature Language="VB.NET" Value="Public Property CompanyName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CompanyName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.CompanyName" />プロパティを取得または取引先担当者に関連付けられている会社名を含む文字列値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.CompanyName" />プロパティは、連絡先に関連付けられている会社名を含む文字列値を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompleteName">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.CompleteNameType CompleteName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.CompleteNameType CompleteName" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.CompleteName" />
+      <MemberSignature Language="VB.NET" Value="Public Property CompleteName As CompleteNameType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::CompleteNameType ^ CompleteName { ExchangeWebServices::CompleteNameType ^ get(); void set(ExchangeWebServices::CompleteNameType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CompleteNameType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.CompleteName" />プロパティを取得または設定のインスタンスの<see cref="T:ExchangeWebServices.CompleteNameType" />クラスのメンバーのオペレーションの完全な名前。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.CompleteName" />のインスタンスを返すプロパティ、<see cref="T:ExchangeWebServices.CompleteNameType" />連絡先の完全な名前を表すクラスです。</value>
+        <remarks>
+          <para>
+            <see cref="P:ExchangeWebServices.ContactItemType.CompleteName" />プロパティの一部である、<see cref="F:ExchangeWebServices.DefaultShapeNamesType.Default" />の図形です。Microsoft Exchange Server 2007 のオリジナル リリース版の GetItem 操作が FindItem 操作ではなくを使用して返されます。Exchange Server 2007 Service Pack 1 (SP1) から始めて、FindItem 操作も返される、 <see cref="P:ExchangeWebServices.ContactItemType.CompleteName" /> 、オートシェイプの既定値を持つプロパティです。この変更は、スキーマには影響しません。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContactSource">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ContactSourceType ContactSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.ContactSourceType ContactSource" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.ContactSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContactSource As ContactSourceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::ContactSourceType ContactSource { ExchangeWebServices::ContactSourceType get(); void set(ExchangeWebServices::ContactSourceType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ContactSourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.ContactSource" />プロパティを取得または設定、有効な 1 つ<see cref="T:ExchangeWebServices.ContactSourceType" />連絡先が Exchange ストアまたは Active Directory ディレクトリ サービス内にあるかどうかを describs の値を列挙します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.ContactSource" />プロパティは、有効な 1 つを返します<see cref="T:ExchangeWebServices.ContactSourceType" />連絡先が Exchange ストアまたは Active Directory ディレクトリ サービス内にあるかどうかを説明する列挙値。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContactSourceSpecified">
+      <MemberSignature Language="C#" Value="public bool ContactSourceSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ContactSourceSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.ContactSourceSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContactSourceSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ContactSourceSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.ContactSourceSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ContactItemType.ContactSource" />プロパティは、SOAP 要求にシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ContactItemType.ContactSource" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.ContactSourceSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ContactItemType.ContactSource" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Department">
+      <MemberSignature Language="C#" Value="public string Department { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Department" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.Department" />
+      <MemberSignature Language="VB.NET" Value="Public Property Department As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Department { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.Department" />プロパティを取得または取引先担当者の作業部門を含む文字列値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.Department" /> 、取引先担当者の作業部門を含む文字列値を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DirectoryId">
+      <MemberSignature Language="C#" Value="public string DirectoryId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DirectoryId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.DirectoryId" />
+      <MemberSignature Language="VB.NET" Value="Public Property DirectoryId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DirectoryId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DirectReports">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.EmailAddressType[] DirectReports { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.EmailAddressType[] DirectReports" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.DirectReports" />
+      <MemberSignature Language="VB.NET" Value="Public Property DirectReports As EmailAddressType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::EmailAddressType ^&gt; ^ DirectReports { cli::array &lt;ExchangeWebServices::EmailAddressType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::EmailAddressType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("Mailbox", IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.EmailAddressType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayName">
+      <MemberSignature Language="C#" Value="public string DisplayName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.DisplayName" />プロパティを取得または連絡先の表示名を含む文字列値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.DisplayName" />プロパティは、連絡先の表示名を含む文字列値を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmailAddresses">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.EmailAddressDictionaryEntryType[] EmailAddresses { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.EmailAddressDictionaryEntryType[] EmailAddresses" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.EmailAddresses" />
+      <MemberSignature Language="VB.NET" Value="Public Property EmailAddresses As EmailAddressDictionaryEntryType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::EmailAddressDictionaryEntryType ^&gt; ^ EmailAddresses { cli::array &lt;ExchangeWebServices::EmailAddressDictionaryEntryType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::EmailAddressDictionaryEntryType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("Entry", IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.EmailAddressDictionaryEntryType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.EmailAddresses" />プロパティを取得または型の配列を設定する<see cref="T:ExchangeWebServices.EmailAddressDictionaryEntryType" />を連絡先に関連付けられている電子メール アドレスが含まれています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.EmailAddresses" />プロパティの型の配列を返します<see cref="T:ExchangeWebServices.EmailAddressDictionaryEntryType" />を連絡先に関連付けられている電子メール アドレスが含まれています。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileAs">
+      <MemberSignature Language="C#" Value="public string FileAs { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FileAs" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.FileAs" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileAs As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileAs { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.FileAs" />プロパティを取得または連絡先フォルダーに連絡先を保存する方法を表す文字列値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.FileAs" />プロパティは、連絡先フォルダーに連絡先を保存する方法を表す文字列値を返します。</value>
+        <remarks>
+          <para>
+            <see cref="P:ExchangeWebServices.ContactItemType.FileAs" />プロパティは、完全な名前または会社名以外の名前で連絡先の並べ替えに使用します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileAsMapping">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.FileAsMappingType FileAsMapping { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.FileAsMappingType FileAsMapping" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.FileAsMapping" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileAsMapping As FileAsMappingType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::FileAsMappingType FileAsMapping { ExchangeWebServices::FileAsMappingType get(); void set(ExchangeWebServices::FileAsMappingType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.FileAsMappingType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.FileAsMapping" />プロパティを取得または設定、有効な 1 つ<see cref="T:ExchangeWebServices.FileAsMappingType" />連絡先の表示内容を構築する方法を定義する列挙値。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.FileAsMapping" />プロパティは、有効な 1 つを返します<see cref="T:ExchangeWebServices.FileAsMappingType" />連絡先の表示内容を構築する方法を定義する列挙値。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileAsMappingSpecified">
+      <MemberSignature Language="C#" Value="public bool FileAsMappingSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FileAsMappingSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.FileAsMappingSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileAsMappingSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FileAsMappingSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.FileAsMappingSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ContactItemType.FileAsMapping" />プロパティは、SOAP 要求にシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ContactItemType.FileAsMapping" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.FileAsMappingSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ContactItemType.FileAsMapping" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Generation">
+      <MemberSignature Language="C#" Value="public string Generation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Generation" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.Generation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Generation As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Generation { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.Generation" />プロパティを取得または取引先担当者の完全な名前を次世代の省略形を含む文字列値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.Generation" />プロパティは、連絡先の完全な名前を次世代の省略形を含む文字列値を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GivenName">
+      <MemberSignature Language="C#" Value="public string GivenName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string GivenName" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.GivenName" />
+      <MemberSignature Language="VB.NET" Value="Public Property GivenName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ GivenName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.GivenName" />プロパティを取得または連絡先の名前を含む文字列値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.GivenName" />プロパティは、連絡先の名前を含む文字列値を返します。</value>
+        <remarks>
+          <para>指定された名前は、通常、人の名前です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasPicture">
+      <MemberSignature Language="C#" Value="public bool HasPicture { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasPicture" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.HasPicture" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasPicture As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasPicture { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.HasPicture" />プロパティを取得または連絡先アイテムが連絡先の画像を表す添付ファイルがあるかどうかを指定するブール値を設定します。</summary>
+        <value>値、<see cref="P:ExchangeWebServices.ContactItemType.HasPicture" />プロパティが<b>true</b>の場合は、連絡先の画像があります。それ以外の場合、値は、 <b>false</b>です。</value>
+        <remarks>
+          <para>設定する必要があります、<see cref="P:ExchangeWebServices.ContactItemType.HasPictureSpecified" />プロパティを<b>true</b>にするよう、<see cref="P:ExchangeWebServices.ContactItemType.HasPicture" />プロパティは、SOAP 要求にシリアル化します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasPictureSpecified">
+      <MemberSignature Language="C#" Value="public bool HasPictureSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasPictureSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.HasPictureSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasPictureSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasPictureSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.HasPictureSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ContactItemType.HasPicture" />プロパティは、SOAP 要求にシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ContactItemType.HasPicture" />プロパティが指定されています。</summary>
+        <value>値、<see cref="P:ExchangeWebServices.ContactItemType.HasPictureSpecified" />プロパティが<b>true</b>の場合、<see cref="P:ExchangeWebServices.ContactItemType.HasPicture" />プロパティは、SOAP 要求にシリアル化それ以外の場合、値が<b>false</b>にします。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImAddresses">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ImAddressDictionaryEntryType[] ImAddresses { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.ImAddressDictionaryEntryType[] ImAddresses" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.ImAddresses" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImAddresses As ImAddressDictionaryEntryType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::ImAddressDictionaryEntryType ^&gt; ^ ImAddresses { cli::array &lt;ExchangeWebServices::ImAddressDictionaryEntryType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::ImAddressDictionaryEntryType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("Entry", IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ImAddressDictionaryEntryType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.ImAddresses" />プロパティを取得または型の配列を設定する<see cref="T:ExchangeWebServices.ImAddressDictionaryEntryType" />を連絡先のインスタント メッセージングのアドレスが含まれています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.ImAddresses" />プロパティの型の配列を返します<see cref="T:ExchangeWebServices.ImAddressDictionaryEntryType" />連絡先のインスタント メッセージングのアドレスを含みます。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initials">
+      <MemberSignature Language="C#" Value="public string Initials { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Initials" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.Initials" />
+      <MemberSignature Language="VB.NET" Value="Public Property Initials As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Initials { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.Initials" />プロパティを取得または取引先担当者のイニシャルを含む文字列値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.Initials" />プロパティは、連絡先のイニシャルを含む文字列値を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JobTitle">
+      <MemberSignature Language="C#" Value="public string JobTitle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string JobTitle" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.JobTitle" />
+      <MemberSignature Language="VB.NET" Value="Public Property JobTitle As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ JobTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.JobTitle" />プロパティを取得または取引先担当者の役職名を含む文字列値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.JobTitle" /> 、取引先担当者の役職名を含む文字列値を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Manager">
+      <MemberSignature Language="C#" Value="public string Manager { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Manager" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.Manager" />
+      <MemberSignature Language="VB.NET" Value="Public Property Manager As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Manager { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.Manager" />プロパティを取得または取引先担当者の上司を表す文字列値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.Manager" /> 、取引先担当者の上司を表す文字列値を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagerMailbox">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.SingleRecipientType ManagerMailbox { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.SingleRecipientType ManagerMailbox" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.ManagerMailbox" />
+      <MemberSignature Language="VB.NET" Value="Public Property ManagerMailbox As SingleRecipientType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::SingleRecipientType ^ ManagerMailbox { ExchangeWebServices::SingleRecipientType ^ get(); void set(ExchangeWebServices::SingleRecipientType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.SingleRecipientType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MiddleName">
+      <MemberSignature Language="C#" Value="public string MiddleName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MiddleName" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.MiddleName" />
+      <MemberSignature Language="VB.NET" Value="Public Property MiddleName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MiddleName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.MiddleName" />プロパティを取得または連絡先のミドル ネームを表す文字列値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.MiddleName" />プロパティは、連絡先のミドル ネームを表す文字列値を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mileage">
+      <MemberSignature Language="C#" Value="public string Mileage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Mileage" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.Mileage" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mileage As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Mileage { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.Mileage" />プロパティを取得または取引先担当者の経費情報を表す文字列値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.Mileage" />プロパティは、取引先担当者の経費情報を表す文字列値を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MSExchangeCertificate">
+      <MemberSignature Language="C#" Value="public byte[][] MSExchangeCertificate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[][] MSExchangeCertificate" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.MSExchangeCertificate" />
+      <MemberSignature Language="VB.NET" Value="Public Property MSExchangeCertificate As Byte()()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;cli::array &lt;System::Byte&gt; ^&gt; ^ MSExchangeCertificate { cli::array &lt;cli::array &lt;System::Byte&gt; ^&gt; ^ get(); void set(cli::array &lt;cli::array &lt;System::Byte&gt; ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("Base64Binary", DataType="base64Binary", IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[][]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Nickname">
+      <MemberSignature Language="C#" Value="public string Nickname { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Nickname" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.Nickname" />
+      <MemberSignature Language="VB.NET" Value="Public Property Nickname As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Nickname { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.Nickname" />プロパティを取得または連絡先のニックネームを表す文字列値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.Nickname" />プロパティを取得または連絡先のニックネームを表す文字列値を設定します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Notes">
+      <MemberSignature Language="C#" Value="public string Notes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Notes" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.Notes" />
+      <MemberSignature Language="VB.NET" Value="Public Property Notes As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Notes { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OfficeLocation">
+      <MemberSignature Language="C#" Value="public string OfficeLocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OfficeLocation" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.OfficeLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property OfficeLocation As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OfficeLocation { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.OfficeLocation" />プロパティを取得または連絡先のオフィスの場所を表す文字列値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.OfficeLocation" />プロパティは、連絡先のオフィスの場所を表す文字列値を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhoneNumbers">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.PhoneNumberDictionaryEntryType[] PhoneNumbers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.PhoneNumberDictionaryEntryType[] PhoneNumbers" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.PhoneNumbers" />
+      <MemberSignature Language="VB.NET" Value="Public Property PhoneNumbers As PhoneNumberDictionaryEntryType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::PhoneNumberDictionaryEntryType ^&gt; ^ PhoneNumbers { cli::array &lt;ExchangeWebServices::PhoneNumberDictionaryEntryType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::PhoneNumberDictionaryEntryType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("Entry", IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.PhoneNumberDictionaryEntryType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.PhoneNumbers" />プロパティを取得または型の配列を設定する<see cref="T:ExchangeWebServices.PhoneNumberDictionaryEntryType" />連絡先の電話番号のコレクションを表します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.PhoneNumbers" />プロパティの型の配列を返します<see cref="T:ExchangeWebServices.PhoneNumberDictionaryEntryType" />連絡先の電話番号のコレクションを表します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhoneticFirstName">
+      <MemberSignature Language="C#" Value="public string PhoneticFirstName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PhoneticFirstName" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.PhoneticFirstName" />
+      <MemberSignature Language="VB.NET" Value="Public Property PhoneticFirstName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PhoneticFirstName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhoneticFullName">
+      <MemberSignature Language="C#" Value="public string PhoneticFullName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PhoneticFullName" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.PhoneticFullName" />
+      <MemberSignature Language="VB.NET" Value="Public Property PhoneticFullName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PhoneticFullName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhoneticLastName">
+      <MemberSignature Language="C#" Value="public string PhoneticLastName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PhoneticLastName" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.PhoneticLastName" />
+      <MemberSignature Language="VB.NET" Value="Public Property PhoneticLastName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PhoneticLastName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Photo">
+      <MemberSignature Language="C#" Value="public byte[] Photo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Photo" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.Photo" />
+      <MemberSignature Language="VB.NET" Value="Public Property Photo As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Photo { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement(DataType="base64Binary")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhysicalAddresses">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.PhysicalAddressDictionaryEntryType[] PhysicalAddresses { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.PhysicalAddressDictionaryEntryType[] PhysicalAddresses" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.PhysicalAddresses" />
+      <MemberSignature Language="VB.NET" Value="Public Property PhysicalAddresses As PhysicalAddressDictionaryEntryType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::PhysicalAddressDictionaryEntryType ^&gt; ^ PhysicalAddresses { cli::array &lt;ExchangeWebServices::PhysicalAddressDictionaryEntryType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::PhysicalAddressDictionaryEntryType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("Entry", IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.PhysicalAddressDictionaryEntryType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.PhysicalAddresses" />プロパティを取得または型の配列を設定する<see cref="T:ExchangeWebServices.PhysicalAddressDictionaryEntryType" />連絡先に関連付けられている物理アドレスのコレクションを表します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.PhysicalAddresses" />プロパティの型の配列を返します<see cref="T:ExchangeWebServices.PhysicalAddressDictionaryEntryType" />連絡先に関連付けられている物理アドレスのコレクションを表します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostalAddressIndex">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.PhysicalAddressIndexType PostalAddressIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.PhysicalAddressIndexType PostalAddressIndex" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.PostalAddressIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property PostalAddressIndex As PhysicalAddressIndexType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::PhysicalAddressIndexType PostalAddressIndex { ExchangeWebServices::PhysicalAddressIndexType get(); void set(ExchangeWebServices::PhysicalAddressIndexType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.PhysicalAddressIndexType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.PostalAddressIndex" />プロパティを取得または設定、有効な 1 つ<see cref="T:ExchangeWebServices.PhysicalAddressIndexType" />連絡先の住所の表示の種類を表す値。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.PostalAddressIndex" />プロパティは、有効な 1 つを返します<see cref="T:ExchangeWebServices.PhysicalAddressIndexType" />連絡先の住所の表示の種類を表す値。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostalAddressIndexSpecified">
+      <MemberSignature Language="C#" Value="public bool PostalAddressIndexSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PostalAddressIndexSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.PostalAddressIndexSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property PostalAddressIndexSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PostalAddressIndexSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.PostalAddressIndexSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ContactItemType.PostalAddressIndex" />プロパティは、SOAP 要求にシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ContactItemType.PostalAddressIndex" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.PostalAddressIndexSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ContactItemType.PostalAddressIndex" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Profession">
+      <MemberSignature Language="C#" Value="public string Profession { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Profession" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.Profession" />
+      <MemberSignature Language="VB.NET" Value="Public Property Profession As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Profession { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.Profession" />プロパティを取得または連絡先の職業を表す文字列値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.Profession" />プロパティは、連絡先の職業を表す文字列値を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpouseName">
+      <MemberSignature Language="C#" Value="public string SpouseName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SpouseName" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.SpouseName" />
+      <MemberSignature Language="VB.NET" Value="Public Property SpouseName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SpouseName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.SpouseName" />プロパティを取得または取引先担当者の配偶者の名前を表す文字列値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.SpouseName" /> 、取引先担当者の配偶者の名前を表す文字列値を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Surname">
+      <MemberSignature Language="C#" Value="public string Surname { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Surname" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.Surname" />
+      <MemberSignature Language="VB.NET" Value="Public Property Surname As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Surname { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.Surname" />プロパティを取得または取引先担当者の姓を格納する文字列値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.Surname" />プロパティは、連絡先の姓を含む文字列値を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserSMIMECertificate">
+      <MemberSignature Language="C#" Value="public byte[][] UserSMIMECertificate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[][] UserSMIMECertificate" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.UserSMIMECertificate" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserSMIMECertificate As Byte()()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;cli::array &lt;System::Byte&gt; ^&gt; ^ UserSMIMECertificate { cli::array &lt;cli::array &lt;System::Byte&gt; ^&gt; ^ get(); void set(cli::array &lt;cli::array &lt;System::Byte&gt; ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("Base64Binary", DataType="base64Binary", IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[][]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WeddingAnniversary">
+      <MemberSignature Language="C#" Value="public DateTime WeddingAnniversary { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime WeddingAnniversary" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.WeddingAnniversary" />
+      <MemberSignature Language="VB.NET" Value="Public Property WeddingAnniversary As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime WeddingAnniversary { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.WeddingAnniversary" />プロパティを取得または取引先担当者の結婚記念日の日付を含む DateTime 構造体のインスタンスを設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.WeddingAnniversary" />プロパティは、取引先担当者の結婚記念日の日付を含む DateTime 構造体のインスタンスを返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WeddingAnniversarySpecified">
+      <MemberSignature Language="C#" Value="public bool WeddingAnniversarySpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool WeddingAnniversarySpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ContactItemType.WeddingAnniversarySpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property WeddingAnniversarySpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WeddingAnniversarySpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ContactItemType.WeddingAnniversarySpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ContactItemType.WeddingAnniversary" />プロパティは、SOAP 要求にシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ContactItemType.WeddingAnniversary" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ContactItemType.WeddingAnniversarySpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ContactItemType.WeddingAnniversary" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

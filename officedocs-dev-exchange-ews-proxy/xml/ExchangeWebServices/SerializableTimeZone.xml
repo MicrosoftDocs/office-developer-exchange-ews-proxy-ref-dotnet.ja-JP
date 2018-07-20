@@ -1,0 +1,128 @@
+<Type Name="SerializableTimeZone" FullName="ExchangeWebServices.SerializableTimeZone">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="2ed72b31912bc360b286c3c4dfa3cd431aacc96e" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608482" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class SerializableTimeZone" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SerializableTimeZone extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.SerializableTimeZone" />
+  <TypeSignature Language="VB.NET" Value="Public Class SerializableTimeZone" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SerializableTimeZone" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.SerializableTimeZone" />クラスは、タイム ゾーン情報と標準時間と夏時間の間の移行を識別します。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SerializableTimeZone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.SerializableTimeZone.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SerializableTimeZone();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.SerializableTimeZone" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.SerializableTimeZone" />クラス。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bias">
+      <MemberSignature Language="C#" Value="public int Bias { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Bias" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SerializableTimeZone.Bias" />
+      <MemberSignature Language="VB.NET" Value="Public Property Bias As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Bias { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.SerializableTimeZone.Bias" />プロパティを取得または世界協定時刻 (UTC) から一般のオフセットを表す値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.SerializableTimeZone.Bias" />プロパティは、UTC オフセットからのオフセットを表す整数を返します。 この値は分単位です。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DaylightTime">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.SerializableTimeZoneTime DaylightTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.SerializableTimeZoneTime DaylightTime" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SerializableTimeZone.DaylightTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property DaylightTime As SerializableTimeZoneTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::SerializableTimeZoneTime ^ DaylightTime { ExchangeWebServices::SerializableTimeZoneTime ^ get(); void set(ExchangeWebServices::SerializableTimeZoneTime ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.SerializableTimeZoneTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.SerializableTimeZone.DaylightTime" />プロパティを取得または基準と世界協定時刻 (UTC) で表される時間からのオフセットを表す値を設定します<see cref="P:ExchangeWebServices.SerializableTimeZone.Bias" />プロパティ。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.SerializableTimeZone.DaylightTime" /> プロパティは <see cref="T:ExchangeWebServices.SerializableTimeZoneTime" /> オブジェクトを返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardTime">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.SerializableTimeZoneTime StandardTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.SerializableTimeZoneTime StandardTime" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.SerializableTimeZone.StandardTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property StandardTime As SerializableTimeZoneTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::SerializableTimeZoneTime ^ StandardTime { ExchangeWebServices::SerializableTimeZoneTime ^ get(); void set(ExchangeWebServices::SerializableTimeZoneTime ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.SerializableTimeZoneTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.SerializableTimeZone.StandardTime" />プロパティを取得または基準と世界協定時刻 (UTC) で表される時間からのオフセットを表す値を設定します<see cref="P:ExchangeWebServices.SerializableTimeZone.Bias" />プロパティ。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.SerializableTimeZone.StandardTime" /> プロパティは <see cref="T:ExchangeWebServices.SerializableTimeZoneTime" /> オブジェクトを返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

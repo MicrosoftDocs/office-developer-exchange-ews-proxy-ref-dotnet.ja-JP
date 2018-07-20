@@ -1,0 +1,115 @@
+<Type Name="RecurringTimeTransitionType" FullName="ExchangeWebServices.RecurringTimeTransitionType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="1cd48a9807733c42dd0c892f6f0120463dc4dacc" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608601" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public abstract class RecurringTimeTransitionType : ExchangeWebServices.TransitionType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit RecurringTimeTransitionType extends ExchangeWebServices.TransitionType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.RecurringTimeTransitionType" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class RecurringTimeTransitionType&#xA;Inherits TransitionType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RecurringTimeTransitionType abstract : ExchangeWebServices::TransitionType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.TransitionType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.RecurringDayTransitionType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(ExchangeWebServices.RecurringDateTransitionType))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.RecurringTimeTransitionType" />クラスは、派生クラスの基本クラスを<see cref="T:ExchangeWebServices.RecurringDateTransitionType" />と<see cref="T:ExchangeWebServices.RecurringDayTransitionType" />のタイムゾーンの遷移を表します。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected RecurringTimeTransitionType ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.RecurringTimeTransitionType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; RecurringTimeTransitionType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.RecurringTimeTransitionType" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.RecurringTimeTransitionType" />クラス。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Month">
+      <MemberSignature Language="C#" Value="public int Month { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Month" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.RecurringTimeTransitionType.Month" />
+      <MemberSignature Language="VB.NET" Value="Public Property Month As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Month { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.RecurringTimeTransitionType.Month" />プロパティを取得またはタイム ゾーンの切り替えが発生する月を設定します。</summary>
+        <value>値、<see cref="P:ExchangeWebServices.RecurringTimeTransitionType.Month" />は、タイム ゾーンの切り替えが発生する月を表す整数値。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeOffset">
+      <MemberSignature Language="C#" Value="public string TimeOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TimeOffset" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.RecurringTimeTransitionType.TimeOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Property TimeOffset As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TimeOffset { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement(DataType="duration")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.RecurringTimeTransitionType.TimeOffset" />プロパティを取得または、世界協定時刻 (UTC) からのタイム ゾーンの移行の期間のオフセットを設定します。</summary>
+        <value>値、<see cref="P:ExchangeWebServices.RecurringTimeTransitionType.TimeOffset" />プロパティは、世界協定時刻 (UTC) からのオフセットを表す文字列。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

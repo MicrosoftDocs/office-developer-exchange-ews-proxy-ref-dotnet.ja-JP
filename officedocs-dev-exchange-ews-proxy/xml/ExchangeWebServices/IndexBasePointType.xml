@@ -1,0 +1,78 @@
+<Type Name="IndexBasePointType" FullName="ExchangeWebServices.IndexBasePointType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="6e3e2b0b6dbe4b02e4439658cc3137033de424c9" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608126" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum IndexBasePointType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed IndexBasePointType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.IndexBasePointType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum IndexBasePointType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class IndexBasePointType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.IndexBasePointType" />列挙体は、アイテムのページが検索条件を使用して検出された項目のセットの最後または先頭に開始されるかどうかを指定します。</summary>
+    <remarks>
+      <para>この列挙体を使って、<see cref="P:ExchangeWebServices.IndexedPageViewType.BasePoint" />のプロパティの<see cref="T:ExchangeWebServices.IndexedPageViewType" />オブジェクトです。</para>
+      <para>を使用する場合、<see cref="F:ExchangeWebServices.IndexBasePointType.End" />の値、末尾からのシークには、オフセットによって識別される原点への移動が含まれることに注意してください。さらに、ポインターが再び要求されたレコードの数によって。などの場合は 100 個のレコードがある、オフセットが末尾から 25、75 から検索を開始します。10 個のレコードが返される場合、ポインターが逆方向さらに 10 は、66 を記録し、66 75 からのレコードを返します。次のインデックスは、65 です。ページの末尾からの次のオフセットは、35 に相当する 65、マイナス 100 です。35 は、次のインデックス付きのページを取得する、末尾からの次のオフセットの値です</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Beginning">
+      <MemberSignature Language="C#" Value="Beginning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.IndexBasePointType Beginning = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.IndexBasePointType.Beginning" />
+      <MemberSignature Language="VB.NET" Value="Beginning" />
+      <MemberSignature Language="C++ CLI" Value="Beginning" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.IndexBasePointType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>ページ ビューは、見つかったアイテム セットの先頭で開始されるかを指定します。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="End">
+      <MemberSignature Language="C#" Value="End" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.IndexBasePointType End = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.IndexBasePointType.End" />
+      <MemberSignature Language="VB.NET" Value="End" />
+      <MemberSignature Language="C++ CLI" Value="End" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.IndexBasePointType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>見つかったアイテム セットの末尾で、ページ ビューが開始されるかを指定します。 末尾からのシークを常に検索を進めます。</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

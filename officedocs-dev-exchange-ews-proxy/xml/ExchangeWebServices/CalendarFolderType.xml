@@ -1,0 +1,134 @@
+<Type Name="CalendarFolderType" FullName="ExchangeWebServices.CalendarFolderType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="c1819ceae18ebb8880aa49553ff05b55604929e9" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608639" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class CalendarFolderType : ExchangeWebServices.BaseFolderType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CalendarFolderType extends ExchangeWebServices.BaseFolderType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.CalendarFolderType" />
+  <TypeSignature Language="VB.NET" Value="Public Class CalendarFolderType&#xA;Inherits BaseFolderType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CalendarFolderType : ExchangeWebServices::BaseFolderType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.BaseFolderType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.CalendarFolderType" />クラスは、主に予定表のアイテムを含むフォルダーを表します。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CalendarFolderType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.CalendarFolderType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CalendarFolderType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.CalendarFolderType" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.CalendarFolderType" />クラス。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PermissionSet">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.CalendarPermissionSetType PermissionSet { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.CalendarPermissionSetType PermissionSet" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CalendarFolderType.PermissionSet" />
+      <MemberSignature Language="VB.NET" Value="Public Property PermissionSet As CalendarPermissionSetType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::CalendarPermissionSetType ^ PermissionSet { ExchangeWebServices::CalendarPermissionSetType ^ get(); void set(ExchangeWebServices::CalendarPermissionSetType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CalendarPermissionSetType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CalendarFolderType.PermissionSet" />プロパティを取得または設定、<see cref="T:ExchangeWebServices.PermissionSetType" />を指定したフォルダーに対して構成されているすべてのアクセス許可を表すオブジェクト。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.CalendarFolderType.PermissionSet" />を<see cref="T:ExchangeWebServices.PermissionSetType" />フォルダーに対して構成されているすべてのアクセス許可を表すオブジェクト。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SharingEffectiveRights">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.CalendarPermissionReadAccessType SharingEffectiveRights { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.CalendarPermissionReadAccessType SharingEffectiveRights" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CalendarFolderType.SharingEffectiveRights" />
+      <MemberSignature Language="VB.NET" Value="Public Property SharingEffectiveRights As CalendarPermissionReadAccessType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::CalendarPermissionReadAccessType SharingEffectiveRights { ExchangeWebServices::CalendarPermissionReadAccessType get(); void set(ExchangeWebServices::CalendarPermissionReadAccessType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CalendarPermissionReadAccessType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CalendarFolderType.SharingEffectiveRights" />プロパティを取得または設定、 <see cref="T:ExchangeWebServices.CalendarPermissionReadAccessType" /> 、クライアントの共有されている予定表データのアクセス許可を表すオブジェクト。</summary>
+        <value>値、<see cref="P:ExchangeWebServices.CalendarFolderType.SharingEffectiveRights" />プロパティは、<see cref="T:ExchangeWebServices.CalendarPermissionReadAccessType" />オブジェクトです。</value>
+        <remarks>
+          <para>設定する必要があります、<see cref="P:ExchangeWebServices.CalendarFolderType.SharingEffectiveRightsSpecified" />プロパティを<b>true</b>にするよう、<see cref="P:ExchangeWebServices.CalendarFolderType.SharingEffectiveRights" />プロパティは、SOAP 要求にシリアル化します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SharingEffectiveRightsSpecified">
+      <MemberSignature Language="C#" Value="public bool SharingEffectiveRightsSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SharingEffectiveRightsSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.CalendarFolderType.SharingEffectiveRightsSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property SharingEffectiveRightsSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SharingEffectiveRightsSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.CalendarFolderType.SharingEffectiveRightsSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.CalendarFolderType.SharingEffectiveRights" />プロパティは、SOAP 要求にシリアル化します。</summary>
+        <value>値、<see cref="P:ExchangeWebServices.CalendarFolderType.SharingEffectiveRightsSpecified" />プロパティが<b>true</b>の場合、<see cref="P:ExchangeWebServices.CalendarFolderType.SharingEffectiveRights" />プロパティは、SOAP 要求にシリアル化それ以外の場合、値が<b>false</b>にします。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

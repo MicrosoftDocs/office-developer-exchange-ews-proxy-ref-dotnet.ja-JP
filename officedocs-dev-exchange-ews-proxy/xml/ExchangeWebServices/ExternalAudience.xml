@@ -1,0 +1,97 @@
+<Type Name="ExternalAudience" FullName="ExchangeWebServices.ExternalAudience">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="12cdcb5812f6ce8b1220085d38587b09248d3826" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608262" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum ExternalAudience" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ExternalAudience extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.ExternalAudience" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ExternalAudience" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ExternalAudience" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.ExternalAudience" />列挙体は、外部の Office (OOF) メッセージを送信するを決定します。</summary>
+    <remarks>
+      <para>この列挙体を使用、<see cref="P:ExchangeWebServices.UserOofSettings.ExternalAudience" />のプロパティの<see cref="T:ExchangeWebServices.UserOofSettings" />オブジェクトと<see cref="P:ExchangeWebServices.GetUserOofSettingsResponse.AllowExternalOof" />のプロパティの<see cref="T:ExchangeWebServices.GetUserOofSettingsResponse" />オブジェクト。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.ExternalAudience All = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.ExternalAudience.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ExternalAudience</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>メールボックス ユーザーの組織外のユーザーにメッセージを送信するメールの送信者が外部の OOF メッセージの応答を受信するかを指定します。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Known">
+      <MemberSignature Language="C#" Value="Known" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.ExternalAudience Known = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.ExternalAudience.Known" />
+      <MemberSignature Language="VB.NET" Value="Known" />
+      <MemberSignature Language="C++ CLI" Value="Known" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ExternalAudience</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>メールボックス ユーザーの組織の外部ユーザーへのメッセージのみが表示されます、外部の OOF メッセージ応答送信者がユーザーの Exchange の場合に送信したメールの送信者がアドレス帳を保存することを指定します。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype ExchangeWebServices.ExternalAudience None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:ExchangeWebServices.ExternalAudience.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ExternalAudience</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>メールボックス ユーザーの組織外のユーザーにメッセージを送信するメールの送信者が外部の OOF メッセージ応答を受け取らないことを指定します。</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

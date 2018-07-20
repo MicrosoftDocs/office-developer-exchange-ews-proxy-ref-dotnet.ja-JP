@@ -1,0 +1,1734 @@
+<Type Name="MeetingRequestMessageType" FullName="ExchangeWebServices.MeetingRequestMessageType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="0ebd3dd66b691032e9c68d4f05a51c5c0291d962" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608137" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class MeetingRequestMessageType : ExchangeWebServices.MeetingMessageType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit MeetingRequestMessageType extends ExchangeWebServices.MeetingMessageType" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.MeetingRequestMessageType" />
+  <TypeSignature Language="VB.NET" Value="Public Class MeetingRequestMessageType&#xA;Inherits MeetingMessageType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MeetingRequestMessageType : ExchangeWebServices::MeetingMessageType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>ExchangeWebServices.MeetingMessageType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラスは、Exchange ストア内の会議出席依頼を表します。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MeetingRequestMessageType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.MeetingRequestMessageType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MeetingRequestMessageType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.MeetingRequestMessageType" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdjacentMeetingCount">
+      <MemberSignature Language="C#" Value="public int AdjacentMeetingCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AdjacentMeetingCount" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.AdjacentMeetingCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property AdjacentMeetingCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AdjacentMeetingCount { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.AdjacentMeetingCount" />プロパティを取得または会議の時刻に隣接している予定表アイテムの数を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.AdjacentMeetingCount" />プロパティは、会議の時刻に隣接している予定表アイテムの数を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdjacentMeetingCountSpecified">
+      <MemberSignature Language="C#" Value="public bool AdjacentMeetingCountSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AdjacentMeetingCountSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.AdjacentMeetingCountSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property AdjacentMeetingCountSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AdjacentMeetingCountSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.AdjacentMeetingCountSpecified" />プロパティを取得または設定を示すブール値かどうか、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.AdjacentMeetingCount" />プロパティは、SOAP メッセージにシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.AdjacentMeetingCount" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.AdjacentMeetingCountSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.AdjacentMeetingCount" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdjacentMeetings">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.NonEmptyArrayOfAllItemsType AdjacentMeetings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.NonEmptyArrayOfAllItemsType AdjacentMeetings" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.AdjacentMeetings" />
+      <MemberSignature Language="VB.NET" Value="Public Property AdjacentMeetings As NonEmptyArrayOfAllItemsType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::NonEmptyArrayOfAllItemsType ^ AdjacentMeetings { ExchangeWebServices::NonEmptyArrayOfAllItemsType ^ get(); void set(ExchangeWebServices::NonEmptyArrayOfAllItemsType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.NonEmptyArrayOfAllItemsType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.AdjacentMeetings" />プロパティを取得または会議の時刻に隣接しているすべての予定表アイテムを設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.AdjacentMeetings" /> 、会議の時刻に隣接している予定表アイテムを返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowNewTimeProposal">
+      <MemberSignature Language="C#" Value="public bool AllowNewTimeProposal { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowNewTimeProposal" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.AllowNewTimeProposal" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowNewTimeProposal As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowNewTimeProposal { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.AllowNewTimeProposal" />プロパティを取得または会議の新しい日時を提案できるかどうかを示しますを Boolean 値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.AllowNewTimeProposal" />プロパティを返します<b>true の</b>場合は、新しい日時を提案できるは会議中などのそれ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowNewTimeProposalSpecified">
+      <MemberSignature Language="C#" Value="public bool AllowNewTimeProposalSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowNewTimeProposalSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.AllowNewTimeProposalSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowNewTimeProposalSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowNewTimeProposalSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.AllowNewTimeProposalSpecified" />プロパティを取得または設定を示すブール値かどうか、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.AllowNewTimeProposal" />プロパティは、SOAP メッセージにシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.AllowNewTimeProposal" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.AllowNewTimeProposalSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.AllowNewTimeProposal" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppointmentReplyTime">
+      <MemberSignature Language="C#" Value="public DateTime AppointmentReplyTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime AppointmentReplyTime" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentReplyTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property AppointmentReplyTime As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime AppointmentReplyTime { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentReplyTime" />プロパティを取得または会議出席依頼に出席者が返信するときの日時を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentReplyTime" />プロパティは会議出席依頼に出席者が返信するときの日時を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppointmentReplyTimeSpecified">
+      <MemberSignature Language="C#" Value="public bool AppointmentReplyTimeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AppointmentReplyTimeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentReplyTimeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property AppointmentReplyTimeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AppointmentReplyTimeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentReplyTimeSpecified" />プロパティを取得または設定を示すブール値かどうか、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentReplyTime" />プロパティは、SOAP メッセージにシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentReplyTime" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentReplyTimeSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentReplyTime" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppointmentSequenceNumber">
+      <MemberSignature Language="C#" Value="public int AppointmentSequenceNumber { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AppointmentSequenceNumber" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentSequenceNumber" />
+      <MemberSignature Language="VB.NET" Value="Public Property AppointmentSequenceNumber As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AppointmentSequenceNumber { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentSequenceNumber" />プロパティを取得または予定のバージョンのシーケンス番号を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentSequenceNumber" />プロパティは、予定のバージョンのシーケンス番号を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppointmentSequenceNumberSpecified">
+      <MemberSignature Language="C#" Value="public bool AppointmentSequenceNumberSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AppointmentSequenceNumberSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentSequenceNumberSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property AppointmentSequenceNumberSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AppointmentSequenceNumberSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentSequenceNumberSpecified" />プロパティを取得または設定を示すブール値かどうか、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentSequenceNumber" />プロパティは、SOAP メッセージにシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentSequenceNumber" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentSequenceNumberSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentSequenceNumber" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppointmentState">
+      <MemberSignature Language="C#" Value="public int AppointmentState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AppointmentState" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentState" />
+      <MemberSignature Language="VB.NET" Value="Public Property AppointmentState As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AppointmentState { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentState" />プロパティを取得または予定の状態を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentState" />プロパティは、予定の状態を取得します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppointmentStateSpecified">
+      <MemberSignature Language="C#" Value="public bool AppointmentStateSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AppointmentStateSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentStateSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property AppointmentStateSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AppointmentStateSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentStateSpecified" />プロパティを取得または設定を示すブール値かどうか、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentState" />プロパティは、SOAP メッセージにシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentState" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentStateSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.AppointmentState" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalendarItemType">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.CalendarItemTypeType CalendarItemType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.CalendarItemTypeType CalendarItemType" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.CalendarItemType" />
+      <MemberSignature Language="VB.NET" Value="Public Property CalendarItemType As CalendarItemTypeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::CalendarItemTypeType CalendarItemType { ExchangeWebServices::CalendarItemTypeType get(); void set(ExchangeWebServices::CalendarItemTypeType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.CalendarItemTypeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.CalendarItemType" />プロパティを取得または予定表アイテムを定期的なアイテムの設定を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.CalendarItemType" />のいずれかのプロパティが返されます、<see cref="T:ExchangeWebServices.CalendarItemTypeType" />の列挙値。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalendarItemTypeSpecified">
+      <MemberSignature Language="C#" Value="public bool CalendarItemTypeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CalendarItemTypeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.CalendarItemTypeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property CalendarItemTypeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CalendarItemTypeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.CalendarItemTypeSpecified" />プロパティを取得または設定を示すブール値かどうか、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.CalendarItemType" />プロパティは、SOAP メッセージにシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.CalendarItemType" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.CalendarItemTypeSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.CalendarItemType" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeHighlights">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ChangeHighlightsType ChangeHighlights { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.ChangeHighlightsType ChangeHighlights" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.ChangeHighlights" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChangeHighlights As ChangeHighlightsType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::ChangeHighlightsType ^ ChangeHighlights { ExchangeWebServices::ChangeHighlightsType ^ get(); void set(ExchangeWebServices::ChangeHighlightsType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ChangeHighlightsType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConferenceType">
+      <MemberSignature Language="C#" Value="public int ConferenceType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ConferenceType" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.ConferenceType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConferenceType As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ConferenceType { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.ConferenceType" />プロパティを取得または会議が実行される会議の種類を指定する整数値を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.ConferenceType" />プロパティは、会議が実行される会議の種類を指定する整数値を返します。 次の表には、可能な値が含まれています、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.ConferenceType" />プロパティ。ValueDescription0NetMeeting1NetShow2Chat</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConferenceTypeSpecified">
+      <MemberSignature Language="C#" Value="public bool ConferenceTypeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ConferenceTypeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.ConferenceTypeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConferenceTypeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ConferenceTypeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.ConferenceTypeSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.ConferenceType" />プロパティは、SOAP 要求にシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.ConferenceType" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.ConferenceTypeSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.ConferenceType" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConflictingMeetingCount">
+      <MemberSignature Language="C#" Value="public int ConflictingMeetingCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ConflictingMeetingCount" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.ConflictingMeetingCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConflictingMeetingCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ConflictingMeetingCount { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.ConflictingMeetingCount" />プロパティを取得または設定のこのインスタンスに関連付けられている会議と競合する会議の数を指定する整数値、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.ConflictingMeetingCount" />のこのインスタンスに関連付けられている会議と競合する会議の数を指定する整数値を返します、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConflictingMeetingCountSpecified">
+      <MemberSignature Language="C#" Value="public bool ConflictingMeetingCountSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ConflictingMeetingCountSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.ConflictingMeetingCountSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConflictingMeetingCountSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ConflictingMeetingCountSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.ConflictingMeetingCountSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.ConflictingMeetingCount" />プロパティは、SOAP メッセージにシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.ConflictingMeetingCount" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.ConflictingMeetingCountSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.ConflictingMeetingCount" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConflictingMeetings">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.NonEmptyArrayOfAllItemsType ConflictingMeetings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.NonEmptyArrayOfAllItemsType ConflictingMeetings" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.ConflictingMeetings" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConflictingMeetings As NonEmptyArrayOfAllItemsType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::NonEmptyArrayOfAllItemsType ^ ConflictingMeetings { ExchangeWebServices::NonEmptyArrayOfAllItemsType ^ get(); void set(ExchangeWebServices::NonEmptyArrayOfAllItemsType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.NonEmptyArrayOfAllItemsType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.ConflictingMeetings" />プロパティを取得または設定のインスタンスの<see cref="T:ExchangeWebServices.NonEmptyArrayOfAllItemsType" />のこのインスタンスに関連付けられている会議の時間と競合するすべてのアイテムを表すクラス、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.ConflictingMeetings" />のインスタンスを返すプロパティ、<see cref="T:ExchangeWebServices.NonEmptyArrayOfAllItemsType" />のこのインスタンスに関連付けられている会議の時間と競合するすべてのアイテムを表すクラス、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeletedOccurrences">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.DeletedOccurrenceInfoType[] DeletedOccurrences { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.DeletedOccurrenceInfoType[] DeletedOccurrences" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.DeletedOccurrences" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeletedOccurrences As DeletedOccurrenceInfoType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::DeletedOccurrenceInfoType ^&gt; ^ DeletedOccurrences { cli::array &lt;ExchangeWebServices::DeletedOccurrenceInfoType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::DeletedOccurrenceInfoType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("DeletedOccurrence", IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DeletedOccurrenceInfoType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.DeletedOccurrences" />プロパティを取得または型の配列を設定する<see cref="T:ExchangeWebServices.DeletedOccurrenceInfoType" />削除された定期的な会議の出現回数を表します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.DeletedOccurrences" />プロパティの型の配列を返します<see cref="T:ExchangeWebServices.DeletedOccurrenceInfoType" />削除された定期的な会議の出現回数を表します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Duration">
+      <MemberSignature Language="C#" Value="public string Duration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Duration" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.Duration" />
+      <MemberSignature Language="VB.NET" Value="Public Property Duration As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Duration { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.Duration" />プロパティを取得または設定のこのインスタンスに関連付けられているミーティングの継続時間を指定する文字列値、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.Duration" />のこのインスタンスに関連付けられている会議の期間を指定する文字列値を返します、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="End">
+      <MemberSignature Language="C#" Value="public DateTime End { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime End" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.End" />
+      <MemberSignature Language="VB.NET" Value="Public Property End As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime End { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.End" />プロパティを取得または会議出席依頼の 1 回の期間の終わりを示す DateTime クラスのインスタンスを設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.End" />プロパティは、会議出席依頼の 1 回の期間の終わりを示す DateTime クラスのインスタンスを返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndSpecified">
+      <MemberSignature Language="C#" Value="public bool EndSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EndSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.EndSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EndSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.EndSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.End" />プロパティは、SOAP メッセージにシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.End" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.EndSpecified" />
+          <b>場合</b>、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.End" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTimeZone">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.TimeZoneDefinitionType EndTimeZone { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.TimeZoneDefinitionType EndTimeZone" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.EndTimeZone" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndTimeZone As TimeZoneDefinitionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::TimeZoneDefinitionType ^ EndTimeZone { ExchangeWebServices::TimeZoneDefinitionType ^ get(); void set(ExchangeWebServices::TimeZoneDefinitionType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.TimeZoneDefinitionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>返します。 <see cref="T:ExchangeWebServices.TimeZoneDefinitionType" />。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTimeZoneId">
+      <MemberSignature Language="C#" Value="public string EndTimeZoneId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EndTimeZoneId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.EndTimeZoneId" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndTimeZoneId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EndTimeZoneId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndWallClock">
+      <MemberSignature Language="C#" Value="public DateTime EndWallClock { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime EndWallClock" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.EndWallClock" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndWallClock As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime EndWallClock { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndWallClockSpecified">
+      <MemberSignature Language="C#" Value="public bool EndWallClockSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EndWallClockSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.EndWallClockSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndWallClockSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EndWallClockSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnhancedLocation">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.EnhancedLocationType EnhancedLocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.EnhancedLocationType EnhancedLocation" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.EnhancedLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnhancedLocation As EnhancedLocationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::EnhancedLocationType ^ EnhancedLocation { ExchangeWebServices::EnhancedLocationType ^ get(); void set(ExchangeWebServices::EnhancedLocationType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.EnhancedLocationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstOccurrence">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.OccurrenceInfoType FirstOccurrence { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.OccurrenceInfoType FirstOccurrence" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.FirstOccurrence" />
+      <MemberSignature Language="VB.NET" Value="Public Property FirstOccurrence As OccurrenceInfoType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::OccurrenceInfoType ^ FirstOccurrence { ExchangeWebServices::OccurrenceInfoType ^ get(); void set(ExchangeWebServices::OccurrenceInfoType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.OccurrenceInfoType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.FirstOccurrence" />プロパティを取得または設定のインスタンスの<see cref="T:ExchangeWebServices.OccurrenceInfoType" />のこのインスタンスに関連付けられているミーティングの最初に見つかった位置を表すクラス、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.FirstOccurrence" />のインスタンスを返すプロパティ、<see cref="T:ExchangeWebServices.OccurrenceInfoType" />のこのインスタンスに関連付けられているミーティングの最初に見つかった位置を表すクラス、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</value>
+        <remarks>
+          <para>このプロパティが有効な場合のこのインスタンスに関連付けられている会議、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラスが定期的な予定します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntendedFreeBusyStatus">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.LegacyFreeBusyType IntendedFreeBusyStatus { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.LegacyFreeBusyType IntendedFreeBusyStatus" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.IntendedFreeBusyStatus" />
+      <MemberSignature Language="VB.NET" Value="Public Property IntendedFreeBusyStatus As LegacyFreeBusyType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::LegacyFreeBusyType IntendedFreeBusyStatus { ExchangeWebServices::LegacyFreeBusyType get(); void set(ExchangeWebServices::LegacyFreeBusyType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.LegacyFreeBusyType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.IntendedFreeBusyStatus" />プロパティを取得または設定のインスタンスの<see cref="T:ExchangeWebServices.LegacyFreeBusyType" />のこのインスタンスに関連付けられている予定表アイテムの目的の状態を表すクラス、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.IntendedFreeBusyStatus" />のインスタンスを返すプロパティ、<see cref="T:ExchangeWebServices.LegacyFreeBusyType" />のこのインスタンスに関連付けられている予定表アイテムの目的の状態を表すクラス、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntendedFreeBusyStatusSpecified">
+      <MemberSignature Language="C#" Value="public bool IntendedFreeBusyStatusSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IntendedFreeBusyStatusSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.IntendedFreeBusyStatusSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IntendedFreeBusyStatusSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IntendedFreeBusyStatusSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.IntendedFreeBusyStatusSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.IntendedFreeBusyStatus" />プロパティは、SOAP プロトコルをシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.IntendedFreeBusyStatus" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.IntendedFreeBusyStatusSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.IntendedFreeBusyStatus" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAllDayEvent">
+      <MemberSignature Language="C#" Value="public bool IsAllDayEvent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAllDayEvent" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.IsAllDayEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsAllDayEvent As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAllDayEvent { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsAllDayEvent" />プロパティを取得または設定を指定するブール値かどうかのこのインスタンスに関連付けられている会議、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラスは、終日のイベントです。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsAllDayEvent" />プロパティが<b>true</b>を返す場合のこのインスタンスに関連付けられている会議、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラスは、終日のイベントです。それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAllDayEventSpecified">
+      <MemberSignature Language="C#" Value="public bool IsAllDayEventSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAllDayEventSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.IsAllDayEventSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsAllDayEventSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAllDayEventSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsAllDayEventSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsAllDayEvent" />プロパティは、SOAP メッセージにシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsAllDayEvent" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsAllDayEventSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsAllDayEvent" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCancelled">
+      <MemberSignature Language="C#" Value="public bool IsCancelled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCancelled" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.IsCancelled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsCancelled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCancelled { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsCancelled" />プロパティを取得または設定を示すブール値かどうかのこのインスタンスに関連付けられている会議、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラスはキャンセルされます。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsCancelled" />プロパティが<b>true</b>を返す場合のこのインスタンスに関連付けられている会議、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラスはキャンセルされます。それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCancelledSpecified">
+      <MemberSignature Language="C#" Value="public bool IsCancelledSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCancelledSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.IsCancelledSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsCancelledSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCancelledSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsCancelledSpecified" />プロパティを取得または設定を示すブール値かどうか、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsCancelled" />プロパティは、SOAP 要求にシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsCancelled" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsCancelledSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsCancelled" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsMeeting">
+      <MemberSignature Language="C#" Value="public bool IsMeeting { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsMeeting" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.IsMeeting" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsMeeting As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMeeting { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsMeeting" />プロパティを取得または設定するブール値を指定するかどうか、予定表アイテムのこのインスタンスに関連付けられて、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラスでは、会議に出席します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsMeeting" />を返します<b>true の</b>場合、予定表アイテムのこのインスタンスに関連付けられている、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラスは、会議です。それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsMeetingSpecified">
+      <MemberSignature Language="C#" Value="public bool IsMeetingSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsMeetingSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.IsMeetingSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsMeetingSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMeetingSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsMeetingSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsMeeting" />プロパティは、SOAP メッセージにシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsMeeting" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsMeetingSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsMeeting" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOnlineMeeting">
+      <MemberSignature Language="C#" Value="public bool IsOnlineMeeting { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOnlineMeeting" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.IsOnlineMeeting" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsOnlineMeeting As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOnlineMeeting { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsOnlineMeeting" />プロパティを取得または指定するブール値を設定するかどうかのこのインスタンスに関連付けられている会議、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラスは、オンライン会議です。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsOnlineMeeting" />プロパティが<b>true</b>を返す場合のこのインスタンスに関連付けられている会議、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラスは、オンライン会議です。それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOnlineMeetingSpecified">
+      <MemberSignature Language="C#" Value="public bool IsOnlineMeetingSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOnlineMeetingSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.IsOnlineMeetingSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsOnlineMeetingSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOnlineMeetingSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsOnlineMeetingSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsOnlineMeeting" />プロパティは、SOAP メッセージにシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsOnlineMeeting" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsOnlineMeetingSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsOnlineMeeting" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRecurring">
+      <MemberSignature Language="C#" Value="public bool IsRecurring { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsRecurring" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.IsRecurring" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsRecurring As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRecurring { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsRecurring" />プロパティを取得または指定するブール値を設定するかどうかのこのインスタンスに関連付けられている会議、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラスは、定期的な会議です。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsRecurring" />プロパティが<b>true</b>を返す場合のこのインスタンスに関連付けられている会議、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラスは、定期的な会議です。それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRecurringSpecified">
+      <MemberSignature Language="C#" Value="public bool IsRecurringSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsRecurringSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.IsRecurringSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsRecurringSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRecurringSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsRecurringSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsRecurring" />プロパティは、SOAP メッセージにシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsRecurring" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsRecurringSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsRecurring" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastOccurrence">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.OccurrenceInfoType LastOccurrence { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.OccurrenceInfoType LastOccurrence" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.LastOccurrence" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastOccurrence As OccurrenceInfoType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::OccurrenceInfoType ^ LastOccurrence { ExchangeWebServices::OccurrenceInfoType ^ get(); void set(ExchangeWebServices::OccurrenceInfoType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.OccurrenceInfoType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.LastOccurrence" />プロパティを取得または設定のインスタンスの<see cref="T:ExchangeWebServices.OccurrenceInfoType" />のこのインスタンスに関連付けられている会議の最後に見つかった位置を表すクラス、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.LastOccurrence" />のインスタンスを返すプロパティ、<see cref="T:ExchangeWebServices.OccurrenceInfoType" />のこのインスタンスに関連付けられている会議の最後に見つかった位置を表すクラス、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LegacyFreeBusyStatus">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.LegacyFreeBusyType LegacyFreeBusyStatus { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.LegacyFreeBusyType LegacyFreeBusyStatus" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.LegacyFreeBusyStatus" />
+      <MemberSignature Language="VB.NET" Value="Public Property LegacyFreeBusyStatus As LegacyFreeBusyType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::LegacyFreeBusyType LegacyFreeBusyStatus { ExchangeWebServices::LegacyFreeBusyType get(); void set(ExchangeWebServices::LegacyFreeBusyType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.LegacyFreeBusyType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.LegacyFreeBusyStatus" />プロパティを取得または設定のインスタンスの<see cref="T:ExchangeWebServices.LegacyFreeBusyType" />のこのインスタンスに関連付けられている会議の空き時間情報のステータスを指定するクラス、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.LegacyFreeBusyStatus" />のインスタンスを返すプロパティ、<see cref="T:ExchangeWebServices.LegacyFreeBusyType" />のこのインスタンスに関連付けられている会議の空き時間情報のステータスを指定するクラス、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LegacyFreeBusyStatusSpecified">
+      <MemberSignature Language="C#" Value="public bool LegacyFreeBusyStatusSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LegacyFreeBusyStatusSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.LegacyFreeBusyStatusSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property LegacyFreeBusyStatusSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LegacyFreeBusyStatusSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.LegacyFreeBusyStatusSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.LegacyFreeBusyStatus" />プロパティは、SOAP メッセージにシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.LegacyFreeBusyStatus" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.LegacyFreeBusyStatusSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.LegacyFreeBusyStatus" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Location">
+      <MemberSignature Language="C#" Value="public string Location { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Location" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.Location" />
+      <MemberSignature Language="VB.NET" Value="Public Property Location As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Location { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.Location" />プロパティを取得または設定のこのインスタンスに関連付けられている会議の場所を指定する文字列値、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.Location" />のこのインスタンスに関連付けられている会議の場所を指定する文字列値を返します、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeetingRequestType">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.MeetingRequestTypeType MeetingRequestType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.MeetingRequestTypeType MeetingRequestType" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.MeetingRequestType" />
+      <MemberSignature Language="VB.NET" Value="Public Property MeetingRequestType As MeetingRequestTypeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::MeetingRequestTypeType MeetingRequestType { ExchangeWebServices::MeetingRequestTypeType get(); void set(ExchangeWebServices::MeetingRequestTypeType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.MeetingRequestTypeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.MeetingRequestType" />プロパティを取得または設定のインスタンスの<see cref="T:ExchangeWebServices.MeetingRequestTypeType" />のこのインスタンスで表される会議出席依頼の種類を指定する、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.MeetingRequestType" />のインスタンスを返すプロパティ、<see cref="T:ExchangeWebServices.MeetingRequestTypeType" />のこのインスタンスで表される会議出席依頼の種類を指定する、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeetingRequestTypeSpecified">
+      <MemberSignature Language="C#" Value="public bool MeetingRequestTypeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MeetingRequestTypeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.MeetingRequestTypeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property MeetingRequestTypeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MeetingRequestTypeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.MeetingRequestTypeSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.MeetingRequestType" />プロパティは、SOAP メッセージにシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.MeetingRequestType" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.MeetingRequestTypeSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.MeetingRequestType" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeetingRequestWasSent">
+      <MemberSignature Language="C#" Value="public bool MeetingRequestWasSent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MeetingRequestWasSent" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.MeetingRequestWasSent" />
+      <MemberSignature Language="VB.NET" Value="Public Property MeetingRequestWasSent As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MeetingRequestWasSent { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.MeetingRequestWasSent" />プロパティの取得または設定の会議を要求するかどうかを指定するブール値のこのインスタンスは、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラスは、要求された出席者に送信されました。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.MeetingRequestWasSent" />プロパティを返します<b>true</b>の会議を要求する場合は、インスタンスによって表されるこの、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラスが、要求された出席者に送信されましたそれ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeetingRequestWasSentSpecified">
+      <MemberSignature Language="C#" Value="public bool MeetingRequestWasSentSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MeetingRequestWasSentSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.MeetingRequestWasSentSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property MeetingRequestWasSentSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MeetingRequestWasSentSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.MeetingRequestWasSentSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.MeetingRequestWasSent" />プロパティは、SOAP メッセージにシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.MeetingRequestWasSent" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.MeetingRequestWasSentSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.MeetingRequestWasSent" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeetingTimeZone">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.TimeZoneType MeetingTimeZone { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.TimeZoneType MeetingTimeZone" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.MeetingTimeZone" />
+      <MemberSignature Language="VB.NET" Value="Public Property MeetingTimeZone As TimeZoneType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::TimeZoneType ^ MeetingTimeZone { ExchangeWebServices::TimeZoneType ^ get(); void set(ExchangeWebServices::TimeZoneType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.TimeZoneType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.MeetingTimeZone" />プロパティを取得または設定のインスタンスの<see cref="T:ExchangeWebServices.TimeZoneType" />のこのインスタンスに関連付けられている会議の場所のタイム ゾーンを表すクラス、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.MeetingTimeZone" />のインスタンスを返すプロパティ、<see cref="T:ExchangeWebServices.TimeZoneType" />のこのインスタンスに関連付けられている会議の場所のタイム ゾーンを表すクラス、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeetingWorkspaceUrl">
+      <MemberSignature Language="C#" Value="public string MeetingWorkspaceUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MeetingWorkspaceUrl" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.MeetingWorkspaceUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property MeetingWorkspaceUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MeetingWorkspaceUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.MeetingWorkspaceUrl" />プロパティを取得または会議ワークスペースの URL を含む文字列値を設定するのこのインスタンスに関連付けられている会議、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />へのリンクのクラスです。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.MeetingWorkspaceUrl" />プロパティは、会議ワークスペースの URL を含む文字列値を返しますのこのインスタンスに関連付けられている会議、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />へのリンクのクラスです。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifiedOccurrences">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.OccurrenceInfoType[] ModifiedOccurrences { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.OccurrenceInfoType[] ModifiedOccurrences" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.ModifiedOccurrences" />
+      <MemberSignature Language="VB.NET" Value="Public Property ModifiedOccurrences As OccurrenceInfoType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::OccurrenceInfoType ^&gt; ^ ModifiedOccurrences { cli::array &lt;ExchangeWebServices::OccurrenceInfoType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::OccurrenceInfoType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("Occurrence", IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.OccurrenceInfoType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.ModifiedOccurrences" />プロパティを取得または型の要素を含む配列を設定する<see cref="T:ExchangeWebServices.OccurrenceInfoType" />のこのインスタンスに関連付けられているが変更されており、定期的な予定マスターとの違いは予定表アイテムの出現は項目を<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.ModifiedOccurrences" />型の要素を含む配列を返します<see cref="T:ExchangeWebServices.OccurrenceInfoType" />のこのインスタンスに関連付けられているが変更されており、定期的な予定マスターとの違いは予定表アイテムの出現は項目を<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</value>
+        <remarks>
+          <para>
+            <see cref="P:ExchangeWebServices.MeetingRequestMessageType.ModifiedOccurrences" />プロパティが有効な場合、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.CalendarItemType" />プロパティに設定されて、<see cref="F:ExchangeWebServices.CalendarItemTypeType.RecurringMaster" />の列挙値。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MyResponseType">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.ResponseTypeType MyResponseType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.ResponseTypeType MyResponseType" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.MyResponseType" />
+      <MemberSignature Language="VB.NET" Value="Public Property MyResponseType As ResponseTypeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::ResponseTypeType MyResponseType { ExchangeWebServices::ResponseTypeType get(); void set(ExchangeWebServices::ResponseTypeType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.ResponseTypeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.MyResponseType" />プロパティを取得または設定、無効のいずれかの<see cref="T:ExchangeWebServices.ResponseTypeType" />のこのインスタンスに関連付けられている会議出席依頼の応答または状態を表す列挙値の<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.MyResponseType" />プロパティは、有効な 1 つを返します<see cref="T:ExchangeWebServices.ResponseTypeType" />のこのインスタンスに関連付けられている会議出席依頼の応答または状態を表す列挙値の<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MyResponseTypeSpecified">
+      <MemberSignature Language="C#" Value="public bool MyResponseTypeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MyResponseTypeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.MyResponseTypeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property MyResponseTypeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MyResponseTypeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.MyResponseTypeSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.MyResponseType" />プロパティは、SOAP メッセージにシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.MyResponseType" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.MyResponseTypeSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.MyResponseType" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NetShowUrl">
+      <MemberSignature Language="C#" Value="public string NetShowUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NetShowUrl" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.NetShowUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property NetShowUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NetShowUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.NetShowUrl" />プロパティを取得または設定のこのインスタンスに関連付けられている会議のブロードキャストのオンライン会議の URL を含む文字列値、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.NetShowUrl" />のこのインスタンスに関連付けられている会議の NetShow オンライン会議の URL を含む文字列値を返します、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OptionalAttendees">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.AttendeeType[] OptionalAttendees { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.AttendeeType[] OptionalAttendees" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.OptionalAttendees" />
+      <MemberSignature Language="VB.NET" Value="Public Property OptionalAttendees As AttendeeType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::AttendeeType ^&gt; ^ OptionalAttendees { cli::array &lt;ExchangeWebServices::AttendeeType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::AttendeeType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("Attendee", IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.AttendeeType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.OptionalAttendees" />プロパティを取得または型の要素を含む配列を設定する<see cref="T:ExchangeWebServices.AttendeeType" />のこのインスタンスに関連付けられている会議に出席する必要のない出席者を表す、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.OptionalAttendees" />プロパティは、型の要素を含む配列を返します<see cref="T:ExchangeWebServices.AttendeeType" />のこのインスタンスに関連付けられている会議に出席する必要のない出席者を表す、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Organizer">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.SingleRecipientType Organizer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.SingleRecipientType Organizer" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.Organizer" />
+      <MemberSignature Language="VB.NET" Value="Public Property Organizer As SingleRecipientType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::SingleRecipientType ^ Organizer { ExchangeWebServices::SingleRecipientType ^ get(); void set(ExchangeWebServices::SingleRecipientType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.SingleRecipientType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.Organizer" />プロパティを取得または設定のインスタンスの<see cref="T:ExchangeWebServices.SingleRecipientType" />のこのインスタンスに関連付けられているミーティングの開催者を表すクラス、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.Organizer" />のインスタンスを返すプロパティ、<see cref="T:ExchangeWebServices.SingleRecipientType" />のこのインスタンスに関連付けられているミーティングの開催者を表すクラス、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginalStart">
+      <MemberSignature Language="C#" Value="public DateTime OriginalStart { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime OriginalStart" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.OriginalStart" />
+      <MemberSignature Language="VB.NET" Value="Public Property OriginalStart As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime OriginalStart { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.OriginalStart" />プロパティを取得または元の開始のこのインスタンスに関連付けられている会議の時刻を示す DateTime クラスのインスタンスを設定します<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.OriginalStart" />プロパティは、元の開始のこのインスタンスに関連付けられている会議の時刻を示す DateTime クラスのインスタンスを返します、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginalStartSpecified">
+      <MemberSignature Language="C#" Value="public bool OriginalStartSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OriginalStartSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.OriginalStartSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property OriginalStartSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OriginalStartSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.OriginalStartSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.OriginalStart" />プロパティは、SOAP メッセージにシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.OriginalStart" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.OriginalStartSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.OriginalStart" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Recurrence">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.RecurrenceType Recurrence { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.RecurrenceType Recurrence" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.Recurrence" />
+      <MemberSignature Language="VB.NET" Value="Public Property Recurrence As RecurrenceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::RecurrenceType ^ Recurrence { ExchangeWebServices::RecurrenceType ^ get(); void set(ExchangeWebServices::RecurrenceType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.RecurrenceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.Recurrence" />プロパティを取得または設定のインスタンスの<see cref="T:ExchangeWebServices.RecurrenceType" />のこのインスタンスに関連付けられている会議の定期的なパターンを指定するクラス、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.Recurrence" />のインスタンスを返すプロパティ、<see cref="T:ExchangeWebServices.RecurrenceType" />のこのインスタンスに関連付けられている会議の定期的なパターンを指定するクラス、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequiredAttendees">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.AttendeeType[] RequiredAttendees { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.AttendeeType[] RequiredAttendees" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.RequiredAttendees" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequiredAttendees As AttendeeType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::AttendeeType ^&gt; ^ RequiredAttendees { cli::array &lt;ExchangeWebServices::AttendeeType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::AttendeeType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("Attendee", IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.AttendeeType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.RequiredAttendees" />プロパティを取得または型の要素を含む配列を設定する<see cref="T:ExchangeWebServices.AttendeeType" />のこのインスタンスに関連付けられている会議に出席するために必要な参加者を表す、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.RequiredAttendees" />型の要素を含む配列を返します<see cref="T:ExchangeWebServices.AttendeeType" />のこのインスタンスに関連付けられている会議に出席するために必要な参加者を表す、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resources">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.AttendeeType[] Resources { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.AttendeeType[] Resources" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.Resources" />
+      <MemberSignature Language="VB.NET" Value="Public Property Resources As AttendeeType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::AttendeeType ^&gt; ^ Resources { cli::array &lt;ExchangeWebServices::AttendeeType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::AttendeeType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("Attendee", IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.AttendeeType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.Resources" />プロパティを取得または型の要素を含む配列を設定する<see cref="T:ExchangeWebServices.AttendeeType" />のこのインスタンスに関連付けられている会議のスケジュール設定されたリソースを表す、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.Resources" />型の要素を含む配列を返します<see cref="T:ExchangeWebServices.AttendeeType" />のこのインスタンスに関連付けられている会議のスケジュール設定されたリソースを表す、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public DateTime Start { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime Start" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.Start" />
+      <MemberSignature Language="VB.NET" Value="Public Property Start As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Start { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.Start" />プロパティを取得または設定のこのインスタンスに関連付けられている会議の開始を表す DateTime クラスのインスタンスの<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.Start" />のこのインスタンスに関連付けられている会議の開始を表す DateTime クラスのインスタンスを返すプロパティ、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</value>
+        <remarks>
+          <para>
+            <see cref="P:ExchangeWebServices.MeetingRequestMessageType.Start" />プロパティは有効な場合、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.IsRecurring" />プロパティが<b>false</b>に設定します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartSpecified">
+      <MemberSignature Language="C#" Value="public bool StartSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StartSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.StartSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StartSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.StartSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.Start" />プロパティは、SOAP 応答にシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.Start" />プロパティが指定されています。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.StartSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.MeetingRequestMessageType.Start" />プロパティは、SOAP 応答をシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartTimeZone">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.TimeZoneDefinitionType StartTimeZone { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.TimeZoneDefinitionType StartTimeZone" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.StartTimeZone" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartTimeZone As TimeZoneDefinitionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::TimeZoneDefinitionType ^ StartTimeZone { ExchangeWebServices::TimeZoneDefinitionType ^ get(); void set(ExchangeWebServices::TimeZoneDefinitionType ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.TimeZoneDefinitionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>返します。 <see cref="T:ExchangeWebServices.TimeZoneDefinitionType" />。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartTimeZoneId">
+      <MemberSignature Language="C#" Value="public string StartTimeZoneId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StartTimeZoneId" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.StartTimeZoneId" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartTimeZoneId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StartTimeZoneId { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartWallClock">
+      <MemberSignature Language="C#" Value="public DateTime StartWallClock { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime StartWallClock" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.StartWallClock" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartWallClock As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime StartWallClock { DateTime get(); void set(DateTime value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartWallClockSpecified">
+      <MemberSignature Language="C#" Value="public bool StartWallClockSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StartWallClockSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.StartWallClockSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartWallClockSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StartWallClockSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeZone">
+      <MemberSignature Language="C#" Value="public string TimeZone { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TimeZone" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.TimeZone" />
+      <MemberSignature Language="VB.NET" Value="Public Property TimeZone As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TimeZone { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.TimeZone" />プロパティを取得または設定のこのインスタンスに関連付けられているミーティングのタイム ゾーンの説明テキストを指定する文字列値、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.TimeZone" />のこのインスタンスに関連付けられているミーティングのタイム ゾーンの説明テキストを指定する文字列値を返します、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラス。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="When">
+      <MemberSignature Language="C#" Value="public string When { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string When" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.MeetingRequestMessageType.When" />
+      <MemberSignature Language="VB.NET" Value="Public Property When As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ When { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.When" />プロパティを取得またはがある場合を説明するテキストを指定する文字列値を設定のこのインスタンスに関連付けられている会議、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラスで発生します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.MeetingRequestMessageType.When" />がある場合を説明するテキストを指定する文字列値を返しますのこのインスタンスに関連付けられている会議、<see cref="T:ExchangeWebServices.MeetingRequestMessageType" />クラスが発生します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

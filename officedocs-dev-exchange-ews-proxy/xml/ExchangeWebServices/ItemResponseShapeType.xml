@@ -1,0 +1,509 @@
+<Type Name="ItemResponseShapeType" FullName="ExchangeWebServices.ItemResponseShapeType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="4314cf2503b8031564660c2f690e1d3ef844723b" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20609223" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class ItemResponseShapeType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ItemResponseShapeType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.ItemResponseShapeType" />
+  <TypeSignature Language="VB.NET" Value="Public Class ItemResponseShapeType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ItemResponseShapeType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.ItemResponseShapeType" />クラスは、GetItem、FindItem、または SyncFolderItems の応答で返されるプロパティのセットを識別します。</summary>
+    <remarks>
+      <para>
+        <see cref="T:ExchangeWebServices.ItemResponseShapeType" />クラスは、要求にのみ使用します。</para>
+      <para />
+    </remarks>
+    <example>
+      <para>次のコード例は、<see cref="T:ExchangeWebServices.ItemResponseShapeType" />の他に、[AllProperties] 図形を使用して設定、<see cref="F:ExchangeWebServices.UnindexedFieldURIType.calendarIsMeeting" />と<see cref="F:ExchangeWebServices.UnindexedFieldURIType.itemImportance" />のプロパティです。</para>
+      <code>// Define the item properties that are returned in the response.
+ItemResponseShapeType itemProperties = new ItemResponseShapeType();
+// Use the Default shape for the response.            
+itemProperties.BaseShape = DefaultShapeNamesType.Default;
+// Add more properties to the request.
+PathToUnindexedFieldType addIsMeeting = new PathToUnindexedFieldType();
+PathToUnindexedFieldType addImportance = new PathToUnindexedFieldType();
+addIsMeeting.FieldURI = UnindexedFieldURIType.calendarIsMeeting;
+addImportance.FieldURI = UnindexedFieldURIType.itemImportance;
+itemProperties.AdditionalProperties = new PathToUnindexedFieldType[2];
+itemProperties.AdditionalProperties[0] = addIsMeeting;
+itemProperties.AdditionalProperties[1] = addImportance;
+// Add the properties shape to the request.
+findItemRequest.ItemShape = itemProperties;</code>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ItemResponseShapeType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.ItemResponseShapeType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ItemResponseShapeType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.ItemResponseShapeType" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.ItemResponseShapeType" />クラス。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddBlankTargetToLinks">
+      <MemberSignature Language="C#" Value="public bool AddBlankTargetToLinks { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AddBlankTargetToLinks" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemResponseShapeType.AddBlankTargetToLinks" />
+      <MemberSignature Language="VB.NET" Value="Public Property AddBlankTargetToLinks As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AddBlankTargetToLinks { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddBlankTargetToLinksSpecified">
+      <MemberSignature Language="C#" Value="public bool AddBlankTargetToLinksSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AddBlankTargetToLinksSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemResponseShapeType.AddBlankTargetToLinksSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property AddBlankTargetToLinksSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AddBlankTargetToLinksSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdditionalProperties">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.BasePathToElementType[] AdditionalProperties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.BasePathToElementType[] AdditionalProperties" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemResponseShapeType.AdditionalProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Property AdditionalProperties As BasePathToElementType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::BasePathToElementType ^&gt; ^ AdditionalProperties { cli::array &lt;ExchangeWebServices::BasePathToElementType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::BasePathToElementType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("ExtendedFieldURI", typeof(ExchangeWebServices.PathToExtendedFieldType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("Path", IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("IndexedFieldURI", typeof(ExchangeWebServices.PathToIndexedFieldType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("FieldURI", typeof(ExchangeWebServices.PathToUnindexedFieldType), IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.BasePathToElementType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ItemResponseShapeType.AdditionalProperties" />プロパティを取得または一連の応答を取得する要求された追加のプロパティを設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ItemResponseShapeType.AdditionalProperties" />プロパティには、基本の型を持つオブジェクトの配列が含まれています<see cref="T:ExchangeWebServices.BasePathToElementType" />。 <see cref="T:ExchangeWebServices.PathToUnindexedFieldType" />、 <see cref="T:ExchangeWebServices.PathToIndexedFieldType" />、および<see cref="T:ExchangeWebServices.PathToExtendedFieldType" />は、このプロパティに設定できる使用可能な型です。</value>
+        <remarks>
+          <para>追加のプロパティは、要求に対してのみ設定されています。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseShape">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.DefaultShapeNamesType BaseShape { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.DefaultShapeNamesType BaseShape" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemResponseShapeType.BaseShape" />
+      <MemberSignature Language="VB.NET" Value="Public Property BaseShape As DefaultShapeNamesType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::DefaultShapeNamesType BaseShape { ExchangeWebServices::DefaultShapeNamesType get(); void set(ExchangeWebServices::DefaultShapeNamesType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.DefaultShapeNamesType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ItemResponseShapeType.BaseShape" />プロパティを取得またはの応答を取得する要求の基本プロパティを設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ItemResponseShapeType.BaseShape" />プロパティは、<see cref="T:ExchangeWebServices.DefaultShapeNamesType" />列挙体です。 可能性のある<see cref="T:ExchangeWebServices.DefaultShapeNamesType" />の値は、 <see cref="F:ExchangeWebServices.DefaultShapeNamesType.IdOnly" />、 <see cref="F:ExchangeWebServices.DefaultShapeNamesType.Default" />、または<see cref="F:ExchangeWebServices.DefaultShapeNamesType.AllProperties" />。</value>
+        <remarks>
+          <para>Exchange Web サービスでは、図形の概念を使用して、操作に対して返される別の既定のプロパティのコレクションを記述します。他の図形を操作し、応答で返される項目の種類に基づいて、さまざまなプロパティを返します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlockExternalImages">
+      <MemberSignature Language="C#" Value="public bool BlockExternalImages { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BlockExternalImages" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemResponseShapeType.BlockExternalImages" />
+      <MemberSignature Language="VB.NET" Value="Public Property BlockExternalImages As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BlockExternalImages { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlockExternalImagesSpecified">
+      <MemberSignature Language="C#" Value="public bool BlockExternalImagesSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BlockExternalImagesSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemResponseShapeType.BlockExternalImagesSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property BlockExternalImagesSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BlockExternalImagesSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BodyType">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.BodyTypeResponseType BodyType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype ExchangeWebServices.BodyTypeResponseType BodyType" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemResponseShapeType.BodyType" />
+      <MemberSignature Language="VB.NET" Value="Public Property BodyType As BodyTypeResponseType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ExchangeWebServices::BodyTypeResponseType BodyType { ExchangeWebServices::BodyTypeResponseType get(); void set(ExchangeWebServices::BodyTypeResponseType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.BodyTypeResponseType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ItemResponseShapeType.BodyType" />プロパティを取得または応答で返される Body プロパティの要求の本文の書式を設定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ItemResponseShapeType.BodyType" />プロパティは、<see cref="T:ExchangeWebServices.BodyTypeResponseType" />列挙体です。 可能性のある<see cref="T:ExchangeWebServices.BodyTypeResponseType" />の値は、 <see cref="F:ExchangeWebServices.BodyTypeResponseType.Best" />、 <see cref="F:ExchangeWebServices.BodyTypeResponseType.HTML" />、または<see cref="F:ExchangeWebServices.BodyTypeResponseType.Text" />。</value>
+        <remarks>
+          <para>設定する必要があります、<see cref="P:ExchangeWebServices.ItemResponseShapeType.BodyTypeSpecified" />プロパティを<b>true</b>にするよう、<see cref="P:ExchangeWebServices.ItemResponseShapeType.BodyType" />プロパティは、SOAP 要求にシリアル化します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BodyTypeSpecified">
+      <MemberSignature Language="C#" Value="public bool BodyTypeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BodyTypeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemResponseShapeType.BodyTypeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property BodyTypeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BodyTypeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ItemResponseShapeType.BodyTypeSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ItemResponseShapeType.BodyType" />プロパティは、SOAP 要求にシリアル化します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ItemResponseShapeType.BodyTypeSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ItemResponseShapeType.BodyType" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertHtmlCodePageToUTF8">
+      <MemberSignature Language="C#" Value="public bool ConvertHtmlCodePageToUTF8 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ConvertHtmlCodePageToUTF8" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemResponseShapeType.ConvertHtmlCodePageToUTF8" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConvertHtmlCodePageToUTF8 As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ConvertHtmlCodePageToUTF8 { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>返します。 <see cref="T:System.Boolean" />。</value>
+        <remarks>
+          <para>
+            <b>メモ</b>: このメンバーは、バージョンの Exchange が Exchange Server 2010 Service Pack 1 (SP1) では、Exchange のオンラインなどで始まるに適用されます。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertHtmlCodePageToUTF8Specified">
+      <MemberSignature Language="C#" Value="public bool ConvertHtmlCodePageToUTF8Specified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ConvertHtmlCodePageToUTF8Specified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemResponseShapeType.ConvertHtmlCodePageToUTF8Specified" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConvertHtmlCodePageToUTF8Specified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ConvertHtmlCodePageToUTF8Specified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>返します。 <see cref="T:System.Boolean" />。</value>
+        <remarks>
+          <para>
+            <b>メモ</b>: このメンバーは、バージョンの Exchange が Exchange Server 2010 Service Pack 1 (SP1) では、Exchange のオンラインなどで始まるに適用されます。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterHtmlContent">
+      <MemberSignature Language="C#" Value="public bool FilterHtmlContent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FilterHtmlContent" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemResponseShapeType.FilterHtmlContent" />
+      <MemberSignature Language="VB.NET" Value="Public Property FilterHtmlContent As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FilterHtmlContent { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>返します。 <see cref="T:System.Boolean" />。</value>
+        <remarks>
+          <para>
+            <b>メモ</b>: このメンバーは、バージョンの Exchange が Exchange Server 2010 Service Pack 1 (SP1) では、Exchange のオンラインなどで始まるに適用されます。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterHtmlContentSpecified">
+      <MemberSignature Language="C#" Value="public bool FilterHtmlContentSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FilterHtmlContentSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemResponseShapeType.FilterHtmlContentSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property FilterHtmlContentSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FilterHtmlContentSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>返します。 <see cref="T:System.Boolean" />。</value>
+        <remarks>
+          <para>
+            <b>メモ</b>: このメンバーは、バージョンの Exchange が Exchange Server 2010 Service Pack 1 (SP1) では、Exchange のオンラインなどで始まるに適用されます。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeMimeContent">
+      <MemberSignature Language="C#" Value="public bool IncludeMimeContent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeMimeContent" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemResponseShapeType.IncludeMimeContent" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeMimeContent As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeMimeContent { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ItemResponseShapeType.IncludeMimeContent" />プロパティは、アイテムまたは添付ファイルの MIME コンテンツが応答で返されるかどうかを指定します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ItemResponseShapeType.IncludeMimeContent" /> MIME コンテンツを応答に返される必要がある場合、プロパティが<b>true</b>に設定それ以外の場合、プロパティは<b>false</b>に設定します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeMimeContentSpecified">
+      <MemberSignature Language="C#" Value="public bool IncludeMimeContentSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeMimeContentSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemResponseShapeType.IncludeMimeContentSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeMimeContentSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeMimeContentSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ItemResponseShapeType.IncludeMimeContentSpecified" />プロパティを取得または指定するブール値を設定するかどうか、<see cref="P:ExchangeWebServices.ItemResponseShapeType.IncludeMimeContent" />プロパティが SOAP 要求にシリアル化します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.ItemResponseShapeType.IncludeMimeContentSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.ItemResponseShapeType.IncludeMimeContent" />プロパティは、SOAP 要求にシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineImageUrlTemplate">
+      <MemberSignature Language="C#" Value="public string InlineImageUrlTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InlineImageUrlTemplate" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemResponseShapeType.InlineImageUrlTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property InlineImageUrlTemplate As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InlineImageUrlTemplate { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumBodySize">
+      <MemberSignature Language="C#" Value="public int MaximumBodySize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumBodySize" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemResponseShapeType.MaximumBodySize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaximumBodySize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumBodySize { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumBodySizeSpecified">
+      <MemberSignature Language="C#" Value="public bool MaximumBodySizeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MaximumBodySizeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ItemResponseShapeType.MaximumBodySizeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaximumBodySizeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MaximumBodySizeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

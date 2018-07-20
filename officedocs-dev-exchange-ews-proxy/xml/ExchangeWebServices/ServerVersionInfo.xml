@@ -1,0 +1,299 @@
+<Type Name="ServerVersionInfo" FullName="ExchangeWebServices.ServerVersionInfo">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="dc3270c7d88a9c8966195b3f2a8dc0e93d6d6587" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608807" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class ServerVersionInfo : System.Web.Services.Protocols.SoapHeader" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ServerVersionInfo extends System.Web.Services.Protocols.SoapHeader" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.ServerVersionInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServerVersionInfo&#xA;Inherits SoapHeader" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServerVersionInfo : System::Web::Services::Protocols::SoapHeader" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Protocols.SoapHeader</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlRoot(IsNullable=false, Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(AnonymousType=true, Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.ServerVersionInfo" />クラスには、Microsoft Exchange Server のバージョン情報が含まれています。</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServerVersionInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.ServerVersionInfo.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServerVersionInfo();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.ServerVersionInfo" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.ServerVersionInfo" />クラス。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MajorBuildNumber">
+      <MemberSignature Language="C#" Value="public int MajorBuildNumber { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MajorBuildNumber" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ServerVersionInfo.MajorBuildNumber" />
+      <MemberSignature Language="VB.NET" Value="Public Property MajorBuildNumber As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MajorBuildNumber { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ServerVersionInfo.MajorBuildNumber" />プロパティを取得またはメジャー ビルド番号を設定します。</summary>
+        <value>値、<see cref="P:ExchangeWebServices.ServerVersionInfo.MajorBuildNumber" />プロパティは、メジャー ビルド番号。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MajorBuildNumberSpecified">
+      <MemberSignature Language="C#" Value="public bool MajorBuildNumberSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MajorBuildNumberSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ServerVersionInfo.MajorBuildNumberSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property MajorBuildNumberSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MajorBuildNumberSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ServerVersionInfo.MajorBuildNumberSpecified" />プロパティを取得または設定を示すブール値かどうか、<see cref="P:ExchangeWebServices.ServerVersionInfo.MajorBuildNumber" />プロパティは、SOAP メッセージにシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ServerVersionInfo.MajorBuildNumber" />プロパティが指定されています。</summary>
+        <value>値、<see cref="P:ExchangeWebServices.ServerVersionInfo.MajorBuildNumberSpecified" />プロパティが<b>true</b>の場合、<see cref="P:ExchangeWebServices.ServerVersionInfo.MajorBuildNumber" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、値が<b>false</b>にします。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MajorVersion">
+      <MemberSignature Language="C#" Value="public int MajorVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MajorVersion" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ServerVersionInfo.MajorVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property MajorVersion As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MajorVersion { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ServerVersionInfo.MajorVersion" />プロパティを取得またはメジャー バージョン番号を設定します。</summary>
+        <value>値、<see cref="P:ExchangeWebServices.ServerVersionInfo.MajorVersion" />プロパティは、メジャー バージョン番号です。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MajorVersionSpecified">
+      <MemberSignature Language="C#" Value="public bool MajorVersionSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MajorVersionSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ServerVersionInfo.MajorVersionSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property MajorVersionSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MajorVersionSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ServerVersionInfo.MajorVersionSpecified" />プロパティを取得または設定を示すブール値かどうか、<see cref="P:ExchangeWebServices.ServerVersionInfo.MajorVersion" />プロパティは、SOAP メッセージにシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ServerVersionInfo.MajorVersion" />プロパティが指定されています。</summary>
+        <value>値、<see cref="P:ExchangeWebServices.ServerVersionInfo.MajorVersionSpecified" />プロパティが<b>true</b>の場合、<see cref="P:ExchangeWebServices.ServerVersionInfo.MajorVersion" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、値が<b>false</b>にします。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinorBuildNumber">
+      <MemberSignature Language="C#" Value="public int MinorBuildNumber { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MinorBuildNumber" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ServerVersionInfo.MinorBuildNumber" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinorBuildNumber As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinorBuildNumber { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ServerVersionInfo.MinorBuildNumber" />プロパティを取得またはマイナーのビルド番号を設定します。</summary>
+        <value>値、<see cref="P:ExchangeWebServices.ServerVersionInfo.MinorBuildNumber" />プロパティは、マイナーのビルド番号です。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinorBuildNumberSpecified">
+      <MemberSignature Language="C#" Value="public bool MinorBuildNumberSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MinorBuildNumberSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ServerVersionInfo.MinorBuildNumberSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinorBuildNumberSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MinorBuildNumberSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ServerVersionInfo.MinorBuildNumberSpecified" />プロパティを取得または設定を示すブール値かどうか、<see cref="P:ExchangeWebServices.ServerVersionInfo.MinorBuildNumber" />プロパティは、SOAP メッセージにシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ServerVersionInfo.MinorBuildNumber" />プロパティが指定されています。</summary>
+        <value>値、<see cref="P:ExchangeWebServices.ServerVersionInfo.MinorBuildNumberSpecified" />プロパティが<b>true</b>の場合、<see cref="P:ExchangeWebServices.ServerVersionInfo.MinorBuildNumber" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、値が<b>false</b>にします。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinorVersion">
+      <MemberSignature Language="C#" Value="public int MinorVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MinorVersion" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ServerVersionInfo.MinorVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinorVersion As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinorVersion { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ServerVersionInfo.MinorVersion" />プロパティを取得またはマイナー バージョン番号を設定します。</summary>
+        <value>値、<see cref="P:ExchangeWebServices.ServerVersionInfo.MinorVersion" />プロパティは、マイナー バージョン番号です。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinorVersionSpecified">
+      <MemberSignature Language="C#" Value="public bool MinorVersionSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MinorVersionSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ServerVersionInfo.MinorVersionSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinorVersionSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MinorVersionSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ServerVersionInfo.MinorVersionSpecified" />プロパティを取得または設定を示すブール値かどうか、<see cref="P:ExchangeWebServices.ServerVersionInfo.MinorVersion" />プロパティは、SOAP メッセージにシリアル化します。 このプロパティは、必要な場合、<see cref="P:ExchangeWebServices.ServerVersionInfo.MinorVersion" />プロパティが指定されています。</summary>
+        <value>値、<see cref="P:ExchangeWebServices.ServerVersionInfo.MinorVersionSpecified" />プロパティが<b>true</b>の場合、<see cref="P:ExchangeWebServices.ServerVersionInfo.MinorVersion" />プロパティは、SOAP メッセージにシリアル化それ以外の場合、値が<b>false</b>にします。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public string Version { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Version" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.ServerVersionInfo.Version" />
+      <MemberSignature Language="VB.NET" Value="Public Property Version As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.ServerVersionInfo.Version" />プロパティを取得または Exchange Web サービス (EWS) スキーマのバージョンを設定します。</summary>
+        <value>値、<see cref="P:ExchangeWebServices.ServerVersionInfo.Version" />プロパティは、Exchange Server 製品のバージョンです。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

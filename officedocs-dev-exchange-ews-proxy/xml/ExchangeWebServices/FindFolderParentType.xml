@@ -1,0 +1,413 @@
+<Type Name="FindFolderParentType" FullName="ExchangeWebServices.FindFolderParentType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="8d78d82fecfdb011e7d9e68b3348076e5eb12793" />
+    <Meta Name="ms.sourcegitcommit" Value="09f9993d313d1e3ec77e21f70573b3fced6eea2e" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20608324" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public class FindFolderParentType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FindFolderParentType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:ExchangeWebServices.FindFolderParentType" />
+  <TypeSignature Language="VB.NET" Value="Public Class FindFolderParentType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FindFolderParentType" />
+  <AssemblyInfo>
+    <AssemblyName>EWS</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.3038")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/exchange/services/2006/types")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <see cref="T:ExchangeWebServices.FindFolderParentType" />クラスには、FindFolder 操作中に単一のルート フォルダーの検索の結果が含まれています。</summary>
+    <remarks>
+      <para>A <see cref="T:ExchangeWebServices.FindFolderParentType" /> FindFolder 応答オブジェクトが返されます。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FindFolderParentType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:ExchangeWebServices.FindFolderParentType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FindFolderParentType();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+          <see cref="T:ExchangeWebServices.FindFolderParentType" />の新しいインスタンスを初期化するコンス トラクター、<see cref="T:ExchangeWebServices.FindFolderParentType" />クラス。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AbsoluteDenominator">
+      <MemberSignature Language="C#" Value="public int AbsoluteDenominator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AbsoluteDenominator" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderParentType.AbsoluteDenominator" />
+      <MemberSignature Language="VB.NET" Value="Public Property AbsoluteDenominator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AbsoluteDenominator { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.AbsoluteDenominator" />プロパティは、分数形式のページングを実行する場合、次の要求に使用する分母を取得します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.AbsoluteDenominator" /> 、分数形式のページングを実行する場合、次の要求に使用する分母を表す整数を返します。</value>
+        <remarks>
+          <para>このプロパティは、応答でのみ返されるために、読み取り専用です。署名のプロパティでプロパティ設定メソッドは、プロキシ ジェネレーターの成果物です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AbsoluteDenominatorSpecified">
+      <MemberSignature Language="C#" Value="public bool AbsoluteDenominatorSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AbsoluteDenominatorSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderParentType.AbsoluteDenominatorSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property AbsoluteDenominatorSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AbsoluteDenominatorSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.AbsoluteDenominatorSpecified" />プロパティを指定するブール値を取得するかどうか、<see cref="P:ExchangeWebServices.FindFolderParentType.AbsoluteDenominator" />プロパティが SOAP 応答をシリアル化します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.AbsoluteDenominatorSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.FindFolderParentType.AbsoluteDenominator" />プロパティは、SOAP 応答をシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Folders">
+      <MemberSignature Language="C#" Value="public ExchangeWebServices.BaseFolderType[] Folders { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class ExchangeWebServices.BaseFolderType[] Folders" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderParentType.Folders" />
+      <MemberSignature Language="VB.NET" Value="Public Property Folders As BaseFolderType()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;ExchangeWebServices::BaseFolderType ^&gt; ^ Folders { cli::array &lt;ExchangeWebServices::BaseFolderType ^&gt; ^ get(); void set(cli::array &lt;ExchangeWebServices::BaseFolderType ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("ContactsFolder", typeof(ExchangeWebServices.ContactsFolderType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("TasksFolder", typeof(ExchangeWebServices.TasksFolderType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("CalendarFolder", typeof(ExchangeWebServices.CalendarFolderType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("Folder", typeof(ExchangeWebServices.FolderType), IsNullable=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlArrayItem("SearchFolder", typeof(ExchangeWebServices.SearchFolderType), IsNullable=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>ExchangeWebServices.BaseFolderType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.Folders" />プロパティは、FindFolder 操作を使用して検出されたフォルダーを取得します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.Folders" />プロパティの配列を返します<see cref="T:ExchangeWebServices.BaseFolderType" />オブジェクトです。</value>
+        <remarks>
+          <para>このプロパティは、応答でのみ返されるために、読み取り専用です。署名のプロパティでプロパティ設定メソッドは、プロキシ ジェネレーターの成果物です。</para>
+          <para />
+        </remarks>
+        <example>
+          <para>RootFolder (FindFolderResponseMessage)</para>
+          <para>
+            <see cref="T:ExchangeWebServices.FindFolderType" />
+          </para>
+          <para>FindFolder 操作</para>
+          <para>フォルダー [Ex15WebSvcsOtherRef]</para>
+          <para>フォルダーの検索</para>
+        </example>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludesLastItemInRange">
+      <MemberSignature Language="C#" Value="public bool IncludesLastItemInRange { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludesLastItemInRange" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderParentType.IncludesLastItemInRange" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludesLastItemInRange As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludesLastItemInRange { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.IncludesLastItemInRange" />プロパティは、追加のページングが必要ないように、現在の結果が、クエリ内の最後のフォルダーを含めるかどうかを示す値を取得します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.IncludesLastItemInRange" />にクエリ内の最後のフォルダーが現在の結果に含まれている場合、プロパティが<b>true</b>を返しますそれ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>
+          <para>このプロパティは、応答でのみ返されるために、読み取り専用です。署名のプロパティでプロパティ設定メソッドは、プロキシ ジェネレーターの成果物です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludesLastItemInRangeSpecified">
+      <MemberSignature Language="C#" Value="public bool IncludesLastItemInRangeSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludesLastItemInRangeSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderParentType.IncludesLastItemInRangeSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludesLastItemInRangeSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludesLastItemInRangeSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.IncludesLastItemInRangeSpecified" />プロパティを示す値を取得するかどうか、<see cref="P:ExchangeWebServices.FindFolderParentType.IncludesLastItemInRange" />プロパティは、SOAP 応答にシリアル化します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.IncludesLastItemInRangeSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.FindFolderParentType.IncludesLastItemInRange" />プロパティは、SOAP 応答をシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>
+          <para>このプロパティは、応答でのみ返されるために、読み取り専用です。署名のプロパティでプロパティ設定メソッドは、プロキシ ジェネレーターの成果物です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexedPagingOffset">
+      <MemberSignature Language="C#" Value="public int IndexedPagingOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 IndexedPagingOffset" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderParentType.IndexedPagingOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Property IndexedPagingOffset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int IndexedPagingOffset { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.IndexedPagingOffset" />プロパティはインデックス付きページング ビューを使用する場合、次の要求に使用する必要があります次のインデックスを取得します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.IndexedPagingOffset" />プロパティは、インデックス付きページング ビューを使用する場合、次の要求に使用する必要があります次のインデックスを表す整数を返します。</value>
+        <remarks>
+          <para>このプロパティは、応答でのみ返されるために、読み取り専用です。署名のプロパティでプロパティ設定メソッドは、プロキシ ジェネレーターの成果物です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexedPagingOffsetSpecified">
+      <MemberSignature Language="C#" Value="public bool IndexedPagingOffsetSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IndexedPagingOffsetSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderParentType.IndexedPagingOffsetSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property IndexedPagingOffsetSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IndexedPagingOffsetSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.IndexedPagingOffsetSpecified" />プロパティを示す値を取得するかどうか、<see cref="P:ExchangeWebServices.FindFolderParentType.IndexedPagingOffset" />プロパティは、SOAP 応答にシリアル化します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.IndexedPagingOffsetSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.FindFolderParentType.IndexedPagingOffset" />プロパティは、SOAP 応答をシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>
+          <para>このプロパティは、応答でのみ返されるために、読み取り専用です。署名のプロパティでプロパティ設定メソッドは、プロキシ ジェネレーターの成果物です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumeratorOffset">
+      <MemberSignature Language="C#" Value="public int NumeratorOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumeratorOffset" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderParentType.NumeratorOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumeratorOffset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumeratorOffset { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.NumeratorOffset" />プロパティは、分数のページ ビューを使用する場合は、次の要求に使用する新しい分子の値を表します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.NumeratorOffset" />プロパティは、分数のページ ビューを使用する場合は、次の要求に使用する新しい分子の値を表す整数を返します。</value>
+        <remarks>
+          <para>このプロパティは、応答でのみ返されるために、読み取り専用です。署名のプロパティでプロパティ設定メソッドは、プロキシ ジェネレーターの成果物です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumeratorOffsetSpecified">
+      <MemberSignature Language="C#" Value="public bool NumeratorOffsetSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NumeratorOffsetSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderParentType.NumeratorOffsetSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumeratorOffsetSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NumeratorOffsetSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.NumeratorOffsetSpecified" />プロパティを示す値を取得するかどうか、<see cref="P:ExchangeWebServices.FindFolderParentType.NumeratorOffset" />プロパティは、SOAP 応答にシリアル化します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.NumeratorOffsetSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.FindFolderParentType.NumeratorOffset" />プロパティは、SOAP 応答をシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>
+          <para>このプロパティは、応答でのみ返されるために、読み取り専用です。署名のプロパティでプロパティ設定メソッドは、プロキシ ジェネレーターの成果物です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalItemsInView">
+      <MemberSignature Language="C#" Value="public int TotalItemsInView { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TotalItemsInView" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderParentType.TotalItemsInView" />
+      <MemberSignature Language="VB.NET" Value="Public Property TotalItemsInView As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TotalItemsInView { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.TotalItemsInView" />プロパティは、制限を満たすフォルダーの総数を取得します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.TotalItemsInView" />プロパティは、制限を満たすフォルダーの合計数を表す整数を返します。</value>
+        <remarks>
+          <para>このプロパティは、応答でのみ返されるために、読み取り専用です。署名のプロパティでプロパティ設定メソッドは、プロキシ ジェネレーターの成果物です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalItemsInViewSpecified">
+      <MemberSignature Language="C#" Value="public bool TotalItemsInViewSpecified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TotalItemsInViewSpecified" />
+      <MemberSignature Language="DocId" Value="P:ExchangeWebServices.FindFolderParentType.TotalItemsInViewSpecified" />
+      <MemberSignature Language="VB.NET" Value="Public Property TotalItemsInViewSpecified As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TotalItemsInViewSpecified { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>EWS</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.TotalItemsInViewSpecified" />プロパティを示す値を取得するかどうか、<see cref="P:ExchangeWebServices.FindFolderParentType.TotalItemsInView" />プロパティは、SOAP 応答にシリアル化します。</summary>
+        <value>
+          <see cref="P:ExchangeWebServices.FindFolderParentType.TotalItemsInViewSpecified" />プロパティが<b>true</b>を返す場合は、<see cref="P:ExchangeWebServices.FindFolderParentType.TotalItemsInView" />プロパティは、SOAP 応答をシリアル化それ以外の場合、このプロパティは<b>false</b>を返します。</value>
+        <remarks>
+          <para>このプロパティは、応答でのみ返されるために、読み取り専用です。署名のプロパティでプロパティ設定メソッドは、プロキシ ジェネレーターの成果物です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
